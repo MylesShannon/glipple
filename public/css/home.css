@@ -1,0 +1,15 @@
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	 position: fixed;
+	 border-right: 1px solid #54879d; 
+	 height: auto;
+}
+
+body {
+color: #333333;
+font-family: Impact, Charcoal, sans-serif;
+}
+

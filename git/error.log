@@ -1,0 +1,193 @@
+[Tue Feb 03 05:05:39 2015] [error] [client 166.171.186.180] File does not exist: /var/www/html/git/hook
+[Tue Feb 03 05:05:49 2015] [error] [client 166.171.186.180] File does not exist: /var/www/html/git/hook
+[Tue Feb 03 05:18:44 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 05:18:44 2015] [error] [client 192.30.252.41] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 05:18:44 2015] [error] [client 192.30.252.41] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 05:34:10 2015] [error] [client 192.30.252.40] File does not exist: /var/www/html/git/git
+[Tue Feb 03 05:35:58 2015] [error] [client 192.30.252.40] File does not exist: /var/www/html/git/git
+[Tue Feb 03 05:36:07 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 05:37:17 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 05:37:20 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 05:42:49 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 05:42:49 2015] [error] [client 146.115.160.26] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 05:42:49 2015] [error] [client 146.115.160.26] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 05:42:56 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 06:08:00 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 06:08:21 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:08:21 2015] [error] [client 146.115.160.26] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:08:21 2015] [error] [client 146.115.160.26] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:09:31 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:09:31 2015] [error] [client 146.115.160.26] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:09:31 2015] [error] [client 146.115.160.26] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:11:04 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:11:04 2015] [error] [client 192.30.252.41] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:11:04 2015] [error] [client 192.30.252.41] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:13:41 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:13:41 2015] [error] [client 192.30.252.34] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:13:41 2015] [error] [client 192.30.252.34] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:15:44 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:15:44 2015] [error] [client 192.30.252.42] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:15:44 2015] [error] [client 192.30.252.42] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:24:06 2015] [error] [client 192.30.252.45] File does not exist: /var/www/html/git/git
+[Tue Feb 03 06:24:55 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/git
+[Tue Feb 03 06:26:04 2015] [error] [client 192.30.252.45] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:26:04 2015] [error] [client 192.30.252.45] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:26:04 2015] [error] [client 192.30.252.45] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:27:35 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:27:35 2015] [error] [client 192.30.252.41] PHP Warning:  file_put_contents(logs/github.txt): failed to open stream: No such file or directory in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:27:35 2015] [error] [client 192.30.252.41] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:27:51 2015] [error] [client 146.115.160.26] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /var/www/html/git/hook.php on line 22
+[Tue Feb 03 06:28:35 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /var/www/html/git/hook.php on line 22
+[Tue Feb 03 06:29:19 2015] [error] [client 192.30.252.42] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /var/www/html/git/hook.php on line 22
+[Tue Feb 03 06:29:26 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /var/www/html/git/hook.php on line 22
+[Tue Feb 03 06:31:33 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:32:06 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:32:08 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:32:14 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:34:20 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:38:07 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 06:39:11 2015] [error] [client 192.30.252.42] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:39:18 2015] [error] [client 192.30.252.45] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:39:42 2015] [error] [client 192.30.252.46] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:40:14 2015] [error] [client 192.30.252.45] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:40:17 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 06:40:38 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:40:39 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:40:46 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:40:53 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /var/www/html/git/hook.php on line 12
+[Tue Feb 03 06:41:03 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:41:14 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:41:56 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:41:58 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:42:32 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:42:39 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:43:00 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:44:09 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 06:44:30 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 07:06:44 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:07:20 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:08:35 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:09:02 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:09:19 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:10:03 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:13:16 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:14:18 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:15:02 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:17:35 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /var/www/html/git/hook.php on line 10
+[Tue Feb 03 07:17:56 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 9
+[Tue Feb 03 07:18:49 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 13
+[Tue Feb 03 07:19:08 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 13
+[Tue Feb 03 07:19:49 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 07:20:16 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 07:20:17 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 15
+[Tue Feb 03 07:44:51 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 07:45:00 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 07:45:28 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 07:50:40 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 7
+[Tue Feb 03 07:50:57 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:50:57 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 7
+[Tue Feb 03 07:51:36 2015] [error] [client 192.30.252.45] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:51:36 2015] [error] [client 192.30.252.45] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 7
+[Tue Feb 03 07:51:56 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:51:56 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 7
+[Tue Feb 03 07:52:24 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:52:24 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:52:31 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:52:31 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:52:52 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:52:52 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:53:37 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:53:37 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:53:52 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:53:52 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:54:18 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:54:18 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:55:16 2015] [error] [client 192.30.252.46] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:55:16 2015] [error] [client 192.30.252.46] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 8
+[Tue Feb 03 07:57:20 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 07:59:09 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:00:38 2015] [error] [client 192.30.252.42] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 11
+[Tue Feb 03 08:01:20 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:02:30 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:02:43 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:04:03 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:04:04 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:04:31 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:05:13 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:07:31 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:07:32 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:07:34 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:08:53 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:09:02 2015] [error] [client 192.30.252.40] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:09:10 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:09:41 2015] [error] [client 192.30.252.34] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:09:51 2015] [error] [client 192.30.252.45] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:09:54 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:10:38 2015] [error] [client 192.30.252.42] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:10:48 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:10:52 2015] [error] [client 107.107.61.223] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:12:18 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:12:32 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:13:00 2015] [error] [client 192.30.252.42] PHP Parse error:  syntax error, unexpected '`', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 08:13:46 2015] [error] [client 192.30.252.40] PHP Parse error:  syntax error, unexpected ']', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 08:13:59 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:15:02 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:15:56 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:15:56 2015] [error] [client 192.30.252.40] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 08:17:17 2015] [error] [client 192.30.252.34] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:17:17 2015] [error] [client 192.30.252.34] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 08:19:00 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:19:00 2015] [error] [client 192.30.252.41] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 08:19:48 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:19:48 2015] [error] [client 192.30.252.42] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:20:05 2015] [error] [client 192.30.252.46] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:20:05 2015] [error] [client 192.30.252.46] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:20:16 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:20:16 2015] [error] [client 192.30.252.40] PHP Notice:  Trying to get property of non-object in /var/www/html/git/hook.php on line 6
+[Tue Feb 03 08:20:54 2015] [error] [client 192.30.252.45] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 2
+[Tue Feb 03 08:31:41 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 08:32:08 2015] [error] [client 107.107.61.223] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 08:32:36 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 08:34:50 2015] [error] [client 192.30.252.46] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 10:16:45 2015] [error] [client 80.82.64.116] script not found or unable to stat: /var/www/cgi-bin/index.cgi
+[Tue Feb 03 10:30:51 2015] [error] [client 71.6.135.131] File does not exist: /var/www/html/git/robots.txt
+[Tue Feb 03 11:59:19 2015] [error] [client 104.149.220.58] File does not exist: /var/www/html/git/manager
+[Tue Feb 03 12:59:03 2015] [error] [client 115.239.248.46] File does not exist: /var/www/html/git/manager
+[Tue Feb 03 16:00:22 2015] [error] [client 192.30.252.46] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 16:22:53 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Tue Feb 03 16:25:09 2015] [error] [client 218.26.217.73] File does not exist: /var/www/html/git/manager
+[Tue Feb 03 16:26:12 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 3
+[Tue Feb 03 16:31:48 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 3
+[Tue Feb 03 16:33:01 2015] [error] [client 192.30.252.40] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 3
+[Tue Feb 03 16:33:53 2015] [error] [client 76.19.171.179] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 5
+[Tue Feb 03 17:08:49 2015] [error] [client 188.138.17.205] File does not exist: /var/www/html/git/robots.txt
+[Tue Feb 03 17:21:01 2015] [error] [client 202.109.143.35] File does not exist: /var/www/html/git/manager
+[Tue Feb 03 20:52:19 2015] [error] [client 193.92.136.90] script not found or unable to stat: /var/www/cgi-bin/authLogin.cgi
+[Tue Feb 03 22:01:42 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 74.125.225.245:80 (*) failed
+[Tue Feb 03 22:45:18 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 173.194.57.117:80 (*) failed
+[Tue Feb 03 22:56:03 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 173.194.7.163:80 (*) failed
+[Tue Feb 03 23:22:01 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 173.194.57.50:80 (*) failed
+[Tue Feb 03 23:33:36 2015] [error] [client 209.81.96.67] File does not exist: /var/www/html/git/manager
+[Tue Feb 03 23:47:02 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 74.125.225.255:80 (*) failed
+[Tue Feb 03 23:48:02 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 74.125.225.255:80 (*) failed
+[Tue Feb 03 23:50:35 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 173.194.39.205:80 (*) failed
+[Tue Feb 03 23:58:06 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 74.125.224.211:80 (*) failed
+[Wed Feb 04 00:03:00 2015] [error] [client 173.194.33.144] SSL Proxy requested for ip-172-31-31-90.us-west-2.compute.internal:8080 but not enabled [Hint: SSLProxyEngine]
+[Wed Feb 04 00:03:00 2015] [error] proxy: HTTPS: failed to enable ssl support for 173.194.33.144:443 (www.google.com)
+[Wed Feb 04 00:13:24 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 74.125.225.226:80 (*) failed
+[Wed Feb 04 00:57:06 2015] [error] [client 213.17.242.225] proxy: Connect to remote machine blocked returned by www.google.pl:80
+[Wed Feb 04 01:09:18 2015] [error] [client 91.237.52.193] (103)Software caused connection abort: proxy: CONNECT: error on sock - ap_pass_brigade
+[Wed Feb 04 01:14:21 2015] [error] [client 216.58.216.132] SSL Proxy requested for ip-172-31-31-90.us-west-2.compute.internal:8080 but not enabled [Hint: SSLProxyEngine]
+[Wed Feb 04 01:14:21 2015] [error] proxy: HTTPS: failed to enable ssl support for 216.58.216.132:443 (www.google.com)
+[Wed Feb 04 01:45:16 2015] [error] [client 222.151.170.234] script not found or unable to stat: /var/www/cgi-bin/authLogin.cgi
+[Wed Feb 04 02:06:00 2015] [error] [client 178.32.200.96] proxy: Connect to remote machine blocked returned by www.google.pl:80
+[Wed Feb 04 02:26:18 2015] [error] [client 78.46.49.138] (103)Software caused connection abort: proxy: CONNECT: error on sock - ap_pass_brigade
+[Wed Feb 04 03:05:17 2015] [error] [client 178.32.200.96] proxy: Connect to remote machine blocked returned by www.google.pl:80
+[Wed Feb 04 04:36:31 2015] [error] [client 80.82.64.116] script not found or unable to stat: /var/www/cgi-bin/index.cgi
+[Wed Feb 04 05:19:03 2015] [error] [client 66.240.192.138] File does not exist: /var/www/html/git/robots.txt
+[Wed Feb 04 07:01:55 2015] [error] [client 190.197.107.107] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Feb 04 07:22:25 2015] [error] [client 192.30.252.34] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 6
+[Wed Feb 04 07:26:34 2015] [error] [client 192.30.252.42] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Wed Feb 04 07:27:40 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
+[Wed Feb 04 07:36:43 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
+[Wed Feb 04 07:36:44 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
