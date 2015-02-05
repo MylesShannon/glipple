@@ -1,0 +1,1629 @@
+﻿AmpJuke Changelog.
+Also available on http://www.ampjuke.org
+Report bugs/errors/suggestions at http://www.ampjuke.org/smforum 
+and/or to michael/AT/ampjuke/DOT/org
+
+--------------------------------------------------------------------------------
+
+Version 0.8.8: Released: 14-08-2014
+
+- Fixed a couple of issues that - under certain circumstances - could
+disrupt the installation process.
+
+- New option to limit total number of outstanding/queued tracks for 
+ALL users (applies only to "jukebox mode"). 
+So far, this was a setting related to each user. It still exists.
+
+- Added additional/new fingerprint parameters from The Echonest.
+Seems like these have been around for some time...
+..."thanks" for keeping us updated, Echonest!
+The new parameters introduced are: liveness, speechiness, acousticness
+and valence.
+
+- Add new music found during scan+import to a specific favorite list.
+This option will - if checked (and it is by default) - add all new
+music found during scan+import to a specific favorite list.
+An additional option makes it possible to add the new music
+to a favorite list covering all users.
+
+- Last.fm apparently made a decision to change the way performer/artist
+images are retrieved using the last.fm API.
+I've changed the code on "my side" of the API accordingly.
+
+- GetID3() latest/newest version.
+
+--------------------------------------------------------------------------------
+
+Version 0.8.7: Released: September 30th, 2013.
+
+- "Keep open" on pop-up.
+...used when selecting a favorite list to add something to.
+It's possible to add to several favorite lists in one "go".
+
+- Update: Echonest API.
+Identification of tracks is now being done using a "2 step" method:
+First, the track is uploaded, then identified. Until recently it was enough
+to upload the track, and the track's "fingerprint" would be returned almost
+immediately.
+I missed that (missing) memo, Echonest!!
+
+- New feature: You might also like...
+When a user clicks on "Add to favorite...", a window pops up prompting for
+the name of the list to add the track to.
+If access to the Echonest API is enabled, some suggestions for similar 
+tracks will appear below the prompt.
+See screenshot.
+
+- Advanced search: New or old method.
+Using advanced search can now be done using parameters (limits) retrieved
+and stored from the Echonest API.
+For example, an advanced search could be done using "danceability">0.7 and
+"tempo">140. The possibilities are quite overwhelming...
+This - of course - requires access to the Echoest API as well as proper
+"fingerprinting" (identification) of a majority of the tracks in your
+collection. 
+It's still possible to use the old advanced search functionality.
+
+- Last.fm API-key inconsistency.
+Embarassing, but true: I've been using TWO API-keys from Last.fm.
+One of them was for testing purposes, and has now expired.
+I've made sure that from now on, only ONE key is used against the
+last.fm API: The right one! Sorry for the inconvenience.
+
+- ...plus: Better "look&feel".
+For example: Tooltips are now much better compared to earlier.
+For example, do a "mouseover" on an album and see for yourself :)
+
+- Bonus: A *LOT* of small improvements here&there.
+
+--------------------------------------------------------------------------------
+
+Version 0.8.6: Released: August 7th, 2012.
+
+- Related tracks: Echonest.
+One year ago I stumbled across an extremely interesting API.
+It basically gives you the option to "identify" each and every 
+track within your music library. The identification is based on the
+API available from Echonest (http://the.echonest.com). I have coded against
+the API in order to use this exciting feature in AmpJuke.
+So - start "identifying" your music in AmpJuke, - I will (almost) guarantee
+this: It will take the listening experience to a whole new level!
+More info. the FAQ: http://www.ampjuke.org/?id=faq87.
+
+- Jukebox mode.
+Until this release, AmpJuke have been operating like a personal streaming
+service for all registered users (and even anonymous users, if you wish that).
+In other words: Each user completely controlled what's being played during
+his/her listening session.
+With the introduction of the jukebox mode in AmpJuke, listening to music 
+can now be done in a manner similar to what is experienced with a 
+jukebox (or radio station): ALL users listens to the same music.
+If this sounds interesting, start here: http://www.ampjuke.org/?id=faq93
+
+- Screensaver (sort of).
+A simple "screensaver" is introduced in this release of AmpJuke.
+There's a small background-story about why I did this.
+Read more about it here: http://www.ampjuke.org/?id=faq98
+
+- Alternative scan+music management.
+By Marc Apgar - THANKS!
+You will find this new feature/tool in the admin panel on the left side
+on the "Welcome" page.
+The tool is included "as is" as I haven't really had the time to look
+close into it. Marc mentioned something about additional documentation
+in an email. Should he decide to do that, I'll post it on the
+webiste.
+
+- Bye bye Bing!
+Recently, Microsoft decided to (almost) pull the plug on free usage
+of the API in relation to Bing!
+Free access to search results are now almost non-existing, to stay
+free API-calls should be kept below 5000. PER MONTH!! 
+Unless - of course - you want to pay...
+...guess M$ is of the impression that that's a great offer.
+I don't think so. 
+To do bulk and individual retrievel of album and performer images, a switch
+has been made to Google. We all know that M$ has been suspected for 
+"borrowing" some of Google's results in the past...
+
+- A lot of small improvements here&there. Really.
+I won't outline all of them here.
+If you're curious, just do a "grep 0.8.6 *.php" within the folder
+where AmpJuke is installed (assuming you run it on Unix/Linux).
+
+--------------------------------------------------------------------------------
+
+Version 0.8.5: Released: July 31st, 2011.
+
+- New feature: Edit tags on files.
+It is possible to enable editing right away when an error/warning is
+encoutered after scan+import has completed.
+Besides editing tags right after scan+import, it's also possible to do it
+later on
+More in the FAQ: http://www.ampjuke.org/?id=faq35
+
+- Information: AmpJuke uses GetID3 version 1.9 (http://www.getid3.org).
+It's the newest.
+
+- Introduced: jQuery. 
+AmpJuke have started to make use of the wildly popular jQuery framework. 
+See for yourself :)
+More in the FAQ: http://www.ampjuke.org/?id=faq86
+
+- Random play improved: Added two extra options when setting up random
+play: The first makes it possible to limit the total duration of tracks
+selected for being played. The other deals with avoiding seletion 
+of tracks played within a specific amount of days.
+More in the FAQ.
+
+- Improvement: When playing tracks by random after the last track
+selected by the user has been played, AmpJuke attempts to avoid
+a "circular trap".
+More in the FAQ: http://www.ampjuke.org/?id=faq30
+
+- Italian language updated.
+By Pietro "Maerlin" Baiguini. THANKS. 
+It's highly appreciated.
+
+- Danish language updated.
+By some strange fellow named Michael H. Iversen... :)
+
+
+--------------------------------------------------------------------------------
+
+Version 0.8.4: Released: December 18th, 2010.
+
+- New feature: Self registration.
+It's been on the to-do list for quite a while.
+From now on, it is possible to enable self-registration of users within
+AmpJuke. Cool...
+
+- New personal setting: Hide text next to icons.
+Save some screen real estate.
+Hiding the text after the icons scattered around the various options is now
+possible. It's a personal setting.
+The text in the main menu to the left will still be visible.
+
+- New feature: IE9 jumplists.
+Frankly, I'm quite impressed with the Windows 7 / Internet Explorer 9 combo.
+So if you're lucky enough to get your hands on a PC with Win 7 and IE9, you
+might as well take advantage of the jumplists in AmpJuke.
+In other words: AmpJuke uses a jumplist-launcher when a user is 
+running Win7 with IE9.
+Pure eyecandy that might impress your friends and family :-)
+
+- German translation updated.
+Thanks to Benjamin Preuß (r2k) for supplying this in the forum.
+
+- Improvement: If an album cover isn't downloaded+stored correctly then
+the cover will be hard (impossible) to see later.
+From now on, the routine that auto-downloads covers will check if the
+size of the image is above a "certain size" (10 bytes).
+If not, the default/blank AmpJuke cover will be used instead.
+Thanks to Ben for suggesting this in the forum.
+
+- Error correction: Clicking on "Play all..." when displaying a specific
+favorite list didn't have any effect (ie. the music wasn't streaming).
+That is no longer the case.
+
+- Modified: The function split() has been deprecated since PHP version 5.3.0.
+I've changed the code where split() is used and is now using explode() instead.
+THANKS to all of you 'out there' who notified about it in the forum.
+
+- Cleaned: Some themes was "broken" (not rendered as expected in the browser).
+Although this is "just" an improvement, it required some work *everywhere*.
+Anyway, "broken" layouts should be history now (I hope...).
+
+- Fixed: When replacing a picture of an artist (performer) and/or replacing an
+image for an album using an URL, nothing happened.
+This is no longer the case. 
+
+- Adjusted: Changed the order of items in the XSPF-playlists generated by
+AmpJuke. I'm not usre why, but suddenly the flash player within AmpJuke
+started to act strange. I've changed the way XSPF-playlists are generated
+so the XSPF-playlists in AmpJuke is according to the standard.
+
+- Cleaned up in some of the code.
+
+--------------------------------------------------------------------------------
+
+Version 0.8.3: Released: August 13th, 2010.
+
+- Fixed: Security issue.
+A specific URL-parameter was not properly sanitized before being 
+used in SQL queries. 
+This is no longer the case.
+
+- Fixed: Upgrade issue.
+If you plan to upgrade to this version, please MAKE SURE that you're running
+AmpJuke version 0.8.0 or above.
+If not, I highly recommend a fresh installation.
+
+- New feature: Use URL when replacing image for an album or artist.
+If you're unhappy with the images returned ans suggested by the API from
+either last.fm and/or Bing, you can type in an URL that points to an
+image you want to use to represent the album or artist.
+THANKS to jesperts for coding this simple,clean and efficient modification.
+
+- New theme: Bright Theme.
+Made by Eigan.no.
+Thanks! Looks extremely great!
+
+- New set of icons: Spirit20 by Dale Morrell.
+You can find the entire set here: http://19eighty7.com
+
+- New set of icons: Crystal Project by Everaldo Coelho.
+You can find the entire set here: http://www.everaldo.com
+
+- New personal setting: Create favorite lists automatically.
+This new setting is related to the functionality introduced in 0.8.2.
+It turned out that having just "Add tracks to favorite lists automatically" as
+the only option to automatically add something to a favorite list (existing
+or new) was a little overwhelming (ie. a *lot* of favorite lists were created).
+The personal setting "Create favorite lists automatically" does - as the name
+indicates - only create *new* favorite lists if this setting is activated.
+If "Create new favorite lists automatically" isn't activated, then tracks 
+will only be added to a given favorite list if the name of the favorite
+list exists already.
+More in the FAQ.
+
+- Error correction: When trying to 'un-share' a shared favorite list, an
+error was shown. This is no longe the case.
+
+- Error correction: Anonymous users could not stream music.
+This is no longer the case.
+THANKS to dontaco2000 for notifying about this in the forum.
+
+- New theme: Big blue.
+Made by me :-)
+Mainly for fairly large monitors.
+...and/or to be used with Everaldo's Crystal Project icons
+
+--------------------------------------------------------------------------------
+
+Version 0.8.2: Released: March 13th, 2010.
+
+- New functionality: Add what's being streamed to a favorite list.
+When listening to a track, you might think that the track
+would be appropriate in a specific favorite list.
+If "Now playing" is turned on, you'll have the option to add
+the track currently playing to one or more favorite lists.
+Besides individual tracks, this functionality also operates in relation to
+performers and albums.
+
+- New functionality: Get suggestions for favorite lists when adding.
+When adding something to a favorite list, and if the option is turned on,
+one or several suggestions for "appropriate" favorite lists will be shown.
+Both existing and non-existing favorites.
+The setting is personal.
+
+- New functionality: Add what's being streamed to a favorite list.
+...AUTOMATICALLY.
+A personal setting allows tracks to be added to one or several favorite lists
+automatically.
+This functionality was made possible using "getTopTags" in the last.fm API.
+
+- Improvement: Covers/performer images on the "Welcome" page.
+If having f.ex. the personal setting "Browse albums by cover" turned on
+as well as some kind of album content on the "Welcome" page, then album
+images are displayed as images.
+The same is true in relation to artists/performers.
+
+- Improvement: Show what favorite list(s) a track is in already.
+When adding a track, the favorite list(s) where the track is in already
+will be shown.
+
+- Improvement: When transcoding/downsampling is active, the actual 
+names (track, tracknumber, album, performer) are used.
+THANKS to dawadoc for coding this nice improvement.
+
+- Improvement: If transcoding/downsampling is enabled+configured, it's
+possible to enable transcoding/downsampling based on individual IP-addresses
+and/or several ranges of IP-addresses.
+This feature can come in handy, if you want to force transcoding
+when someone is coming from specific IP-addresses/-ranges.
+Please remember that you can also force transcoding/downsampling for 
+individual users, no matter where they come from.
+
+- Cleaned up in some of the code.
+
+--------------------------------------------------------------------------------
+
+Version 0.8.1: Released: December 13th, 2009.
+
+- New feature: "Scan metadata".
+Addressing the apparent need to auto-download and store images of albums and
+artists/performers, a new functionality - "Scan metadata" - is introduced.
+It's using the Microsoft Bing API 2.0 to auto-download and store these images
+makes it possible. The API requires registration with Microsoft, and the
+creation of and AppID (http://www.bing.com/developers).
+More information can be found in the FAQ. 
+
+- New feature: Create AND automatically populate a favorite list with tracks.
+For long-time users of AmpJuke and favorite-list afficionados, this might come
+in handy.
+When creating a new favorite list, you can request that the new favorite list
+is created using existing tracks automatically.
+This was - once again - made possible using last.fm's API (and some heavy coding
+in AmpJuke, naturally).
+More information can be found in the FAQ.
+
+- Improvement: Miscrosoft Bing API 2.0 vs. album covers and performer images.
+The option to replace/lookup covers and/or images for artists/performers
+has been improved.
+When you (or somebody else with admin acccess) click "Lookup a new image",
+the API's from last.fm and Miscrosoft Bing are asked and results are displayed.
+More info. can be found in the FAQ.
+
+- Error correction: When enabling the setting 
+"Re-process tracks found in database and on the filesystem" before doing a 
+scan+import caused an error to be displayed.
+This is no longer the case.
+THANKS to enedene for nofifying about it in the forum.
+
+- Improved: Scan+import can lookup local covers for albums on the file-system
+during scan+import.
+If you have album images stored in the same folder as the album tracks, then
+actvating a setting can look for album images to be used+displayed later on.
+THANKS to wurlitzer for nofifying about it in the forum + contributing with
+some code to build upon.
+
+- Minor improvement: The option "Keep me signed in..." on the loginpage
+can be hidden.
+More info. in the FAQ.
+
+--------------------------------------------------------------------------------
+
+Version 0.8.0: Released: 13-09-2009.
+
+- New feature: Flash player introduced.
+Having been asked for a flash player feature a while ago in the forum, it's 
+(finally) implemented in AmpJuke.
+The flash player relies on the XSPF Web Music Player 
+(also included in the download) for the AmpJuke server, and the appropriate 
+browser plugin for the users accessing/playing the music.
+You can configure the use of the built-in flash player in various ways.
+Note that the flash player is not supposed to replace the normal way music 
+streaming works, but rather supposed to be an "add-on" to the 
+streaming music engine in AmpJuke.
+
+- Automatic cover retrieval: Ditched Amazon, now using the last.fm API.
+Amazon recently made it a bit harder to fetch, download and display album 
+covers automatically using the Amazon webservice.
+So I switched from Amazon to the webservice provided by last.fm.
+It's much easier to deal with, and - the best of all - you don't have to 
+register for an API-account at Amazon (or last.fm).
+Starting from this release of AmpJuke album covers are found, downloaded and 
+displayed automatically - provided last.fm finds a cover.
+Bear in mind you can upload your own covers as well.
+
+- Error correction: Scan+import of music only happened in subfolders.
+A rather annoying error has been corrected. 
+It's related to the fact that music found in the "base_music_folder" was 
+not discovered during scan+import.
+F.ex. a track located here /music/track01.mp3 would not be found during 
+scan+import, but /music/somefolder/track01.mp3 would.
+This is no longer the case (i.e. /music/track01.mp3 will be added to the 
+online music collection, provided permissions are ok).
+
+- Error correction: "Play all..." from a specific favorite list.
+Nothing started playing when clicking on "Play all..." in relation to 
+any given online playlist (favorite list).
+This is no longer the case.
+
+- Optimized: Displaying images of related performers is now remarkably faster.
+At least compared to earlier releases.
+Furthermore, when clicking "Refresh related...", *existing* images are 
+left untouched and only *new* images are retrieved, stored and displayed.
+
+- Fixed: Only administrators are allowed to edit biographies for albums 
+and artists/performers.
+...at least starting from this release :)
+More about automatic retrieval of biographies from albums and 
+artists/performers in the corresponding FAQ-entry.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.9: Released: July 7th, 2009.
+
+- Improvement: Browse albums by covers.
+Rather than having a "plain" list of albums, it's now possible to display
+album covers instead.
+Cool...
+Of course, the "plain" list is still available so you can switch back and forth
+to use the most appropriate (personal) setting.
+
+- Improvement: Browse performers by pictures.
+Basically same type of functionality as described above.
+
+- Improvement: Retrieving images of related performers from last.fm
+is now making an attempt to get the "largesquare" (126x126px) image
+of a given related performer.
+If found, it will - as usual - be stored in the local cache.
+
+- Improvement: When dispalying related performers and _not_ having
+a configured number of samples displayed, the related performers
+are shown in several rows rather than one related performer per row.
+
+- Error correction: Deleting something, f.ex. a favorite list, caused a
+redirect to the login-screen.
+That is no longer the case.
+Thanks to cowboy for notifying about it in the forum.
+
+- New theme: Minimalistic.
+An attempt to make a good theme for netbooks w. relatively small screens.
+
+- Improvement: Rather than using sys. calls (like exec(something)), php's
+own functions (like rename, move, copy) is used instead.
+
+- Inconvenience removed: Number of related performers could in some
+instances be one number higher than what was displayed.
+
+- Made the names/title look a little better by replacing "stream.php?"
+with "stream.php?/".
+This only happens when "Now playing" is turned on.
+
+- Inconvenience removed: When displaying related performers and when
+"Display some tracks..." is turned on, the number of tracks from a given
+related performer wasn't correct.
+That is no longer the case.
+More info.: http://www.ampjuke.org/faq.php?q_id=41
+
+- When downloading *one* track *and* without compression enabled,
+nothing was downloaded.
+That is no longer the case.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.8: Released: May 21st, 2009.
+
+- More info. about related performers.
+When displaying a specific performer and 'related performers' is turned
+on, the part of the page with related performers now shows the number of
+tracks in the database plus a configured maximum of track/samples for each 
+related performer.
+More information here: http://www.ampjuke.org/faq.php?q_id=41
+
+- Advanced search introduced.
+Rather than using the simple search, it's also possible to do a more advanced
+search based on several parameters.
+F.ex. it's possible to search all performers starting with a specific letter
+for a track, or search for all albums starting with "E" from a specific year.
+
+- Reflections - a kewl effect...
+When displaying an album image, a reflection of that image can be shown.
+This is a site-wide setting that must be enabled.
+More information here: http://www.ampjuke.org/faq.php?q_id=10
+
+- Added a new icon-set - "boomy".
+This consists of some relatively large icons best suited on medium to big
+sized monitors/screens.
+You can also add your own, see this: http://www.ampjuke.org/faq.php?q_id=49
+
+- Some minor improvements here+there.
+Think this is just the usual BS-statement that eveybody else adds..?
+Well, try this: Display something w. page-numbers at the bottom - f.ex. a
+track-list. Mouseover one of the page links. In the "help text" you'll see
+the name of the entry the page starts with. Note: This doens't work for all
+types of views w. pagenumbers at the bottom.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.7 Released: January 30th, 2009.
+
+- New feature: Retrieve, store and display biographies for performers and albums.
+By using the artist.getInfo and album.getInfo methods from last.fm's REST based
+webservices, AmpJuke can now display a biography for any given performer/album.
+If available, both short and long biographies for performers and albums 
+are fetched from last.fm and then stored in the AmpJuke database.
+Note: If you want a bio. to appear for albums, you'll also need to get 
+your hands on an AWS-key from Amazon.
+More info. in the FAQ.
+
+- Hungarian language updated.
+Thanks for Rezso for doing this.
+
+- Improvement: If enabled, lyrics can now be obtained from a configurable
+source. Previously, lyrics relied on a search engine.
+The FAQ has more information.
+
+- Improvement: Rather than displaying small images of related performers, 
+AmpJuke now uses the medium sized images, if available.
+It was hard enough to see anything using the (very) small images in the first
+place anyway - or maybe I'm getting old :)
+
+- Improvement: When displaying a specific performer, the various information
+about that performer (bio., albums, tracks and related performers) is now
+displayed in sections that can be expanded/collapsed.
+
+- Improvement: Lockout/banning of IP-adresses can now be 
+configured to be enabled/disabled. 
+The setting was hardcoded previously.
+If enabled, you can ban/lockout IP-addresses that have too many failed
+login attempts by setting a limit that, when reached, will ban one or more
+specific IP-addresses (i.e.: nobody from that IP-address will be able to
+login).
+The FAQ has more information.
+
+- Corrected a major inconvenience: When displaying performers starting 
+with a certain letter (f.ex. "E"), the page numbers showed links to pages 
+from *all* performers or albums (f.ex. 105 pages instead of just 3).
+This is no longer the case.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.6 Released: November 27th, 2008.
+
+- Fixed a security issue in relation to displaying a specific performer.
+When changing the URL "by hand", it was possible to display something
+completely different.
+
+- Error correction: Personal settings wasn't saved.
+More information here: http://www.ampjuke.org/forum/viewtopic.php?f=2&t=124
+
+- Romanian language introduced.
+THANKS to Nelu Campean for doing this.
+
+- Improved installation procedure.
+
+- Some "under the hood" modifications.
+This covers a lot of improved stuff.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.5 Released: September 14th, 2008.
+
+- Most important: Scan+import has been completely re-programmed.
+The new scan+import offers a *lot* of settings in order to let you tweak how
+to scan+import, handle missing tags, re-process files already in the database
+and musc more.
+The FAQ has a complete explanation of the parameters associated with
+scan+import.
+Thanks to wolf and kanna for suggesting a lot of relevant stuff in relation
+to this in the forum.
+
+- Fixed some security issues in relation to login.
+Password is now _hashed_ in the _cookie_, 3+ failed login attempts will ban
+the users IP-adress and a small delay is introduced after a login fails.
+Thanks to BigBaddaBoom for suggesting this in the forum.
+
+- Hungarian language updated.
+Thanks to Rezso for doing this.
+
+- Each section in the personal settings can now be expanded/collapsed.
+This makes it much easier to jump (expand) to the part of a users 
+personal settings (Login -> Settings) that he/she wish to change.
+Expand/collapse is also introduced when inspecting/setting
+site-wide parameters (Login -> Configuration...).
+
+- If "Now playing" is enabled (http://www.ampjuke.org/faq.php?q_id=42),
+the "popout" window used to show what's playing right now.
+The "popout" window has been modified, so it also shows what's up next.
+
+- With Internet Explorer 8 just around the corner, the new IE8 meta tag 
+is included in the header.
+The Internet Explorer 8 meta tag is set so pages are rendered as IE7 does.
+
+- Changed slightly in the AWS (Amazon Web Service) routine.
+The new method should be more efficient when fetching an album cover
+automatically from Amazon.
+
+- Images of related perfomers from last.fm are now stored _relative_ to the
+folder where AmpJuke is installed.
+Previously, the images was stored as an URL (http://...whatever...), which
+gave problems displaying images of related performers after moving an AmpJuke 
+installation from one server to another.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.4 Released: July 17th, 2008.
+
+- Improvement: Passwords are now md5-hashed and stored as such in the usertable.
+Please note that after and upgrade, and if "remember me" is turned on 
+on the loginpage, then a user is forced to login again, since passwords 
+stored in cookies needs to be md5-hashed as well.
+Thanks to wolf for suggesting this in the forum.
+
+- The headline on each of the "boxes" on the 'welcome' page is now a link
+to the corresponding section/view.
+F.ex., if a box is used to display recently played tracks, then clicking on
+the headline "Recently played tracks" will switch to the track list sorted
+by tracks played recently.
+Thanks to kanna for suggesting this in the forum.
+
+- When jumping to something (f.ex. albums starting w. "K"), it's now also
+possible to jump to something (tracks, albums, performers) that starts
+with a digit (0..9).
+Thanks to anil_mndl for suggesting this in the forum.
+
+- Minor improvement: The utility for editing the data in the database
+has been improved slightly.
+More information here: http://www.ampjuke.org/faq.php?q_id=35
+
+- Minor improvement: The functionality for showing/hiding the upload option 
+is now the same as the functionality related to download.
+Basically it's not necessary to login again to see the upload option.
+More here: http://www.ampjuke.org/faq.php?q_id=23
+and (related to configuration), here: http://www.ampjuke.org/faq.php?q_id=37
+and here: http://www.ampjuke.org/faq.php?q_id=24
+
+- Search also accepts spaces.
+
+- Username and -password in the last.fm section in the personal settings
+accepts more characters.
+Thanks to kanna for a reminder about this in the forum.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.3 Released: May 22nd, 2008.
+
+- Support for M4a, MP4 etc. ('special extensions')...sort of.
+A new setting called 'special extensions' is introduced to handle this.
+The goal is specifically to enable support for the popular m4a format.
+However, mp4, wma and possible other formats as well might be supported...
+There are some limitations when using something like m4a-files in AmpJuke.
+This FAQ-entry has all the (important) details: 
+http://www.ampjuke.org/faq.php?q_id=54
+
+- New (cool) functionality: When moving the mouse over something that has an 
+image available, f.ex. an album name, AmpJuke will display that image.
+This is done using a simple, pure CSS popup image viewer.
+If you have an AWS key, you can use this functionality to "flip through"
+your albums (images) by just hovering over the link of the album, and then an
+image will automatically popup as long as the mouse is over the link.
+This is - of course - a personal setting, so it can be turned on/off 
+according to each user's personal preference/taste.
+Check out the FAQ at: http://www.ampjuke.org/faq.php?q_id=53
+
+- New theme: "Matrix", done by cowboy. THANKS !
+There are now 17 different themes available to choose from in AmpJuke.
+Feel free to add your own.
+
+- New icons: "Circular" (16x16 .png format) has been added.
+There are now 7 different icon sets to choose from in AmpJuke.
+Feel free to add your own.
+
+- Fixed an error in upload that enabled upload of music _outside_ the
+'base' folder used to music.
+This meant that an upload could enter something like '../../otherfolder'
+as the destination folder...
+THANKS to don for notifying about this.
+
+- Fixed a small error in relation to "jump to <letter>".
+
+- Optimized for speed. 
+Compared to earlier releases, this version of AmpJuke has improved in
+terms of page load times. The 'price' to pay is increased memory consumption.
+
+- One of the security issues fixed in the previous version meant that
+anonymous users couldn't get access (provided AmpJuke allows anonymous access).
+This is no longer the case.
+
+- Corrected a minor inconvenience in relation to displaying what's up next:
+When the last track in the playlist was being streamed, the "next playing"
+section showed "Random tracks".
+This is no longer the case.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.2 Released: April 4th, 2008.
+
+- The last.fm functionality in AmpJuke has been expanded.
+Besides displaying and streaming tracks based on related performers, it's
+also possible to submit tracks to a user-profile on last.fm.
+The FAQ has more information about configuration and how to use this
+new functionality.
+
+- When displaying what being played currently, AmpJuke also displays
+the name of the _next_ track to be streamed (or just "Random play" of you're at
+the end of the playlist).
+This is only displayed in the "Now playing" section (not in the "pop out"), and
+only of your media-player isn't in the "light update" list.
+See this FAQ for usage+configuration of 
+the "Now playing" feature: http://www.ampjuke.org/faq.php?q_id=42
+
+- New icons: "Pi Diagona" (10x10 .png format) has been added.
+
+- Added a check to see if all pictures are locally available when displaying
+related performers (as in: performers related to the performer displayed
+currently).
+If not, refresh related performers (incl. pictures) from last.fm.
+
+- More security issues fixed. Basically checking URL-parameters 'n' stuff.
+
+- Added an unobtrusive donation button. Only for administrators...
+
+--------------------------------------------------------------------------------
+
+Version 0.7.1 Released: February 14th, 2008.
+
+- New feature introduced to speed up scanning: "Cutoff" date.
+If/when set to a date in the past, AmpJuke will only look for+add tracks
+that have been modified after that date.
+By setting a "cutoff" date, scan+import will happen a *lot* faster, compared 
+to previous functionality (scan everything, everytime).
+The FAQ has more information about the tweaks+settings in relation to this.
+
+- A (cool?) new feature: AmpJuke can stream music based on related performers.
+Basically last.fm functionality is used to pick related performers in AmpJuke.
+Just like last.fm, AmpJuke selects a random track based on a performer 
+that's "related" to the most recently played performer.
+F.ex. if your last selection was Erasure, then AmpJuke will most likely 
+pick the next track from a related performer, such as Pet Shop Boys,
+Yazoo, Duran Duran, Eurythmics etc. (provided either one is a part of your 
+music collection).
+This is a personal setting, - the FAQ has more information.
+
+- When searching, some XSS-vulnerabilities have been reported elsewhere.
+XSS is (_should_) no longer (be) possible.
+
+- New theme: "Kutzaray's Cool Theme".
+Thanks to kutzaray , it really is...cool.
+
+- Running a scan+import now shows how many seconds that scan took.
+
+--------------------------------------------------------------------------------
+
+Version 0.7.0 Released: January 16th, 2008.
+
+- Transcoding (downsampling) of music introduced.
+You can set transcoding to a lower bitrate (f.ex. 96kbit/sec) 
+when users stream tracks.
+Transcoding happens on-the-fly (in realtime) and can be quite heavy on the CPU.
+Enable/disable this feature just like most other settings ("Now playing",
+allow anonymous access etc.).
+
+- Icons !
+A new personal setting means you can combine icons with themes.
+For starters, FOUR icon sets have been included in this release of AmpJuke.
+If you still want 'old' behaviour, you can select "no icons" in your personal
+setting, and the usual "arrow" is displayed in various places.
+
+- Hungarian language updated.
+THANKS to Rezso for doing this.
+
+- Estonian language updated.
+THANKS to kanna for doing this in the forum.
+
+- The earlier reported error about the "disappearance" of the configured
+prefix for tables does no longer exist.
+THANKS to chs for notifying about this in the forum.
+
+- Refreshing related performers from last.fm happens automatically.
+If "Related performers" is enabled, then a query will be made against last.fm 
+in order to retrieve an updated list of related performers.
+This only happens if the cached list of related performers isn't available.
+It's still possible for administrators to make the query manually.
+
+- The graphics displayed on the login and 'welcome' page have changed.
+They more or less are 'web 2.0 style' now - or at least SUPPOSED to look like
+that :-)
+
+- Corrected some minor inconveniences related to displaying stuff.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.7. Released: December 15th, 2007.
+
+- New feature: Prefix for tablenames.
+During installation it's possible to specify a prefix for all tablenames.
+This is especially useful if you use a server that only allows one MySQL
+database, but you might run many different applications that each require
+access to MySQL.
+Default prefix is "ampjuke_", which will be added in front of all 
+tablenames used.
+If you want to use prefixes, please note that it will have an impact
+on performance, since each and every SQL-statement will have to be inspected,
+and possibly modified, before execution.
+Note that prefixes is new functionality - I've done my best to test - *if*
+you run into trouble in relation to this, please post whatever problem
+exists in relation to prefixes in the forum.
+
+- New feature: Refresh related performers.
+Added an option (for users with administrator access) to refresh/update
+related performer(s) from last.fm, when displaying a given performer/group.
+
+- Error correction: File(s) left in ./tmp was not removed automatically after
+24 hours.
+This is no longer the case.
+
+- Improvement: A warning is issued, if you try to install AmpJuke using 
+a PHP-version less than 5.
+Although it *MIGHT* work, it's still recommended to run at least PHP 5.x.x.
+
+- Improvement: When displaying a list that spans across several pages, there's
+now a link that jumps to the 1st/last page of the list in question.
+Basically an improvement when displaying paginated lists.
+
+- Improvement: Tables are now, by default, created using the MyISAM storage 
+engine.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.6. Released: November 6th, 2007.
+
+- Cleaned up + improved the entire streaming process.
+The earlier introduction of "Now playing" apparently caused a lot of trouble
+"out there". I'm sorry about that, since streaming is such a vital part of
+AmpJuke.
+Anyway, streaming should work without any flaws from now on.
+...and I PROMISE I won't modify this part (not in the next couple of releases).
+
+- Improved the code that retrieves album covers using the Amazon web service.
+Besides a significant reduction (33%) in the number of lines to handle this,
+combined with a more speedy cover-retrievel, the code also relies 
+completely on PHP5.
+
+- Corrected an error in relation to replacing an Amazon cover by either a
+"blank" cover and/or by looking up a new cover at Amazon.
+Thanks to kutzaray for notifying about this in the forum.
+
+- New personal setting: Avoid duplicate entries.
+When enabled (checked), AmpJuke will not add a given track to a given
+favorite list, if the track is already present in the list.
+More information about this can be found in the FAQ.
+
+- Minor improvements here+there.
+Such as: Added link to "Play/enqueue all..." when displaying a specific
+performer, added more links to the AmpJuke FAQ.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.5. Released: October 14th, 2007.
+
+- Corrected an annoying (but important) detail:
+When using Microsoft Windows Media Player and having "Now playing" set to "on", 
+it turned out that there was problems showing the name of the track that
+is playing in WMP.
+This has been corrected. 
+More information in this FAQ: http://www.ampjuke.org/faq.php?q_id=44
+I must admit WMP is not a favorite of mine...
+Thanks to kutzaray for reporting about this in the forum.
+
+- Corrected an error that appeared during upgrade.
+Thanks to wolf for notifying about this in the forum.
+
+- Spanish translation complete.
+Besides being available in the download, it's also available in the forum.
+Thanks to kutzaray for doing this.
+
+- Covers for albums are now stored using "album_id.jpg".
+It used to be "performer name - album name.jpg", which caused problems when
+displaying certain albums, - f.ex. if an album has a "&" in the name.
+Thanks to kutzaray for suggesting this in the forum.
+By the way: In case you have album covers stored from an older version 
+(<0.6.5), AmpJuke attempts to make the name transition automatically 
+each time an album is displayed.
+
+- "Help" links points to the AmpJuke FAQ.
+This is a personal setting. It can be turned on/off.
+When turned on, a small question mark appears next to various menus and
+configuration options within AmpJuke.
+If the user clicks on a question mark, an attempt to open a new window
+with the relevant FAQ is made.
+The number of help topics (FAQ -> "Using AmpJuke") will increase in the future.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.4. Released: October 10th, 2007.
+
+- New feature: "Now playing".
+Like most other configurable stuff in AmpJuke, this feature operates on 
+two levels:
+Administrators can turn this feature on/off completely for the installation, 
+and individual users can turn it on/off as well (provided it's enabled for 
+the installation).
+There's also an option for displaying what's currently being played in a small
+"popout" box.
+This is a very, very cool feature ! (At least I pretend it to be cool and 
+unique, so please let me continue to believe that...lol)
+
+- New language: Estonian.
+Thanks to Kalmer Kand for this nice contribution.
+
+- New setting: Allow anonymous users to browse only.
+When configuring AmpJuke (during installation and/or later), there's an
+option to allow anonymous users (users wo. login+password) to get access.
+With this new setting, you can allow 'anonymous' users to only browse
+music (not stream it).
+Thanks to viciouslime for suggesting this in the forum.
+
+- New theme: "Back to school". 
+Purpose: To look like something scribbled by hand on the big board at school.
+It's available in two flavors: Blackboard and Whiteboard.
+Depending on your age, either one might bring back memories from your time
+in school.
+The "Back to school" theme relies on certain fonts that must be on your system.
+
+- The './tmp' folder is no longer included in downloaded music.
+Thanks to wolf for asking for this improvement in the forum.
+
+- A MySQL-error was displayed when a performer with no tracks/albums was
+being deleted, causing the deletion to fail.
+This is no longer the case.
+Thanks to kutzaray for notification about this in the forum.
+
+- Songs with "#" in the filename could not be streamed.
+This has been corrected by introducing a configurable setting 
+called "forbidden" characters (like o-umalut, "#" and so on).
+Thanks to kutzaray for notification about this in the forum.
+
+- Error correction in download.
+An error causing tracks with "special" characters (like o-umlaut) not to be
+downloaded has been corrected (see previous topic).
+Thanks to wolf for notification about this in the forum.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.3. Released: August 31st, 2007.
+
+- Change the 'welcome' page.
+This is a personal setting, so each user can pick what's displayed on
+the 'welcome' page to suit his/her own taste.
+
+- Remember login+password on the computer you're using.
+Just like other sites (f.ex. Google, Yahoo!), you can stay logged in 
+between sessions.
+This is done by checking the "Keep me signed in" on the login-page.
+
+- When running a scan+import of new/updated music and if the 'Delete "dead"
+records' have been checked, the deletion of "dead" records in the database
+now happens BEFORE new/updated music is discovered.
+Thanks to wolf for notification about this in the forum.
+
+- Upload a cover: If the Amazon webservice doesn't find a suitable cover
+and you don't want to use a blank cover for a particular album, you can
+now - as a third option - upload a cover.
+Covers will always be stored in the "covers" folder.
+Furthermore, covers (still) must be .jpg-files.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.2. Released: August 1st, 2007.
+
+- Changed the folder-name that contains graphics.
+The new name is "ampjukeicons" (was previously: "icons").
+Apparently, the name "icons" got mixed up with Apache's own "icons" folder
+on some installations.
+Thanks to Kevin for the notification about this.
+
+- Corrected an inconvenience on the 'welcome' page (not related to the above).
+
+- French and Turkish languages updated.
+
+--------------------------------------------------------------------------------
+
+Version 0.6.1. Released: July 26th, 2007.
+
+- New personal setting: Display related performers.
+If turned on and when displaying a performer, AmpJuke makes a query against
+the popular last.fm site/community, and retrieve a list of related performers.
+This is done using a webservice from last.fm.
+If a related performer in the last.fm list is also found the AmpJuke database, 
+a link (+ picture!) is displayed for each performer.
+This makes it possible to jump around related performers within AmpJuke.
+You dont need an access-key or anything to use this functionality - its 
+simply built into AmpJuke.
+However, for this to work, you *must* use PHP version 5.
+
+- The Amazon web service is now upgraded to use Amazon's ECS 4.0.
+Furthermore, AmpJuke now tries to find a suitable cover on three different
+Amazon sites: USA, UK and Germany (was only trying the USA site earlier).
+Please see this FAQ for more details: http://www.ampjuke.org/faq.php?q_id=10
+
+- Upload feature introduced.
+It's possible to enable individual users to upload music on a track-by-track
+basis. Upload can be turned completely off as well on the configuration page.
+This a FAQ-entry explains the configuration options:
+http://www.ampjuke.org/faq.php?q_id=37
+
+- The SQL-code used for displaying an album list as well as displaying an
+individual album has been modified.
+THANKS to Stuart Hardy for suggesting+implementing the code for this.
+You can - by the way - find Stuarts homepage here: http://stuart-h.homeip.net/
+
+- "Deutch" corrected to "Deutsch" in Settings -> Other options -> Language.
+My deepest apologies to the German users for this typo.
+...and THANKS to Andreas B. for notifying about this (obvious) error.
+
+- New theme: "AB Centered Terracotta".
+Once again: THANKS to Andreas B. (http://andreasburg.de).
+It's really cool (um...rather: red - but still cool), isn't it ??
+
+- Improved installation as well as scan+import of music. 
+Checks are made here+there to ensure a smooth installation (and scan+import).
+However, you're still more than welcome to see (and follow) a step-by-step
+installation example. Just point your browser to:
+http://www.ampjuke.org/install_ex.php
+
+- Before actual scan+import begins, a check is made against the
+folder(s) that contains music tracks on the filesystem, to make sure that
+the web-user has permissions to access the folder(s).
+
+- Corrected an error in relation to scan+import of mp3-files with ID3v1-tags:
+The track number was not discovered+imported. It is now.
+
+- Corrected a stupid error (wrong speling....) that prevented .wma-files
+from being recognized as music (and thus couldn't be scanned+imported).
+THANKS to Claes-Henrik for pointing me in the right direction.
+Please note that your preferred musicplayer might not be able to play
+.wma-files (I had some issues with XMMS), so please dont blame AmpJuke.
+
+- Remember settings in random play.
+The settings for "Play tracks from", "Number of tracks..." and 
+"Give priority to..." are remembered.
+This is done using the lazy approach: cookies, - so the settings will 
+only be remembered/stored locally (on the computer).
+
+--------------------------------------------------------------------------------
+
+Version 0.6.0. Released: June 6th, 2007.
+
+- A beefed-up scan-routine. Scan+import music is easier now.
+New music is discovered automatically.
+
+- Added an option to 'clean-up' in the database during scan+import.
+If selected, the "dead" records (a record that points to a file on the
+filesystem that's no longer there is "dead") will be deleted from the database.
+
+- Improved download functionality.
+When downloading more than one track (f.ex. an album), all tracks are
+compressed into one file, which is sent for download afterwards.
+I know compression doesn't make much sense in relation to stuff that's
+already compressed (which is the case with the mp3 music format), but
+hey: at least you're no longer prompted several times when downloading
+more than one track...
+
+- Added options to play/enqueue/download an entire album, all tracks 
+by a specific performer, year, favorite list etc. in the 'overview'.
+
+- Updated languages: German/Deutch (THANKS Andreas!), Español, Francais, 
+Dutch, Portuguese and Turkish.
+THANKS to all who took the time+effort to do this ! (but please
+enter your email address next time, so I can ask to link to your
+homepage).
+
+- New theme: Highlighter.
+You know: just like the "greasy" pen you're using to - well - highlight 
+something within a text...squeak...squeak... :-)
+
+- Corrected an error:
+When having 'Confirm deletions' set to 'on' in the personal settings,
+it was _not_ possible to delete an entry in a given favorite list (error msg.).
+When 'Confirm deletions' was set to 'off', no error messages appeared, and
+the item was removed from the favoritelist in question.
+
+- Corrected (another) error in relation to fetching/displaying lyrics.
+This time it should be right....hopefully....sort of....
+
+- More descriptive title displayed in the title bar of the browser.
+
+--------------------------------------------------------------------------------
+
+Version 0.5.5. Released: April 7th, 2007.
+
+- New feature: AmpJuke can be set to ask what favoritelist you want to add
+something (tracks,albums,performers,years) to.
+This is a personal setting, meaning each user can set it to whatever is 
+wanted.
+Of course, it's still possible to do as usual: 
+create/select a favoritelist and then add something (tracks,albums...).
+
+- Hungarian language updated. 
+THANKS to Rezso (http://www.rezso.net/) for doing this.
+
+- Spanish language updated. THANKS to Claudio for doing this.
+
+- Corrected an error in relation to displaying/fetching the lyrics.
+It seemed like the URL was not properly formatted. THANKS to Steven for
+reporting this.
+
+- It's now possible to download individual tracks from a favorite list.
+THANKS to David for asking for this (obvious) feature.
+
+- When creating a new favorite list, the new list is no longer selected
+by default.
+
+- Cleaned up the code eliminating some redundancy (f.ex. removing same 
+sequence of PHP-statements used in a lot of different places so they from
+now on only is found in one place).
+
+- New theme: Empty ("Do not apply any CSS"). Really simple :-)
+
+--------------------------------------------------------------------------------
+
+Version: 0.5.4. Released: 13-03-2007.
+
+- Dutch language up-to-date.
+THANKS to Fokke Slottje (http://www.twilightmusic.nl/) for doing this!
+
+- Incrementing the value of 'times played' by one for a given track, is from 
+now on done *AFTER* the track has been streamed.
+
+- Annoying error corrected:
+If a user specified *NOT* to display 'number of times played' it turned
+out that the date of 'last played' was hidden instead (and the opposite).
+This is no longer the case.
+
+- Error correction: When copying the queue to a specific favorite list,
+nothing was copied.
+This is no longer the case.
+
+- New theme: Typewriter.
+Remember when you had to use a typewriter with a two-colored ribbon-band ??
+This theme brings back the (good old) memories...
+If not, here's what your father might have had to deal with in his young years!
+
+- Cleaned up minor display inconveniences here&there.
+
+--------------------------------------------------------------------------------
+
+Version: 0.5.3. Released: February 20th, 2007.
+
+- A new setting in relation to random play:
+You can optionally let the random selection appear based on one of five criterias:
+  - No criteria (completely random -> do as usual).
+  - Least played tracks.
+  - Most played tracks.
+  - Tracks not played recently.
+  - Tracks played recently.
+...obviously, this means you can now have a kind of "fair" rotation of tracks 
+in any favorite list.
+
+- Corrected an error in relation to updating 'last-played' in 
+random play->All tracks.
+
+--------------------------------------------------------------------------------
+
+Version: 0.5.2. Released: February 13th, 2007.
+
+- Improvement: Displaying favorites is now a factor 10 (at least) faster, 
+depending on the number/size of favorite lists you have.
+This 'slow' behaviour (with many/huge favorite lists) has been a personal 
+pain for me for quite some time...
+
+- Swedish language updated (a long time ago in fact...THANKS, Jorgen).
+
+- Hungarian language updated (THANKS, Rezso, www.rezso.net).
+
+- New feature: You can share your favorites with other AmpJuke users.
+A new column is displayed in the "favorites" view: Shared.
+Below is an indication showing if the favoritelist is shared or 
+not (Yes/No) as well as a number indicating how many other users 
+have access to the favorite list in question.
+Each user can set the display of shared favorites to on/off in 
+his/her personal settings.
+
+--------------------------------------------------------------------------------
+
+Version: 0.5.1. Released: January 19th, 2007.
+
+- Error correction: When using "jukebox mode" (see prev. release) and
+setting AmpJuke to play music by random from a specific favorite list,
+a selection was made against an 'old' table (pre. 0.5.x-series) of
+favorites.
+This is no longer the case.
+
+- Modification: Since the release of 0.5.0, I received some reports
+about Ubuntu (especially) complaining about "headers already sent...".
+As a consequence, the stream method has now - more or less - been
+'rolled back' to reflect the functionality found in 0.4.4.
+
+- Get external, extended information about a performer displayed.
+By using f.ex. the popular Wikipedia, you can display detailed information
+about any performer/group in your database.
+Youre not limited to Wikipedia, use whatever external site as reference.
+Please see the FAQ (http://www.ampjuke.org/faq.php) for further details.
+
+- Portuguese language 100% updated. Thanks to Alfredo Oliveira for taking
+the time to do this using the new translation feature 
+(found at http://www.ampjuke.org/xlate/).
+
+--------------------------------------------------------------------------------
+
+Version: 0.5.0. Released: December 31st, 2006.
+
+- New feature: Favorites can now be sorted/played by whatever your selection 
+is. F.ex. year, duration, times played etc.
+F.ex. if you lookup and album, sort it by duration and then click on
+'play all tracks...', the music will be played based on the sorting
+criteria you selected.
+
+- New personal setting: AmpJuke can stream music *AFTER* the last track has 
+been streamed ("jukebox mode").
+
+- New theme: "Polonium-210". A "radioactive" (lethal?) appearance of AmpJuke.
+Thanks to Dave (who kindly asked not to have full name + webiste mentioned)
+for this !
+
+- The words "day" and "days" were not translated.
+Note: If your preferred language is something different than English, you
+must translate these words yourself.
+Take a look at: http://www.ampjuke.org/faq.php?q_id=8
+
+- Date (+time, optionally) of last login is now displayed (was earlier 
+displaying "Unix-time" -> seconds since 01-01-70).
+
+- Got rid of the last header(...)-statements. 
+Replaced with redirects based on JavaScript...
+Hopefully, NOBODY will ever get the "headers allready sent" error anymore.
+Thanks to Johan Corstjens for reporting this !
+
+- Some empty columns here+there have been eliminated -> improved layout.
+
+--------------------------------------------------------------------------------
+
+Version: 0.4.4. Released: October 19th, 2006.
+
+- New method for playing/streaming music.
+Instead of copying music to the 'tmp' directory and then play/stream,
+the program now streams music directly from where they are stored.
+Thanks to Allan Hansen from the getID3 project (http://getid3.sourgeforge.net)
+for suggesting this as well as suppplying a couple of lines of code I could
+use for implementing this.
+
+- The 'demos' directory under the 'getid3' directory have been removed.
+Thanks (again) to Allan for mentioning that the scripts in the directory
+could be used by anybody to explore whatever is available
+on the local harddrive.
+
+- Hungarian languagefile was updated.
+Thanks to Reszo (http://www.reszo.net) for doing this.
+
+- The settings for 'Directory to place music temporarily' as well
+as the setting 'Delete files in tmp directory after X hours' have
+been removed (as a consequence of the new streaming method introduced).
+
+Minor stuff:
+- Last search word(s) is (are) remembered.
+- Date+time on the 'welcome' page now uses the correct date (Thanks, Rezso).
+- More use of JavaScript instead of header("Location...") for redirects.
+
+--------------------------------------------------------------------------------
+
+Version: 0.4.3. Released: October 4th, 2006.
+
+- THEMES ! (finally)
+By far the most important in the release: It's now possible to change 
+the layout of AmpJuke.
+This has been on the list for quite a while, and a *lot* of you out there
+have asked for this feature.
+I've included 4 themes (one is for different screen resolutions).
+
+- References are made to relevant FAQ-entries on the AmpJuke homepage 
+during installation. 
+This should hopefully help...
+
+- When pointing the browser to the directory where AmpJuke 
+is installed, a check is made to see if you want to upgrade or install.
+
+- Corrected some small errors found here+there (not a big deal).
+
+- Corrected another small error in relation to displaying lyrics.
+Grab+display of lyrics should work as expected now...hmmm...hope so at least...
+
+- New logo's have been introduced in this version of AmpJuke.
+
+--------------------------------------------------------------------------------
+
+Version: 0.4.2. Released: September 6th, 2006.
+
+A "maintenance" release, adding one new feature as well as 
+adressing some minor inconveniences:
+
+- You can keep extensions (mp3/ogg/wma/ape/whatever) when streaming music.
+By setting this to 'on' music files will be streamed as:
+"performer - track.extension" (extension could f.ex. be: mp3).
+By setting this to 'off' music files will be streamed as:
+"performer - track".
+See the difference ?
+
+- When creating a new user, the selected language is stored (was set to EN
+by default earlier).
+
+- When searching for lyrics, the first result (URL) from the 
+search at Yahoo! is displayed (wasn't sure that was the case earlier).
+
+- Deletion of individual tracks/album/year/performer also deletes
+the references to the track/album/year/performer from users favorites lists.
+The data is only deleted from the database - no musicfiles will be deleted.
+
+--------------------------------------------------------------------------------
+
+Version: 0.4.1. Released: July 25th, 2006.
+
+- Error correction: When reading .ogg-files, nothing was imported.
+This has been fixed.
+
+- A file called 'template.php' now exists in the 'lang' directory.
+It contains all keywords/phrases you will need to translate to your
+own language, in order to get a 'local' version of AmpJuke.
+If you could take the time and e-mail me a copy of whatever language you have
+translated to, I (and possibly everybody else) would be happy.
+Include your homepage, if you want me to link to it.
+Thanks to Rezso for suggesting and implementing this.
+
+- Some minor inconveniencies have been eliminated. 
+Once again: Thanks to Rezso for pointing this out.
+
+You might only wanto to upgrade to this verson if you're having trouble with
+importing ogg-files...
+
+--------------------------------------------------------------------------------
+
+Version: 0.4.0. Released: July 21st, 2006.
+
+- Get lyrics (optionally). 
+You can search for and display lyrics for any track within your database. 
+If found, the lyrics will show up in a seperate window.
+So from now on you have absolutely no excuse for not singing along !!  :-)
+
+- New language introduced: Hungarian (Magyar). THANKS to Reszo !
+
+- Error corrected in the module that displays page numbers (div. by zero).
+Once again: THANKS to Reszo (even though I never encountered the
+problem myself...).
+
+- The Amazon Web Service is now (at least) a factor 10 faster.
+The code has been rewritten completely.
+
+- Remember username and/or password (optionally).
+You can make AmpJuke remember the last used username and/or password on
+the computer(s) you're using with AmpJuke.
+I know this is a feature of (most?) browsers, but it's available anyway.
+It's based on standard cookie-stuff, so it will not work if your 
+browser does not allow cookies.
+
+- Various minor inconsistencies corrected, such as:
+no more PHP-scripts using <? in the beginning (now it's: <?php), added
+"missing" <TH>'s etc..
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.7. Released: July 10th, 2006.
+
+- Allow "anonymous" users to login (no username+password required).
+Obviously, "anonymous" users cannot create favorite lists, change 
+settings etc.
+In fact, "anonymous" users are rather limited when it comes to 
+changing stuff...
+This functionality was implemented as a result of several requests.
+You set/change this in the "Configuration" menu, and/or when you install.
+Please note that allowing this might cause trouble in relation to
+the record industry...should they ever find out you're allowing anonymous
+users to listen to your music :-)
+
+- When displaying the "welcome page" (1st page after successfull login),
+The 10 most recently tracks played will be shown below the other two
+"last played..." tables.
+
+- If ID-numbers are displayed (optionally), albums will be 
+sorted descending when entering the album view. 
+If not, sorting will be based on album name.
+
+- Error correction: When the duration of a specific favorite list exceeded
+one day (24 hours), the days wasn't calculated. That is no longer the case.
+If a favorite list exceeds one day, it will be displayed as: 
+"x day(s) hh:mm:ss" (x=days, hh=hours, mm=minutes, ss=seconds).
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.6. Released: May 8th, 2006.
+
+- No attempt is made to lookup cover/album art on amazon.com, if the
+AWS-key (Amazon Webservices Key) has  not been entered/set.
+
+- Download option. A user with the appropriate access level can download
+individual traks, entire albums, search results etc.
+
+- Automatic play. Just after a successfull login, it is possible to
+have AmpJuke play tracks based on "all tracks" or a favorite list.
+
+- Translation to French. THANKS TO Edwin ! (www.allan.ch)
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.5. Released: March 30th, 2006.
+
+- AmpJuke has been translated to Dutch.
+It's included in the distribution.
+
+- Users can set "confirm deletion" (or not).
+If set, an "...are you sure ?" message is displayed everytime before
+deletion of favorite lists, tracks, albums, the queue etc.etc. is done.
+
+- Users can specify if they want the duration on _individual_ tracks
+displayed (or not).
+
+- Users can specify if they want to "display totals" (or not).
+This might require a little explanation...
+If selected, the following will be displayed in addition to what was there
+before:
+1. Displaying an album: # of tracks, total duration and times played
+will be added at the bottom of the list.
+2. Displaying a list of performers: A new column will appear showing total
+duration for all tracks/albums.
+3. Displaying a list of albums: Two news columns will appear showing
+total number of tracks and total duration.
+4. Displaying favorite lists: A new column will appear showing duration
+for all tracks within the favorite list.
+...these additional informations are only available then "Display totals"
+is checked in "Settings".
+
+- It is now more clear/evident what the active/selected favorite list is.
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.4. Released: March 9th, 2006.
+
+- AmpJuke has been translated to Italian.
+It's included in the distribution.
+
+- Settings for "Show ID numbers" and "Show letters (jump to)" are now
+stored/remembered between sessions/logins.
+
+- Users can optionally change password under "Personal settings".
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.3. Released: November 22nd, 2005.
+
+- You can FILTER the tracks displayed in "Tracks" and "Search", so it is
+possible to see one of the following:
+        1. All tracks (no filter). This is default/normal.
+        2. Tracks only on albums.
+        3. Tracks not on any album.
+
+- When stepping back to a previous page that contained a search-result,
+the browser would normally warn about the fact that data should be POST'ed
+again. This is normal behaviour, but annoying.
+The inconvenience is fixed in this release.
+        
+- AmpJuke has been translated to Turkish.
+It's included in the distribution.
+
+- Minor improvements.
+Really not worth to write about, but I just did anyway :-)
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.2. Released: November 7th, 2005.
+
+- Option to remove duplicate entries from the queue as well as any favorite
+list.
+
+- Option to avoid playing same track twice when selecting random tracks.
+
+- All translated languages so far are now a part of the release.
+
+- Minor inconveniencies removed/fixed:
+    - No translation of "The queue" when setting up random play (fixed).
+    - Various tablerows no longer needed (removed).
+    - "Missing" translations (fixed).
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.1. Released: October 17th 2005.
+
+- Besides MP3-music files, AmpJuke can now read/import
+music on these formats: WMA, OGG and APE.
+
+- Bugfix: It is now possible for administrators to change language on 
+behalf of other users (Thanks, Jorgen).
+
+- When importing music, AmpJuke may display a number of warnings found
+during import of a certain directory.
+Until now, it was not possible to investigate what causes these warnings.
+With the introduction of this release, the user can now click on a link and
+see exactly what it is that produces these warnings.
+A warning may be issued because of lack of "non-critical" information, such as
+no year or no album found within the tags.
+
+--------------------------------------------------------------------------------
+
+Version: 0.3.0. Released: October 8th 2005.
+
+- Album and Performer/Group covers ("album art") is displayed.
+This is basically done using a webservice from Amazon.
+You will need to register with "Amazon Web Services (AWS)" to get an
+"Amazon Developer Key".
+Check in on www.ampjuke.org for details.
+
+- AmpJuke has been translated to ONE language (apart from english): Danish.
+However, the only thing that remains in order to have more languages is YOUR
+HELP.
+
+- AmpJuke can be set to automatically clear files from the 'tmp' dir.
+This setting is controlled from the "Configuration" link under
+"Admin's options".
+
+- It is now possible to UPGRADE an AmpJuke installation without overwriting
+previous configuration values/settings.
+Just extract the files in the distribution to your ampjuke directory and
+point your browser to http://"whatever"/install.php.
+This procedure should be done also if you're INSTALLING for the 1st time.
+
+
+--------------------------------------------------------------------------------
+
+Version: 0.2.5. Released: September 19th, 2005.
+
+- A warning is issued during installation stating the user "admin" should 
+change the default password immediately after installation.
+
+- The program only scans files with an extension of "mp3". 
+All other types of files (f.ex.: "m3u", "asx", "wma" and so on) found within
+the music directory and below are skipped.
+
+- The AmpJuke version number is displayed in the lower right corner.
+Please do not remove it. It's a fair "price" to pay to use the program...
+Besides, it's a link to www.ampjuke.org, so you can check in later to look
+for updates/new releases.
+
+- New logos, again. Hope you like them :-)
+Thanks to Jorgen for the logos, and thanks to Everaldo for supplying the
+loudspeaker ! In case you like the old logos they're still included in the
+"icons" directory. Just rename "ampjuke176x62_old.jpg" to "ampjuke176x62.jpg"
+and "ampjuke88x31_old.jpg" to "ampjuke88x31.jpg" and they'll be back.
+There is also "ampjuke88x31_alt.jpg" and "ampjuke176x62_alt.jpg" if you want to
+experiment a little :-]
+
+--------------------------------------------------------------------------------
+
+Version: 0.2.4. Released: September 2005.
+- "[Add to favorite]" was still displayed in some views, even though no favorite
+list was selected/created. This error also existed in previous versions.
+This should no longer be the case starting from this version...hopefully :-)
+
+- It is now possible to rescan all or parts of the music directly from 
+"Admin's options" (menu in the lower left of the screen).
+
+- When installing AmpJuke, the options: "Create an empty database" as well as
+Create empty tables within the database" are now UNCHECKED. 
+Take care to CHECK the options FIRST time you install the program.
+
+- The function for calculating the size of the cache (the sum of files within
+the 'tmp' directory) has been rewritten.
+
+--------------------------------------------------------------------------------
+
+Version: 0.2.3. Released: September 2005.
+
+New features / changes:
+- Logos. 
+New logos (2 pcs.) are introduced. Hope you like them :-)
+
+- Performer.
+The view now shows two additional columns: "Number of tracks" and 
+"Number of albums".
+"Number of albums" just shows the albums where the performer displayed is the 
+only performer on that album, - ie. "Also appears on" does not count in 
+this column.
+
+- Settings.
+Settings now controls more options. 
+This includes the "Display ID's" and the "Show letters" settings. 
+Basically, all display settings are controlled within "Settings".
+
+- Edit/delete/transfer. 
+Editing is implemented in this release. It's a BETA, so be CAREFUL !
+To edit something (tracks, albums, performers), the "Display ID's" must 
+be turned on (see previous topic), since editing is something you 
+do by clicking on the ID for the item in question.
+The option to delete something (tracks, albums, performers) is 
+accessed in the same way. It is also possible to "transfer" something. 
+F.ex. all tracks from one album can be transferred to another album and/or 
+all tracks with one performer can be transferred to another (useful when 
+spelling errors exists in the mp3-files' ID-tags).
+
+
+
+Error corrections / fixes:
+- User administration: Several bugs was fixed.
+
+- "[Add to favorite]" was displayed even though no favorite 
+list was created/selected.
+
+- Performer: When entering the performer list, the performers appeard 
+to be sorted alphabetically. That was not the case. 
+(Thanks to Robert for reporting this).

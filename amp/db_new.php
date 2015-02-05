@@ -1,0 +1,160 @@
+<?php
+$c_album="CREATE TABLE IF NOT EXISTS album (
+  aid int(11) NOT NULL auto_increment,
+  aperformer_id int(11) NOT NULL default '0',
+  aname varchar(200) NOT NULL,
+  bio_short text,
+  bio_long text,
+  PRIMARY KEY  (aid),
+  KEY aperformer_id (aperformer_id),
+  KEY aname (aname)
+) ENGINE=MyISAM;";
+
+
+$c_fav="CREATE TABLE IF NOT EXISTS fav (
+  id int(11) NOT NULL auto_increment,
+  track_id int(11) NOT NULL default '0',
+  performer_id int(11) default NULL,
+  album_id int(11) default NULL,
+  name varchar(200) NOT NULL,
+  duration varchar(6) default NULL,
+  last_played varchar(20) default NULL,
+  times_played int(11) NOT NULL default '0',
+  year varchar(4) default NULL,
+  user_id int(11) NOT NULL default '0',
+  fav_name varchar(80) NOT NULL default '',
+  PRIMARY KEY  (id),
+  KEY fav_name (fav_name),
+  KEY user_id (user_id),
+  KEY track_id (track_id)
+) ENGINE=MyISAM;";
+
+$c_fav_shares="CREATE TABLE IF NOT EXISTS fav_shares (
+  id int(11) NOT NULL auto_increment,
+  owner_id int(11) NOT NULL default '0',
+  fav_name varchar(80) NOT NULL,
+  share_id int(11) NOT NULL default '0',
+  PRIMARY KEY  (id)
+) ENGINE=MyISAM";
+
+$c_performer="CREATE TABLE IF NOT EXISTS performer (
+  pid int(11) NOT NULL auto_increment,
+  pname varchar(200) NOT NULL,
+  bio_short text,
+  bio_long text,
+  PRIMARY KEY  (pid),
+  KEY pname (pname)
+) ENGINE=MyISAM;";
+
+$c_queue="CREATE TABLE IF NOT EXISTS queue (
+  qid bigint(20) NOT NULL auto_increment,
+  user_name varchar(80) NOT NULL,
+  track_id bigint(20) NOT NULL default '0',
+  PRIMARY KEY  (qid),
+  KEY user_name (user_name)
+) ENGINE=MyISAM;"; 
+
+$c_track="CREATE TABLE IF NOT EXISTS `track` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `performer_id` int(11) DEFAULT NULL,
+  `album_id` int(11) DEFAULT NULL,
+  `track_no` smallint(6) DEFAULT NULL,
+  `name` varchar(200) NOT NULL,
+  `duration` varchar(6) DEFAULT NULL,
+  `last_played` varchar(20) DEFAULT NULL,
+  `times_played` int(11) NOT NULL DEFAULT '0',
+  `year` varchar(4) DEFAULT NULL,
+  `path` text COLLATE latin1_danish_ci,
+  `echonest_id` varchar(20) NOT NULL DEFAULT '-1',
+  `echonest_tempo` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_loudness` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_danceability` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_energy` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_mode` varchar(2) NOT NULL DEFAULT '-1',
+  `echonest_key` varchar(2) NOT NULL DEFAULT '-1',
+  `echonest_time_signature` varchar(2) NOT NULL DEFAULT '-1',
+  `echonest_status` varchar(10) NOT NULL DEFAULT '-1',
+  `echonest_liveness` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_speechiness` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_acousticness` varchar(8) NOT NULL DEFAULT '-1',
+  `echonest_valence` varchar(8) NOT NULL DEFAULT '-1',
+  PRIMARY KEY (`id`),
+  KEY `performer_id` (`performer_id`),
+  KEY `album_id` (`album_id`),
+  KEY `name` (`name`),
+  KEY `year` (`year`),
+  KEY `echonest_tempo` (`echonest_tempo`),
+  KEY `echonest_loudness` (`echonest_loudness`),
+  KEY `echonest_danceability` (`echonest_danceability`),
+  KEY `echonest_energy` (`echonest_energy`),
+  KEY `echonest_mode` (`echonest_mode`),
+  KEY `echonest_key` (`echonest_key`),
+  KEY `echonest_time_signature` (`echonest_time_signature`),
+  KEY `echonest_liveness` (`echonest_liveness`),
+  KEY `echonest_speechiness` (`echonest_speechiness`),
+  KEY `echonest_acousticness` (`echonest_acousticness`),
+  KEY `echonest_valence` (`echonest_valence`)
+) ENGINE=MyISAM;";
+
+$c_user="CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(80) NOT NULL,
+  `email` varchar(80) NOT NULL DEFAULT '0',  
+  `password` varchar(80) NOT NULL,
+  `password_salt` varchar(40) NOT NULL DEFAULT '0',
+  `last_login` varchar(40) NOT NULL DEFAULT '',
+  `last_ip` varchar(40) NOT NULL DEFAULT '',
+  `admin` tinytext NOT NULL,
+  `lang` char(2) NOT NULL DEFAULT '',
+  `count` mediumint(9) NOT NULL DEFAULT '0',
+  `enqueue` char(1) DEFAULT '0',
+  `cssfile` varchar(80) NOT NULL DEFAULT '',
+  `icon_dir` varchar(80) DEFAULT NULL,
+  `disp_last_played` char(1) DEFAULT '1',
+  `disp_times_played` char(1) DEFAULT '1',
+  `disp_id_numbers` char(1) DEFAULT '1',
+  `disp_jump_to` char(1) DEFAULT '1',
+  `disp_duration` char(1) DEFAULT '1',
+  `disp_totals` char(1) DEFAULT '1',
+  `disp_related_performers` char(1) DEFAULT '1',
+  `confirm_delete` char(1) DEFAULT '1',
+  `can_download` char(1) DEFAULT '0',
+  `can_upload` char(1) DEFAULT '0',
+  `disp_download` char(1) DEFAULT '0',
+  `disp_upload` char(1) DEFAULT '0',
+  `disp_lyrics` char(1) DEFAULT '0',
+  `hide_icon_text` char(1) NOT NULL DEFAULT '0',
+  `disp_fav_shares` char(1) DEFAULT '0',
+  `disp_small_images` char(1) DEFAULT '1',
+  `browse_albums_by_covers` char(1) DEFAULT '0',
+  `browse_performer_by_picture` char(1) DEFAULT '0',
+  `autoplay` char(1) DEFAULT '0',
+  `autoplay_num_tracks` int(11) NOT NULL DEFAULT '1',
+  `autoplay_list` varchar(80) DEFAULT 'Tracks',
+  `autoplay_last` char(1) DEFAULT '0',
+  `autoplay_last_list` varchar(80) DEFAULT NULL,
+  `ask4favoritelist` char(1) DEFAULT '0',
+  `ask4favoritelist_disp_suggestion` char(1) NOT NULL DEFAULT '0',
+  `disp_now_playing` char(1) DEFAULT '0',
+  `disp_now_playing_add2favorite` char(1) NOT NULL DEFAULT '0',
+  `avoid_duplicate_entries` char(1) DEFAULT '1',
+  `auto_add2favorite` char(1) NOT NULL DEFAULT '0',
+  `auto_add2favorite_create_new` char(1) NOT NULL DEFAULT '1',
+  `auto_add2favorite_prefix` varchar(50) NOT NULL DEFAULT 'AmpJuke_Automatically_added',
+  `disp_help` char(1) DEFAULT '1',
+  `welcome_num_items` smallint(6) NOT NULL DEFAULT '10',
+  `welcome_content_1` varchar(80) DEFAULT 'Recently played tracks',
+  `welcome_content_2` varchar(80) DEFAULT 'Random albums',
+  `welcome_content_3` varchar(80) DEFAULT 'Random albums',
+  `lame_local_enabled` char(1) DEFAULT '1',
+  `lame_local_parameters` varchar(80) DEFAULT NULL,
+  `lastfm_active` char(1) DEFAULT '0',
+  `lastfm_username` varchar(80) DEFAULT NULL,
+  `lastfm_password` varchar(80) DEFAULT NULL,
+  `xspf_active` char(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `name` (`name`),
+  KEY `password` (`password`)
+) ENGINE=MyISAM;";
+
+?>

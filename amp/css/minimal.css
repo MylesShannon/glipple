@@ -1,0 +1,126 @@
+/* 
+By: Michael (michael AT ampjuke DOT org)
+*/
+body {
+	background-color: #000;
+	color: #a9eff1;
+}
+tr, td {
+  padding: 2px;
+  border-collapse: collapse;
+}
+.all_content {
+	width: 100%;
+	background-color: #000;
+	color: #a9eff1;
+}	
+.tr_alt {
+	background-color: #000;
+}
+
+.tr_norm {
+ 	background-color: #000;
+}	 	
+
+.tableRollOverEffect{
+	background-color: #333333;
+}
+
+/* Table used for OUTLINE of all content in AmpJuke */
+.ampjuke_outline_table {
+ 	border: 1px solid #3c3c3c;
+ 	border-spacing: 0px;
+}	
+/* Table used for menu-items to the left */
+.ampjuke_menu_table {	
+	width: 100%;
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+ 	border-spacing: 1px;	
+}	 
+.ampjuke_now_playing {	
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+}
+/* "Dummy" table used for holding content (headline, actions, content, pagenumbers), to the right of the menu: */
+.ampjuke_main_content_table {
+ 	border: 1px solid;	
+	border-color: #000 #000 #000 #3c3c3c;
+ 	border-spacing: 0px;
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+}	
+/* Table used for HEADLINES - top of page/content */
+.ampjuke_headline_table {
+ 	border: 1px solid;	
+	border-color: #000 #000 #3c3c3c #000;
+ 	border-spacing: 0px;	
+ 	width: 100%;	
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+}	 
+/* Table used for ACTIONS - items just below the headline */
+.ampjuke_actions_table {
+ 	width: 100%;
+ 	border: 1px solid;
+ 	border-spacing: 0px; 	
+	border-color: #000 #000 #3c3c3c #000;	
+ 	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+ 	font-size: 10px;
+}
+/* Table used for CONTENTS */
+.ampjuke_content_table {
+ 	width: 100%;
+ 	border: 1px solid;
+ 	border-spacing: 0px; 	
+	border-color: #000 #000 #3c3c3c #000;	
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+}	 
+/* Table used for controlling how PAGENUMBERS should look like */
+.ampjuke_pagenumber_table {
+ 	width: 100%;
+ 	border-spacing: 0px; 	 	
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+}	
+/* This setting controls how totals (f.ex. for albums) is displayed */
+.totals {
+ 	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+ 	font-size: 10px;
+ 	color: #a9eff1;
+}
+/* Table setting for covers */
+.cover_table {
+ 	width: 100%;
+ 	border-spacing: 0px; 	
+ 	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+ 	font-size: 10px;
+} 	
+/* text-input fields: */
+.tfield { 
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+	border-color: #1e2b2b;
+}
+
+/* Link settings */
+a:link {
+	color: #fff;
+	text-decoration: none;
+}		
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff4444;
+	text-decoration: underline;
+}
+
+/* The "note" is used for "highlighting" something. F.ex. the Admin's options in the lower left corner */
+.note {
+	font-family: DejaVu Sans Mono, URW Gothic L, Arial;
+	font-size: 10px;
+	background-color: #3c3c3c;
+}	

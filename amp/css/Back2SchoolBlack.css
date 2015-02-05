@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  text-align: center;
+  color: #fff8dc;
+  background-color: #000000;
+}
+table {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  width: 100%;
+}
+/* "Outlines" all content */
+.ampjuke_outline_table {
+ 	background-color: #000000;
+	border-spacing: 0px;
+ 	border: 1px dotted;	
+}	
+/* Menu items */
+.ampjuke_menu_table {	
+	width: 130px;
+	background-color: #000000;
+	text-align: left;
+    font-family: Lucida Calligraphy, Comic Sans MS, TSCu_Comic, sans-serif;
+	line-height: 2.5em;
+	border-spacing: 0px;	
+}	 
+/* Now playing */
+.ampjuke_now_playing {
+	border: 1px dashed;
+	border-color: whitesmoke #000000 #000000 #000000;
+    font-family: Lucida Calligraphy, Chiller, Modern, Purisa, TSCu_Comic, sans-serif;
+	font-size: 18px;
+	line-height: 1.2em;	
+	text-align: left;
+	border-spacing: 0px;	
+}	 
+
+/* The table for content (ie.: not menu, what's playing etc. */
+.ampjuke_main_content_table {
+	width: 100%;
+ 	background-color: #000000;
+	border-spacing: 0px; 	
+}	
+/* Headlines */
+.ampjuke_headline_table {
+    font-family: Lucida Handwriting, Comic Sans MS, TSCu_Comic, Ani, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	border-spacing: 0px;	
+}
+/* Table used for ACTIONS - items just below the headline */
+.ampjuke_actions_table {
+    font-family: Lucida Handwriting, Comic Sans MS, TSCu_Comic, sans-serif;
+ 	font-size: 16px;
+ 	text-align: left;
+	border-spacing: 0px; 	
+}
+/* Where all the juicy, relevant stuff is... */
+.ampjuke_content_table {
+    font-family: Lucida Handwriting, Lucida Calligraphy, Modern, Purisa, sans-serif;
+	font-size: 14px;
+	line-height: 1.3em;
+	text-indent: 5px;
+	text-align: left;
+	border-spacing: 0px;	
+}	 
+.cover_table {
+    font-family: Lucida Handwriting, Lucida Calligraphy, Modern, Purisa, sans-serif;
+	font-size: 10px;
+	line-height: 1.3em;
+	text-indent: 5px;
+	text-align: left;
+	border-spacing: 0px;		
+}	 
+
+/* Pagenumbers */
+.ampjuke_pagenumber_table {
+    font-family: Lucida Handwriting, Comic Sans MS, Purisa, sans-serif;
+ 	text-align: center;
+	border-spacing: 0px; 	
+}
+a:link {
+	color: whitesmoke;
+	text-decoration: none;
+}		
+a:visited {
+	color: whitesmoke;
+	text-decoration: none;
+}
+a:hover {
+	color: whitesmoke;
+	text-decoration: underline;
+}
+.hr_std {
+ 	width: 70%;
+ 	color: #000000;
+} 	
+ 

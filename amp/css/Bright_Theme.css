@@ -1,0 +1,197 @@
+/*
+   Theme: Bright Theme
+   Author: eigan.no
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+}
+
+a {
+   color: #111;
+   text-decoration: none;
+}
+
+/* Centering the page */
+.all_content {
+   width: 800px;
+   margin: 30px auto;
+}
+
+.ampjuke_outline_table, .ampjuke_main_content_table {
+   width: 100%;
+}
+
+
+/* Navigation
+*/
+.ampjuke_menu_table {
+   width: 130px;
+}
+
+.ampjuke_menu_table a {
+   text-decoration: none;
+   font-size: 12px;
+   color: #222;
+   display: block;
+   line-height: 25px;
+   padding: 0px 5px;
+}
+
+.ampjuke_menu_table form input {
+}
+
+.ampjuke_menu_table a:hover {
+   background: #eee;
+}
+
+
+.ampjuke_menu_table img {
+   vertical-align: middle;
+   padding-bottom: 2px;
+   margin-right: 3px;
+}
+
+.ampjuke_menu_table a[href="index.php?what=welcome"] {
+}
+
+/* Admin navigation
+*/
+.ampjuke_menu_table .note {
+   font-weight: bold;
+}
+
+.ampjuke_menu_table .note a {
+   font-weight: normal;
+}
+
+.ampjuke_menu_table .note img {
+   display: none;
+}
+
+.ampjuke_menu_table .note br {
+   display: none;
+}
+
+/* Headline table
+*/
+.ampjuke_headline_table {
+   background: #f3f3f3;
+   padding: 3px;
+   font-size: 11px;
+   border: 2px solid #eee;
+   text-align: left;
+   width: 100%;
+}
+
+
+/* Actions */
+.ampjuke_actions_table {
+   padding: 3px;
+   font-size: 11px;
+   width: 100%;
+}
+
+.ampjuke_actions_table a {
+   padding-right: 5px;
+}
+
+.ampjuke_actions_table a:hover {
+   text-decoration: underline;
+}
+
+.ampjuke_actions_table img {
+   margin-right: 4px;
+   vertical-align: middle;
+   margin-bottom: 3px;
+}
+
+
+.ampjuke_content_table {
+   font-size: 13px;
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 10px;
+}
+
+.ampjuke_content_table th {
+   padding: 3px;
+   background: #666;
+   color: #ddd;
+}
+
+.ampjuke_content_table th img {
+   vertical-align: middle;
+   margin-right: 4px;
+   width: 14px;
+   margin-bottom: 3px;
+}
+
+.ampjuke_content_table th a {
+   color: #eee;
+}
+
+.ampjuke_content_table td {
+   padding: 3px;
+   border: 1px solid #eee;
+}
+
+.tableRollOverEffect {
+   background: #eee;
+}
+
+.tr_norm {
+   background: #f9f9f9;
+}
+
+.ampjuke_pagenumber_table {
+   font-size: 12px;
+   padding: 5px;
+}
+
+.ampjuke_pagenumber_table img {
+   vertical-align: middle;
+   margin-bottom: 2px;
+}
+
+
+/* settings */
+.ampjuke_headline_table {
+   width: 680px;
+}
+
+.ampjuke_headline_table .note {
+   font-size: 14px;
+}
+
+.ampjuke_headline_table .note img {
+   vertical-align: middle;
+   margin-bottom: 5px;
+}
+
+.ampjuke_headline_table td {
+}
+
+.ampjuke_headline_table #ampjuke_content img {
+   margin-left: 5px;
+}
+
+#ampjuke_content3 select {
+   width: 600px;
+}
+
+/* Footer text thing */
+a[href="http://www.ampjuke.org"] {
+   text-align: center;
+   display: block;
+   width: 800px;
+   color: #555;
+   margin-top: 10px;
+   padding-left: 60px;
+}

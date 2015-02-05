@@ -1,0 +1,144 @@
+/* The following three definitions sets what happens in the "contents" on each page
+tr_alt is the setting for "alternative" (every 2nd) table row.
+tr_norm is the setting for the opposite...(!)
+tableRollOverEffect is the setting for what happens when the user 'mouseover' a row in the table
+*/
+body {
+	background-color: #3677A3;
+	font-family: Arial, Uktal, Garuda, Nimbus Sans L, Freesans;
+	font-size: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+table {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+table table {
+  text-align: left;
+}
+
+.tr_alt {
+	background-color: #3677A3;
+}
+
+.tr_norm {
+ 	background-color: #3677A3;
+}	 	
+
+.tableRollOverEffect{
+	background-color: #3677A3;
+}
+
+/* Table used for OUTLINE of all content in AmpJuke */
+.ampjuke_outline_table {
+ 	background-color: #3677A3;
+	border: 1px solid #afafaf;
+	border-spacing: 0px;
+}	
+/* Table used for menu-items to the left */
+.ampjuke_menu_table {	
+	border: 1px solid #afafaf;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-weight: bold;
+	background-color: #3677A3;
+	color: whitesmoke;
+	line-height: 1.5em;
+	font-size: 24px;
+}	 
+.ampjuke_now_playing {	
+ 	border: 1px solid;
+	border-color: #3677A3 #3677A3 #afafaf #3677A3;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	background-color: #3677A3;
+	font-size: 18px;
+}	 
+/* "Dummy" table used for holding content (headline, actions, content, pagenumbers), to the right of the menu: */
+.ampjuke_main_content_table {
+ 	border: 2px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	background-color: #3677A3;
+}	
+/* Table used for HEADLINES - top of page/content */
+.ampjuke_headline_table {
+ 	width: 100%;	
+ 	border: 1px solid #afafaf;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-weight: italic;
+	padding: 10px;
+	font-size: 18px;	
+}	 
+/* Table used for ACTIONS - items just below the headline */
+.ampjuke_actions_table {
+ 	width: 100%;
+ 	border: 1px solid #afafaf;
+ 	border-spacing: 0px;
+}
+/* Table used for controlling how PAGENUMBERS should look like */
+.ampjuke_pagenumber_table {
+ 	width: 100%;
+ 	border: 1px solid #afafaf;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}	
+/* Table used for CONTENTS */
+.ampjuke_content_table {
+ 	width: 100%;
+ 	border: 1px solid #afafaf;
+	border-spacing: 1px;
+	line-height: 1em;
+}	 
+/* This setting controls how totals (f.ex. for albums) is displayed */
+.totals {
+ 	font-weight: bold;
+	color: #EDF0F2;
+}
+/* Table setting for covers */
+.cover_table {
+ 	width: 100%;
+ 	border-spacing: 1px;
+} 	
+
+/* text-input fields: */
+.tfield { 
+	border-width: 1px;
+	border-color: #afafaf;
+	background-color: #e6f5df;
+	font-size: 18px;
+}
+
+/* Link settings */
+a:link {
+	color: #fff;
+	text-decoration: none;
+}		
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* The "note" is used for "highlighting" something. F.ex. the Admin's options in the lower left corner */
+.note {
+	background-color: #3677A3;
+}	
+
+/* This setting controls the color of HR's: */
+.hr_std {
+ 	width: 70%;
+ 	color: #afafaf;
+} 	
+
+tr,td {
+	color: #C8F2B3;
+}		

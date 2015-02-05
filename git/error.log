@@ -191,3 +191,101 @@
 [Wed Feb 04 07:27:40 2015] [error] [client 192.30.252.41] PHP Notice:  Undefined index: payload in /var/www/html/git/hook.php on line 4
 [Wed Feb 04 07:36:43 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
 [Wed Feb 04 07:36:44 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
+[Wed Feb 04 08:12:10 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.com:80
+[Wed Feb 04 08:35:12 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.pt:80
+[Wed Feb 04 08:50:33 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.com:80
+[Wed Feb 04 09:10:11 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.ch:80
+[Wed Feb 04 10:35:36 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.pt:80
+[Wed Feb 04 10:46:27 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.pl:80
+[Wed Feb 04 11:00:38 2015] [error] [client 216.58.216.164] SSL Proxy requested for ip-172-31-31-90.us-west-2.compute.internal:8080 but not enabled [Hint: SSLProxyEngine]
+[Wed Feb 04 11:00:38 2015] [error] proxy: HTTPS: failed to enable ssl support for 216.58.216.164:443 (www.google.com)
+[Wed Feb 04 11:02:52 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by www.bing.com:80
+[Wed Feb 04 11:25:29 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:25:29 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:25:45 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:25:45 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:25:46 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:25:46 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 64.233.162.44:80 (*) failed
+[Wed Feb 04 11:27:37 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.com:80
+[Wed Feb 04 12:11:22 2015] [error] [client 198.27.114.146] proxy: Connect to remote machine blocked returned by google.com:80
+[Wed Feb 04 13:54:48 2015] [error] [client 74.125.239.48] SSL Proxy requested for ip-172-31-31-90.us-west-2.compute.internal:8080 but not enabled [Hint: SSLProxyEngine]
+[Wed Feb 04 13:54:48 2015] [error] proxy: HTTPS: failed to enable ssl support for 74.125.239.48:443 (www.google.com)
+[Wed Feb 04 15:26:19 2015] [error] [client 82.241.253.246] script not found or unable to stat: /var/www/cgi-bin/authLogin.cgi
+[Wed Feb 04 17:11:59 2015] [error] [client 80.82.64.116] script not found or unable to stat: /var/www/cgi-bin/index.cgi
+[Wed Feb 04 17:43:11 2015] [error] [client 117.21.173.96] File does not exist: /var/www/html/git/manager
+[Wed Feb 04 20:36:54 2015] [error] [client 91.231.140.82] (104)Connection reset by peer: proxy: error reading status line from remote server domy.pl.nyud.net:8080
+[Wed Feb 04 20:36:54 2015] [error] [client 91.231.140.82] proxy: Error reading from remote server returned by http://domy.pl.nyud.net:8080/mieszkania-wynajem--pl?page=1
+[Wed Feb 04 20:38:57 2015] [error] [client 91.231.140.82] proxy: DNS lookup failure for: itvps.org returned by http://itvps.org/fill.png, referer: http://www.gumtree.pl/fp-domy-i-mieszkania-sprzedam-i-kupie/gdansk/c9073l3200072?AdType=2&Page=2
+[Wed Feb 04 20:39:08 2015] [error] [client 91.231.140.82] proxy: DNS lookup failure for: itvps.org returned by http://itvps.org/fill.png, referer: http://www.gumtree.pl/fp-domy-i-mieszkania-sprzedam-i-kupie/gdansk/c9073l3200072?AdType=2&Page=2
+[Wed Feb 04 20:40:31 2015] [error] [client 91.231.140.82] proxy: DNS lookup failure for: itvps.org returned by http://itvps.org/fill.png, referer: http://www.gumtree.pl/fp-domy-i-mieszkania-sprzedam-i-kupie/poznan/c9073l3200366?AdType=2&Page=2
+[Wed Feb 04 20:42:29 2015] [error] (70007)The timeout specified has expired: proxy: HTTP: attempt to connect to 156.56.250.227:8080 (*) failed
+[Wed Feb 04 21:06:44 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by www.google.com:80
+[Wed Feb 04 21:06:45 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by smtp.gmail.com:25
+[Wed Feb 04 21:06:50 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by login.icq.com:5190
+[Wed Feb 04 21:06:50 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.austnet.org:6667
+[Wed Feb 04 21:13:58 2015] [error] [client 91.231.140.82] proxy: DNS lookup failure for: itvps.org returned by http://itvps.org/fill.png, referer: http://www.gumtree.pl/fp-domy-i-mieszkania-do-wynajecia/gdansk/c9008l3200072?AdType=2&Page=1
+[Wed Feb 04 21:32:11 2015] [error] [client 118.140.173.4] script not found or unable to stat: /var/www/cgi-bin/authLogin.cgi
+[Wed Feb 04 22:39:02 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.graniczny.slupsk.pl returned by http://www.graniczny.slupsk.pl/op/producent%20siatki%20ogrodzeniowej/
+[Wed Feb 04 22:39:06 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.kieliszek.nowekubki.pl returned by http://www.kieliszek.nowekubki.pl/Gaczkowo/18/
+[Wed Feb 04 22:39:09 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.iqportali.pl returned by http://www.iqportali.pl/tag%2Cpily%2Cstolowe.iqportal
+[Wed Feb 04 22:39:13 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.tomnowak.dlugoleka.pl returned by http://www.tomnowak.dlugoleka.pl/Kosakowo/sklepy-outlet%2CKosakowo/
+[Wed Feb 04 22:39:14 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.door.xn--bkart-j0a.bialystok.pl returned by http://www.door.xn--bkart-j0a.bialystok.pl/?uzytkownik=5520
+[Wed Feb 04 22:39:21 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.sekspanel.pl returned by http://www.sekspanel.pl/salondominique.pl
+[Wed Feb 04 22:39:32 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.magdalia.pl returned by http://www.magdalia.pl/Karnice/hotel-diament-grzybowo%2CKarnice/
+[Wed Feb 04 22:39:32 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: kassadin.bydgoszcz.pl returned by http://kassadin.bydgoszcz.pl/firmy/damy%2Crade%2Czespol%2Cna%2Cwesele%2Cs%2C2333/
+[Wed Feb 04 22:39:33 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.hugrowita.pl returned by http://www.hugrowita.pl/about%2CMC_Vspishkin
+[Wed Feb 04 22:39:58 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: roguemage.pulawy.pl returned by http://roguemage.pulawy.pl/firmy/damy%2Crade%2Czespol%2Cweselny%2Cs%2C2311/
+[Wed Feb 04 22:41:23 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: isoldend.com.pl returned by http://isoldend.com.pl/biznes-i-finanse/5059/
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:26 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:27 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:28 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:29 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:29 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:08:30 2015] [error] [client 85.100.227.203] proxy: Connect to remote machine blocked returned by irc.geveze.org:6667
+[Wed Feb 04 23:16:28 2015] [error] [client 155.133.19.30] (104)Connection reset by peer: proxy: error reading status line from remote server www.acity.pl:80
+[Wed Feb 04 23:16:28 2015] [error] [client 155.133.19.30] proxy: Error reading from remote server returned by http://www.acity.pl/httptest.php
+[Wed Feb 04 23:30:41 2015] [error] [client 202.109.143.35] File does not exist: /var/www/html/git/manager
+[Thu Feb 05 02:09:48 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
+[Thu Feb 05 02:09:48 2015] [error] [client 146.115.160.26] File does not exist: /var/www/html/git/favicon.ico
+[Thu Feb 05 02:16:48 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.wielkopolskie.twoj-telefon.eu returned by http://www.wielkopolskie.twoj-telefon.eu/affnt_724%2C120.html
+[Thu Feb 05 02:16:49 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.siodma.matematunia24.pl returned by http://www.siodma.matematunia24.pl/index-9686
+[Thu Feb 05 02:16:49 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.dublin.datingsky.co.uk returned by http://www.dublin.datingsky.co.uk/page/tos/
+[Thu Feb 05 02:16:57 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: lalakatalog.pl returned by http://lalakatalog.pl/firmy/wideofilmowanie%2Cbydgoszcz%2Cs%2C7948/
+[Thu Feb 05 02:16:59 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.tomnowak.dlugoleka.pl returned by http://www.tomnowak.dlugoleka.pl/Grodek/sklepy-meblowe-szczecin%2CGrodek/
+[Thu Feb 05 02:17:05 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: wow.devstyle.net returned by http://wow.devstyle.net/viewtopic.php?pid=69458
+[Thu Feb 05 02:17:08 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: wosinska.net returned by http://wosinska.net/kultura%2Ci%2Csztuka/matari%2Cstudio%2Cwideofilmowanie%2Cfotografia%2Cs%2C3816/
+[Thu Feb 05 02:17:10 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.swiat.opt.waw.pl returned by http://www.swiat.opt.waw.pl/Kaszew/
+[Thu Feb 05 02:17:15 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: beta.filesbox.pl returned by http://beta.filesbox.pl/file___issy_%2Cpl%2Cpl.html
+[Thu Feb 05 02:17:15 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.kieliszek.nowekubki.pl returned by http://www.kieliszek.nowekubki.pl/Bardacie/
+[Thu Feb 05 02:17:25 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: nyceng.org.pl returned by http://nyceng.org.pl/wiedza/778/
+[Thu Feb 05 02:17:27 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.kieliszek.nowekubki.pl returned by http://www.kieliszek.nowekubki.pl/Kobarynki/kieliszki-10ml/
+[Thu Feb 05 02:17:29 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: wow.devstyle.net returned by http://wow.devstyle.net/viewtopic.php?pid=69441
+[Thu Feb 05 02:17:33 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.niemcy.pl-rozmowy.pl returned by http://www.niemcy.pl-rozmowy.pl/?tag=wakacje%20w%20ko%C5%82obrzegu
+[Thu Feb 05 02:17:37 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.portalik.pisz.pl returned by http://www.portalik.pisz.pl/rozrywka%2Ci%2Chobby/damy%2Crade%2Czespol%2Cweselny%2Cs%2C3350/
+[Thu Feb 05 02:17:51 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.lincoln.goodating.eu returned by http://www.lincoln.goodating.eu/member/2487/pictures/2454/
+[Thu Feb 05 02:18:03 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: maca.siemson.pl returned by http://maca.siemson.pl/tag/abonament%2Bmedyczny
+[Thu Feb 05 02:18:23 2015] [error] [client 185.53.153.153] proxy: DNS lookup failure for: www.fifa-soccer.pl returned by http://www.fifa-soccer.pl/210326.html
+[Thu Feb 05 02:21:25 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined variable: lose in /var/www/html/git/hook.php on line 6
+[Thu Feb 05 02:21:26 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined variable: lose in /var/www/html/git/hook.php on line 6
+[Thu Feb 05 02:21:38 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined variable: lose in /var/www/html/git/hook.php on line 6
+[Thu Feb 05 02:21:39 2015] [error] [client 146.115.160.26] PHP Notice:  Undefined variable: lose in /var/www/html/git/hook.php on line 6
+[Thu Feb 05 02:21:49 2015] [error] [client 146.115.160.26] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 8
+[Thu Feb 05 02:21:50 2015] [error] [client 146.115.160.26] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 8
+[Thu Feb 05 02:21:50 2015] [error] [client 146.115.160.26] PHP Parse error:  syntax error, unexpected T_STRING in /var/www/html/git/hook.php on line 8
+[Thu Feb 05 02:23:32 2015] [error] [client 146.115.160.26] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /var/www/html/git/index.php on line 4
+[Thu Feb 05 02:24:18 2015] [error] [client 146.115.160.26] PHP Notice:  Use of undefined constant dicks - assumed 'dicks' in /var/www/html/git/hook.php on line 14

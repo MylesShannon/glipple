@@ -1,0 +1,142 @@
+/* The following three definitions sets what happens in the "contents" on each page
+tr_alt is the setting for "alternative" (every 2nd) table row.
+tr_norm is the setting for the opposite...(!)
+tableRollOverEffect is the setting for what happens when the user 'mouseover' a row in the table
+*/
+.tr_alt {
+	background-color: #DFDFDF;
+}
+
+.tr_norm {
+ 	background-color: #efefef;
+}	 	
+
+.tableRollOverEffect{
+	background-color: #FFFFFF;
+}
+
+/* Table used for OUTLINE of all content in AmpJuke */
+.ampjuke_outline_table {
+ 	background-color: #f9f9f9;
+	border: 2px solid #969696;
+	padding: 2px solid #0000;
+	border-spacing: 0px;
+}	
+/* Table used for menu-items to the left */
+.ampjuke_menu_table {	
+	border: 1px dotted #969696;
+	width: 150px;
+	height: 350px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Tahoma, Verdana;
+	font-size: 12px;
+}	 
+.ampjuke_now_playing {	
+	border: 1px dashed #999999;
+	width: 150px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Tahoma, Verdana;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+/* "Dummy" table used for holding content (headline, actions, content, pagenumbers), to the right of the menu: */
+.ampjuke_main_content_table {
+ 	width: 600px;
+ 	border: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 12px;
+}	
+/* Table used for HEADLINES - top of page/content */
+.ampjuke_headline_table {
+ 	width: 100%;	
+	border: 1px solid #999999;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Tahoma, Verdana;
+	font-weight: bold;
+	font-color: #969696;
+	font-size: 11px;
+}	 
+/* Table used for ACTIONS - items just below the headline */
+.ampjuke_actions_table {
+ 	width: 100%;
+ 	border: 1px solid #969696;
+ 	border-spacing: 0px;
+ 	border-collapse: collapse;
+ 	font-family: Tahoma, Verdana;
+ 	font-size: 11px;
+ 	background-color: #ffffff;
+}
+/* Table used for controlling how PAGENUMBERS should look like */
+.ampjuke_pagenumber_table {
+ 	width: 100%;
+ 	border: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 11px;
+	background-color: #ffffff;	
+}	
+/* Table used for CONTENTS */
+.ampjuke_content_table {
+ 	width: 100%;
+ 	border: 1px solid #969696;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Tahoma, Verdana;
+	font-size: 12px;
+}	 
+/* This setting controls how totals (f.ex. for albums) is displayed */
+.totals {
+ 	font-family: Tahoma, Verdana;
+ 	font-size: 11px;
+ 	font-weight: bold;
+ 	color: #0000;
+}
+/* Table setting for covers */
+.cover_table {
+ 	width: 100%;
+ 	border-spacing: 1px;
+ 	font-family: Arial;
+ 	font-size: 10px;
+} 	
+
+/* text-input fields: */
+.tfield { 
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 100%;
+	border-width: 1px;
+	border-color: blue;
+}
+
+/* Link settings */
+a:link {
+	color: #333333;
+	text-decoration: none;
+}		
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/* The "note" is used for "highlighting" something. F.ex. the Admin's options in the lower left corner */
+.note {
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	background-color: #F3F4D7;
+}	
+
+/* This setting controls the color of HR's: */
+.hr_std {
+ 	width: 70%;
+ 	color: #abcdef;
+} 	
+

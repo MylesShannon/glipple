@@ -1,0 +1,133 @@
+/* The following three definitions sets what happens in the "contents" on each page
+tr_alt is the setting for "alternative" (every 2nd) table row.
+tr_norm is the setting for the opposite...(!)
+tableRollOverEffect is the setting for what happens when the user 'mouseover' a row in the table
+*/
+.tr_alt {
+	background-color: #D2FDD0;
+}
+
+.tr_norm {
+ 	background-color: #EEFEED;
+}	 	
+
+.tableRollOverEffect{
+	background-color: #FF7F2A;
+}
+
+/* Table used for OUTLINE of all content in AmpJuke */
+.ampjuke_outline_table {
+	border: 1px solid #000000;
+	padding: 2px solid #FF7F2A;
+	border-spacing: 0px;
+	background-color: #D2FDD0;
+}	
+/* Table used for menu-items to the left */
+.ampjuke_menu_table {	
+	border-spacing: 5px;
+	border-width: 5px;
+	font-family: Arial;
+	font-size: 11px;;
+}	 
+.ampjuke_now_playing {	
+	border: 1px solid #FF7F2A;
+	background-color: #eefeed;
+	font-family: Arial;
+	font-size: 11px;;
+}	 
+/* "Dummy" table used for holding content (headline, actions, content, pagenumbers), to the right of the menu: */
+.ampjuke_main_content_table {
+ 	border: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 11px;
+	background-color: #EEFEED;
+}	
+/* Table used for HEADLINES - top of page/content */
+.ampjuke_headline_table {
+ 	width: 100%;	
+	border: 1px solid #FF7F2A;
+	border-spacing: 2px;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #EEFEED;
+}	 
+/* Table used for ACTIONS - items just below the headline */
+.ampjuke_actions_table {
+ 	width: 100%;
+ 	border: 1px dashed #FF7F2A;
+ 	border-spacing: 0px;
+ 	border-collapse: collapse;
+ 	font-family: Verdana;
+ 	font-size: 12px;
+ 	background-color: #EEFEED;
+}
+/* Table used for CONTENTS */
+.ampjuke_content_table {
+ 	width: 100%;
+ 	border: 1px solid #FF7F2A;
+	border-spacing: 1px;
+	font-family: Comic Sans MS, Arial;
+	font-size: 13px;
+}	 
+/* Table used for controlling how PAGENUMBERS should look like */
+.ampjuke_pagenumber_table {
+ 	width: 100%;
+ 	border: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 11px;
+	background-color: #EDECE9;	
+}	
+/* This setting controls how totals (f.ex. for albums) is displayed */
+.totals {
+ 	font-family: Arial;
+ 	font-size: 12px;
+ 	font-weight: bold;
+ 	color: #E9ECED;
+}
+/* Table setting for covers */
+.cover_table {
+ 	width: 10%;
+ 	float: right;
+ 	font-family: Arial;
+ 	font-size: 10px;
+} 	
+/* text-input fields: */
+.tfield { 
+	font-family: Verdana;
+	font-size: 10px;
+	border-width: 1px;
+	border-color: #FF7F2A;
+}
+
+/* Link settings */
+a:link {
+	color: #008000;
+	text-decoration: none;
+}		
+a:visited {
+	color: #008000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}	
+/* The "note" is used for "highlighting" something. F.ex. the Admin's options in the lower left corner */
+.note {
+	font-family: Verdana;
+	font-size: 11px;
+	background-color: #F3F4D7;
+}	
+
+/* This setting controls the color of HR's: */
+.hr_std {
+ 	width: 70%;
+ 	color: #F3F3F5;
+} 	
+

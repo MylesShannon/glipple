@@ -1,0 +1,69 @@
+.ampjuke_content_table {
+ 	width: 98%;
+ 	border: 1px dotted #abcdef;
+	border-spacing: 1px;
+}
+
+.ampjuke_login_table {
+	width: 400px;
+	border: 1px solid #abcdef;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;	
+	
+}
+.ampjuke_login_tr {
+	background-color: #ffffff;
+	text-align: center;
+}	
+.ampjuke_login_left_td {
+ 	background-color: #ffffff;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 70%;
+	text-align: right;
+}
+.ampjuke_login_right_td {
+ 	background-color: #ffffff;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 70%;
+	text-align: left;
+}
+.ampjuke_login_field { 
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 100%;
+	border-width: 1px;
+	border-color: blue;
+}
+ 
+.note {
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 100%;
+	background-color: #F3F4D7;
+}	
+a:link {
+	color: blue;
+	text-decoration: none;
+}		
+a:visited {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+}		
+table {
+    margin-left: 1%;
+    width: 98%;
+}
+td,th {
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 70%;
+}	
+.tfield { 
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 100%;
+	border-width: 1px;
+	border-color: blue;
+}

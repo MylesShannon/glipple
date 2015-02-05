@@ -1,0 +1,14 @@
+EN;English
+DA;Dansk
+DE;Deutsch
+ES;Español
+EE;Eesti
+FR;Français
+HU;Magyar
+IT;Italiano
+NL;Dutch
+PT;Português
+RO;Romanian
+SV;Svenska
+TR;Türkçe
+
