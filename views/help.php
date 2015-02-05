@@ -8,9 +8,3 @@
 	<li>Radio Player
 	<li>Downloading, Uploading
 </p>
-
-<p>
-	GitHub works, now check the git log for exists and msg
-	</br>
-	testing, 9:51AM
-</p>
