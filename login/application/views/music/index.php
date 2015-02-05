@@ -33,11 +33,11 @@
 	mysql_close();
 */
 ?>
-<div id="drozone">
+</* div id="drozone">
 <p style="width:50%;">
 <form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
 </p>
-</div>
+</div> */
 
 <table id="music" class="display" cellspacing="0" width="100%">
         <thead>
