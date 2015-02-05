@@ -1,5 +1,5 @@
 <div class="content">
-    <h1>Dicks</h1>
+    <h1>Music</h1>
 <?php $this->renderFeedbackMessages(); ?>
 <?php
 
@@ -33,11 +33,11 @@
 	mysql_close();
 */
 ?>
-// <div id="drozone">
-// <p style="width:50%;">
-// <form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
-// </p>
-// </div> 
+<!--<div id="drozone">
+<p style="width:50%;">
+<form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
+</p>
+</div> -->
 
 <table id="music" class="display" cellspacing="0" width="100%">
         <thead>
