@@ -1,5 +1,5 @@
 <div class="content">
-    <h1>Music</h1>
+    <h1>Dicks</h1>
 <?php $this->renderFeedbackMessages(); ?>
 <?php
 
