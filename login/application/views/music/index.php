@@ -72,9 +72,9 @@
 	
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr><form class='songTable'>";
-		echo "<td><input class='songTitle' type='text'>".$row['title']."</input></td>";
-		echo "<td><input class='songArtist' type='text'>".$row['artist']."</input></td>";
-		echo "<td><input class='songAlbum' type='text'>".$row['album']."</input></td>";
+		echo "<td><input class='songTitle' type='text' name='title' value='".$row['title']."'></td>";
+		echo "<td><input class='songArtist' type='text' name='artist' value='".$row['artist']."'></td>";
+		echo "<td><input class='songAlbum' type='text' name='album' value='".$row['album']."'></td>";
 		echo "</form></tr>";
 	}
 
