@@ -62,6 +62,7 @@
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
 	$db = "music";
+	$count = 1;
 	
 	
 	mysql_connect($server, $user, $pass) or die(mysql_error());
@@ -71,10 +72,11 @@
 	
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr>";
-		echo "<td><input id='row-".$row."-title' name='row-".$row."-title' value='".$row['title']."' type='text'></td>";
-		echo "<td><input id='row-".$row."-artist' name='row-".$row."-artist' value='".$row['artist']."' type='text'></td>";
-		echo "<td><input id='row-".$row."-album' name='row-".$row."-album' value='".$row['album']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
 		echo "</tr>";
+		$count++;
 	}
 
 mysql_close();
