@@ -33,10 +33,9 @@
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" />
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/dropzone.css" type="text/css" />
-	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css" />
-    <!-- in case you wonder: That's the cool-kids-protocol-free way to load jQuery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script> -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="<?php echo URL; ?>public/js/application.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/dropzone.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/ajax.js"></script> 
