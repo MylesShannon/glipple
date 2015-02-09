@@ -40,6 +40,7 @@
 </div> -->
 
 <table id="music" class="display" cellspacing="0" width="100%">
+	<colgroup span="4" class="columns"></colgroup>
         <thead>
             <tr>
                 <th>Title</th>
@@ -47,15 +48,6 @@
                 <th>Artist</th>
             </tr>
         </thead>
- <!--
-        <tfoot>
-            <tr>
-                <th>Title</th>
-                <th>Album</th>
-                <th>Artist</th>
-            </tr>
-        </tfoot>
--->
  
         <tbody>
 <?php
@@ -79,9 +71,16 @@
 	}
 
 mysql_close();
-
 ?>
 		</tbody>
+		
+		<tfoot>
+            <tr>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Artist</th>
+            </tr>
+        </tfoot>
 </table>
 
 <!--
