@@ -30,7 +30,7 @@
 	<link rel="shortcut icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
 	<link rel="icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" />
+    <!-- <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" /> -->
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/dropzone.css" type="text/css" />
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
