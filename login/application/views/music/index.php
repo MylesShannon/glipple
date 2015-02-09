@@ -83,12 +83,14 @@ mysql_close();
 </table>
 
 <script>
+/*
 $(document).ready(function() {
     $('#music').dataTable( {
         "paging":   false,
         "info":     false
     } );
 } );
+*/
 
 $(document).ready(function() {
     var table = $('#music').DataTable();
