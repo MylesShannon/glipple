@@ -39,6 +39,8 @@
 </p>
 </div> -->
 
+<button type="submit">Submit form</button>
+
 <table id="music" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -98,7 +100,7 @@ $(document).ready(function() {
     var table = $('#music').DataTable();
  
     $('button').click( function() {
-        var data = table.$('input, select').serialize();
+        var data = table.$('input').serialize();
         alert(
             "The following data would have been submitted to the server: \n\n"+
             data.substr( 0, 120 )+'...'
