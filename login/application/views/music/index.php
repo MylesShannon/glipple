@@ -40,7 +40,6 @@
 </div> -->
 
 <table id="music" class="display" cellspacing="0" width="100%">
-	<colgroup span="4" class="columns"></colgroup>
         <thead>
             <tr>
                 <th>Title</th>
@@ -48,6 +47,14 @@
                 <th>Artist</th>
             </tr>
         </thead>
+		
+		<tfoot>
+            <tr>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Artist</th>
+            </tr>
+        </tfoot>
  
         <tbody>
 <?php
@@ -63,27 +70,18 @@
 	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".Session::get('user_id')) or die(mysql_error());  
 	
 	while ($row = mysql_fetch_array($result)) {
-		echo "<tr><form class='songTable'>";
-		echo "<td><input class='songTitle' type='text' name='title' value='".$row['title']."'></td>";
-		echo "<td><input class='songArtist' type='text' name='artist' value='".$row['artist']."'></td>";
-		echo "<td><input class='songAlbum' type='text' name='album' value='".$row['album']."'></td>";
-		echo "</form></tr>";
+		echo "<tr>";
+		echo "<td><input id='row-".$row."-title' name='row-".$row."-title' value='".$row['title']."' type='text'></td>";
+		echo "<td><input id='row-".$row."-artist' name='row-".$row."-artist' value='".$row['artist']."' type='text'></td>";
+		echo "<td><input id='row-".$row."-album' name='row-".$row."-album' value='".$row['album']."' type='text'></td>";
+		echo "</tr>";
 	}
 
 mysql_close();
 ?>
 		</tbody>
-		
-		<tfoot>
-            <tr>
-                <th>Title</th>
-                <th>Album</th>
-                <th>Artist</th>
-            </tr>
-        </tfoot>
 </table>
 
-<!--
 <script>
 $(document).ready(function() {
     $('#music').dataTable( {
@@ -91,5 +89,17 @@ $(document).ready(function() {
         "info":     false
     } );
 } );
+
+$(document).ready(function() {
+    var table = $('#music').DataTable();
+ 
+    $('button').click( function() {
+        var data = table.$('input, select').serialize();
+        alert(
+            "The following data would have been submitted to the server: \n\n"+
+            data.substr( 0, 120 )+'...'
+        );
+        return false;
+    } );
+} );
 </script>
--->
