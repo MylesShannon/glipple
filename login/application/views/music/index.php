@@ -84,6 +84,7 @@ mysql_close();
 		</tbody>
 </table>
 
+<!--
 <script>
 $(document).ready(function() {
     $('#music').dataTable( {
@@ -92,3 +93,4 @@ $(document).ready(function() {
     } );
 } );
 </script>
+-->
