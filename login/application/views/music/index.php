@@ -1,5 +1,10 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <div class="content">
     <h1>Music</h1>
+
 <?php $this->renderFeedbackMessages(); ?>
 <?php
 
@@ -39,9 +44,9 @@
 </p>
 </div> -->
 
-<button type="submit">Submit form</button>
+<button type="submit">Update music</button>
 
-<table id="music" class="display" cellspacing="0" width="100%">
+<table id="music" class="display" cellspacing="0">
         <thead>
             <tr>
                 <th>Title</th>
@@ -70,10 +75,10 @@
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
-	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".Session::get('user_id')) or die(mysql_error());  
+	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".Session::get('user_id')) or die(mysql_error());
 	
 	while ($row = mysql_fetch_array($result)) {
-		echo "<tr>";
+		echo "<tr class='musicRows'>";
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
@@ -96,6 +101,7 @@ $(document).ready(function() {
 } );
 */
 
+/*
 $(document).ready(function() {
     var table = $('#music').DataTable();
  
@@ -108,4 +114,5 @@ $(document).ready(function() {
         return false;
     } );
 } );
+*/
 </script>
