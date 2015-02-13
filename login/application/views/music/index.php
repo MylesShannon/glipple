@@ -44,14 +44,13 @@
 </p>
 </div> -->
 
-<button type="submit">Update music</button>
-
 <table id="music" class="display" cellspacing="0">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Album</th>
                 <th>Artist</th>
+				<th></th>
             </tr>
         </thead>
 		
@@ -60,6 +59,7 @@
                 <th>Title</th>
                 <th>Album</th>
                 <th>Artist</th>
+				<th></th>
             </tr>
         </tfoot>
  
@@ -79,9 +79,12 @@
 	
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr class='musicRows'>";
+		echo "<form action='update.php'>";
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-commit' name='row-".$count."-commit' value='commit' type='sumbit'></td>";
+		echo "</form>";
 		echo "</tr>";
 		$count++;
 	}
