@@ -25,4 +25,9 @@ class Music extends Controller
     {
         $this->view->render('music/index');
     }
+	
+	function update()
+    {
+        $this->view->render('music/update');
+    }
 }
