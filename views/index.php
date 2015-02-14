@@ -130,7 +130,7 @@
 	
 	while ($row = mysql_fetch_array($result)) {
 	//	echo "<a href='http://54.148.79.138/dl.php?file=".$row['id'].".mp3&?id=".$row['owner']."'>";
-		echo "<a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download>";
+		echo "<a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>";
 		echo "<table class='latest'>";
 		echo "<tr><td>".$row['id']."</td>";
 		echo "<td>".$row['title']."</td>";
