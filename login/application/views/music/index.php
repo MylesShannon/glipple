@@ -82,7 +82,7 @@
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
-		echo "<td><form action='delete.php?artist=".$row['artist']."&title=".$row['title']."'><button type='sumbit' id='row-".$count."-delete' name='row-".$count."-delete' value='delete'>delete</button></form></td>";
+		echo "<td><form action='/delete.php?artist=".$row['artist']."&title=".$row['title']."'><button type='sumbit' id='row-".$count."-delete' name='row-".$count."-delete' value='delete'>delete</button></form></td>";
 		echo "</tr>";
 		$count++;
 	}
