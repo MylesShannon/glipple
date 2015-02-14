@@ -30,4 +30,9 @@ class Music extends Controller
     {
         $this->view->render('music/update');
     }
+
+    function delete()
+    {
+        $this->view->render('music/delete');
+    }
 }
