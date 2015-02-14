@@ -34,6 +34,11 @@ class LoginModel
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_FIELD_EMPTY;
             return false;
         }
+		
+		if (!isset($_POST['passcode']) OR empty($_POST['passcode']) OR $_POST['passcode'] != PASSCODE) {
+            $_SESSION["feedback_negative"][] = "Passcode missing";
+            return false;
+        }
 
         // get user's data
         // (we check if the password fits the password_hash via password_verify() some lines below)

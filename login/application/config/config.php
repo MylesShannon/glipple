@@ -14,6 +14,9 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+// Artist passcode
+define('PASSCODE', '12345');
+
 /**
  * Configuration for: Base URL
  * This is the base url of our app. if you go live with your app, put your full domain name here.
