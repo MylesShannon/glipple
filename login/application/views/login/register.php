@@ -51,12 +51,13 @@
                 </span> -->
             </label>
             <input type="text" name="captcha" required />
-            <input type="submit"  name="register" value="Register" />
-
+			
 			<label for="login_input_passcode">
                 Passcode
             </label>
 			<input id="login_input_passcode" class="passcode_input" type="text" name="passcode" required autocomplete="off" />
+			
+            <input type="submit"  name="register" value="Register" />
         </form>
     </div>
 
