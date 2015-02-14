@@ -55,7 +55,7 @@
 			<label for="login_input_passcode">
                 Passcode
             </label>
-			<input id="login_input_passcode" class="passcode_input" type="text" name="passcode" required autocomplete="off" />
+			<input id="login_input_passcode" class="passcode_input" type="password" name="passcode" required autocomplete="off" />
 			
             <input type="submit"  name="register" value="Register" />
         </form>
