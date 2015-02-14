@@ -1,11 +1,13 @@
 <?php
 // delete music
-$query = trim($_GET["artist"]);
-$artistcaps = strtoupper($query); 
-echo $artistcaps;
-$querytitle = trim($_GET["title"]);
-$titlecaps = strtoupper($querytitle); 
-echo $titlecaps;
+$artist = trim($_GET["artist"]);
+$artist = strtoupper($artist); 
+$artist = urlencode($artist);
+echo $artistc;
+$title = trim($_GET["title"]);
+$title = strtoupper($title); 
+$title = urlencode($title);
+echo $title;
 // connect to mysql
 $server = "localhost";
 $user = "root";
@@ -16,7 +18,7 @@ mysql_select_db($db) or die(mysql_error());
 
 
 
-$result = mysql_query('DELETE * FROM id3 WHERE UPPER(artist) LIKE "'.$artistcaps.'" AND UPPER(title) LIKE "'.$titlecaps.'"') or die(mysql_error());  
+$result = mysql_query('DELETE * FROM id3 WHERE UPPER(artist) LIKE "'.$artist.'" AND UPPER(title) LIKE "'.$title.'"') or die(mysql_error());  
 // take passed info and commit it to db
 echo "deleted";
 // close sql connection
