@@ -12,7 +12,7 @@ mysql_select_db($db) or die(mysql_error());
 
 
 
-$result = mysql_query("DELETE * FROM id3 WHERE id LIKE '%$id%") or die(mysql_error());  
+$result = mysql_query("DELETE * FROM id3 WHERE id LIKE $id") or die(mysql_error());  
 // take passed info and commit it to db
 echo "deleted";
 // close sql connection
