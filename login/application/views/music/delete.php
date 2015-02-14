@@ -11,10 +11,13 @@ mysql_connect($server, $user, $pass) or die(mysql_error());
 mysql_select_db($db) or die(mysql_error());
 
 
-
-$result = mysql_query("DELETE FROM id3 WHERE id = $id") or die(mysql_error());  
 // take passed info and commit it to db
-echo "deleted";
+$result = mysql_query("DELETE FROM id3 WHERE id = $id") or die(mysql_error());
+  
+// delete file
+unlink(Session::get('user_id')."/".$id.".mp3");
+
+echo "deleted song '$id'";
 // close sql connection
 mysql_close();
 ?>
