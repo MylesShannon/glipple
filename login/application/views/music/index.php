@@ -78,14 +78,14 @@
 	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".Session::get('user_id')) or die(mysql_error());
 	
 	while ($row = mysql_fetch_array($result)) {
+		echo "<form action='delete.php'>";
 		echo "<tr class='musicRows'>";
-		echo "<form action='update.php'>";
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-delete' name='row-".$count."-delete' class='button' value='delete' type='sumbit'></td>";
-		echo "</form>";
 		echo "</tr>";
+		echo "</form>";
 		$count++;
 	}
 
