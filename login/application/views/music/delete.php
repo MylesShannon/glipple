@@ -2,10 +2,10 @@
 // delete music
 $query = trim($_GET["artist"]);
 $artistcaps = strtoupper($query); 
-echo $artistcaps
+echo $artistcaps;
 $querytitle = trim($_GET["title"]);
 $titlecaps = strtoupper($querytitle); 
-echo $titlecaps
+echo $titlecaps;
 // connect to mysql
 $server = "localhost";
 $user = "root";
