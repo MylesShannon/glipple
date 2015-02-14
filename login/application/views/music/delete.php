@@ -1,12 +1,13 @@
 <?php
 // delete music
 $artist = trim($_GET["artist"]);
+$artist = urldecode($artist);
 $artist = strtoupper($artist); 
-$artist = urlencode($artist);
-echo $artistc;
+echo $artist;
 $title = trim($_GET["title"]);
+$title = urldecode($title);
 $title = strtoupper($title); 
-$title = urlencode($title);
+
 echo $title;
 // connect to mysql
 $server = "localhost";
