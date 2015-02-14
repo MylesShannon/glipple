@@ -83,7 +83,7 @@
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
-		echo "<td><input id='row-".$count."-commit' name='row-".$count."-commit' value='commit' type='sumbit'></td>";
+		echo "<td><input id='row-".$count."-delete' name='row-".$count."-delete' class='button' value='delete' type='sumbit'></td>";
 		echo "</form>";
 		echo "</tr>";
 		$count++;
