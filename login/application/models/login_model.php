@@ -34,11 +34,6 @@ class LoginModel
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_FIELD_EMPTY;
             return false;
         }
-		
-		if (!isset($_POST['passcode']) OR empty($_POST['passcode']) OR $_POST['passcode'] != '12345') {
-            $_SESSION["feedback_negative"][] = "Passcode missing";
-            return false;
-        }
 
         // get user's data
         // (we check if the password fits the password_hash via password_verify() some lines below)
@@ -430,7 +425,10 @@ class LoginModel
             $_SESSION["feedback_negative"][] = FEEDBACK_CAPTCHA_WRONG;
         } elseif (empty($_POST['user_name'])) {
             $_SESSION["feedback_negative"][] = FEEDBACK_USERNAME_FIELD_EMPTY;
-        } elseif (empty($_POST['user_password_new']) OR empty($_POST['user_password_repeat'])) {
+        } elseif (empty($_POST['passcode']) OR $_POST['passcode'] != PASSCODE) {
+            $_SESSION["feedback_negative"][] = FEEDBACK_PASSCODE_FIELD_EMPTY;
+            return false;
+        }elseif (empty($_POST['user_password_new']) OR empty($_POST['user_password_repeat'])) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_FIELD_EMPTY;
         } elseif ($_POST['user_password_new'] !== $_POST['user_password_repeat']) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_REPEAT_WRONG;

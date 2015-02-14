@@ -16,6 +16,7 @@ ini_set("display_errors", 1);
 
 // Artist passcode
 define('PASSCODE', '12345');
+define('FEEDBACK_PASSCODE_FIELD_EMPTY', 'Passcode invalid!');
 
 /**
  * Configuration for: Base URL
