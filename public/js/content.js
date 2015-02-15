@@ -28,12 +28,14 @@ function loadXMLDoc(content)
 		xmlhttp.open("GET","views/test.php",true);
 	} else if(content == "radio") {
 		xmlhttp.open("GET","views/radio.php",true);
-	}else if(content == "help") {
+	} else if(content == "help") {
 		xmlhttp.open("GET","views/help.php",true);
-	}else if(content == "blog") {
+	} else if(content == "blog") {
 		xmlhttp.open("GET","views/blog.php",true);
-	}else if(content == "discover") {
+	} else if(content == "discover") {
 		xmlhttp.open("GET","views/discover.php",true);
+	} else if(content.indexOf("userid-") != -1) {
+		xmlhttp.open("GET","login/overview/showuserprofile/".content.substring(7),true);
 	} else {
 		xmlhttp.open("GET","views/error.php",true);
 	}
