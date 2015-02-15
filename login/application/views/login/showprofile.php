@@ -21,7 +21,7 @@
     </div>
 	<br>
 	<div id="bandImage">
-		<form action="<?php echo URL ?>login/login/upload" method="post" enctype="multipart/form-data">
+		<form action="<?php echo URL ?>login/upload" method="post" enctype="multipart/form-data">
 		Select an image to upload as your band image:
 		<input type="file" name="fileToUpload" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
