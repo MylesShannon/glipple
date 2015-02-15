@@ -1,1 +1,0 @@
-<? header("Location: ../index.php?what=welcome"); ?>
