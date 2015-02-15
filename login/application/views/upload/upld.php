@@ -22,7 +22,9 @@ if (!is_dir($userDir))
 	mkdir($userDir, 0777);
 }
 
+echo $_FILES["file"]["name"];
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
+echo $target_dir;
 //$song_file = mime_content_type($_FILES["file"]["tmp_name"]);
 //echo $song_file;
 //echo $target_dir."<br>";
