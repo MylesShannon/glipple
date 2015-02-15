@@ -34,8 +34,9 @@ function loadXMLDoc(content)
 		xmlhttp.open("GET","views/blog.php",true);
 	} else if(content == "discover") {
 		xmlhttp.open("GET","views/discover.php",true);
-	} else if(content.indexOf("userid-") != -1) {
+	} else if(content.indexOf("userid-") == 0) {
 		xmlhttp.open("GET","login/overview/showuserprofile/".content.substring(7),true);
+		console.log("userid profile page called");
 	} else {
 		xmlhttp.open("GET","views/error.php",true);
 	}
