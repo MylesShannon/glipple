@@ -19,7 +19,18 @@
             Your avatar pic (saved on local server): <img src='<?php echo Session::get('user_avatar_file'); ?>' />
         <?php } ?>
     </div>
+	
+	<div id="bandImage">
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+		Select image to upload as your band image:
+		<input type="file" name="fileToUpload" id="fileToUpload">
+		<input type="submit" value="Upload Image" name="submit">
+		</form>
+	</div>
+	
+	<!--
     <div>
         Your account type is: <?php echo Session::get('user_account_type'); ?>
     </div>
+	-->
 </div>
