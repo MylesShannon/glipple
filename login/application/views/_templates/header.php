@@ -152,9 +152,9 @@
                 <li <?php if ($this->checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo URL; ?>login/showprofile">My Account</a>
                     <ul class="sub-menu">
-                        <li <?php if ($this->checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
+                        <!--<li <?php if ($this->checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
                             <a href="<?php echo URL; ?>login/changeaccounttype">Change account type</a>
-                        </li>
+                        </li>-->
                         <li <?php if ($this->checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
                             <a href="<?php echo URL; ?>login/uploadavatar">Upload an avatar</a>
                         </li>
