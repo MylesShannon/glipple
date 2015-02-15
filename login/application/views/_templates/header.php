@@ -142,12 +142,13 @@
             </li>
             <?php endif; ?>
 			-->
+			<!--
 			<?php if (Session::get('user_logged_in') == true):?>
             <li <?php if ($this->checkForActiveController($filename, "overview")) { echo ' class="active" '; } ?> >
                 <a href="<?php echo URL; ?>overview/index">Overview</a>
             </li>
             <?php endif; ?>
-
+			-->
             <?php if (Session::get('user_logged_in') == true):?>
                 <li <?php if ($this->checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo URL; ?>login/showprofile">My Account</a>
