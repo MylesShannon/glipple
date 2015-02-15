@@ -9,7 +9,7 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-$bandImageDir = "/var/www/html/public/img/band/".$userID;
+$bandImageDir = "/var/www/html/login/public/img/band/".$userID;
 
 // Does the user have a band image directory, if not create one
 if (!is_dir($bandImageDir)) 
