@@ -19,7 +19,7 @@ $userDir = "/music/".$userID;
 // Does the user have a music directory, if not create one
 if (!is_dir($userDir)) 
 {
-	mkdir($userDir, 0777);
+	mkdir($userDir, 0775);
 }
 echo "File basename:".basename( $_FILES["file"]["name"]);
 

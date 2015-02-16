@@ -14,7 +14,7 @@ $bandImageDir = "/var/www/html/login/public/img/band/".$userID;
 // Does the user have a band image directory, if not create one
 if (!is_dir($bandImageDir)) 
 {
-	mkdir($bandImageDir, 0777);
+	mkdir($bandImageDir, 0775);
 }
 
 $target_file = $bandImageDir . basename($_FILES["fileToUpload"]["name"]);
