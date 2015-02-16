@@ -70,7 +70,7 @@ $path = $bandImageDir.$lastRow.".".$imageFileType;
 mysql_query("UPDATE profiles SET band_image = '$path' WHERE id = '$lastRow'") or die(mysql_error());
 
 // Rename uploaded file to last row id
-rename($userDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
+rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
 
 mysql_close();
 ?>
