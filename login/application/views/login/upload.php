@@ -64,5 +64,13 @@ if ($uploadOk == 0) {
     }
 }
 
+mysql_query("INSERT INTO id3 (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL)") or die(mysql_error());  
+$lastRow = mysql_insert_id();
+$path = $bandImageDir.$lastRow.".".$imageFileType;
+mysql_query("UPDATE profiles SET band_image = '$path' WHERE id = '$lastRow'") or die(mysql_error());
+
+// Rename uploaded file to last row id
+rename($userDir."/".$target_dir, $userDir."/".$lastRow.".mp3");
+
 mysql_close();
 ?>
