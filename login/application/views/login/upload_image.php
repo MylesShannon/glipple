@@ -79,7 +79,7 @@ if (mysql_num_rows($result) <= 0) {
 	$lastRow = mysql_insert_id() or die(mysql_error());;
 	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
 	mysql_query("UPDATE '$table' SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
-} elseif ($row['user_id'] == $userID) {
+} else {
 	// $res = mysql_query("SELECT * FROM '$table' WHERE id LIKE ".Session::get('user_id')) or die(mysql_error());
 	$id = $row['id'];
 	$uppath = $bandImageDir.$id.".".$imageFileType;
