@@ -66,7 +66,8 @@ if ($uploadOk == 0) {
     }
 }
 
-mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL)") or die(mysql_error());  
+// mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL)") or die(mysql_error());  
+mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES (NULL, '$userID', NULL, NULL, NULL) ON DUPLICATE KEY UPDATE user_id = '$userID'") or die(mysql_error());
 $lastRow = mysql_insert_id();
 $path = $bandImageDir.$lastRow.".".$imageFileType;
 mysql_query("UPDATE profiles SET band_image = '$path' WHERE id = '$lastRow'") or die(mysql_error());
