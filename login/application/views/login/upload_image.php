@@ -1,4 +1,6 @@
 <?php
+// band image upload
+
 $server = "localhost";
 $user = "root";
 $pass = "4DaL0v3AM0n3y";

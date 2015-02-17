@@ -19,9 +19,15 @@
             Your avatar pic (saved on local server): <img src='<?php echo Session::get('user_avatar_file'); ?>' />
         <?php } ?>
     </div>
+	<div id=bandBio>
+		<form action="<?php echo URL ?>login/upload_bio" method="post">
+		Inser your profile bio here:
+		<input type="text" name="bandBio">
+		<input type="submit" value="Update Bio" name="submit">
+	</div>
 	<br>
 	<div id="bandImage">
-		<form action="<?php echo URL ?>login/upload" method="post" enctype="multipart/form-data">
+		<form action="<?php echo URL ?>login/upload_image" method="post" enctype="multipart/form-data">
 		Select an image to upload as your band image:
 		<input type="file" name="fileToUpload" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
