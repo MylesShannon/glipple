@@ -79,8 +79,9 @@ if (mysql_num_rows($result) <= 0) {
 	mysql_query("UPDATE '$table' SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
 } elseif ($row['user_id'] == $userID) {
 	// $res = mysql_query("SELECT * FROM '$table' WHERE id LIKE ".Session::get('user_id')) or die(mysql_error());
-	$uppath = $bandImageDir.$row['id'].".".$imageFileType;
-    mysql_query("UPDATE '$table' SET band_image = '$uppath' WHERE user_id = '$userID'") or die(mysql_error());
+	$id = $row['id'];
+	$uppath = $bandImageDir.$id.".".$imageFileType;
+    mysql_query("UPDATE '$table' SET band_image = '$uppath' WHERE id = '$id'") or die(mysql_error());
 }
 
 // Rename uploaded file to last row id
