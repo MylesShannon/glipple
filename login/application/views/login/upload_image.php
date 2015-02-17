@@ -71,7 +71,7 @@ if ($uploadOk == 0) {
 // mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES (NULL, '$userID', NULL, NULL, NULL) ON DUPLICATE KEY UPDATE user_id = '$userID'") or die(mysql_error());
 $result = mysql_query("SELECT * FROM '$table' WHERE user_id = '$userID' ");
 
-if ( mysql_num_rows($result) = 0) {
+if ( mysql_num_rows($result) == 0) {
     mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ");
 	$lastRow = mysql_insert_id();
 	$path = $bandImageDir.$lastRow.".".$imageFileType;
