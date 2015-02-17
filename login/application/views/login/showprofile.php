@@ -25,6 +25,7 @@
 		Inser your profile bio here:
 		<input type="text" name="bandBio">
 		<input type="submit" value="Update Bio" name="submit">
+		</form>
 	</div>
 	<br>
 	<div id="bandImage">
