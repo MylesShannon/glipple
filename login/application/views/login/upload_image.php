@@ -76,7 +76,7 @@ if (mysql_num_rows($result) <= 0) {
     mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ") or die(mysql_error());;
 	$lastRow = mysql_insert_id() or die(mysql_error());;
 	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
-	mysql_query("UPDATE profiles SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
+	mysql_query("UPDATE '$table' SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
 } elseif ($row['user_id'] == $userID) {
 	// $res = mysql_query("SELECT * FROM '$table' WHERE id LIKE ".Session::get('user_id')) or die(mysql_error());
 	$uppath = $bandImageDir.$row['id'].".".$imageFileType;
