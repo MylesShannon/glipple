@@ -69,18 +69,18 @@ if ($uploadOk == 0) {
 
 // mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL)") or die(mysql_error());  
 // mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES (NULL, '$userID', NULL, NULL, NULL) ON DUPLICATE KEY UPDATE user_id = '$userID'") or die(mysql_error());
-$result = mysql_query("SELECT * FROM '$table' WHERE user_id = '$userID' ");
+$result = mysql_query("SELECT user_id FROM '$table'") or die(mysql_error());;
+$row = mysql_fetch_array($result) or die(mysql_error());;
 
-if ( mysql_num_rows($result) == 0) {
-    mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ");
-	$lastRow = mysql_insert_id();
-	$path = $bandImageDir.$lastRow.".".$imageFileType;
-	mysql_query("UPDATE profiles SET band_image = '$path' WHERE id = '$lastRow'") or die(mysql_error());
-} elseif ( mysql_num_rows($result) > 0) {
+if (mysql_num_rows($result) =< 0) {
+    mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ") or die(mysql_error());;
+	$lastRow = mysql_insert_id() or die(mysql_error());;
+	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
+	mysql_query("UPDATE profiles SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
+} elseif ($row['user_id'] == $userID) {
 	// $res = mysql_query("SELECT * FROM '$table' WHERE id LIKE ".Session::get('user_id')) or die(mysql_error());
-	$row = mysql_fetch_array($result)
-	$p = $bandImageDir.$row['id'].".".$imageFileType;
-    mysql_query("UPDATE '$table' SET band_image = '$p' WHERE user_id = '$userID' ");
+	$uppath = $bandImageDir.$row['id'].".".$imageFileType;
+    mysql_query("UPDATE '$table' SET band_image = '$uppath' WHERE user_id = '$userID'") or die(mysql_error());
 }
 
 // Rename uploaded file to last row id
