@@ -11,7 +11,8 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-mysql_query("UPDATE profiles SET band_bio = $_POST('bandBio') WHERE 'user_id' = $userID") or die(mysql_error());
+mysql_query("UPDATE profiles SET band_bio = $_POST['bandBio'] WHERE 'user_id' = $userID") or die(mysql_error());
+//mysql_query("INSERT INTO profiles (a,b,c) VALUES (1,2,3) ON DUPLICATE KEY UPDATE c=c+1;") or die(mysql_error());
 
 mysql_close();
 ?>

@@ -19,6 +19,7 @@
             Your avatar pic (saved on local server): <img src='<?php echo Session::get('user_avatar_file'); ?>' />
         <?php } ?>
     </div>
+	<br>
 	<div id="bandBio">
 		<form action="<?php echo URL ?>login/upload_bio" method="post">
 		Inser your profile bio here:
