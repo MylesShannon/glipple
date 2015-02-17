@@ -11,7 +11,7 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-mysql_query("INSERT INTO profiles WHERE user_id = $userID (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, NULL, NULL, $_POST("bandBio"), NULL) or die(mysql_error());
+mysql_query("INSERT INTO profiles WHERE 'user_id' = $userID (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, NULL, NULL, $_POST('bandBio'), NULL") or die(mysql_error());
 
 mysql_close();
 ?>
