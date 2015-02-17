@@ -47,7 +47,7 @@ class Login extends Controller
 		
     }
 	
-	function bio()
+	function upload_bio()
     {	
         // show the view
         $this->view->render('login/upload_bio');
