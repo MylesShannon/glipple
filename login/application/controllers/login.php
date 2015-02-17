@@ -40,10 +40,17 @@ class Login extends Controller
 		
     }
 	
-	function upload()
+	function upload_image()
     {	
         // show the view
-        $this->view->render('login/upload');
+        $this->view->render('login/upload_image');
+		
+    }
+	
+	function bio()
+    {	
+        // show the view
+        $this->view->render('login/upload_bio');
 		
     }
 
