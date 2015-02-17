@@ -72,7 +72,7 @@ if ($uploadOk == 0) {
 $result = mysql_query("SELECT user_id FROM '$table'") or die(mysql_error());;
 $row = mysql_fetch_array($result) or die(mysql_error());;
 
-if (mysql_num_rows($result) =< 0) {
+if (mysql_num_rows($result) <= 0) {
     mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ") or die(mysql_error());;
 	$lastRow = mysql_insert_id() or die(mysql_error());;
 	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
