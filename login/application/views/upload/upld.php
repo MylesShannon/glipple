@@ -59,9 +59,11 @@ if ($uploadok == 0){
 	
 // Call php to store ID3 information to DB
 $tag =  $getID3->analyze($target_dir);
+
 $owner = $userID;
 
-$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['title'][0]);
+echo 
+$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['title']);
 $artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["artist"]);
 $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["album"]);
 //$year = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["year"]);
