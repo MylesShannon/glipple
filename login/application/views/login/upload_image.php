@@ -23,6 +23,7 @@ if (!is_dir($bandImageDir))
 $target_file = $bandImageDir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -50,9 +51,14 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 }
 
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+if($imageFileType != "jpg" && $imageFileType != "jpeg" ) {
     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
     $uploadOk = 0;
+}
+
+// Change file extension to .jpg if image is .jpeg when renamed
+if ( $imageFileType == 'jpeg') {
+		$imageFileType = 'jpg';
 }
 
 // Check if $uploadOk is set to 0 by an error
@@ -87,15 +93,25 @@ if (mysql_num_rows($result) <= 0) {
     mysql_query("UPDATE '$table' SET band_image = '$uppath' WHERE id = '$id'") or die(mysql_error());
 }
 */
-
-if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID', band_image = NULL"))){
-	// Code inside if block if userid is already there
-	// set $lastRow to 'id' of that user's row existing row
+if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE band_image = NULL"))){
+	// Row with user_id exists but band_image is NULL
 	$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
 	$row = mysql_fetch_array($result);
-	$lastRow = $row['id'];
-	rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
-} else {
+	$existingRow = $row['id'];
+	$newpath = $bandImageDir.$existingRow.".".$imageFileType;
+	mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
+	// Rename uploaded file to last row id
+	rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
+} elseif(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && mysql_num_rows(!mysql_query("SELECT user_id FROM $table WHERE band_image = NULL"))){
+	// Row with user_id exists but band_image is NOT NULL (should add check that 'band_image' does in fact equal id.jpg)
+	// rename file to existing id after upload
+	// set $existingRow to 'id' of that user's existing row id
+	$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
+	$row = mysql_fetch_array($result);
+	$existingRow = $row['id'];
+	rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
+} elseif(!mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
+	// If row with user_id does not exist, insert new row and rename file to new row id
 	mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, $userID, NULL, NULL, NULL) ") or die(mysql_error());
 	$lastRow = mysql_insert_id() or die(mysql_error());;
 	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
