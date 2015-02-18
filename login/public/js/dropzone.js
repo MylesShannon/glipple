@@ -1390,7 +1390,7 @@
   Dropzone.options = {};
 
     Dropzone.options.songUpload = {
-    maxFilesize:2,
+    maxFilesize:20,
     acceptedFiles: ".mp3"      };
 
   Dropzone.optionsForElement = function(element) {
