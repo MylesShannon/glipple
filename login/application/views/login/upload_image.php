@@ -21,6 +21,14 @@ if(isset($_POST["submit"])) {
 }
 
 function upload_image() {
+	$userID = Session::get('user_id');
+	$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
+	$server = "localhost";
+	$user = "root";
+	$pass = "4DaL0v3AM0n3y";
+	$db = "login";
+	$table = "profiles";
+	
 	// Does the user have a band image directory, if not create one
 	if (!is_dir($bandImageDir)) 
 	{
@@ -85,6 +93,15 @@ function upload_image() {
 // ----------- DATABASE --------------
 // -----------------------------------
 function mysql_image(){
+	
+	$userID = Session::get('user_id');
+	$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
+	$server = "localhost";
+	$user = "root";
+	$pass = "4DaL0v3AM0n3y";
+	$db = "login";
+	$table = "profiles";
+	
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
