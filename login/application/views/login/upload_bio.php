@@ -20,8 +20,10 @@ $bio = $_POST['bandBio'];
 
 if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
 	mysql_query("UPDATE $table SET band_bio = '$bio' WHERE user_id = '$userID' ") or die(mysql_error());
+	echo "Existing row updated!";
 } else {
     mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, '$bio', NULL) ") or die(mysql_error());
+	echo "Added row!";
 }
 
 /*
@@ -35,8 +37,4 @@ else
 */
 
 mysql_close();
-
-// Send browser to showprofile
-ob_start();
-header('location: ' . URL . 'login/showprofile');
 ?>
