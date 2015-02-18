@@ -54,7 +54,7 @@
 	<p>
 		<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post"> <!-- add class="dropzone" for dropzone and remove content -->
 
-		  Select songs: <input type="file" name="song" accept=".mp3" id="song" multiple>
+		  Select songs: <input type="file" name="song" id="song">
 		  <input type="submit">
 
 		</form>
