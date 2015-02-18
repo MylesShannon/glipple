@@ -106,25 +106,25 @@ function mysql_image($imageFileType){
 	
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
+	
+	$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
+	$row = mysql_fetch_array($result);
+	$existingRow = $row['id'];
 
-	if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE band_image = NULL"))){
+	if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && $row['band_image'] == 'NULL'){
 		// Row with user_id exists but band_image is NULL
 		echo "<br>Row exists but band_image NULL";
-		$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
-		$row = mysql_fetch_array($result);
-		$existingRow = $row['id'];
+		
 		$newpath = $bandImageDir.$existingRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
 		// Rename uploaded file to last row id
 		rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
-	} elseif(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && !mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE band_image = NULL"))){
+	} elseif(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && $row['band_image'] != 'NULL'){
 		// Row with user_id exists but band_image is NOT NULL (should add check that 'band_image' does in fact equal id.jpg)
 		// rename file to existing id after upload
 		// set $existingRow to 'id' of that user's existing row id
 		echo "<br>Row exists but band_image is NOT NULL";
-		$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
-		$row = mysql_fetch_array($result);
-		$existingRow = $row['id'];
+		
 		rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
 	} elseif(!mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
 		// If row with user_id does not exist, insert new row and rename file to new row id
