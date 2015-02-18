@@ -71,11 +71,12 @@ if ($uploadOk == 0) {
 // mysql_query("INSERT INTO profiles (id, user_id, band_image, band_bio, timestamp) VALUES (NULL, '$userID', NULL, NULL, NULL) ON DUPLICATE KEY UPDATE user_id = '$userID'") or die(mysql_error());
 
 // $result = mysql_query("SELECT user_id FROM '$table'") or die(mysql_error());
+/*
 $result = mysql_query("SELECT * FROM $table WHERE user_id = '$userID' ") or die(mysql_error());
 $row = mysql_fetch_array($result) or die(mysql_error());;
 
 if (mysql_num_rows($result) <= 0) {
-    mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ") or die(mysql_error());;
+    mysql_query("INSERT INTO '$table' (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, NULL, NULL) ") or die(mysql_error());
 	$lastRow = mysql_insert_id() or die(mysql_error());;
 	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
 	mysql_query("UPDATE '$table' SET band_image = '$newpath' WHERE id = '$lastRow'") or die(mysql_error());
@@ -85,9 +86,23 @@ if (mysql_num_rows($result) <= 0) {
 	$uppath = $bandImageDir.$id.".".$imageFileType;
     mysql_query("UPDATE '$table' SET band_image = '$uppath' WHERE id = '$id'") or die(mysql_error());
 }
+*/
 
-// Rename uploaded file to last row id
-rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
+if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
+	// Code inside if block if userid is already there
+	// set $lastRow to 'id' of that user's row existing row
+	$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
+	$row = mysql_fetch_array($result);
+	$lastRow = $row['id'];
+	rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
+} else {
+	mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, $userID, NULL, NULL, NULL) ") or die(mysql_error());
+	$lastRow = mysql_insert_id() or die(mysql_error());;
+	$newpath = $bandImageDir.$lastRow.".".$imageFileType;
+	mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $lastRow") or die(mysql_error());
+	// Rename uploaded file to last row id
+	rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
+}
 
 mysql_close();
 ?>

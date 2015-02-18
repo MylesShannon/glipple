@@ -19,9 +19,9 @@ $bio = $_POST['bandBio'];
 //$result = mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID' ");
 
 if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
-	mysql_query("UPDATE $table SET band_bio = '$bio' WHERE user_id = '$userID' ");
+	mysql_query("UPDATE $table SET band_bio = '$bio' WHERE user_id = '$userID' ") or die(mysql_error());
 } else {
-    mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, '$bio', NULL) ");
+    mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, '$bio', NULL) ") or die(mysql_error());
 }
 
 /*
