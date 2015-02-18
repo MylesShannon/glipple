@@ -63,15 +63,15 @@ $tag =  $getID3->analyze($target_dir);
 $owner = $userID;
 
 echo $tag;
-$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['title']);
-$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["artist"]);
-$album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["album"]);
+$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['title'][0]);
+$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
+$album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['album'][0]);
 //$year = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["year"]);
-$year = $tag["year"];
-$genre = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["genre"]);
+$year = $tag['tags']['id3v2']['year'][0];
+$genre = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['genre'][0]);
 //$comment = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["comment"]);
 $comment = $tag["comment"];
-$track = preg_replace("/[^0-9\-\/ ]/", "", $tag["track"]);
+$track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v2']['track'][0]);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
 
