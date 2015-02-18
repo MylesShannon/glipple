@@ -33,7 +33,9 @@ echo "File basename:".$filename;
 
  $uploadok = 1;
  if (!isset($_FILES["file"]))
+
  {
+ 	// we need to make dropzone error
 	$uploadok =0;
 	}	
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
@@ -74,10 +76,10 @@ $comment = $tag['id3v1']['comment'];
 $track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v1']['track'][0]);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
+
+mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', '$comment', '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
 $path = "/music/".$owner."/".$lastRow.".mp3";
-mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', '$comment', '$track', '$path', NULL)") or die(mysql_error());  
-
 
 mysql_query("UPDATE id3 SET path = '$path' WHERE id = '$lastRow'") or die(mysql_error());
 // Rename uploaded file
