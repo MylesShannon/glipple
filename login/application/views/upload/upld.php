@@ -62,7 +62,7 @@ $tag =  $getID3->analyze($target_dir);
 
 $owner = $userID;
 
-echo 
+echo $tag;
 $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['title']);
 $artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["artist"]);
 $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["album"]);
