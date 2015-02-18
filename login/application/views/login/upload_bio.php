@@ -16,9 +16,9 @@ $bio = $_POST['bandBio'];
 // mysql_query("UPDATE profiles SET band_bio = '$bio' WHERE user_id = $userID") or die(mysql_error());
 // mysql_query("INSERT INTO $table (user_id, band_bio) VALUES ('$userID','$bio') ON DUPLICATE KEY UPDATE band_bio = '$bio'") or die(mysql_error());
 
-$result = mysql_num_rows(mysql_query("SELECT user_id FROM '$table' WHERE user_id = '$userID' "));
+$result = mysql_query("SELECT user_id FROM '$table' WHERE user_id = '$userID' ");
 
-if( $result > 0) {
+if( mysql_num_rows($result)) {
     mysql_query("UPDATE '$table' SET band_bio = '$bio' WHERE user_id = '$userID' ");
 }
 else
