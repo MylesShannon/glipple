@@ -14,8 +14,8 @@ $db = "login";
 $table = "profiles";
 
 if(isset($_POST["submit"])) {
-	upload_image();
-	mysql_image();
+	$type = upload_image();
+	mysql_image($type);
 } else {
 	echo "No submission!";
 }
@@ -87,12 +87,14 @@ function upload_image() {
 			echo "Sorry, there was an error uploading your file.";
 		}
 	}
+	
+	return $imageFileType;
 }
 
 // -----------------------------------
 // ----------- DATABASE --------------
 // -----------------------------------
-function mysql_image(){
+function mysql_image($imageFileType){
 	
 	$userID = Session::get('user_id');
 	$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
