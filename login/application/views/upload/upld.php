@@ -3,6 +3,9 @@
 
 <?php
 
+require_once('./getid3/getid3/getid3.php');
+$getID3 = new getID3;
+
 $server = "localhost";
 $user = "root";
 $pass = "4DaL0v3AM0n3y";
@@ -22,8 +25,8 @@ if (!is_dir($userDir))
 	mkdir($userDir, 0775);
 }
 
-
-echo "File basename:".basename( $_FILES["song"]["name"]);
+$filename=basename( $_FILES["song"]["name"]);
+echo "File basename:".$filename;
 
 
 

@@ -17,7 +17,7 @@ mysql_select_db($db) or die(mysql_error());
 
 // print anything in id3 where id = currently playing ($obj)
 $row = mysql_fetch_array(mysql_query("SELECT * FROM id3 WHERE id = ".$obj["icestats"]["source"]["title"]))or die("missing song info");
-echo $row['title']." - ".$row['artist'];
+echo "<a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']." - ".$row['artist']."</a>";
 
 mysql_close(); 
 ?>
