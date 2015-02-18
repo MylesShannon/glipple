@@ -23,16 +23,16 @@ if (!is_dir($userDir))
 }
 
 
-echo "File basename:".basename( $_FILES["file"]["name"]);
+echo "File basename:".basename( $_FILES["song"]["name"]);
 
 
 
  $uploadOk = 1;
- if (!isset($_FILES["file"]))
+ if (!isset($_FILES["song"]))
  {
 	$uploadok =0;
 	}	
-$target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
+$target_dir = $userDir ."/". basename( $_FILES["song"]["name"]);
 
 $songFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
 
@@ -48,14 +48,14 @@ if ($uploadok == 0){
 	    echo "Sorry, your file was not uploaded.";
 }
 	else{
-	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
-	    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
+	if (move_uploaded_file($_FILES["song"]["tmp_name"], $target_dir)) {
+	    echo "The file ". basename( $_FILES["song"]["name"]). " has been uploaded.";
 	} else {
 	    echo "Sorry, there was an error uploading your file.";
 	}
 }
 
-$target_dir = basename( $_FILES["file"]["name"]);
+$target_dir = basename( $_FILES["song"]["name"]);
 // Call php to store ID3 information to DB
 $tag = id3_get_tag($userDir."/".$target_dir);
 $owner = $userID;
