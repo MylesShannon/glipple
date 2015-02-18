@@ -52,7 +52,7 @@
 	-->
 
 	<p>
-		<form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
+		<form action="<?php echo URL ?>upload/upld" id="songUpload" class="dropzone"></form>
 
 
 

@@ -1524,6 +1524,10 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
 
   Dropzone.options = {};
 
+  Dropzone.options.songUpload = {
+    maxFilesize:2,
+    acceptedFiles: ".mp3"      };
+
   Dropzone.optionsForElement = function(element) {
     if (element.getAttribute("id")) {
       return Dropzone.options[camelize(element.getAttribute("id"))];

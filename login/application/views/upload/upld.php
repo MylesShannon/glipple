@@ -24,18 +24,29 @@ if (!is_dir($userDir))
 echo "File basename:".basename( $_FILES["file"]["name"]);
 
 
+
+ $uploadOk = 1;
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
+
+$songFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
+
+
 
 //$song_file = mime_content_type($_FILES["file"]["tmp_name"]);
 //echo $song_file;
 //echo $target_dir."<br>";
 //print_r($_FILES);
 //echo move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir);
+if ($uploadok == 0){
 
-if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
-    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
-} else {
-    echo "Sorry, there was an error uploading your file.";
+	    echo "Sorry, your file was not uploaded.";
+}
+	else{
+	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
+	    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
+	} else {
+	    echo "Sorry, there was an error uploading your file.";
+	}
 }
 
 $target_dir = basename( $_FILES["file"]["name"]);
