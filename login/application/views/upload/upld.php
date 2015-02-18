@@ -28,9 +28,10 @@ echo "File basename:".basename( $_FILES["file"]["name"]);
 
 
  $uploadOk = 1;
- if (!isset($_FILES["file"]){
+ if (!isset($_FILES["file"])
+ {
 	$uploadok =0;
-}
+	}	
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
 
 $songFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
