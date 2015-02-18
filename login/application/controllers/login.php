@@ -51,7 +51,6 @@ class Login extends Controller
     {	
         // show the view
         $this->view->render('login/upload_bio');
-		header('location: ' . URL . 'login/showprofile');
 		
     }
 
