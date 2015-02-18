@@ -37,5 +37,6 @@ else
 mysql_close();
 
 // Send browser to showprofile
+ob_start();
 header('location: ' . URL . 'login/showprofile');
 ?>
