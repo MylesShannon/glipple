@@ -113,7 +113,7 @@ function mysql_image($imageFileType){
 
 	if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && $row['band_image'] == NULL){
 		// Row with user_id exists but band_image is NULL
-		echo "<br>Row exists but band_image NULL";
+		echo "<br>Row exists but band_image is NULL";
 		
 		$newpath = $bandImageDir.$existingRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
