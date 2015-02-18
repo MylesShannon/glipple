@@ -70,8 +70,8 @@ $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['album'][
 $year = $tag['tags']['id3v2']['year'][0];
 $genre = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['genre'][0]);
 //$comment = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["comment"]);
-$comment = $tag["comment"];
-$track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v2']['track'][0]);
+$comment = $tag['comments'];
+$track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v1']['track'][0]);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
 
@@ -85,7 +85,7 @@ mysql_query("UPDATE id3 SET path = '$path' WHERE id = '$lastRow'") or die(mysql_
 //$lastRow = mysql_result($result, 1, 'id') or die(mysql_error());  
 
 // Rename uploaded file to last row id
-rename($userDir."/".$target_dir, $userDir."/".$lastRow.".mp3");
+rename($target_dir, $userDir."/".$lastRow.".mp3");
 
 //list(mysql_insert_id(),$fileext) = explode(".",$imagename); 
 //rename($userDir."/".mysql_insert_id(), $musicID.$fileext);
