@@ -30,6 +30,7 @@ echo "File basename:".$filename;
 
 
 
+
  $uploadok = 1;
  if (!isset($_FILES["song"]))
  {
@@ -39,7 +40,9 @@ $target_dir = $userDir ."/". basename( $_FILES["song"]["name"]);
 
 $songFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
 
-
+if ($songFileType!='mp3'){
+	$uploadok =0;
+}
 
 //$song_file = mime_content_type($_FILES["file"]["tmp_name"]);
 //echo $song_file;
@@ -54,10 +57,8 @@ if ($uploadok == 0){
 	if (move_uploaded_file($_FILES["song"]["tmp_name"], $target_dir)) {
 	    echo "The file ". basename( $_FILES["song"]["name"]). " has been uploaded.";
 	
-
-$target_dir = basename( $_FILES["song"]["name"]);
 // Call php to store ID3 information to DB
-$tag = id3_get_tag($userDir."/".$target_dir);
+$tag =  $getID3->analyze($target_dir);
 $owner = $userID;
 
 $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["title"]);
