@@ -61,7 +61,7 @@ if ($uploadok == 0){
 $tag =  $getID3->analyze($target_dir);
 $owner = $userID;
 
-$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['title'][]);
+$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['title'][0]);
 $artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["artist"]);
 $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["album"]);
 //$year = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["year"]);
