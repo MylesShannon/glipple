@@ -88,7 +88,7 @@ if (mysql_num_rows($result) <= 0) {
 }
 */
 
-if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
+if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID', band_image = NULL"))){
 	// Code inside if block if userid is already there
 	// set $lastRow to 'id' of that user's row existing row
 	$result = mysql_query("SELECT * FROM $table WHERE user_id LIKE $userID") or die(mysql_error());
