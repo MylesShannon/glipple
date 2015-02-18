@@ -52,7 +52,12 @@
 	-->
 
 	<p>
-		<form action="<?php echo URL ?>upload/upld" id="songUpload" class="dropzone"></form>
+		<form action="<?php echo URL ?>upload/upld" id="songUpload">
+
+		  Select songs: <input type="file" name="song" accept=".mp3" multiple>
+		  <input type="submit">
+
+		</form>
 
 
 
