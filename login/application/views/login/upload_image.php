@@ -3,6 +3,8 @@
 // ------- Band Image Upload ---------
 // -----------------------------------
 
+
+// Global vars
 $userID = Session::get('user_id');
 $bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
 $server = "localhost";
