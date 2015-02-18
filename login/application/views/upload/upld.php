@@ -53,10 +53,7 @@ if ($uploadok == 0){
 	else{
 	if (move_uploaded_file($_FILES["song"]["tmp_name"], $target_dir)) {
 	    echo "The file ". basename( $_FILES["song"]["name"]). " has been uploaded.";
-	} else {
-	    echo "Sorry, there was an error uploading your file.";
-	}
-}
+	
 
 $target_dir = basename( $_FILES["song"]["name"]);
 // Call php to store ID3 information to DB
@@ -93,6 +90,14 @@ rename($userDir."/".$target_dir, $userDir."/".$lastRow.".mp3");
 
 //rmdir($tmpDir."/".$userID."/".$session_id);
 //rmdir($tmpDir."/".$userID);
+
+
+
+
+	} else {
+	    echo "Sorry, there was an error uploading your file.";
+	}
+}
 
 mysql_close();
 ?>
