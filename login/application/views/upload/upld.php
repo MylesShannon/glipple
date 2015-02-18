@@ -30,7 +30,7 @@ echo "File basename:".$filename;
 
 
 
- $uploadOk = 1;
+ $uploadok = 1;
  if (!isset($_FILES["song"]))
  {
 	$uploadok =0;
