@@ -4,8 +4,7 @@ function loadXMLDoc(content)
 {
 	$.ajax({
             url: "/views/"+content+".php",
-            context: document.body,
-            
+            context: document.body
         });
 	/*
 	var xmlhttp;
