@@ -37,7 +37,7 @@
 	<br>
 	<div id="bandLinks">
 		<form action="<?php echo URL ?>login/upload_links" method="post">
-		Profile link:
+		Profile links:
 		<input type="text" name="link1">
 		<input type="text" name="link2">
 		<input type="text" name="link3">

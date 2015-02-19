@@ -3,7 +3,7 @@
 // ------- Band Bio Upload ---------
 // -----------------------------------
 
-if(isset($_POST['bandLinks'])) {
+if(isset($_POST['link1'])) {
 	upload_links();
 } else {
 	echo "No submission!";
