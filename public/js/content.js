@@ -4,7 +4,13 @@ function loadXMLDoc(content)
 {
 	$.ajax({
             url: "/views/"+content+".php",
-            context: document.body
+            context: document.body,
+            success: function(responseText) {
+                $("#filler").html(responseText);
+                $("#filler").find("script").each(function(i) {
+                    //eval($(this).text());
+                });
+            }	
         });
 	/*
 	var xmlhttp;
