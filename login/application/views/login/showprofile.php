@@ -22,7 +22,7 @@
 	<br>
 	<div id="bandBio">
 		<form action="<?php echo URL ?>login/upload_bio" method="post">
-		<textarea name="bandBio" rows="10" cols="30" placeholder="Insert your profile bio here:">
+		<textarea name="bandBio" rows="10" placeholder="Insert your profile bio here:">
 		</textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>
