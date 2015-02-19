@@ -61,5 +61,7 @@ $(document).ready(function() {
     } );
 } );
 
+$("#latest").tabs();
+
 </script>
 
