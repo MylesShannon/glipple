@@ -1,4 +1,4 @@
-<?php include '../header.php'; ?>
+<?php //include '../header.php'; ?>
 
 <h1> Latest Tracks </h1>
 

@@ -99,7 +99,7 @@ mysql_close();
 </table>
 
 <script>
-
+/*
 $(document).ready(function() {
     $('#music').dataTable( {
         "paging":   false,
