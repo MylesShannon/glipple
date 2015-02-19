@@ -1,7 +1,5 @@
 <?php //include '../header.php'; ?>
 
-<h1> Latest Tracks </h1>
-
 <table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
