@@ -1,88 +1,129 @@
-<div class="content">
-    <h1>My Music</h1>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
+<div class="content">
+    <h1>Music</h1>
+
+<?php $this->renderFeedbackMessages(); ?>
 <?php
 
-$userID = Session::get('user_id');
 
-$session_id = time();
-$session_id = $session_id * $userID;
-$musicDir = "/var/www/html/music/".$userID;
-
-// *** Scan ID3 and add to SQL DB "getid3.files" ***
-//$newscan = $musicDir."/";
-//require_once('/var/www/html/application/views/id3/mysql.php');
-
-// *** Rename file to primary ID from column in getid3 DB ***
-
-//$musicID = 123;
-//$musicID = mysql_insert_id();
 /*
-mysql_select_db('getid3');
-$result = mysql_query('select * from table');
-if (!$result) {
-    die('Query failed: ' . mysql_error());
-}
-*/
-
-//$musicID = mysql_fetch_field($result, 1);
-//printf ("musicID is %d\n", mysql_insert_id());
-//echo "<br>".$musicID;
-//rename("".mysql_insert_id()."", $musicID.".mp3");
-
-// DB credentials 
-$DB_HOST = 'localhost';
-$DB_USER = 'root';
-$DB_PASS = 'dJc001Nfr35h';
-
-$DB_DB = 'getid3';
-$DB_TABLE = 'files';
-
-// CREATE DATABASE `getid3`;
-
-// Create connection
-$conn = @mysql_connect($DB_HOST, $DB_USER, $DB_PASS);
-// Check connection
-if (!$conn){
-	 echo( "<p>Unable to connect to database manager.</p>");
-       die('Could not connect: ' . mysql_error());
-	 exit();
-} else {
-  // echo("<p>Successfully Connected to MySQL Database Manager!</p>");
-}
-// Select and check DB selection
-if (! @mysql_select_db($DB_DB ) ){
-	 echo( "<p>Unable to  connect database...</p>");
-	 exit();
-} else {
-  // echo("<p>Successfully Connected to Database '".$DB_DB."'!</p>");
-}
-echo("<p>Output all rows in getid3.files DB</p>");
-
-// Print 'ID' and 'filename' from 'file' table
-$result = mysql_query("SELECT * FROM `".$DB_TABLE."`")
-or die(mysql_error());  
-
-echo "<table border='1'>";
-echo "<tr> <th>ID</th> <th>Path</th> </tr>";
-// keeps getting the next row until there are no more to get
-while($row = mysql_fetch_array( $result )) {
-	// Print out the contents of each row into a table
-	echo "<tr><td>"; 
-	echo $row['ID'];
-	echo "</td><td>"; 
-	echo $row['filename'];
-	echo "</td></tr>"; 
+	$server = "localhost";
+	$user = "root";
+	$pass = "4DaL0v3AM0n3y";
+	$db = "music";
 	
-	//var_dump($row);
-	//d($row); 
-} 
+	$userID = Session::get('user_id');
 
-echo "</table>";
+	mysql_connect($server, $user, $pass) or die(mysql_error());
+	mysql_select_db($db) or die(mysql_error());
+	
+	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE '$userID'") or die(mysql_error());  
+	
+	while ($row = mysql_fetch_array($result)) {
+		echo $row['id'].", ";
+		echo $row['owner'].", ";
+		echo $row['title'].", ";
+		echo $row['artist'].", ";
+		echo $row['album'].", ";
+		echo $row['year'].", ";
+		echo $row['genre'].", ";
+		echo $row['comment'].", ";
+		echo $row['track'].", ";
+		echo $row['timestamp']."<br>";
+	}
 
-
-
-mysql_close($conn);
-
+	mysql_close();
+*/
 ?>
-</div>
+<!--<div id="drozone">
+<p style="width:50%;">
+<form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
+</p>
+</div> -->
+
+<table id="music" class="display" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Genre</th>
+				<th></th>
+            </tr>
+        </thead>
+		
+		<tfoot>
+            <tr>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Artist</th>
+                 <th>Genre</th>
+				<th></th>
+            </tr>
+        </tfoot>
+ 
+        <tbody>
+<?php
+	$server = "localhost";
+	$user = "root";
+	$pass = "4DaL0v3AM0n3y";
+	$db = "music";
+	$count = 1;
+	
+
+	
+	mysql_connect($server, $user, $pass) or die(mysql_error());
+	mysql_select_db($db) or die(mysql_error());
+
+	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".Session::get('user_id')) or die(mysql_error());
+	
+	while ($row = mysql_fetch_array($result)) {
+		echo "<tr class='musicRows'>";
+		/*
+		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
+		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
+		*/
+		echo "<td>".$row['title']."</td>";
+		echo "<td>".$row['album']."</td>";
+		echo "<td>".$row['artist']."</td>";
+		echo "<td>".$row['genre']."</td>";
+		// no need for ?id= because action is POST
+		echo "<td><form action='delete?id=".$row['id']."'' method='post'><button type='sumbit'>delete</button></form></td>";
+		echo "</tr>";
+		$count++;
+	}
+
+mysql_close();
+?>
+		</tbody>
+</table>
+
+<script>
+
+$(document).ready(function() {
+    $('#music').dataTable( {
+        "paging":   false,
+        "info":     false
+    } );
+} );
+
+/*
+
+$(document).ready(function() {
+    var table = $('#music').DataTable();
+ 
+    $('button').click( function() {
+        var data = table.$('input').serialize();
+        alert(
+            "The following data would have been submitted to the server: \n\n"+
+            data.substr( 0, 120 )+'...'
+        );
+        return false;
+    } );
+} );
+*/
+</script>
