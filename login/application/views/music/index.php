@@ -50,6 +50,7 @@
                 <th>Title</th>
                 <th>Album</th>
                 <th>Artist</th>
+                <th>Genre</th>
 				<th></th>
             </tr>
         </thead>
@@ -59,6 +60,7 @@
                 <th>Title</th>
                 <th>Album</th>
                 <th>Artist</th>
+                 <th>Genre</th>
 				<th></th>
             </tr>
         </tfoot>
@@ -79,9 +81,15 @@
 	
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr class='musicRows'>";
+		/*
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
+		*/
+		echo "<td>".$row['title']."</td>";
+		echo "<td>".$row['album']."</td>";
+		echo "<td>".$row['artist']."</td>";
+		echo "<td>".$row['genre']."</td>";
 		// no need for ?id= because action is POST
 		echo "<td><form action='delete?id=".$row['id']."'' method='post'><button type='sumbit'>delete</button></form></td>";
 		echo "</tr>";
