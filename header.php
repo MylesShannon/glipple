@@ -3,12 +3,12 @@ define('URL', 'http://54.148.79.138/');
 ?>
 	
 	<!-- load jQuery -->
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery-2.1.1.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo URL; ?>public/js/jquery-2.1.1.js"></script> -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	
 	<!-- load dropzone css and js -->
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/dropzone.css" type="text/css" />
 	<script src="<?php echo URL; ?>public/js/dropzone.js"></script>
-	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
 	
 	<!-- load jplayer and skin -->	
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.min.js"></script>
@@ -17,3 +17,4 @@ define('URL', 'http://54.148.79.138/');
 	
 		<!-- datatables -->
 	<script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
