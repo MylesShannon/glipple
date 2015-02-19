@@ -115,7 +115,7 @@
 	<!-- content filler AJAX js -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/content.js"></script> 
 	
-	<?php include("./views/index.php"); ?>
+	<?php //include("./views/index.php"); ?>
 	
     <div class="footer">
 		
