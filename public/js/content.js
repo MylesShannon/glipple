@@ -3,12 +3,12 @@ window.onload = loadXMLDoc('index');
 function loadXMLDoc(content)
 {
 	$.ajax({
-            url: "/views/"+content+".php",
-            context: document.body,
-            success: function(result) {
-                $("#filler").html(result);
-            }	
-        });
+        url: "/views/"+content+".php",
+        context: document.body,
+        success: function(result) {
+            $("#filler").html(result);
+        }	
+    });
 	/*
 	var xmlhttp;
 	if (window.XMLHttpRequest)
@@ -56,7 +56,7 @@ function loadXMLDoc(content)
 
 function loadsearchresults(s)
 {
-	
+	/*
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 		{
@@ -84,7 +84,14 @@ function loadsearchresults(s)
 		}
 	
 	xmlhttp.send();
-	
+	*/
+	$.ajax({
+        url: "views/search.php?s="+s",
+        context: document.body,
+        success: function(result) {
+            $("#filler").html(result);
+        }	
+    });
 
-	}
+}
 	
