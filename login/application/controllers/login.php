@@ -53,6 +53,13 @@ class Login extends Controller
         $this->view->render('login/upload_bio');
 		
     }
+	
+	function upload_links()
+    {	
+        // show the view
+        $this->view->render('login/upload_links');
+		
+    }
 
     /**
      * The login action, when you do login/login

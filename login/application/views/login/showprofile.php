@@ -24,8 +24,7 @@
 		<form action="<?php echo URL ?>login/upload_bio" method="post">
 		<textarea name="bandBio" rows="4" cols="50" placeholder="Insert your profile bio here:"></textarea>
 		<input type="submit" value="Update Bio" name="submit">
-		</form>
-		
+		</form>		
 	</div>
 	<br>
 	<div id="bandImage">
@@ -33,6 +32,18 @@
 		Select an image to upload as your band image:
 		<input type="file" name="fileToUpload" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
+		</form>
+	</div>
+	<br>
+	<div id="bandLinks">
+		<form action="<?php echo URL ?>login/upload_links" method="post">
+		Profile link:
+		<input type="text" name="link1">
+		<input type="text" name="link2">
+		<input type="text" name="link3">
+		<input type="text" name="link4">
+		<input type="text" name="link5">
+		<input type="submit" value="Update Links" name="submit">
 		</form>
 	</div>
 	
