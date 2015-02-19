@@ -1,7 +1,3 @@
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
 <div class="content">
     <h1>Music</h1>
 
