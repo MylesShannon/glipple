@@ -112,6 +112,26 @@
 // </table>
 // </div>
 // -->
+<table class='latest' id='latest'>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        
+        <tfoot>
+            <tr>
+                <th>Timestamp</th>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                </tr>
+        </tfoot>
 <?php
 	header('Content-Disposition: attachment');
 
@@ -127,19 +147,29 @@
 	mysql_select_db($db) or die(mysql_error());
 
 	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error());  
-	
+
 	while ($row = mysql_fetch_array($result)) {
 	//	echo "<a href='http://54.148.79.138/dl.php?file=".$row['id'].".mp3&?id=".$row['owner']."'>";
 		echo "<a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>";
-		echo "<table class='latest'>";
-		echo "<tr><td>".$row['id']."</td>";
+		echo "<tr><td>".$row['timestamp']."</td>";
 		echo "<td>".$row['title']."</td>";
 		echo "<td>".$row['artist']."</td>";
-		echo "<td>".$row['album']."</td></tr></table>";
+		echo "<td>".$row['album']."</td>";
+        echo "<td>".$row['genre']."</td></tr>";
 		echo "</a>";
 	}
 
 mysql_close(); 
 
 ?>
+</table>
+<script>
+$(document).ready(function() {
+    $('#latest').dataTable( {
+        "paging":   false,
+        "info":     false
+    } );
+} );
+
+</script>
 
