@@ -100,11 +100,13 @@
 	<!-- load Now Playing js -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script> 
 	
+	<!--
 	<div class="search-bar">
 		<form id="searchbar">
 			<input type="text" placeholder="Search for Title, Artist, Album, or Genre" id="s" onkeyup="loadsearchresults(this.value)"><br>
 		</form>
 	</div>
+	-->
 	
 	<div class="clear-both"></div>
 	
