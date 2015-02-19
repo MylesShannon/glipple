@@ -40,7 +40,7 @@
 </p>
 </div> -->
 
-<table id="music" class="display" cellspacing="0">
+<table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
                 <th>Title</th>
