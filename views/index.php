@@ -114,7 +114,7 @@
 // </div>
 // -->      <!-- datatables -->
 
-<table id="music" class="display" cellspacing="0">
+<table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
                 <th>Timestamp</th>
