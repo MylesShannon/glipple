@@ -1,5 +1,7 @@
 <?php include '../header.php'; ?>
 
+<h1> Latest Tracks </h1>
+
 <table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
@@ -23,8 +25,6 @@
         <tbody>
 <?php
 	// header('Content-Disposition: attachment');
-
-	// echo "<h1> Latest Tracks </h1>";
 	
 	$server = "localhost";
 	$user = "root";
