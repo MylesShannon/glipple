@@ -23,9 +23,11 @@
 	<div id="bandBio">
 		<form action="<?php echo URL ?>login/upload_bio" method="post">
 		Insert your profile bio here:
-		<input type="text" name="bandBio">
+		<textarea name="bandBio" rows="10" cols="30">
+		</textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>
+		
 	</div>
 	<br>
 	<div id="bandImage">
