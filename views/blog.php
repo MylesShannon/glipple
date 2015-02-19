@@ -1,5 +1,3 @@
-<?php include '../header.php'; ?>
-
 <h1>Blog</h1>
 
 <p>

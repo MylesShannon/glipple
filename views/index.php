@@ -1,5 +1,3 @@
-<?php //include '../header.php'; ?>
-
 <table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>

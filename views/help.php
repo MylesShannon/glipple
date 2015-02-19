@@ -1,6 +1,3 @@
-<?php include '../header.php'; ?>
-
-
 <p>
 	<h1>How Can We Help You?</h1>
 	<ul>
