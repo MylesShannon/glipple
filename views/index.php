@@ -1,4 +1,5 @@
 <?php include '../header.php'; ?>
+
 <!--
 // <div class="popular_downloads">
 // <table>
@@ -166,7 +167,6 @@ mysql_close();
 ?>
 </tbody>
 </table>
-    <script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
 <script>
 $(document).ready(function() {
