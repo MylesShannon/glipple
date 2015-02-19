@@ -22,7 +22,7 @@
         </tfoot>
         <tbody>
 <?php
-	header('Content-Disposition: attachment');
+	// header('Content-Disposition: attachment');
 
 	echo "<h1> Latest Tracks </h1>";
 	
