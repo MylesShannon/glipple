@@ -14,7 +14,5 @@ define('URL', 'http://54.148.79.138/');
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.min.js"></script>
 	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
-	
-		<!-- datatables -->
 	<script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />

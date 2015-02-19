@@ -38,7 +38,6 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="<?php echo URL; ?>public/js/application.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/dropzone.js"></script>
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/ajax.js"></script> 
 	<script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 	
 		
