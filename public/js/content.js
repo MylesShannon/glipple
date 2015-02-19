@@ -1,7 +1,18 @@
-window.onload = loadXMLDoc('home');
+window.onload = loadXMLDoc('index');
 
 function loadXMLDoc(content)
 {
+	$.ajax({
+            url: "/views/"+content+".php",
+            context: document.body,
+            success: function(responseText) {
+                $("#filler").html(responseText);
+                $("#filler").find("script").each(function(i) {
+                    eval($(this).text());
+                });
+            }
+        });
+	/*
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 		{
@@ -42,6 +53,7 @@ function loadXMLDoc(content)
 	}
 	
 	xmlhttp.send();
+	*/
 }
 
 

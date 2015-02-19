@@ -122,7 +122,7 @@
 		<div class="footer_left_box">
 			<ul id="menu">
 				<li>
-					<a href="#home" onclick="loadXMLDoc('home')">Home</a>
+					<a href="#home" onclick="loadXMLDoc('index')">Home</a>
 				</li>
 				<!--
 				<li>
