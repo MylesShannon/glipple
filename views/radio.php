@@ -1,4 +1,4 @@
-<?php include '../header.php'; ?>
+
 
 <!--
 <script type="text/javascript" src="http://54.148.79.138/public/js/jquery.jplayer.min.js"></script>
