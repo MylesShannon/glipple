@@ -52,14 +52,15 @@
 	-->
 
 	<p>
-		<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post" enctype="multipart/form-data"> add class="dropzone" for dropzone and remove content
+		<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post" enctype="multipart/form-data"> <!-- add class="dropzone" for dropzone and remove content-->
 
 		  Select songs: <input type="file" name="file" id="file">
 		  <input type="submit">
 
 		</form>
 <!-- 
-				<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post" class="dropzone"> </form><!-- add class="dropzone" for dropzone and remove content -->
+				<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post" class="dropzone"> </form> -->
+				<!-- add class="dropzone" for dropzone and remove content -->
 				 
 
 
