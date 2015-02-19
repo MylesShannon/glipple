@@ -86,7 +86,7 @@ function loadsearchresults(s)
 	xmlhttp.send();
 	*/
 	$.ajax({
-        url: "/views/search.php?s="+s,
+        if(s != NULL) {url: "/views/search.php?s="+s} else {url: "/views/index.php"},
         context: document.body,
         success: function(result) {
             $("#filler").html(result);
