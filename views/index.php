@@ -112,7 +112,6 @@
 // </table>
 // </div>
 // -->      <!-- datatables -->
-    <script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
 <table class='latest' id='latest'>
         <thead>
@@ -165,6 +164,8 @@ mysql_close();
 
 ?>
 </table>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+
 <script>
 $(document).ready(function() {
     $('#latest').dataTable( {
