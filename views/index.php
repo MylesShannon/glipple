@@ -24,7 +24,7 @@
 <?php
 	// header('Content-Disposition: attachment');
 
-	echo "<h1> Latest Tracks </h1>";
+	// echo "<h1> Latest Tracks </h1>";
 	
 	$server = "localhost";
 	$user = "root";
