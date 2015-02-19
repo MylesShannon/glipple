@@ -138,9 +138,6 @@
 				<li>
 					<a href="#blog" onclick="loadXMLDoc('blog')">Blog</a>
 				</li>
-				<li>
-					<a href="#profile" onclick="loadXMLDoc('userid-12')">Myles's Profile</a>
-				</li>
 			</ul>
         </div>
 		
