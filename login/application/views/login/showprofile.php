@@ -64,7 +64,7 @@ $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post("upload_bio.php",
         {
-          bio: "This is the jQ test bio"
+          bandBio: "This is the jQ test bio"
         });
     });
 	
