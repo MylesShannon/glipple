@@ -28,7 +28,7 @@
 	</div>
 	<br>
 	<div>
-		<form id="bandImage" method="post" enctype="multipart/form-data">
+		<form id="bandImage" action="<?php echo URL ?>login/upload_bio" method="post" enctype="multipart/form-data">
 		Select an image to upload as your band image:
 		<input type="file" name="uploadImage" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
@@ -61,29 +61,38 @@
 
 <script>
 $(document).ready(function(){
-    $("#bandBio").submit(function(){
+    $("#bandBio").submit(function(bio){
         $.post("upload_bio",
         {
-          bandBio: "This is the jQ test bio"
+          bandBio : bio
         }
 		);
-		alert("Bio submitted");
+		alert("Bio submitted!");
     });
 	/*
 	$("#bandImage").submit(function(){
-        $.post("upload_image.php",
+        $.post("upload_image",
         {
-          name: "Donald Duck",
-          city: "Duckburg"
+          bandImage: "Donald Duck"
         });
     });
-	
+	*/
 	$("#bandLinks").submit(function(){
-        $.post("upload_links.php",
+        $.post("upload_links",
         {
-          name: "Donald Duck",
-          city: "Duckburg"
+			link1 : "test"
+			link2 : "test"
+			link3 : "test"
+			link4 : "test"
+			link5 : "test"
+			
+			link1p : "test"
+			link2p : "test"
+			link3p : "test"
+			link4p : "test"
+			link5p : "test"
         });
+		alert("Links submitted!");
     });
 	*/
 });
