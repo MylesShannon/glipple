@@ -80,16 +80,16 @@ $(document).ready(function(){
 	$("#bandLinks").submit(function(){
         $.post("upload_links",
         {
-			link1 : "test"
-			link2 : "test"
-			link3 : "test"
-			link4 : "test"
-			link5 : "test"
+			link1 : "test",
+			link2 : "test",
+			link3 : "test",
+			link4 : "test",
+			link5 : "test",
 			
-			link1p : "test"
-			link2p : "test"
-			link3p : "test"
-			link4p : "test"
+			link1p : "test",
+			link2p : "test",
+			link3p : "test",
+			link4p : "test",
 			link5p : "test"
         });
 		alert("Links submitted!");
