@@ -20,23 +20,23 @@
         <?php } ?>
     </div>
 	<br>
-	<div id="bandBio">
-		<form action="<?php echo URL ?>login/upload_bio" method="post">
+	<div>
+		<form id="bandBio" method="post">
 		<textarea name="bandBio" rows="4" cols="50" placeholder="Insert your profile bio here:"></textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>		
 	</div>
 	<br>
-	<div id="bandImage">
-		<form action="<?php echo URL ?>login/upload_image" method="post" enctype="multipart/form-data">
+	<div>
+		<form id="bandImage" method="post" enctype="multipart/form-data">
 		Select an image to upload as your band image:
 		<input type="file" name="uploadImage" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
 	</div>
 	<br>
-	<div id="bandLinks">
-		<form action="<?php echo URL ?>login/upload_links" method="post">
+	<div>
+		<form id="bandLinks" method="post">
 		Profile links:
 		<input type="text" placeholder="Provider 1" name="link1p">
 		<input type="text" placeholder="Link 1" name="link1">
@@ -58,3 +58,30 @@
     </div>
 	-->
 </div>
+
+<script>
+$(document).ready(function(){
+    $("#bandBio").submit(function(){
+        $.post("upload_bio.php",
+        {
+          bio: "This is the jQ test bio"
+        });
+    });
+	
+	$("#bandImage").submit(function(){
+        $.post("upload_image.php",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        });
+    });
+	
+	$("#bandLinks").submit(function(){
+        $.post("upload_links.php",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        });
+    });
+});
+</script>
