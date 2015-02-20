@@ -61,6 +61,10 @@
 
 <script>
 $(document).ready(function(){
+	$("#bandBio").submit(function(){
+    alert("Submitted");
+	}); 
+	/*
     $("#bandBio").submit(function(){
         $.post("upload_bio.php",
         {
@@ -83,5 +87,6 @@ $(document).ready(function(){
           city: "Duckburg"
         });
     });
+	*/
 });
 </script>
