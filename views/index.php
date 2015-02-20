@@ -34,14 +34,12 @@
 	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error());  
 
 	while ($row = mysql_fetch_array($result)) {
-	//	echo "<a href='http://54.148.79.138/dl.php?file=".$row['id'].".mp3&?id=".$row['owner']."'>";
 		echo "<tr><td>".$row['timestamp']."</td>";
 		echo "<td><a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
-		
-        	}
+	}
 
 mysql_close(); 
 

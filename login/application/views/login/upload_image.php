@@ -35,13 +35,13 @@ function upload_image() {
 		mkdir($bandImageDir, 0775);
 	}
 
-	$target_file = $bandImageDir . basename($_FILES["fileToUpload"]["name"]);
+	$target_file = $bandImageDir . basename($_FILES["uploadImage"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
 	// Check if image file is a actual image or fake image
 	if(isset($_POST["submit"])) {
-		$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+		$check = getimagesize($_FILES["uploadImage"]["tmp_name"]);
 		if($check !== false) {
 			echo "File is an image - " . $check["mime"] . ".";
 			$uploadOk = 1;
@@ -60,7 +60,7 @@ function upload_image() {
 	*/
 
 	// Check file size
-	if ($_FILES["fileToUpload"]["size"] > 500000) {
+	if ($_FILES["uploadImage"]["size"] > 500000) {
 		echo "Sorry, your file is too large.";
 		$uploadOk = 0;
 	}
@@ -81,8 +81,8 @@ function upload_image() {
 		echo "Sorry, your file was not uploaded.";
 	// if everything is ok, try to upload file
 	} else {
-		if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-			echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		if (move_uploaded_file($_FILES["uploadImage"]["tmp_name"], $target_file)) {
+			echo "The file ". basename( $_FILES["uploadImage"]["name"]). " has been uploaded.";
 		} else {
 			echo "Sorry, there was an error uploading your file.";
 		}
@@ -118,14 +118,14 @@ function mysql_image($imageFileType){
 		$newpath = $bandImageDir.$existingRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
 		// Rename uploaded file to last row id
-		rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
+		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
 	} elseif(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'")) && $row['band_image'] != NULL){
 		// Row with user_id exists but band_image is NOT NULL (should add check that 'band_image' does in fact equal id.jpg)
 		// rename file to existing id after upload
 		// set $existingRow to 'id' of that user's existing row id
 		echo "<br>Row exists but band_image is NOT NULL";
 		
-		rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
+		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
 	} elseif(!mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
 		// If row with user_id does not exist, insert new row and rename file to new row id
 		echo "<br>Row does not exist";
@@ -134,7 +134,7 @@ function mysql_image($imageFileType){
 		$newpath = $bandImageDir.$lastRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $lastRow") or die(mysql_error());
 		// Rename uploaded file to last row id
-		rename($bandImageDir.basename($_FILES["fileToUpload"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
+		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
 	}
 
 	mysql_close();

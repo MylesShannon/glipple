@@ -30,7 +30,7 @@
 	<div id="bandImage">
 		<form action="<?php echo URL ?>login/upload_image" method="post" enctype="multipart/form-data">
 		Select an image to upload as your band image:
-		<input type="file" name="fileToUpload" id="fileToUpload">
+		<input type="file" name="uploadImage" id="fileToUpload">
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
 	</div>
@@ -38,11 +38,16 @@
 	<div id="bandLinks">
 		<form action="<?php echo URL ?>login/upload_links" method="post">
 		Profile links:
-		<input type="text" name="link1">
-		<input type="text" name="link2">
-		<input type="text" name="link3">
-		<input type="text" name="link4">
-		<input type="text" name="link5">
+		<input type="text" placeholder="Provider 1" name="link1p">
+		<input type="text" placeholder="Link 1" name="link1">
+		<input type="text" placeholder="Provider 2" name="link2p">
+		<input type="text" placeholder="Link 2" name="link2">
+		<input type="text" placeholder="Provider 3" name="link3p">
+		<input type="text" placeholder="Link 3" name="link3">
+		<input type="text" placeholder="Provider 4" name="link4p">
+		<input type="text" placeholder="Link 4" name="link4">
+		<input type="text" placeholder="Provider 5" name="link5p">
+		<input type="text" placeholder="Link 5" name="link5">
 		<input type="submit" value="Update Links" name="submit">
 		</form>
 	</div>
