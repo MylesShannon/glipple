@@ -61,10 +61,10 @@
 
 <script>
 $(document).ready(function(){
-    $("#bandBio").submit(function(){
+    $("#bandBio").submit(function(bio){
         $.post("upload_bio",
         {
-          bandBio : "jQ test bio"
+          bandBio : bio
         }
 		);
 		alert("Bio submitted!");
@@ -94,6 +94,5 @@ $(document).ready(function(){
         });
 		alert("Links submitted!");
     });
-	*/
 });
 </script>
