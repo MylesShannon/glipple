@@ -62,7 +62,7 @@
 <script>
 $(document).ready(function(){
     $("#bandBio").submit(function(){
-        $.post("upload_bio.php",
+        $.post("upload_bio",
         {
           bandBio: "This is the jQ test bio"
         }
