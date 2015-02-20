@@ -61,17 +61,15 @@
 
 <script>
 $(document).ready(function(){
-	$("#bandBio").submit(function(){
-    alert("Submitted");
-	}); 
-	/*
     $("#bandBio").submit(function(){
         $.post("upload_bio.php",
         {
           bandBio: "This is the jQ test bio"
-        });
+        },
+		alert("Submitted");
+		);
     });
-	
+	/*
 	$("#bandImage").submit(function(){
         $.post("upload_image.php",
         {
