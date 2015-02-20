@@ -3,7 +3,7 @@
 // ------- Band Bio Upload ---------
 // -----------------------------------
 
-if(isset($_POST['link1']) || isset($_POST['link2']) || isset($_POST['link3']) || isset($_POST['link4']) || isset($_POST['link5']) ||) {
+if(isset($_POST['link1']) || isset($_POST['link2']) || isset($_POST['link3']) || isset($_POST['link4']) || isset($_POST['link5']) || isset($_POST['link1p']) || isset($_POST['link2p']) || isset($_POST['link3p']) || isset($_POST['link4p']) || isset($_POST['link5p'])) {
 	upload_links();
 } else {
 	echo "No submission!";
