@@ -33,7 +33,7 @@ function upload_links(){
 	mysql_select_db($db) or die(mysql_error());
 
 	if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
-		mysql_query("UPDATE $table SET link1 = '$link1' WHERE user_id = '$userID' ") or die(mysql_error());
+		mysql_query("UPDATE $table SET link1p = '$link1p', link1 = '$link1', link2p = '$link2p', link2 = '$link2', link3p = '$link3p', link3 = '$link3', link4p = '$link4p', link4 = '$link4', link5p = '$link5p', link5 = '$link5' WHERE user_id = '$userID' ");
 		echo "Existing row updated!";
 	} else {
 		mysql_query("INSERT INTO $table (user_id, link1p, link1, link2p, link2, link3p, link3, link4p, link4, link5p, link5) VALUES('$userID', '$link1p', '$link1', '$link2p', '$link2', '$link3p', '$link3', '$link4p', '$link4', '$link5p', '$link5') ") or die(mysql_error());

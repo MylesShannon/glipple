@@ -25,7 +25,7 @@ function upload_bio(){
 		mysql_query("UPDATE $table SET band_bio = '$bio' WHERE user_id = '$userID' ") or die(mysql_error());
 		echo "Existing row updated!";
 	} else {
-		mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, '$userID', NULL, '$bio', NULL) ") or die(mysql_error());
+		mysql_query("INSERT INTO $table (user_id, band_bio) VALUES('$userID', '$bio') ") or die(mysql_error());
 		echo "Added row!";
 	}
 

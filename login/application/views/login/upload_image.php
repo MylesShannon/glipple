@@ -129,7 +129,7 @@ function mysql_image($imageFileType){
 	} elseif(!mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
 		// If row with user_id does not exist, insert new row and rename file to new row id
 		echo "<br>Row does not exist";
-		mysql_query("INSERT INTO $table (id, user_id, band_image, band_bio, timestamp) VALUES(NULL, $userID, NULL, NULL, NULL) ") or die(mysql_error());
+		mysql_query("INSERT INTO $table (user_id) VALUES('$userID') ") or die(mysql_error());
 		$lastRow = mysql_insert_id() or die(mysql_error());;
 		$newpath = $bandImageDir.$lastRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $lastRow") or die(mysql_error());
