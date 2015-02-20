@@ -66,7 +66,7 @@ $(document).ready(function(){
         {
           bandBio: "This is the jQ test bio"
         }
-		),
+		);
 		alert("Bio submitted");
     });
 	/*
