@@ -10,6 +10,7 @@ $server = "localhost";
 $user = "root";
 $pass = "4DaL0v3AM0n3y";
 $db = "music";
+$usersdb = "login";
 
 mysql_connect($server, $user, $pass) or die(mysql_error());
 mysql_select_db($db) or die(mysql_error());
@@ -66,7 +67,13 @@ $owner = $userID;
 
 
 $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['title'][0]);
-$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
+
+mysql_select_db($usersdb) or die(mysql_error());
+$result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userID) or die(mysql_error());  
+$usernamequery = mysql_fetch_array($result);
+$artist=$usernamequery['user_name'];
+
+//$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
 $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['album'][0]);
 //$year = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["year"]);
 $year = $tag['tags']['id3v2']['year'][0];
