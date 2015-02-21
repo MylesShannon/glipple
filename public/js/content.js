@@ -94,4 +94,43 @@ function loadsearchresults(s)
     });
 
 }
+	function loadprofile(s)
+{
+	/*
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+		{
+			// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		} else {
+			// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
 	
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+			document.getElementById("filler").innerHTML=xmlhttp.responseText;
+		}
+	}
+	
+	console.log();
+
+		if (s == ""){
+		xmlhttp.open("GET","views/index.php",true);
+		} else {
+		xmlhttp.open("GET","views/search.php?s="+s,true);
+		}
+	
+	xmlhttp.send();
+	*/
+	$.ajax({
+        url: "/views/profile.php?id="+s,
+        context: document.body,
+        success: function(result) {
+            $("#filler").html(result);
+        }	
+    });
+
+}
