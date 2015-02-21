@@ -1,8 +1,4 @@
-<table id="profile">
-<tr>
 
-
-<td >
 <?php 
 
 	$userid = trim($_GET["id"]);
@@ -19,23 +15,19 @@
 
 	$row=mysql_fetch_array($result);
 		
-		echo $row['band_bio'];
+		$bio = $row['band_bio'];
+		$imagepath = $row['band_image'];
+
+
 	$result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userid) or die(mysql_error());  
 $usernamequery = mysql_fetch_array($result);
 
-	echo $usernamequery['user_name'];
+	$username = $usernamequery['user_name'];
 
 
 mysql_close(); 
 
+echo "<table><th>".$username."</th>";
+echo "<tr><td><img src='".$imagepath."'></td><td>".$bio."</td></tr></table>";
+
 ?>
-</td>
-
-
-<td>
-
-</td>
-
-
-</tr>
-</table>
