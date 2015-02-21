@@ -21,8 +21,32 @@
     </div>
 	<br>
 	<div>
+		<?php 
+
+	$userid = Session::get('user_id');
+	$server = "localhost";
+	$user = "root";
+	$pass = "4DaL0v3AM0n3y";
+	$db = "login";
+	
+	
+	mysql_connect($server, $user, $pass) or die(mysql_error());
+	mysql_select_db($db) or die(mysql_error());
+
+	$result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userid) or die(mysql_error());  
+
+	$row=mysql_fetch_array($result);
+		
+
+		$bio = $row['band_bio'];
+		if ($bio == NULL){
+			$bio= "Insert your profile bio here:";
+		}
+	mysql_close(); 
+	?>
+
 		<form id="bandBio" method="post">
-		<textarea name="bandBio" rows="4" cols="50" placeholder="Insert your profile bio here:"></textarea>
+		<textarea name="bandBio" rows="4" cols="50" value="<?php echo $bio; ?>"></textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>		
 	</div>
