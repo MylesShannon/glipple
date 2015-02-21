@@ -40,7 +40,7 @@
 
 		$bio = $row['band_bio'];
 		if ($bio == NULL){
-			$bio= "Insert your profile bio here:";
+			$bio = "Insert your profile bio here:";
 		}else{
 
 		}
@@ -48,7 +48,7 @@
 	?>
 
 		<form id="bandBio" method="post">
-		<textarea name="bandBio" rows="4" cols="50" value="<?php echo "test"; ?>"></textarea>
+		<textarea name="bandBio" rows="4" cols="50" ><?php echo $bio; ?></textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>		
 	</div>
