@@ -89,10 +89,11 @@
 		echo "<td>".$row['genre']."</td>";
 		// no need for ?id= because action is POST
 		echo "<td><form action='delete?id=".$row['id']."'' method='post'><button type='sumbit'>delete</button></form></td>";
-		echo "</tr>";
+
 		echo "<script type='text/javascript'>";
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script>";
+		echo "</tr>";
 		$count++;
 	}
 
