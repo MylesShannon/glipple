@@ -36,19 +36,18 @@
 	$result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userid) or die(mysql_error());  
 
 	$row=mysql_fetch_array($result);
-		
 
 		$bio = $row['band_bio'];
 		if ($bio == NULL){
-			$bio = "Insert your profile bio here:";
+			$bio = "placeholder='Insert your profile bio here...'>";
 		}else{
-
+			$bio = "> ".$row['band_bio'];
 		}
 	mysql_close(); 
 	?>
 
-		<form id="bandBio" method="post">
-		<textarea name="bandBio" id='bandBioText' rows="4" cols="50" ><?php echo $bio; ?></textarea>
+		<form id='bandBio' method="post">
+		<textarea name='bandBio' id='bandBioText' rows='4' cols='50' <?php echo $bio; ?></textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>		
 	</div>
@@ -93,7 +92,7 @@ $(document).ready(function(){
           bandBio : $('textarea#bandBioText').val()
         }
 		);
-		alert("Bio submitted!");
+		//alert("Bio submitted!");
     });
 	/*
 	$("#bandImage").submit(function(){
@@ -118,7 +117,7 @@ $(document).ready(function(){
 			link4p : "test",
 			link5p : "test"
         });
-		alert("Links submitted!");
+		//alert("Links submitted!");
     });
 });
 </script>
