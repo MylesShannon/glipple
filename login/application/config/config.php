@@ -24,8 +24,8 @@ define('FEEDBACK_PASSCODE_FIELD_EMPTY', 'Passcode invalid!');
  * if you are using a (different) port, then put this in here, like http://mydomain:8888/subfolder/
  * Note: The trailing slash is important!
  */
-define('URL', 'http://54.148.79.138/login/');
-define('URLlog', 'http://54.148.79.138/');
+define('URL', 'http://glipple.com/login/');
+define('URLlog', 'http://glipple.com/');
 
 /**
  * Configuration for: Folders
