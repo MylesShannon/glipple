@@ -66,7 +66,7 @@ function upload_image() {
 	}
 
 	// Change file extension to .jpg if image is .jpeg
-	if ( $imageFileType == 'jpeg' || $imageFileType == 'JPEG' || $imageFileType == 'JPG') {
+	if ( $imageFileType == 'image/jpeg' || $imageFileType == 'image/JPEG' || $imageFileType == 'image/JPG' || $imageFileType == 'image/jpg') {
 			$imageFileType = 'jpg';
 	} else {
 		// Allow certain file formats
