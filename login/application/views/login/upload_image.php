@@ -6,7 +6,7 @@
 
 // Global vars
 $userID = Session::get('user_id');
-$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
+$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
 $server = "localhost";
 $user = "root";
 $pass = "4DaL0v3AM0n3y";
@@ -22,7 +22,7 @@ if(isset($_POST["submit"])) {
 
 function upload_image() {
 	$userID = Session::get('user_id');
-	$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
+	$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
 	$server = "localhost";
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
@@ -97,7 +97,7 @@ function upload_image() {
 function mysql_image($imageFileType){
 	
 	$userID = Session::get('user_id');
-	$bandImageDir = "/var/www/html/login/public/img/band/".$userID."/";
+	$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
 	$server = "localhost";
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
@@ -115,7 +115,7 @@ function mysql_image($imageFileType){
 		// Row with user_id exists but band_image is NULL
 		echo "<br>Row exists but band_image is NULL";
 		
-		$newpath = "login/public/img/band/".$userID."/".$existingRow.".".$imageFileType;
+		$newpath = "public/img/bands/".$userID."/".$existingRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
 		// Rename uploaded file to last row id
 		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
@@ -131,7 +131,7 @@ function mysql_image($imageFileType){
 		echo "<br>Row does not exist";
 		mysql_query("INSERT INTO $table (user_id) VALUES('$userID') ") or die(mysql_error());
 		$lastRow = mysql_insert_id() or die(mysql_error());;
-		$newpath = "login/public/img/band/".$userID."/".$lastRow.".".$imageFileType;
+		$newpath = "public/img/bands/".$userID."/".$lastRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $lastRow") or die(mysql_error());
 		// Rename uploaded file to last row id
 		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
