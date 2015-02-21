@@ -1,3 +1,5 @@
+<?php include "../header.php"; ?>
+
 <table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
@@ -35,7 +37,7 @@
 
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr><td>".$row['timestamp']."</td>";
-		echo "<td><a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
+		echo "<td><a href='".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile-".$row['artist']."' onclick='loadprofile(".$row['owner'].")'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
