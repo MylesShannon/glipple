@@ -15,9 +15,11 @@
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
-	$result = mysql_query("SELECT band_bio FROM profiles WHERE user_id LIKE ".$userid) or die(mysql_error());  
+	$result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userid) or die(mysql_error());  
 
-	echo mysql_fetch_assoc($result);
+		echo mysql_fetch_array($result)['band_bio'];
+
+
 mysql_close(); 
 
 ?>
