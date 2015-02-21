@@ -71,6 +71,7 @@ $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['title'][
 mysql_select_db($usersdb) or die(mysql_error());
 $result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userID) or die(mysql_error());  
 $usernamequery = mysql_fetch_array($result);
+
 $artist=$usernamequery['user_name'];
 
 //$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
@@ -83,6 +84,7 @@ $comment = $tag['id3v1']['comment'];
 $track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v1']['track'][0]);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
+mysql_select_db($db) or die(mysql_error());
 
 mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', '$comment', '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
