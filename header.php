@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://54.148.79.138/');
+define('URL', 'http://glipple.com');
 ?>
 	
 	<!-- load jQuery -->
