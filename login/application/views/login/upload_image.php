@@ -115,7 +115,7 @@ function mysql_image($imageFileType){
 		// Row with user_id exists but band_image is NULL
 		echo "<br>Row exists but band_image is NULL";
 		
-		$newpath = $existingRow.".".$imageFileType;
+		$newpath = "/login/public/img/band/".$existingRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $existingRow") or die(mysql_error());
 		// Rename uploaded file to last row id
 		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$existingRow.".".$imageFileType);
@@ -131,7 +131,7 @@ function mysql_image($imageFileType){
 		echo "<br>Row does not exist";
 		mysql_query("INSERT INTO $table (user_id) VALUES('$userID') ") or die(mysql_error());
 		$lastRow = mysql_insert_id() or die(mysql_error());;
-		$newpath = $lastRow.".".$imageFileType;
+		$newpath = "/login/public/img/band/".$lastRow.".".$imageFileType;
 		mysql_query("UPDATE $table SET band_image = '$newpath' WHERE id = $lastRow") or die(mysql_error());
 		// Rename uploaded file to last row id
 		rename($bandImageDir.basename($_FILES["uploadImage"]["name"]), $bandImageDir.$lastRow.".".$imageFileType);
