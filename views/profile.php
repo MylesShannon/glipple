@@ -22,6 +22,8 @@
 
 }
 
+mysql_close(); 
+
 ?>
 </td>
 
