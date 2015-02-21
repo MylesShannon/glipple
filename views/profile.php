@@ -1,4 +1,6 @@
 
+	<?php include "../header.php"; ?>
+
 <?php 
 
 	$userid = trim($_GET["id"]);
@@ -16,7 +18,7 @@
 	$row=mysql_fetch_array($result);
 		
 		$bio = $row['band_bio'];
-		$imagepath = $row['band_image'];
+		$imagepath = URL.$row['band_image'];
 
 
 	$result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userid) or die(mysql_error());  
@@ -28,8 +30,6 @@ $usernamequery = mysql_fetch_array($result);
 mysql_close(); 
 
 echo "<table><th>".$username."</th>";
-echo "<tr><td><img src='";
-echo URL;
-echo $imagepath."'></td><td>".$bio."</td></tr></table>";
+echo "<tr><td><img src='".$imagepath."'></td><td>".$bio."</td></tr></table>";
 
 ?>
