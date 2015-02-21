@@ -16,5 +16,8 @@ define('URL', 'http://54.148.79.138/');
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
 	<script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
+
+	<!-- using this to make on the fly editable fields
 	<script src="<?php echo URL; ?>public/js/prototype.js" type="text/javascript"></script>
 	<script src="<?php echo URL; ?>public/js/scriptaculous.js?load=controls" type="text/javascript"></script>
+	-->
