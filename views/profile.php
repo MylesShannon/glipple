@@ -28,6 +28,6 @@ $usernamequery = mysql_fetch_array($result);
 mysql_close(); 
 
 echo "<table><th>".$username."</th>";
-echo "<tr><td><img src='".$imagepath."'></td><td>".$bio."</td></tr></table>";
+echo "<tr><td><img src='".URL.$imagepath."'></td><td>".$bio."</td></tr></table>";
 
 ?>
