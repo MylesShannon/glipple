@@ -17,11 +17,7 @@
 
 	$result = mysql_query("SELECT band_bio FROM profiles WHERE user_id LIKE ".$userid) or die(mysql_error());  
 
-	while ($row = mysql_fetch_array($result)) {
-		echo $row['band_bio'];
-
-}
-
+	echo $result;
 mysql_close(); 
 
 ?>
