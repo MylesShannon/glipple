@@ -41,7 +41,7 @@
 		if ($bio == NULL){
 			$bio = "placeholder='Insert your profile bio here...'>";
 		}else{
-			$bio = "> ".$row['band_bio'];
+			$bio = ">".$row['band_bio'];
 		}
 	mysql_close(); 
 	?>
