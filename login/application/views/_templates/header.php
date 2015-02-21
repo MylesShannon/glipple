@@ -24,6 +24,9 @@
 		echo 'Glipple - '.$page;
 	?>
 	</title>
+
+    <?php include "../../../../header.php"; ?>
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
