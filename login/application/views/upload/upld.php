@@ -18,7 +18,7 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-$userDir = "/music/".$userID;
+$userDir = "/media/music/".$userID;
 
 // Does the user have a music directory, if not create one
 if (!is_dir($userDir)) 
@@ -88,7 +88,7 @@ mysql_select_db($db) or die(mysql_error());
 
 mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', '$comment', '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
-$path = "/music/".$owner."/".$lastRow.".mp3";
+$path = "/media/music/".$owner."/".$lastRow.".mp3";
 
 mysql_query("UPDATE id3 SET path = '$path' WHERE id = '$lastRow'") or die(mysql_error());
 // Rename uploaded file
