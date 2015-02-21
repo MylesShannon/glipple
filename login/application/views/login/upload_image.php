@@ -72,7 +72,7 @@ function upload_image() {
 	}
 
 	// Change file extension to .jpg if image is .jpeg when renamed
-	if ( $imageFileType == 'jpeg') {
+	if ( $imageFileType == 'jpeg' || $imageFileType == 'JPEG' || $imageFileType == 'JPG') {
 			$imageFileType = 'jpg';
 	}
 
