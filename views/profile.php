@@ -20,7 +20,10 @@
 	$row=mysql_fetch_array($result);
 		
 		echo $row['band_bio'];
+	$result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userid) or die(mysql_error());  
+$usernamequery = mysql_fetch_array($result);
 
+	echo $usernamequery['user_name'];
 
 
 mysql_close(); 

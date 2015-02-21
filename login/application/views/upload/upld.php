@@ -69,7 +69,7 @@ $owner = $userID;
 $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['title'][0]);
 
 mysql_select_db($usersdb) or die(mysql_error());
-$result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userID) or die(mysql_error());  
+$result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userID) or die(mysql_error());  
 $usernamequery = mysql_fetch_array($result);
 
 $artist=$usernamequery['user_name'];
