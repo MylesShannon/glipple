@@ -83,13 +83,16 @@
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
 		*/
-		echo "<td>".$row['title']."</td>";
+		echo "<td id='".$row['id']."-title'>".$row['title']."</td>";
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
 		// no need for ?id= because action is POST
 		echo "<td><form action='delete?id=".$row['id']."'' method='post'><button type='sumbit'>delete</button></form></td>";
 		echo "</tr>";
+		echo "<script type='text/javascript'>";
+		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
+		echo "</script>";
 		$count++;
 	}
 
