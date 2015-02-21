@@ -65,15 +65,13 @@ function upload_image() {
 		$uploadOk = 0;
 	}
 
-	// Allow certain file formats
-	if($imageFileType != "jpg" && $imageFileType != "jpeg" ) {
-		echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-		$uploadOk = 0;
-	}
-
 	// Change file extension to .jpg if image is .jpeg when renamed
 	if ( $imageFileType == 'jpeg' || $imageFileType == 'JPEG' || $imageFileType == 'JPG') {
 			$imageFileType = 'jpg';
+	} else {
+		// Allow certain file formats
+		echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+		$uploadOk = 0;
 	}
 
 	// Check if $uploadOk is set to 0 by an error
