@@ -40,7 +40,7 @@ $(document).ready(function(){
 // Myles' player
 $(document).ready(function(){
 	var stream = {
-		m4a: "http://54.148.79.138/listen"
+		m4a: "http://glipple.com/radio"
 	},
 	ready = false;
 		
