@@ -31,7 +31,7 @@
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
-	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error());  
+	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp") or die(mysql_error());  
 
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr><td>".$row['timestamp']."</td>";
