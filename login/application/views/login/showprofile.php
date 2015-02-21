@@ -48,7 +48,7 @@
 	?>
 
 		<form id="bandBio" method="post">
-		<textarea name="bandBio" rows="4" cols="50" ><?php echo $bio; ?></textarea>
+		<textarea name="bandBio" id='bandBioText' rows="4" cols="50" ><?php echo $bio; ?></textarea>
 		<input type="submit" value="Update Bio" name="submit">
 		</form>		
 	</div>
@@ -90,7 +90,7 @@ $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post("upload_bio",
         {
-          bandBio : "jQ test bio"
+          bandBio : $('textarea#bandBioText').val()
         }
 		);
 		alert("Bio submitted!");
