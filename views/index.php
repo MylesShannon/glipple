@@ -49,15 +49,12 @@ mysql_close();
 </tbody>
 </table>
 
-<!--
 <script>
 $(document).ready(function() {
     $('#latest').dataTable( {
         "paging":   false,
-        "info":     false,
-		"order": [[ 0, "desc" ]]
+        "info":     false
     } );
 } );
 </script>
--->
 
