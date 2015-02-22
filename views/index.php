@@ -56,8 +56,5 @@ $(document).ready(function() {
         "info":     false
     } );
 } );
-
-//$("#latest").tabs();
-
 </script>
 
