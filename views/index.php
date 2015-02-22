@@ -49,6 +49,7 @@ mysql_close();
 </tbody>
 </table>
 
+<!--
 <script>
 $(document).ready(function() {
     $('#latest').dataTable( {
@@ -58,4 +59,5 @@ $(document).ready(function() {
     } );
 } );
 </script>
+-->
 
