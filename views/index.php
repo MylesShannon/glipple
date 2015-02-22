@@ -52,7 +52,8 @@ mysql_close();
 $(document).ready(function() {
     $('#latest').dataTable( {
         "paging":   false,
-        "info":     false
+        "info":     false,
+		"order": [[ 0, "desc" ]]
     } );
 } );
 </script>
