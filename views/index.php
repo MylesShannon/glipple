@@ -43,8 +43,7 @@
         echo "<td>".$row['genre']."</td></tr>";
 	}
 
-mysql_close(); 
-
+mysql_close();
 ?>
 </tbody>
 </table>
