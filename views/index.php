@@ -3,7 +3,7 @@
 <table id="latest" class="display" cellspacing="0">
         <thead>
             <tr>
-                <th>Timestamp</th>
+                <th>#</th>
                 <th>Title</th>
                 <th>Artist</th>
                 <th>Album</th>
@@ -13,7 +13,7 @@
         
         <tfoot>
             <tr>
-                <th>Timestamp</th>
+                <th>#</th>
                 <th>Title</th>
                 <th>Album</th>
                 <th>Artist</th>
@@ -33,10 +33,11 @@
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
-	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error());  
+	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error()); 
+	$count = 1;
 
 	while ($row = mysql_fetch_array($result)) {
-		echo "<tr><td>".$row['timestamp']."</td>";
+		echo "<tr><td>".$count++."</td>";
 		echo "<td><a href='".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile-".$row['artist']."' onclick='loadprofile(".$row['owner'].")'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
