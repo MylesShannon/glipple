@@ -15,7 +15,7 @@ mysql_select_db($db) or die(mysql_error());
 $result = mysql_query("DELETE FROM id3 WHERE id = $id") or die(mysql_error());
   
 // delete file
-unlink("/music/".Session::get('user_id')."/".$id.".mp3");
+unlink("/media/music/".Session::get('user_id')."/".$id.".mp3");
 
 echo "deleted song '$id'";
 // close sql connection
