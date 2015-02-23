@@ -92,7 +92,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
 		// no need for ?id= because action is POST
-		echo "<td><form action='delete?id=".$row['id']."'' method='post'><button type='sumbit'>delete</button></form></td>";
+		echo "<td><form action='delete' method='post'><button type='sumbit'>delete</button></form></td>";
 
 
 		echo "</tr>";
