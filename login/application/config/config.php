@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 // Artist passcode
-define('PASSCODE', '12345');
+define('PASSCODE', 'Pg2Phk19Pmg13');
 define('FEEDBACK_PASSCODE_FIELD_EMPTY', 'Passcode invalid!');
 
 /**
