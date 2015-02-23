@@ -4,6 +4,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 // delete music
 $id = trim($_POST["del"]);
 echo $_POST["del"];
+echo $id;
 
 // connect to mysql
 $server = "localhost";
@@ -15,7 +16,7 @@ mysql_select_db($db) or die(mysql_error());
 
 
 // take passed info and commit it to db
-$result = mysql_query("DELETE FROM id3 WHERE id = $id") or die(mysql_error());
+$result = mysql_query("DELETE FROM id3 WHERE id = '$id'") or die(mysql_error());
   
 // delete file
 unlink("/media/music/".Session::get('user_id')."/".$id.".mp3");
