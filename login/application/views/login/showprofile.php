@@ -21,8 +21,9 @@
     </div>
 	<br>
 	<div>
-		<?php 
-
+	<?php 
+	error_reporting(E_ALL ^ E_DEPRECATED);
+	
 	$userid = Session::get('user_id');
 	$server = "localhost";
 	$user = "root";
