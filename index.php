@@ -126,19 +126,14 @@
 				<li>
 					<a href="#home" onclick="loadXMLDoc('index')">Home</a>
 				</li>
-				<!--
-				<li>
-					<a href="#test" onclick="loadXMLDoc('test')">Test</a>
-				</li>
-				-->
-				<li>
-					<a href="#radio" onclick="loadXMLDoc('radio')">Radio</a>
-				</li>
 				<li>
 					<a href="#help" onclick="loadXMLDoc('help')">Help</a>
 				</li>
 				<li>
 					<a href="#blog" onclick="loadXMLDoc('blog')">Blog</a>
+				</li>
+				<li>
+					<a href="#contact" onclick="loadXMLDoc('contact')">Contact</a>
 				</li>
 			</ul>
         </div>
