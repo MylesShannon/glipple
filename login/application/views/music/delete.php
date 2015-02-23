@@ -1,6 +1,9 @@
 <?php
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 // delete music
 $id = trim($_POST["del"]);
+echo $_POST["del"];
 
 // connect to mysql
 $server = "localhost";
