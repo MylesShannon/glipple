@@ -1,6 +1,6 @@
 <?php
 // delete music
-$id = trim($_GET["id"]);
+$id = trim($_POST["id"]);
 
 // connect to mysql
 $server = "localhost";
