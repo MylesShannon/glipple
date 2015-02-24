@@ -3,8 +3,8 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 // delete music
 $id = trim($_POST['del']);
-echo $_POST["del"];
-echo $id;
+echo "POST: ".$_POST["del"];
+echo "ID: ".$id;
 
 if(isset($_POST['del'])) {
 	deleteSong($id);
