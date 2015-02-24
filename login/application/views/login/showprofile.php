@@ -60,61 +60,61 @@
 		if ($link1p == NULL){
 			$link1p = "placeholder='Provider...'>";
 		}else{
-			$link1p = ">".$link1p;
+			$link1p = "value='".$link1p."'";
 		}
 		
 		if ($link1 == NULL){
 			$link1 = "placeholder='Link...'>";
 		}else{
-			$link1 = ">".$link1;
+			$link1 = "value='".$link1."'";
 		}
 		
 		if ($link2p == NULL){
 			$link2p = "placeholder='Provider...'>";
 		}else{
-			$link2p = ">".$link2p;
+			$link2p = "value='".$link2p."'";
 		}
 		
 		if ($link2 == NULL){
 			$link2 = "placeholder='Link...'>";
 		}else{
-			$link2 = ">".$link2;
+			$link2 = "value='".$link2."'";
 		}
 		
 		if ($link3p == NULL){
 			$link3p = "placeholder='Provider...'>";
 		}else{
-			$link3p = ">".$link3p;
+			$link3p = "value='".$link3p."'";
 		}
 		
 		if ($link3 == NULL){
 			$link3 = "placeholder='Link...'>";
 		}else{
-			$link3 = ">".$link3;
+			$link3 = "value='".$link3."'";
 		}
 		
 		if ($link4p == NULL){
 			$link4p = "placeholder='Provider...'>";
 		}else{
-			$link4p = ">".$link4p;
+			$link4p = "value='".$link4p."'";
 		}
 		
 		if ($link4 == NULL){
 			$link4 = "placeholder='Link...'>";
 		}else{
-			$link4 = ">".$link4;
+			$link4 = "value='".$link4."'";
 		}
 		
 		if ($link5p == NULL){
 			$link5p = "placeholder='Provider...'>";
 		}else{
-			$link5p = ">".$link5p;
+			$link5p = "value='".$link5p."'";
 		}
 		
 		if ($link5 == NULL){
 			$link5 = "placeholder='Link...'>";
 		}else{
-			$link5 = ">".$link5;
+			$link5 = "value='".$link5."'";
 		}
 		
 		
@@ -138,16 +138,16 @@
 	<div>
 		<form id="bandLinks" method="post">
 		Profile links:
-		<input type="text" name="link1p" id="link1p" <?php echo $link1p; ?></input>
-		<input type="text" name="link1" id="link1" <?php echo $link1; ?></input>
-		<input type="text" name="link2p" id="link2p" <?php echo $link2p; ?></input>
-		<input type="text" name="link2" id="link2" <?php echo $link2; ?></input>
-		<input type="text" name="link3p" id="link3p" <?php echo $link3p; ?></input>
-		<input type="text" name="link3" id="link3" <?php echo $link3; ?></input>
-		<input type="text" name="link4p" id="link4p" <?php echo $link4p; ?></input>
-		<input type="text" name="link4" id="link4" <?php echo $link4; ?></input>
-		<input type="text" name="link5p" id="link5p" <?php echo $link5p; ?></input>
-		<input type="text" name="link5" id="link5" <?php echo $link5; ?></input>
+		<input type="text" name="link1p" id="link1p" <?php echo $link1p; ?>>
+		<input type="text" name="link1" id="link1" <?php echo $link1; ?>>
+		<input type="text" name="link2p" id="link2p" <?php echo $link2p; ?>>
+		<input type="text" name="link2" id="link2" <?php echo $link2; ?>>
+		<input type="text" name="link3p" id="link3p" <?php echo $link3p; ?>>
+		<input type="text" name="link3" id="link3" <?php echo $link3; ?>>
+		<input type="text" name="link4p" id="link4p" <?php echo $link4p; ?>>
+		<input type="text" name="link4" id="link4" <?php echo $link4; ?>>
+		<input type="text" name="link5p" id="link5p" <?php echo $link5p; ?>>
+		<input type="text" name="link5" id="link5" <?php echo $link5; ?>>
 		<input type="submit" value="Update Links" name="submit">
 		</form>
 	</div>
