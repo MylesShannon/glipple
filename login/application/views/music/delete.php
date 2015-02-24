@@ -2,9 +2,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 
 // delete music
-$id = trim($_POST['del']);
-echo "POST: ".$_POST["del"];
-echo "ID: ".$id;
+$id = $_POST['del'];
 
 if(isset($_POST['del'])) {
 	deleteSong($id);
@@ -29,7 +27,8 @@ function deleteSong($id) {
 	// delete file
 	unlink("/media/music/".Session::get('user_id')."/".$id.".mp3");
 
-	echo "deleted song '$id'";
+	// echo "deleted song '$id'";
+	
 	// close sql connection
 	mysql_close();
 }

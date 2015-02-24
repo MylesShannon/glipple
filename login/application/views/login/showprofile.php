@@ -90,7 +90,7 @@ $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post("upload_bio",
         {
-          bandBio : $('textarea#bandBioText').val()
+          bandBio : $('#bandBioText').val()
         }
 		);
 		//alert("Bio submitted!");
@@ -99,7 +99,7 @@ $(document).ready(function(){
 	$("#bandImage").submit(function(){
         $.post("upload_image",
         {
-          bandImage: "Donald Duck"
+          bandImage: "/dir"
         });
     });
 	*/

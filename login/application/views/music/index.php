@@ -80,7 +80,7 @@ $(document).ready(function() {
         { 
 			del : '76'
 		});
-		alert("Delete button clicked!");
+		location.reload();
 	} );
 } );
 
