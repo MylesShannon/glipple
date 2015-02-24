@@ -54,6 +54,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script></td>";
 		*/
+		echo "<td>".$row['title']."</td>";
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
