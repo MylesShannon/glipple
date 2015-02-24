@@ -94,6 +94,7 @@ $(document).ready(function(){
 	});
 	$('#bandLinks').submit(function(){
 		var data = $('#bandLink').serialize();
+		console.log(data);
 		$.post('upload_links', data);
 		return false;
 	});
