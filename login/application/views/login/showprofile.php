@@ -89,13 +89,11 @@
 $(document).ready(function(){
     $('#bandBio').submit(function(){
 		var bio = $('#bandBio').serialize();
-		console.log(bio);
         $.post('upload_bio', bio);
 		return false;
 	});
 	$('#bandLinks').submit(function(){
 		var links = $('#bandLinks').serialize();
-		console.log(links);
 		$.post('upload_links', links);
 		return false;
 	});
