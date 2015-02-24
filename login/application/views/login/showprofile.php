@@ -90,7 +90,7 @@ $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post("upload_bio",
         {
-          bandBio : $('textarea#bandBioText').val()
+          $('#bandBio').serialize())
         }
 		);
 		alert("Bio submitted!");
