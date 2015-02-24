@@ -39,6 +39,7 @@
 	$row=mysql_fetch_array($result);
 
 		$bio    = $row['band_bio'];
+		$image = $row['band_image'];
 		
 		$link1p = $row['link1p'];
 		$link1  = $row['link1'];
@@ -133,6 +134,8 @@
 		<input type="file" name="uploadImage" id="upload_image">
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
+		
+		<img src="<?php echo URL.$image; ?>" alt="Your Band Image" style="width:50%;height:50%">
 	</div>
 	<br>
 	<div>
