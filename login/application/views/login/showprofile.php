@@ -38,12 +38,86 @@
 
 	$row=mysql_fetch_array($result);
 
-		$bio = $row['band_bio'];
+		$bio    = $row['band_bio'];
+		
+		$link1p = $row['link1p'];
+		$link1  = $row['link1'];
+		$link2p = $row['link2p'];
+		$link2  = $row['link2'];
+		$link3p = $row['link3p'];
+		$link3  = $row['link3'];
+		$link4p = $row['link4p'];
+		$link4  = $row['link4'];
+		$link5p = $row['link5p'];
+		$link5  = $row['band_bio'];
+		
 		if ($bio == NULL){
 			$bio = "placeholder='Insert your profile bio here...'>";
 		}else{
-			$bio = ">".$row['band_bio'];
+			$bio = ">".$bio;
 		}
+		
+		if ($link1p == NULL){
+			$link1p = "placeholder='Provider...'>";
+		}else{
+			$link1p = ">".$link1p;
+		}
+		
+		if ($link1 == NULL){
+			$link1 = "placeholder='Link...'>";
+		}else{
+			$link1 = ">".$link1;
+		}
+		
+		if ($link2p == NULL){
+			$link2p = "placeholder='Provider...'>";
+		}else{
+			$link2p = ">".$link2p;
+		}
+		
+		if ($link2 == NULL){
+			$link2 = "placeholder='Link...'>";
+		}else{
+			$link2 = ">".$link2;
+		}
+		
+		if ($link3p == NULL){
+			$link3p = "placeholder='Provider...'>";
+		}else{
+			$link3p = ">".$link3p;
+		}
+		
+		if ($link3 == NULL){
+			$link3 = "placeholder='Link...'>";
+		}else{
+			$link3 = ">".$link3;
+		}
+		
+		if ($link4p == NULL){
+			$link4p = "placeholder='Provider...'>";
+		}else{
+			$link4p = ">".$link4p;
+		}
+		
+		if ($link4 == NULL){
+			$link4 = "placeholder='Link...'>";
+		}else{
+			$link4 = ">".$link4;
+		}
+		
+		if ($link5p == NULL){
+			$link5p = "placeholder='Provider...'>";
+		}else{
+			$link5p = ">".$link5p;
+		}
+		
+		if ($link5 == NULL){
+			$link5 = "placeholder='Link...'>";
+		}else{
+			$link5 = ">".$link5;
+		}
+		
+		
 	mysql_close(); 
 	?>
 
@@ -64,16 +138,16 @@
 	<div>
 		<form id="bandLinks" method="post">
 		Profile links:
-		<input type="text" placeholder="Provider 1" name="link1p" id="link1p">
-		<input type="text" placeholder="Link 1" name="link1" id="link1">
-		<input type="text" placeholder="Provider 2" name="link2p" id="link2p">
-		<input type="text" placeholder="Link 2" name="link2" id="link2">
-		<input type="text" placeholder="Provider 3" name="link3p" id="link3p">
-		<input type="text" placeholder="Link 3" name="link3" id="link3">
-		<input type="text" placeholder="Provider 4" name="link4p" id="link4p">
-		<input type="text" placeholder="Link 4" name="link4" id="link4">
-		<input type="text" placeholder="Provider 5" name="link5p" id="link5p">
-		<input type="text" placeholder="Link 5" name="link5" id="link5">
+		<input type="text" name="link1p" id="link1p" <?php echo $link1p; ?></input>
+		<input type="text" name="link1" id="link1" <?php echo $link1; ?></input>
+		<input type="text" name="link2p" id="link2p" <?php echo $link2p; ?></input>
+		<input type="text" name="link2" id="link2" <?php echo $link2; ?></input>
+		<input type="text" name="link3p" id="link3p" <?php echo $link3p; ?></input>
+		<input type="text" name="link3" id="link3" <?php echo $link3; ?></input>
+		<input type="text" name="link4p" id="link4p" <?php echo $link4p; ?></input>
+		<input type="text" name="link4" id="link4" <?php echo $link4; ?></input>
+		<input type="text" name="link5p" id="link5p" <?php echo $link5p; ?></input>
+		<input type="text" name="link5" id="link5" <?php echo $link5; ?></input>
 		<input type="submit" value="Update Links" name="submit">
 		</form>
 	</div>
@@ -97,5 +171,12 @@ $(document).ready(function(){
 		$.post('upload_links', links);
 		return false;
 	});
+	/*
+	$('#bandImage').submit(function(){
+		var image = $('#bandImage').serialize();
+		$.post('upload_image', image);
+		return false;
+	});
+	*/
 });
 </script>
