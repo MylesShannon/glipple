@@ -89,7 +89,7 @@
 $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post('upload_bio', $('#bandBio').serialize());
-		alert("Bio submitted!");
+		// alert("Bio submitted!");
     });
 	/*
 	$("#bandImage").submit(function(){
@@ -100,6 +100,8 @@ $(document).ready(function(){
     });
 	*/
 	$("#bandLinks").submit(function(){
+		$.post('upload_links', $('#bandLinks').serialize());
+		/*
         $.post("upload_links",
         {
 			link1 : $('input#link1').val(),
@@ -115,6 +117,7 @@ $(document).ready(function(){
 			link5p : $('input#link5p').val()
         });
 		alert("Links submitted!");
+		*/
     });
 });
 </script>
