@@ -48,11 +48,12 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td><input id='row-".$count."-title' name='row-".$count."-title' value='".$row['title']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-artist' name='row-".$count."-artist' value='".$row['artist']."' type='text'></td>";
 		echo "<td><input id='row-".$count."-album' name='row-".$count."-album' value='".$row['album']."' type='text'></td>";
-		*/
+		
 		echo "<td><div id='".$row['id']."-title'>".$row['title'];
 		echo "</div><script type='text/javascript'>";
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script></td>";
+		*/
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
