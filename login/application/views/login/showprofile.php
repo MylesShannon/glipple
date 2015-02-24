@@ -49,7 +49,7 @@
 		$link4p = $row['link4p'];
 		$link4  = $row['link4'];
 		$link5p = $row['link5p'];
-		$link5  = $row['band_bio'];
+		$link5  = $row['link5'];
 		
 		if ($bio == NULL){
 			$bio = "placeholder='Insert your profile bio here...'>";
