@@ -58,61 +58,61 @@
 		}
 		
 		if ($link1p == NULL){
-			$link1p = "placeholder='Provider...'>";
+			$link1p = "placeholder='Provider...'";
 		}else{
 			$link1p = "value='".$link1p."'";
 		}
 		
 		if ($link1 == NULL){
-			$link1 = "placeholder='Link...'>";
+			$link1 = "placeholder='Link...'";
 		}else{
 			$link1 = "value='".$link1."'";
 		}
 		
 		if ($link2p == NULL){
-			$link2p = "placeholder='Provider...'>";
+			$link2p = "placeholder='Provider...'";
 		}else{
 			$link2p = "value='".$link2p."'";
 		}
 		
 		if ($link2 == NULL){
-			$link2 = "placeholder='Link...'>";
+			$link2 = "placeholder='Link...'";
 		}else{
 			$link2 = "value='".$link2."'";
 		}
 		
 		if ($link3p == NULL){
-			$link3p = "placeholder='Provider...'>";
+			$link3p = "placeholder='Provider...'";
 		}else{
 			$link3p = "value='".$link3p."'";
 		}
 		
 		if ($link3 == NULL){
-			$link3 = "placeholder='Link...'>";
+			$link3 = "placeholder='Link...'";
 		}else{
 			$link3 = "value='".$link3."'";
 		}
 		
 		if ($link4p == NULL){
-			$link4p = "placeholder='Provider...'>";
+			$link4p = "placeholder='Provider...'";
 		}else{
 			$link4p = "value='".$link4p."'";
 		}
 		
 		if ($link4 == NULL){
-			$link4 = "placeholder='Link...'>";
+			$link4 = "placeholder='Link...'";
 		}else{
 			$link4 = "value='".$link4."'";
 		}
 		
 		if ($link5p == NULL){
-			$link5p = "placeholder='Provider...'>";
+			$link5p = "placeholder='Provider...'";
 		}else{
 			$link5p = "value='".$link5p."'";
 		}
 		
 		if ($link5 == NULL){
-			$link5 = "placeholder='Link...'>";
+			$link5 = "placeholder='Link...'";
 		}else{
 			$link5 = "value='".$link5."'";
 		}
