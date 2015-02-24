@@ -90,7 +90,7 @@ $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post("upload_bio",
         {
-          bandBio : $('#bandBioText').val()
+          bandBio : $('textarea#bandBioText').val()
         }
 		);
 		//alert("Bio submitted!");
@@ -106,17 +106,17 @@ $(document).ready(function(){
 	$("#bandLinks").submit(function(){
         $.post("upload_links",
         {
-			link1 : $('#link1').val(),
-			link2 : $('#link2').val(),
-			link3 : $('#link3').val(),
-			link4 : $('#link4').val(),
-			link5 : $('#link5').val(),
+			link1 : $('input#link1').val(),
+			link2 : $('input#link2').val(),
+			link3 : $('input#link3').val(),
+			link4 : $('input#link4').val(),
+			link5 : $('input#link5').val(),
 			
-			link1p : $('#link1p').val(),
-			link2p : $('#link2p').val(),
-			link3p : $('#link3p').val(),
-			link4p : $('#link4p').val(),
-			link5p : $('#link5p').val()
+			link1p : $('input#link1p').val(),
+			link2p : $('input#link2p').val(),
+			link3p : $('input#link3p').val(),
+			link4p : $('input#link4p').val(),
+			link5p : $('input#link5p').val()
         });
 		//alert("Links submitted!");
     });
