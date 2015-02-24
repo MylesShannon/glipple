@@ -89,35 +89,8 @@
 $(document).ready(function(){
     $("#bandBio").submit(function(){
         $.post('upload_bio', $('#bandBio').serialize());
-		// alert("Bio submitted!");
+		alert("Bio submitted!");
     });
-	/*
-	$("#bandImage").submit(function(){
-        $.post("upload_image",
-        {
-          bandImage: "/dir"
-        });
-    });
-	*/
-	//$("#bandLinks").submit(function(){
-		//$.post('upload_links', $('#bandLinks').serialize());
-		/*
-        $.post("upload_links",
-        {
-			link1 : $('input#link1').val(),
-			link2 : $('input#link2').val(),
-			link3 : $('input#link3').val(),
-			link4 : $('input#link4').val(),
-			link5 : $('input#link5').val(),
-			
-			link1p : $('input#link1p').val(),
-			link2p : $('input#link2p').val(),
-			link3p : $('input#link3p').val(),
-			link4p : $('input#link4p').val(),
-			link5p : $('input#link5p').val()
-        });
-		alert("Links submitted!");
-		*/
-    //});
+	
 });
 </script>
