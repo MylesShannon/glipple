@@ -135,7 +135,7 @@
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
 		
-		<img src="<?php echo URL.$image; ?>" alt="Your Band Image" style="width:50%;height:50%">
+		<img src="<?php echo URLlog.$image; ?>" alt="Your Band Image" style="width:50%;height:50%">
 	</div>
 	<br>
 	<div>
