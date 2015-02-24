@@ -78,7 +78,7 @@ $(document).ready(function() {
 $( "#delete" ).click(function() {
 		$.post("delete",
         { 
-			del : <?php $row['id'] ?>
+			del : '76'
 		});
 		alert("Delete button clicked!");
 } );
