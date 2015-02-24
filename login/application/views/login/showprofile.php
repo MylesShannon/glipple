@@ -160,6 +160,22 @@
         Your account type is: <?php echo Session::get('user_account_type'); ?>
     </div>
 	-->
+	<br>
+	<div>
+		<form id="process_image_form" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES); ?>" method="post" >
+			<input type="hidden" name="image_id1" id="image_id1" />
+			<table class="bordered-table">
+				<tbody>                 
+					<tr>
+						<td><input name="file" type="file" id="file"/></td>
+					</tr>
+					<tr> 
+						<td><button type="submit" class="btn primary" data-loading-text="Uploading..." id="upload_profile_photo" name="upload_profile_photo">Upload</button></td> 
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
 </div>
 
 <script>
@@ -174,6 +190,18 @@ $(document).ready(function(){
 		$.post('upload_links', links);
 		return false;
 	});
+	
+	$('#upload_profile_photo').click(function(e) {
+		e.preventDefault();
+
+		$.post('upload_image', $("#process_image_form").serialize(), function(status) {
+			if (status.st) {
+				alert("Photo Uploaded");
+			}
+		}, "json");
+	});
+	
+	/*
 	$("#bandImage").submit(function(e) {
         var formData = new FormData($(this)[0]);
 
@@ -192,5 +220,6 @@ $(document).ready(function(){
 
         e.preventDefault();
     });
+	*/
 });
 </script>
