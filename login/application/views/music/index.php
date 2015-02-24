@@ -79,6 +79,7 @@ $(document).ready(function() {
         { 
 			del : <?php $row['id'] ?>
 		});
+		alert("Delete button clicked!");
 	} );
 } );
 
