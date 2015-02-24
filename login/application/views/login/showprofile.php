@@ -87,12 +87,15 @@
 
 <script>
 $(document).ready(function(){
-    $("#bandBio").submit(function(){
+    $('#bandBio').submit(function(){
 		var data = $('#bandBio').serialize();
         $.post('upload_bio', data);
-		//alert("Bio submitted!");
 		return false;
 	});
-	
+	$('#bandLinks').submit(function(){
+		var data = $('#bandLink').serialize();
+		$.post('upload_links', data);
+		return false;
+	});
 });
 </script>
