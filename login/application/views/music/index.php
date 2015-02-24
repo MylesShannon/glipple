@@ -1,10 +1,10 @@
 <div class="content">
     <h1>Music</h1>
 
-<?php $this->renderFeedbackMessages(); ?>
-<?php
+<?php 
+$this->renderFeedbackMessages();
 error_reporting(E_ALL ^ E_DEPRECATED);
-
+?>
 
 <table id="music" class="display" cellspacing="0">
         <thead>

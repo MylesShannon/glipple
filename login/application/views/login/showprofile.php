@@ -106,17 +106,17 @@ $(document).ready(function(){
 	$("#bandLinks").submit(function(){
         $.post("upload_links",
         {
-			link1 : $('textarea#link1').val(),
-			link2 : $('textarea#link2').val(),
-			link3 : $('textarea#link3').val(),
-			link4 : $('textarea#link4').val(),
-			link5 : $('textarea#link5').val(),
+			link1 : $('#link1').val(),
+			link2 : $('#link2').val(),
+			link3 : $('#link3').val(),
+			link4 : $('#link4').val(),
+			link5 : $('#link5').val(),
 			
-			link1p : $('textarea#link1p').val(),
-			link2p : $('textarea#link2p').val(),
-			link3p : $('textarea#link3p').val(),
-			link4p : $('textarea#link4p').val(),
-			link5p : $('textarea#link5p').val()
+			link1p : $('#link1p').val(),
+			link2p : $('#link2p').val(),
+			link3p : $('#link3p').val(),
+			link4p : $('#link4p').val(),
+			link5p : $('#link5p').val()
         });
 		//alert("Links submitted!");
     });
