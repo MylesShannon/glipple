@@ -88,7 +88,7 @@
 <script>
 $(document).ready(function(){
     $("#bandBio").submit(function(){
-        $.post('upload_bio', $('#bandBio').serialize());
+        $.post('upload_bio', $('#bandBio').serialize())
 		// alert("Bio submitted!");
     });
 	
