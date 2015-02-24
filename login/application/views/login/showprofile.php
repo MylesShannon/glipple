@@ -88,14 +88,15 @@
 <script>
 $(document).ready(function(){
     $('#bandBio').submit(function(){
-		var data = $('#bandBio').serialize();
-        $.post('upload_bio', data);
+		var bio = $('#bandBio').serialize();
+		console.log(bio);
+        $.post('upload_bio', bio);
 		return false;
 	});
 	$('#bandLinks').submit(function(){
-		var data = $('#bandLink').serialize();
-		console.log(data);
-		$.post('upload_links', data);
+		var links = $('#bandLinks').serialize();
+		console.log(links);
+		$.post('upload_links', links);
 		return false;
 	});
 });
