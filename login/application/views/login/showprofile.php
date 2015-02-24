@@ -93,7 +93,7 @@ $(document).ready(function(){
           bandBio : $('textarea#bandBioText').val()
         }
 		);
-		//alert("Bio submitted!");
+		alert("Bio submitted!");
     });
 	/*
 	$("#bandImage").submit(function(){
@@ -118,7 +118,7 @@ $(document).ready(function(){
 			link4p : $('input#link4p').val(),
 			link5p : $('input#link5p').val()
         });
-		//alert("Links submitted!");
+		alert("Links submitted!");
     });
 });
 </script>
