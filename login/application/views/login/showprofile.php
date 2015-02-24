@@ -129,7 +129,7 @@
 	</div>
 	<br>
 	<div>
-		<form id="bandImage" action="<?php echo URL ?>login/upload_image" method="post" enctype="multipart/form-data">
+		<form id="bandImage" method="post">
 		Select an image to upload as your band image:
 		<input type="file" name="uploadImage" id="upload_image">
 		<input type="submit" value="Upload Image" name="submit">
@@ -178,7 +178,7 @@ $(document).ready(function(){
         var formData = new FormData($(this)[0]);
 
         $.ajax({
-            url: "band_image",
+            url: "upload_image",
             type: "POST",
             data: formData,
             async: false,
