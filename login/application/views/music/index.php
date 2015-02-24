@@ -75,15 +75,15 @@ $(document).ready(function() {
         "paging":   false,
         "info":     false
     } );
-} );
-
-$( "#delete" ).click(function() {
+	$('#delete').click(function() {
 		$.post("delete",
         { 
 			del : '76'
 		});
 		alert("Delete button clicked!");
+	} );
 } );
+
 
 /*
 $(document).ready(function() {
