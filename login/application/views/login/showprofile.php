@@ -171,12 +171,23 @@ $(document).ready(function(){
 		$.post('upload_links', links);
 		return false;
 	});
-	/*
-	$('#bandImage').submit(function(){
-		var image = $('#bandImage').serialize();
-		$.post('upload_image', image);
-		return false;
-	});
-	*/
+	$("#bandImage").submit(function(e) {
+        var formData = new FormData($(this)[0]);
+
+        $.ajax({
+            url: "band_image",
+            type: "POST",
+            data: formData,
+            async: false,
+            success: function (msg) {
+                alert(msg)
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        e.preventDefault();
+    });
 });
 </script>
