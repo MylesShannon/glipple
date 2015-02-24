@@ -73,14 +73,14 @@ $(document).ready(function() {
         "paging":   false,
         "info":     false
     } );
-	
-	$( "#delete" ).click(function() {
+} );
+
+$( "#delete" ).click(function() {
 		$.post("delete",
         { 
 			del : <?php $row['id'] ?>
 		});
 		alert("Delete button clicked!");
-	} );
 } );
 
 /*
