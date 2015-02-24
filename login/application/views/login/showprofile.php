@@ -99,8 +99,8 @@ $(document).ready(function(){
         });
     });
 	*/
-	$("#bandLinks").submit(function(){
-		$.post('upload_links', $('#bandLinks').serialize());
+	//$("#bandLinks").submit(function(){
+		//$.post('upload_links', $('#bandLinks').serialize());
 		/*
         $.post("upload_links",
         {
@@ -118,6 +118,6 @@ $(document).ready(function(){
         });
 		alert("Links submitted!");
 		*/
-    });
+    //});
 });
 </script>
