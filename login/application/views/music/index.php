@@ -6,41 +6,6 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 
 
-/*
-	$server = "localhost";
-	$user = "root";
-	$pass = "4DaL0v3AM0n3y";
-	$db = "music";
-	
-	$userID = Session::get('user_id');
-
-	mysql_connect($server, $user, $pass) or die(mysql_error());
-	mysql_select_db($db) or die(mysql_error());
-	
-	$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE '$userID'") or die(mysql_error());  
-	
-	while ($row = mysql_fetch_array($result)) {
-		echo $row['id'].", ";
-		echo $row['owner'].", ";
-		echo $row['title'].", ";
-		echo $row['artist'].", ";
-		echo $row['album'].", ";
-		echo $row['year'].", ";
-		echo $row['genre'].", ";
-		echo $row['comment'].", ";
-		echo $row['track'].", ";
-		echo $row['timestamp']."<br>";
-	}
-
-	mysql_close();
-*/
-?>
-<!--<div id="drozone">
-<p style="width:50%;">
-<form action="<?php echo URL ?>upload/upld" class="dropzone"></form>
-</p>
-</div> -->
-
 <table id="music" class="display" cellspacing="0">
         <thead>
             <tr>
@@ -91,10 +56,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
-		// no need for ?id= because action is POST
-		echo "<td><form action='delete' name='del' method='post'><button type='sumbit'>delete</button></form></td>";
-
-
+		echo "<td><button id='delete' type='sumbit'>delete</button></td>";
 		echo "</tr>";
 		$count++;
 	}
@@ -111,10 +73,13 @@ $(document).ready(function() {
         "paging":   false,
         "info":     false
     } );
+	
+	$( "#delete" ).click(function() {
+		alert( "Delete clicked for: nothing yet" );
+	} );
 } );
 
 /*
-
 $(document).ready(function() {
     var table = $('#music').DataTable();
  

@@ -64,16 +64,16 @@
 	<div>
 		<form id="bandLinks" method="post">
 		Profile links:
-		<input type="text" placeholder="Provider 1" name="link1p">
-		<input type="text" placeholder="Link 1" name="link1">
-		<input type="text" placeholder="Provider 2" name="link2p">
-		<input type="text" placeholder="Link 2" name="link2">
-		<input type="text" placeholder="Provider 3" name="link3p">
-		<input type="text" placeholder="Link 3" name="link3">
-		<input type="text" placeholder="Provider 4" name="link4p">
-		<input type="text" placeholder="Link 4" name="link4">
-		<input type="text" placeholder="Provider 5" name="link5p">
-		<input type="text" placeholder="Link 5" name="link5">
+		<input type="text" placeholder="Provider 1" name="link1p" id="link1p">
+		<input type="text" placeholder="Link 1" name="link1" id="link1">
+		<input type="text" placeholder="Provider 2" name="link2p" id="link2p">
+		<input type="text" placeholder="Link 2" name="link2" id="link2">
+		<input type="text" placeholder="Provider 3" name="link3p" id="link3p">
+		<input type="text" placeholder="Link 3" name="link3" id="link3">
+		<input type="text" placeholder="Provider 4" name="link4p" id="link4p">
+		<input type="text" placeholder="Link 4" name="link4" id="link4">
+		<input type="text" placeholder="Provider 5" name="link5p" id="link5p">
+		<input type="text" placeholder="Link 5" name="link5" id="link5">
 		<input type="submit" value="Update Links" name="submit">
 		</form>
 	</div>
@@ -106,17 +106,17 @@ $(document).ready(function(){
 	$("#bandLinks").submit(function(){
         $.post("upload_links",
         {
-			link1 : "test",
-			link2 : "test",
-			link3 : "test",
-			link4 : "test",
-			link5 : "test",
+			link1 : $('textarea#link1').val(),
+			link2 : $('textarea#link2').val(),
+			link3 : $('textarea#link3').val(),
+			link4 : $('textarea#link4').val(),
+			link5 : $('textarea#link5').val(),
 			
-			link1p : "test",
-			link2p : "test",
-			link3p : "test",
-			link4p : "test",
-			link5p : "test"
+			link1p : $('textarea#link1p').val(),
+			link2p : $('textarea#link2p').val(),
+			link3p : $('textarea#link3p').val(),
+			link4p : $('textarea#link4p').val(),
+			link5p : $('textarea#link5p').val()
         });
 		//alert("Links submitted!");
     });
