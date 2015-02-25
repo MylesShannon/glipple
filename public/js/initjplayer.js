@@ -52,12 +52,14 @@ $(document).ready(function(){
 		stop: function() {
 			$(this).jPlayer("clearMedia");
 		},
+		/*
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
-		},
+		}
+		*/,
 		swfPath: "./js/jPlayer/jPlayer.swf",
 		supplied: "m4a",
 		preload: "none",
