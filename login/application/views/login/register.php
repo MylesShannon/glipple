@@ -34,7 +34,11 @@
             <input id="login_input_password_new" class="login_input" type="password" name="user_password_new" pattern=".{6,}" required autocomplete="off" />
             <label for="login_input_password_repeat">Repeat password</label>
             <input id="login_input_password_repeat" class="login_input" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
-            <!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
+            <label for="login_input_passcode">Passcode</label>
+			<input id="login_input_passcode" class="passcode_input" type="password" name="passcode" required autocomplete="off" />
+			<label for="login_input_tos">Agree to the <a href='<?php echo URL; ?>' >Terms of Service</a></label>
+			<input style="display:inline" id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
+			<!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
             <!-- to avoid weird with-slash-without-slash issues: simply always use the URL constant here -->
             <img id="captcha" src="<?php echo URL; ?>login/showCaptcha" />
             <span style="display: block; font-size: 11px; color: #999; margin-bottom: 10px">
@@ -51,11 +55,6 @@
                 </span> -->
             </label>
             <input type="text" name="captcha" required />
-			
-			<label for="login_input_passcode">
-                Passcode
-            </label>
-			<input id="login_input_passcode" class="passcode_input" type="password" name="passcode" required autocomplete="off" />
 			
             <input type="submit"  name="register" value="Register" />
         </form>
