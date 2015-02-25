@@ -38,7 +38,6 @@ $(document).ready(function(){
 */
 
 // Myles' player
-/*
 $(document).ready(function(){
 	var stream = {
 		m4a: "http://glipple.com:8000/radio"
@@ -66,7 +65,6 @@ $(document).ready(function(){
 		keyEnabled: true
 	});
 });
-*/
 
 // tut's player 
 /*
@@ -92,6 +90,7 @@ toggleDuration: true
 });
 */
 
+/*
 status.formatType = 'mp3'
 Browser canPlay('audio/mpeg')
 
@@ -142,3 +141,4 @@ $('#jquery_jplayer_1').jPlayer({
  errorAlerts: false,
  warningAlerts: false
 });
+*/
