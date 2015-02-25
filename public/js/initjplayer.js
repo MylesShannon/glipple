@@ -49,7 +49,7 @@ $(document).ready(function(){
 			ready = true;
 			$(this).jPlayer("setMedia", stream);
 		},
-		pause: function() {
+		stop: function() {
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
