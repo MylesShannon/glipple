@@ -21,24 +21,15 @@
                 </span>
             </label>
             <input id="login_input_email" class="login_input" type="email" name="user_email" required />
-            <label for="login_input_password_new">
-                Password (min. 6 characters)
-                <!-- <span class="login-form-password-pattern-reminder">
-                    Please note: using a long sentence as a password is much much safer then something like "!c00lPa$$w0rd").
-                    Have a look on
-                    <a href="http://security.stackexchange.com/questions/6095/xkcd-936-short-complex-password-or-long-dictionary-passphrase">
-                        this interesting security.stackoverflow.com thread
-                    </a>.
-                </span> -->
-            </label>
+            <label for="login_input_password_new">Password (min. 6 characters)</label>
             <input id="login_input_password_new" class="login_input" type="password" name="user_password_new" pattern=".{6,}" required autocomplete="off" />
             <label for="login_input_password_repeat">Repeat password</label>
             <input id="login_input_password_repeat" class="login_input" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
             <label for="login_input_passcode">Passcode</label>
 			<input id="login_input_passcode" class="passcode_input" type="password" name="passcode" required autocomplete="off" />
 			
-			<label for="login_input_tos">Agree to the <a href='<?php echo URL; ?>' >Terms of Service</a></label>
-			<input style="float:left" id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
+			<label for="login_input_tos">I agree to the <a href='<?php echo URL; ?>' >Glipple Terms of Service</a></label>
+			<input id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
 			
 			<!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
             <!-- to avoid weird with-slash-without-slash issues: simply always use the URL constant here -->
@@ -49,12 +40,6 @@
             </span>
             <label>
                 Please enter these characters
-                <!-- <span style="display: block; font-size: 11px; color: #999;">
-                    Please note: This captcha will be generated when the img tag requests the captcha-generation
-                    (and a real image) from YOURURL/login/showcaptcha. As this is a client-side triggered request, the
-                    $_SESSION["captcha"] dump in the footer will not show the captcha characters. The captcha generation
-                    happens AFTER the rendering of the footer.
-                </span> -->
             </label>
             <input type="text" name="captcha" required />
 			
