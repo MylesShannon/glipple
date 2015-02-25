@@ -132,7 +132,7 @@
 	
 			<form action="<?php echo URL ?>login/upload_image" id="imageUpload" method="post" class="dropzone"> </form>
 		
-		<img <?php echo "src='".$image."'"; ?> alt="Your Band Image" style="width:50%;height:50%">
+		<img <?php echo 'src="'.$image.'"'; ?> alt="Your Band Image" style="width:50%;height:50%">
 	</div>
 	<br>
 	<div>
