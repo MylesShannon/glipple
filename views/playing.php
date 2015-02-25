@@ -1,4 +1,6 @@
 <?php
+include "../header.php";
+
 //query json through http and pass array to $obj
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "http://localhost:8000/status-json.xsl"); 
@@ -17,7 +19,7 @@ mysql_select_db($db) or die(mysql_error());
 
 // print anything in id3 where id = currently playing ($obj)
 $row = mysql_fetch_array(mysql_query("SELECT * FROM id3 WHERE id = ".$obj["icestats"]["source"]["title"]))or die("missing song info");
-echo "<a href='http://54.148.79.138/music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']." - ".$row['artist']."</a>";
+echo "<a href='http://".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']." - ".$row['artist']."</a>";
 
 mysql_close(); 
 ?>
