@@ -1,60 +1,36 @@
-#!/usr/local/bin/php -q
-<?php
-error_reporting(E_ALL);
+<?
 
-/* Allow the script to hang around waiting for connections. */
-set_time_limit(0);
+$socket = fsockopen("localhost", 1234);
 
-/* Turn on implicit output flushing so we see what we're getting
- * as it comes in. */
-ob_implicit_flush();
-
-$address = 'localhost';
-$port = 1234;
-
-if (($sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {
-    echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";
-}
-
-if (socket_bind($sock, $address, $port) === false) {
-    echo "socket_bind() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";
-}
-
-if (socket_listen($sock, 5) === false) {
-    echo "socket_listen() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";
-}
+if(!$socket)return;
+stream_set_blocking($socket, 0);
+stream_set_blocking(STDIN, 0);
 
 do {
-    if (($msgsock = socket_accept($sock)) === false) {
-        echo "socket_accept() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";
-        break;
+  echo "$ ";
+  $read   = array( $socket, STDIN); $write  = NULL; $except = NULL;
+
+  if(!is_resource($socket)) return;
+  $num_changed_streams = @stream_select($read, $write, $except, null);
+  if(feof($socket)) return ;
+
+
+  if($num_changed_streams  === 0) continue;
+  if (false === $num_changed_streams) {
+      /* Error handling */
+    var_dump($read);
+    echo "Continue\n";
+    die;
+  } elseif ($num_changed_streams > 0) {
+    echo "\r";
+    $data = fread($socket, 4096);
+    if($data !== "") 
+      echo "<<< $data";
+
+    $data2 = fread(STDIN, 4096);
+
+    if($data2 !== "") {
+      echo ">>> $data2";
+      fwrite($socket, trim($data2));
     }
-    /* Send instructions. */
-    $msg = "\nWelcome to the PHP Test Server. \n" .
-        "To quit, type 'quit'. To shut down the server type 'shutdown'.\n";
-    socket_write($msgsock, $msg, strlen($msg));
-
-    do {
-        if (false === ($buf = socket_read($msgsock, 2048, PHP_NORMAL_READ))) {
-            echo "socket_read() failed: reason: " . socket_strerror(socket_last_error($msgsock)) . "\n";
-            break 2;
-        }
-        if (!$buf = trim($buf)) {
-            continue;
-        }
-        if ($buf == 'quit') {
-            break;
-        }
-        if ($buf == 'shutdown') {
-            socket_close($msgsock);
-            break 2;
-        }
-        $talkback = "PHP: You said '$buf'.\n";
-        socket_write($msgsock, $talkback, strlen($talkback));
-        echo "$buf\n";
-    } while (true);
-    socket_close($msgsock);
-} while (true);
-
-socket_close($sock);
-?>
+  }
