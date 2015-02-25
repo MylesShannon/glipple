@@ -1,10 +1,8 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
 
-// delete music
-$id = $_POST['del'];
-
 if(isset($_POST['del'])) {
+	$id = $_POST['del'];
 	deleteSong($id);
 } else {
 	echo "No submission!";
