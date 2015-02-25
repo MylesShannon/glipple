@@ -82,7 +82,7 @@ $(document).ready(function() {
 			del : d
 		});
 		// location.reload();
-		alert(d);
+		return false;
 	} );
 } );
 
