@@ -82,7 +82,6 @@ $(document).ready(function() {
 			del : d
 		});
 		return false;
-		location.reload();
 	} );
 } );
 </script>
