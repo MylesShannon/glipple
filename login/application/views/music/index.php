@@ -58,7 +58,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
-		echo "<td><button id='delete' type='submit'>delete</button></td>";
+		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
 		echo "</tr>";
 		$count++;
 	}
@@ -76,27 +76,12 @@ $(document).ready(function() {
         "info":     false
     } );
 	$('#delete').click(function() {
+		var d = $("#delete").val();
 		$.post("delete",
         { 
-			del : '76'
+			del : d
 		});
-		location.reload();
+		return false;
 	} );
 } );
-
-
-/*
-$(document).ready(function() {
-    var table = $('#music').DataTable();
- 
-    $('button').click( function() {
-        var data = table.$('input').serialize();
-        alert(
-            "The following data would have been submitted to the server: \n\n"+
-            data.substr( 0, 120 )+'...'
-        );
-        return false;
-    } );
-} );
-*/
 </script>

@@ -72,9 +72,9 @@ mysql_select_db($usersdb) or die(mysql_error());
 $result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userID) or die(mysql_error());  
 $usernamequery = mysql_fetch_array($result);
 
-$artist=$usernamequery['user_name'];
+//$artist=$usernamequery['user_name'];
 
-//$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
+$artist = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['artist'][0]);
 $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['album'][0]);
 //$year = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["year"]);
 $year = $tag['tags']['id3v2']['year'][0];
