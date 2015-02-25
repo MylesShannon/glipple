@@ -24,4 +24,8 @@ class Index extends Controller
 		
         $this->view->render('index/index');
     }
+        function image_upload()
+    {
+        $this->view->render('login/upload_image');
+    }
 }

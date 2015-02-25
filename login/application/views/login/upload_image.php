@@ -1,10 +1,6 @@
-<div class="content">
-    <h1>Upload - upld</h1>
+
 
 <?php
-
-require_once('./getid3/getid3/getid3.php');
-$getID3 = new getID3;
 
 $server = "localhost";
 $user = "root";
@@ -18,7 +14,7 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-$userDir = "/var/www/html/public/img/bands/img/".$userID;
+$userDir = "/var/www/html/public/img/bands/".$userID;
 
 // Does the user have a music directory, if not create one
 if (!is_dir($userDir)) 
