@@ -129,8 +129,11 @@
 	</div>
 	<br>
 	<div>
-	
-			<form action="<?php echo URL ?>login/upload_image" id="imageUpload" method="post" class="dropzone"> </form>
+		<form id="bandImage" method="post">
+		Select an image to upload as your band image:
+		<input type="file" name="uploadImage" id="upload_image">
+		<input type="submit" value="Upload Image" name="submit">
+		</form>
 		
 		<img src="<?php echo URLlog.$image; ?>" alt="Your Band Image" style="width:50%;height:50%">
 	</div>
