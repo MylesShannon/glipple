@@ -1,18 +1,17 @@
 // window.onload = loadXMLDoc('index');
 
-$('#menu li a').click(function() {
-	var page = $("#menu li a").val();
-	/*
-	$.ajax({
-        url: "/views/"+page+".php",
-        context: document.body,
-        success: function(result) {
-            $("#filler").html(result);
-        }	
+$(document).ready(function() {
+    $("#menu li a").click(function (event) {
+        var page = event.target.id;
+		$.ajax({
+			url: "/views/"+page+".php",
+			context: document.body,
+			success: function(result) {
+				$("#filler").html(result);
+			}	
+		});
     });
-	*/
-	alert(page);
-}
+});
 
 /*
 function loadsearchresults(s)
