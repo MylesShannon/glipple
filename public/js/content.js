@@ -1,90 +1,20 @@
-window.onload = loadXMLDoc('index');
+// window.onload = loadXMLDoc('index');
 
-function loadXMLDoc(content)
-{
+$('#menu.li.a').click(function() {
+	var page = $("#menu.li.a").val();
 	$.ajax({
-        url: "/views/"+content+".php",
+        url: "/views/"+page+".php",
         context: document.body,
         success: function(result) {
             $("#filler").html(result);
         }	
     });
-	/*
-	var xmlhttp;
-	if (window.XMLHttpRequest)
-		{
-			// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		} else {
-			// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-	
-	xmlhttp.onreadystatechange=function()
-	{
-		if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		{
-			document.getElementById("filler").innerHTML=xmlhttp.responseText;
-		}
-	}
-	
-	console.log(content);
-
-	if(content == "home") {
-		xmlhttp.open("GET","views/index.php",true);
-	} else if(content == "test") {
-		xmlhttp.open("GET","views/test.php",true);
-	} else if(content == "radio") {
-		xmlhttp.open("GET","views/radio.php",true);
-	} else if(content == "help") {
-		xmlhttp.open("GET","views/help.php",true);
-	} else if(content == "blog") {
-		xmlhttp.open("GET","views/blog.php",true);
-	} else if(content == "discover") {
-		xmlhttp.open("GET","views/discover.php",true);
-	} else if(content.indexOf("userid-") == 0) {
-		xmlhttp.open("GET","login/overview/showuserprofile/"+content.substring(7),true);
-		console.log(content+" called!");
-	} else {
-		xmlhttp.open("GET","views/error.php",true);
-	}
-	
-	xmlhttp.send();
-	*/
+	alert(page);
 }
 
-
+/*
 function loadsearchresults(s)
 {
-	/*
-	var xmlhttp;
-	if (window.XMLHttpRequest)
-		{
-			// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		} else {
-			// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-	
-	xmlhttp.onreadystatechange=function()
-	{
-		if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		{
-			document.getElementById("filler").innerHTML=xmlhttp.responseText;
-		}
-	}
-	
-	console.log();
-
-		if (s == ""){
-		xmlhttp.open("GET","views/index.php",true);
-		} else {
-		xmlhttp.open("GET","views/search.php?s="+s,true);
-		}
-	
-	xmlhttp.send();
-	*/
 	$.ajax({
         url: "/views/search.php?s="+s,
         context: document.body,
@@ -96,35 +26,6 @@ function loadsearchresults(s)
 }
 	function loadprofile(s)
 {
-	/*
-	var xmlhttp;
-	if (window.XMLHttpRequest)
-		{
-			// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		} else {
-			// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-	
-	xmlhttp.onreadystatechange=function()
-	{
-		if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		{
-			document.getElementById("filler").innerHTML=xmlhttp.responseText;
-		}
-	}
-	
-	console.log();
-
-		if (s == ""){
-		xmlhttp.open("GET","views/index.php",true);
-		} else {
-		xmlhttp.open("GET","views/search.php?s="+s,true);
-		}
-	
-	xmlhttp.send();
-	*/
 	$.ajax({
         url: "/views/profile.php?id="+s,
         context: document.body,
@@ -134,3 +35,4 @@ function loadsearchresults(s)
     });
 
 }
+*/

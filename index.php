@@ -120,16 +120,16 @@
 		<div class="footer_left_box">
 			<ul id="menu">
 				<li>
-					<a href="#home" onclick="loadXMLDoc('index')">Home</a>
+					<a href="#home" id="home">Home</a>
 				</li>
 				<li>
-					<a href="#help" onclick="loadXMLDoc('help')">Help</a>
+					<a href="#help" id="help">Help</a>
 				</li>
 				<li>
-					<a href="#blog" onclick="loadXMLDoc('blog')">Blog</a>
+					<a href="#blog" id="blog">Blog</a>
 				</li>
 				<li>
-					<a href="#contact" onclick="loadXMLDoc('contact')">Contact</a>
+					<a href="#contact" id="contact">Contact</a>
 				</li>
 			</ul>
         </div>
