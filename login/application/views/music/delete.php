@@ -17,7 +17,7 @@ function deleteSong($id) {
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
 	$db = "music";
-	$user = Session::get('user_id')
+	$user = Session::get('user_id');
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
