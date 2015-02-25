@@ -34,4 +34,5 @@ do {
       fwrite($socket, trim($data2));
     }
   }
+} while(true);
 ?>
