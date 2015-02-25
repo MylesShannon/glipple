@@ -76,9 +76,10 @@ $(document).ready(function() {
         "info":     false
     } );
 	$('#delete').click(function() {
+		var d = $("#delete").val();
 		$.post("delete",
         { 
-			del : $("#delete").val()
+			del : d
 		});
 		location.reload();
 	} );
