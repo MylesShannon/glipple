@@ -40,7 +40,7 @@ $(document).ready(function(){
 // Myles' player
 $(document).ready(function(){
 	var stream = {
-		m4a: "http://glipple.com:8000/radio"
+		mp3: "http://glipple.com:8000/radio"
 	},
 	ready = false;
 		
@@ -58,10 +58,9 @@ $(document).ready(function(){
 				// Setup the media stream again and play it.
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
-		}
-		*/,
+		}, */
 		swfPath: "./js/jPlayer/jPlayer.swf",
-		supplied: "m4a",
+		supplied: "mp3",
 		preload: "none",
 		wmode: "window",
 		keyEnabled: true
