@@ -6,7 +6,7 @@
 
 // Global vars
 $userID = Session::get('user_id');
-$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
+$bandImageDir = "/var/www/html/public/bands/img/".$userID."/";
 $server = "localhost";
 $user = "root";
 $pass = "4DaL0v3AM0n3y";
@@ -22,7 +22,7 @@ if(isset($_POST["submit"])) {
 
 function upload_image() {
 	$userID = Session::get('user_id');
-	$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
+	$bandImageDir = "/var/www/html/public/bands/img/".$userID."/";
 	$server = "localhost";
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
@@ -96,7 +96,7 @@ function upload_image() {
 function mysql_image($imageFileType){
 	
 	$userID = Session::get('user_id');
-	$bandImageDir = "/var/www/html/public/img/bands/".$userID."/";
+	$bandImageDir = "/var/www/html/public/bands/img/".$userID."/";
 	$server = "localhost";
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
