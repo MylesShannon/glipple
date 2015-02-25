@@ -36,10 +36,10 @@
             <input id="login_input_password_repeat" class="login_input" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
             <label for="login_input_passcode">Passcode</label>
 			<input id="login_input_passcode" class="passcode_input" type="password" name="passcode" required autocomplete="off" />
-			<div style='display:inline'>
+			
 			<label for="login_input_tos">Agree to the <a href='<?php echo URL; ?>' >Terms of Service</a></label>
-			<input id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
-			</div>
+			<input style="float:left" id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
+			
 			<!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
             <!-- to avoid weird with-slash-without-slash issues: simply always use the URL constant here -->
             <img id="captcha" src="<?php echo URL; ?>login/showCaptcha" />
