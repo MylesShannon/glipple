@@ -17,16 +17,16 @@ function deleteSong($id) {
 	$user = "root";
 	$pass = "4DaL0v3AM0n3y";
 	$db = "music";
-	$user = Session::get('user_id');
+	$owner = Session::get('user_id');
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
 
 	// take passed info and commit it to db
-	$result = mysql_query("DELETE FROM id3 WHERE id = '$id' AND owner = '$user'") or die(mysql_error());
+	$result = mysql_query("DELETE FROM id3 WHERE id = '$id' AND owner = '$owner'") or die(mysql_error());
 	  
 	// delete file
-	unlink("/media/music/".$user."/".$id.".mp3");
+	unlink("/media/music/".$owner."/".$id.".mp3");
 
 	// echo "deleted song '$id'";
 	
