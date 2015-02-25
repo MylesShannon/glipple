@@ -85,20 +85,4 @@ $(document).ready(function() {
 		return false;
 	} );
 } );
-
-
-/*
-$(document).ready(function() {
-    var table = $('#music').DataTable();
- 
-    $('button').click( function() {
-        var data = table.$('input').serialize();
-        alert(
-            "The following data would have been submitted to the server: \n\n"+
-            data.substr( 0, 120 )+'...'
-        );
-        return false;
-    } );
-} );
-*/
 </script>
