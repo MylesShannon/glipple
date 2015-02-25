@@ -81,8 +81,8 @@ $(document).ready(function() {
         { 
 			del : d
 		});
-		// location.reload();
 		return false;
+		location.reload();
 	} );
 } );
 
