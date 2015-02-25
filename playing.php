@@ -1,4 +1,4 @@
-<?
+<?php
 
 $socket = fsockopen("localhost", 1234);
 
@@ -34,3 +34,4 @@ do {
       fwrite($socket, trim($data2));
     }
   }
+?>
