@@ -23,7 +23,7 @@ function deleteSong($id) {
 
 
 	// take passed info and commit it to db
-	$result = mysql_query("DELETE FROM id3 WHERE id = '$id' AND user_id = '$user'") or die(mysql_error());
+	$result = mysql_query("DELETE FROM id3 WHERE id = '$id' AND owner = '$user'") or die(mysql_error());
 	  
 	// delete file
 	unlink("/media/music/".$user."/".$id.".mp3");
