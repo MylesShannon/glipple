@@ -138,7 +138,7 @@
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
 		-->
-		<img <?php echo "src='glipple.com/public/img/bands/".$userid."/profile.jpg'"; ?> alt="Your Profile Image" style="width:50%;height:50%">
+		<img <?php echo "src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'"; ?> alt="Your Profile Image" style="width:50%;height:50%">
 	</div>
 	<br>
 	<div>
