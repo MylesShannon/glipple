@@ -58,9 +58,7 @@ if ($uploadok == 0){
 		$path = $userDir."/profile.jpg";
 	rename($target_dir, $path);
 
-define('profilepic', URL."public/img/profile.jpg');
-
-mysql_query("INSERT INTO $table (band_image) VALUES ($path)") or die(mysql_error());  
+mysql_query("INSERT INTO $table (band_image) VALUES ('$path')") or die(mysql_error());  
 
 	} else {
 	    echo "Sorry, there was an error uploading your file.";
