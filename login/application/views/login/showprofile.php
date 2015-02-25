@@ -132,7 +132,7 @@
 	
 			<form action="<?php echo URL ?>login/upload_image" id="imageUpload" method="post" class="dropzone"> </form>
 		
-		<img src="<?php echo profilepic; ?>" alt="Your Band Image" style="width:50%;height:50%">
+		<img src="<?php echo URL.'public/img/band/'.Session::get('user_id').'/profile.jpg' ?>" alt="Your Band Image" style="width:50%;height:50%">
 	</div>
 	<br>
 	<div>
