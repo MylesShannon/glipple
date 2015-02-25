@@ -1,7 +1,7 @@
 // window.onload = loadXMLDoc('index');
 
-$('#menu.li.a').click(function() {
-	var page = $("#menu.li.a").val();
+$('#menu li a').click(function() {
+	var page = $("#menu li a").val();
 	$.ajax({
         url: "/views/"+page+".php",
         context: document.body,
