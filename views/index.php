@@ -39,7 +39,7 @@
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr><td>".$count++."</td>";
 		echo "<td><a href='".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
-		echo "<td><a href='#profile-".$row['artist']."' id='".$row['owner']."'>".$row['artist']."</a></td>";
+		echo "<td><a href='#profile' id='".$row['owner']."'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
 	}
