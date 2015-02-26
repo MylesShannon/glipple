@@ -61,13 +61,14 @@ if ( $imageFileType == 'jpeg' || $imageFileType == 'JPEG' || $imageFileType == '
 if ($uploadok == 0){
 
 	    echo "Sorry, your file was not uploaded.";
-} else {
+}
+	else{
 	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
 	    echo "The file ". $filename. " has been uploaded.";
 		$path = $userDir."/profile.jpg";
 	rename($target_dir, $path);
 
-if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))) {
+if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
 // Row with user_id exists but band_image is NULL
 		echo "<br>Row exists but band_image is NULL";
 		
@@ -79,9 +80,8 @@ mysql_query("UPDATE $table SET band_image = '$path' WHERE user_id LIKE '$userID'
 		echo "<br>Row does not exist";
 		mysql_query("INSERT INTO $table (user_id, band_image) VALUES('$userID', '$path') ") or die(mysql_error());
 	}
-}else{
-echo "Sorry, your file was not uploaded.";
 }
 }
 mysql_close();
 ?>
+</div>
