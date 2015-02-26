@@ -50,7 +50,7 @@ mysql_close();
 </table>
 
 <script>
-$(#latest).ready(function() {
+$(document).ready(function() {
     $('#latest').dataTable( {
         "paging":   false,
         "info":     false
