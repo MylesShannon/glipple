@@ -18,6 +18,26 @@ $(document).ready(function() {
 			}
 		});
 	};
+	
+	$("#menu li a").click(function (event) {
+        var page = event.target.id;
+		content(page);
+    });
+	
+	//load profile on click
+	$("#latest").click(function (event) {
+        var late = event.target.id;
+		profile(late);
+    });
+	function profile(late) {
+		$.ajax({
+			url: "/views/profile.php?id="+late,
+			context: document.body,
+			success: function(result) {
+				$("#filler").html(result);
+			}	
+		});
+	}
 });
 
 /*
