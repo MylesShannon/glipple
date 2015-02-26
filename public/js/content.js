@@ -26,12 +26,12 @@ $(document).ready(function() {
 	
 	//load profile on click
 	$("#latest * a").click(function (event) {
-        var late = event.target.id;
-		profile(late);
+        var pro = event.target.id;
+		profile(pro);
     });
-	function profile(late) {
+	function profile(pro) {
 		$.ajax({
-			url: "/views/profile.php?id="+late,
+			url: "/views/profile.php?id="+pro,
 			context: document.body,
 			success: function(result) {
 				$("#filler").html(result);

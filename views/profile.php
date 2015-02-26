@@ -1,7 +1,4 @@
-
-	<?php include "../header.php"; ?>
-
-<?php 
+<?php include "../header.php";
 
 	$userid = trim($_GET["id"]);
 	$server = "localhost";

@@ -187,7 +187,7 @@ $(document).ready(function(){
             data: formData,
             async: false,
             success: function (msg) {
-                alert(msg)
+                //alert(msg)
             },
             cache: false,
             contentType: false,
