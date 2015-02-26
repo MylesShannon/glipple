@@ -120,7 +120,7 @@
 		<div class="footer_left_box">
 			<ul id="menu">
 				<li>
-					<a href="#home" id="home">Home</a>
+					<a href="#home" id="index">Home</a>
 				</li>
 				<li>
 					<a href="#help" id="help">Help</a>
