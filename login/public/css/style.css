@@ -7,25 +7,6 @@ white: #fff
 black #000
 */
 
-/*
-#login_label_tos {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
-
-#login_input_tos {
-    width: 13px;
-    height: 13px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    *overflow: hidden;
-}
-*/
-
 drozone {
 width: 50%;
 float:right;
@@ -503,4 +484,27 @@ table.overview-table td.avatar {
 .avatar img {
     width: 44px;
     height: 44px;
+}
+
+/*
+#login_label_tos {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+#login_input_tos {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+*/
+
+#ToS {
+	display:none;
 }
