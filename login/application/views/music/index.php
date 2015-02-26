@@ -67,6 +67,7 @@ mysql_close();
 ?>
 		</tbody>
 </table>
+</div>
 
 <script>
 
