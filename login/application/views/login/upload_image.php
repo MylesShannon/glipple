@@ -15,7 +15,7 @@ mysql_select_db($db) or die(mysql_error());
 $userID = Session::get('user_id');
 
 $userDir = URL."public/img/bands/".$userID;
-
+$target_dir = "/var/www/html/public/img/bands/".$userID."/profile.jpg";
 // Does the user have a music directory, if not create one
 if (!is_dir($userDir)) 
 {
@@ -35,9 +35,8 @@ echo "File basename:".$filename;
  	// we need to make dropzone error
 	$uploadok =0;
 	}	
-$target_dir = $userDir ."/". $filename;
 
-$imageFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
+$imageFileType = pathinfo($userDir,PATHINFO_EXTENSION);
 
 if ($imageFileType!='jpg'){
 	$uploadok =0;
@@ -55,11 +54,15 @@ if ($uploadok == 0){
 	else{
 	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
 	    echo "The file ". $filename. " has been uploaded.";
-		$path = $userDir."/profile.jpg";
-	rename($target_dir, $path);
 
-mysql_query("UPDATE $table SET band_image = '$path' WHERE user_id LIKE '$userID'") or die(mysql_error());  
+		if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
+			mysql_query("UPDATE $table SET band_image = '$target_dir' WHERE user_id LIKE '$userID'") or die(mysql_error());  
+			echo "The database has been updated.";
+		} else{
+			mysql_query("INSERT INTO $table (user_id, band_image) VALUES('$userID', '$target_dir') ") or die(mysql_error());
+			echo "The database has been updated with a new row.";
 
+		}
 	} else {
 	    echo "Sorry, there was an error uploading your file.";
 	}
