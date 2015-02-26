@@ -34,11 +34,14 @@ echo "File basename:".$filename;
  {
  	// we need to make dropzone error
 	$uploadok =0;
+
 	}	
 
-$imageFileType = pathinfo($userDir,PATHINFO_EXTENSION);
+$imageFileType = pathinfo($filename,PATHINFO_EXTENSION);
 
 if ($imageFileType!='jpg'){
+
+	echo "Sorry, only JPG/JPEG are allowed.";
 	$uploadok =0;
 }
 
