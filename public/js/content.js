@@ -1,12 +1,6 @@
 // window.onload = loadXMLDoc('index');
 
-$(document).ready(function() {
-	//init dataTable
-	$('#latest').dataTable( {
-        "paging":   false,
-        "info":     false
-    } );
-	
+$(document).ready(function() {	
 	//dynamic tab loading
 	//load index by default
 	content('index');
