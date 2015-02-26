@@ -79,8 +79,10 @@ mysql_query("UPDATE $table SET band_image = '$path' WHERE user_id LIKE '$userID'
 		// If row with user_id does not exist, insert new row and rename file to new row id
 		echo "<br>Row does not exist";
 		mysql_query("INSERT INTO $table (user_id, band_image) VALUES('$userID', '$path') ") or die(mysql_error());
+		} else {
+		    echo "Sorry, there was an error uploading your file.";
+		}
 	}
-}
 }
 mysql_close();
 ?>
