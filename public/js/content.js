@@ -1,16 +1,22 @@
 // window.onload = loadXMLDoc('index');
 
 $(document).ready(function() {
+	content('index');
+	
     $("#menu li a").click(function (event) {
         var page = event.target.id;
+		content(page);
+    });
+	
+	function content(page) {
 		$.ajax({
 			url: "/views/"+page+".php",
 			context: document.body,
 			success: function(result) {
 				$("#filler").html(result);
-			}	
+			}
 		});
-    });
+	};
 });
 
 /*
