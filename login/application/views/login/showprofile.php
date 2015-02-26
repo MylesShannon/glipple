@@ -132,9 +132,9 @@
 	
 		<!--	<form action="<?php echo URL ?>login/upload_image" id="imageUpload" method="post" class="dropzone"> </form>
 		-->
-				<form id="bandImage" method="post" >
+				<form id="bandImage" name="uploadImage" method="post" >
 		Select an image to upload as your band image:
-		<input type="file" name="uploadImage" id="file">
+		<input type="file" id="file">
 		<input type="submit" value="Upload Image" name="submit">
 		</form>
 		
