@@ -345,7 +345,7 @@ label {
 }
 
 input {
-    /* display: block; */
+    display: block;
     margin-bottom: 15px;
     min-width: 200px;
     padding: 10px;
