@@ -35,13 +35,23 @@ echo "File basename:".$filename;
  	// we need to make dropzone error
 	$uploadok =0;
 	}	
+
+		if ($_FILES["file"]["size"] > 500000) {
+		echo "Sorry, your file is too large.";
+		$uploadOk = 0;
+	}
 $target_dir = $userDir ."/". $filename;
+
 
 $imageFileType = pathinfo($target_dir,PATHINFO_EXTENSION);
 
-if ($imageFileType!='jpg'){
-	$uploadok =0;
-}
+if ( $imageFileType == 'jpeg' || $imageFileType == 'JPEG' || $imageFileType == 'JPG') {
+			$imageFileType = 'jpg';
+	} else {
+		// Allow certain file formats
+		echo "Sorry, only JPG/JPEG are allowed.";
+		$uploadOk = 0;
+	}
 
 //$song_file = mime_content_type($_FILES["file"]["tmp_name"]);
 //echo $song_file;
@@ -58,13 +68,22 @@ if ($uploadok == 0){
 		$path = $userDir."/profile.jpg";
 	rename($target_dir, $path);
 
+if(mysql_num_rows(mysql_query("SELECT user_id FROM $table WHERE user_id = '$userID'"))){
+// Row with user_id exists but band_image is NULL
+		echo "<br>Row exists but band_image is NULL";
+		
+
 mysql_query("UPDATE $table SET band_image = '$path' WHERE user_id LIKE '$userID'") or die(mysql_error());  
 
-	} else {
-	    echo "Sorry, there was an error uploading your file.";
+	}else{
+		// If row with user_id does not exist, insert new row and rename file to new row id
+		echo "<br>Row does not exist";
+		mysql_query("INSERT INTO $table (user_id, band_image) VALUES('$userID', '$path') ") or die(mysql_error());
+		} else {
+		    echo "Sorry, there was an error uploading your file.";
+		}
 	}
 }
-
 mysql_close();
 ?>
 </div>
