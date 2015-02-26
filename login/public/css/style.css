@@ -24,18 +24,6 @@ black #000
     *overflow: hidden;
 }
 
-#music {
-	width:100%;
-}
-
-.musicRows td {
-	border: 1px solid black;
-}
-
-.musicRows input {
-	width:100%;
-}
-
 drozone {
 width: 50%;
 float:right;
@@ -430,7 +418,7 @@ a.facebook-register-button:hover {
 .register-default-box,
 .register-facebook-box {
     display: inline-block;
-    width: 325px;
+    width: 425px;
     vertical-align: top;
 }
 
