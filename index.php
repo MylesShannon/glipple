@@ -6,24 +6,9 @@
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-    <title><?php 	
-		if ($_GET) 
-		{
-			$page = $_GET['url'];
-			$parts = explode("/",$page); 
-			$page = $parts['0']; 
-			
-			if($page == 'index')
-			{
-				$page = 'home';
-			}
-		} else {
-			$page = "home";
-		}
-		
-		$page = ucfirst($page);
-		echo 'Glipple - '.$page;
-	?></title>
+    <title> 	
+		Glipple
+	</title>
 	
 	<?php include "./header.php"; ?>
 	
