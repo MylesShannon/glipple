@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 	
 	//load profile on click
-	$("#latest").click(function (event) {
+	$("#latest * a").click(function (event) {
         var late = event.target.id;
 		profile(late);
     });
