@@ -15,10 +15,12 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
 	<link rel="icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
+	
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" />
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
+	<!-- <link rel="stylesheet" href="<?php echo URL; ?>public/css/stickyfooter.css" /> -->
 	
 	<!-- google analytics 
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/google.js"></script>
@@ -27,6 +29,12 @@
 	
 </head>
 <body>
+	<!--
+    <div class="debug-helper-box">
+        DEBUG HELPER: you are in the view: <?php echo $filename; ?>
+    </div>
+	-->
+
     <div class='title-box'>
         <a href="#home" id="index" class="link"><img class="logo" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple"></a>
 	</div>
@@ -73,10 +81,28 @@
 	<!-- load Now Playing js -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script> 
 	
+	<!--
+	<div class="search-bar">
+		<form id="searchbar">
+			<input type="text" placeholder="Search for Title, Artist, Album, or Genre" id="s" onkeyup="loadsearchresults(this.value)"><br>
+		</form>
+	</div>
+	-->
+	
 	<div class="clear-both"></div>
 	
-	<div class="header">
-		<div class="header_left_box">
+	<div class="content">
+		<div id="filler"></div>
+	</div>
+	
+	<!-- content filler AJAX js -->
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/content.js"></script> 
+	
+	<?php //include("./views/index.php"); ?>
+	
+    <div class="footer">
+		
+		<div class="footer_left_box">
 			<ul id="menu">
 				<li>
 					<a href="#help" id="help" class="link">Help</a>
@@ -89,23 +115,14 @@
 				</li>
 			</ul>
         </div>
-	</div>
-	
-	<div class="content">
-		<div id="filler"></div>
-	</div>
-	
-	<!-- content filler AJAX js -->
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/content.js"></script> 
-	
-    <div class="footer">	
+		
 		<div class="footer_right_box">
 			<div class="login-access-box">
 				<a href="<?php echo URL; ?>login" >artist login</a>
 			</div>
 		</div>
 		
-		<!-- <div class="clear-both"></div> -->
+		<div class="clear-both"></div>
     </div>
 </body>
 </html>
