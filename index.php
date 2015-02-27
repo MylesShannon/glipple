@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class='title-box'>
-        <a href="#home" id="index" class="content"><img class="logo" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple"></a>
+        <a href="#home" id="index" class="link"><img class="logo" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple"></a>
 	</div>
 	 
 	<div class='radio'>
@@ -79,13 +79,13 @@
 		<div class="header_left_box">
 			<ul id="menu">
 				<li>
-					<a href="#help" id="help" class="content">Help</a>
+					<a href="#help" id="help" class="link">Help</a>
 				</li>
 				<li>
-					<a href="#blog" id="blog" class="content">Blog</a>
+					<a href="#blog" id="blog" class="link">Blog</a>
 				</li>
 				<li>
-					<a href="#contact" id="contact" class="content">Contact</a>
+					<a href="#contact" id="contact" class="link">Contact</a>
 				</li>
 			</ul>
         </div>

@@ -3,7 +3,7 @@ $(document).ready(function() {
 	//load index by default
 	content('index');
 	//load tab on what is clicked
-    $(".content").click(function (event) {
+    $(".link").click(function (event) {
         var page = event.target.id;
 		content(page);
     });
