@@ -1,11 +1,9 @@
-// window.onload = loadXMLDoc('index');
-
 $(document).ready(function() {	
 	//dynamic tab loading
 	//load index by default
 	content('index');
 	//load tab on what is clicked
-    $("#menu li a").click(function (event) {
+    $(".content").click(function (event) {
         var page = event.target.id;
 		content(page);
     });
