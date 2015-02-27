@@ -36,7 +36,7 @@
 	-->
 
     <div class='title-box'>
-        <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple"></a>
+        <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
 	 
 	<div class='radio'>
