@@ -30,6 +30,7 @@
 
 			<label for="login_input_tos" id="login_label_tos">I agree to the <a href='<?php echo URL; ?>' >Glipple Terms of Service</a></label>
 			<input id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
+			<div id="#return_display "/>
 			
 			<!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
             <!-- to avoid weird with-slash-without-slash issues: simply always use the URL constant here -->

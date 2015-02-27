@@ -494,3 +494,6 @@ table.overview-table td.avatar {
     display: inline;
 	min-width:0px;
 }
+
+#return_display {
+     display:block;   
