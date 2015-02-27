@@ -491,9 +491,6 @@ table.overview-table td.avatar {
 }
 
 #login_input_tos {
-    display: inline;
 	min-width:0px;
+    display: inline;
 }
-
-#return_display {
-     display:block;   
