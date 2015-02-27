@@ -428,7 +428,7 @@ class LoginModel
         } elseif (empty($_POST['passcode']) OR $_POST['passcode'] != PASSCODE) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSCODE_FIELD_EMPTY;
             // return false;
-        } elseif (empty($_POST['tos']) {
+        } elseif (empty($_POST['tos'])) {
 			$_SESSION["feedback_negative"][] = FEEDBACK_TOS_EMPTY;
 		} elseif (empty($_POST['user_password_new']) OR empty($_POST['user_password_repeat'])) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_FIELD_EMPTY;
