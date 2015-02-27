@@ -5,6 +5,10 @@ $(document).ready(function() {
 	//load tab on what is clicked
     $(".link").click(function (event) {
         var page = event.target.id;
+	if (page == 'logo')
+	{
+		page = 'index';
+	}
 		content(page);
     });
 	function content(page) {
@@ -15,7 +19,7 @@ $(document).ready(function() {
 				$("#filler").html(result);
 			}
 		});
-	};
+	}
 	
 });
 
