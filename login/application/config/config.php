@@ -18,6 +18,9 @@ ini_set("display_errors", 1);
 define('PASSCODE', 'Pg2Phk19Pmg13');
 define('FEEDBACK_PASSCODE_FIELD_EMPTY', 'Passcode invalid!');
 
+//ToS
+define('FEEDBACK_TOS_EMPTY', 'Please agree to the Terms of Service!');
+
 /**
  * Configuration for: Base URL
  * This is the base url of our app. if you go live with your app, put your full domain name here.

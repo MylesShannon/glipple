@@ -42,7 +42,7 @@
 			
 			<div id="ToS">
 				<label for="login_input_tos" id="login_label_tos">I agree to the <a href='#ToS' id="ToS_link">Glipple Terms of Service</a></label>
-				<input id="login_input_tos" class="tos_input" type="checkbox" name="checkbox" required />
+				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
 			</br>
 			

@@ -427,8 +427,10 @@ class LoginModel
             $_SESSION["feedback_negative"][] = FEEDBACK_USERNAME_FIELD_EMPTY;
         } elseif (empty($_POST['passcode']) OR $_POST['passcode'] != PASSCODE) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSCODE_FIELD_EMPTY;
-            return false;
-        }elseif (empty($_POST['user_password_new']) OR empty($_POST['user_password_repeat'])) {
+            // return false;
+        } elseif (empty($_POST['tos']) {
+			$_SESSION["feedback_negative"][] = FEEDBACK_TOS_EMPTY;
+		} elseif (empty($_POST['user_password_new']) OR empty($_POST['user_password_repeat'])) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_FIELD_EMPTY;
         } elseif ($_POST['user_password_new'] !== $_POST['user_password_repeat']) {
             $_SESSION["feedback_negative"][] = FEEDBACK_PASSWORD_REPEAT_WRONG;
@@ -458,6 +460,7 @@ class LoginModel
             // clean the input
             $user_name = strip_tags($_POST['user_name']);
             $user_email = strip_tags($_POST['user_email']);
+			$user_tos = $_POST['tos'];
 
             // crypt the user's password with the PHP 5.5's password_hash() function, results in a 60 character
             // hash string. the PASSWORD_DEFAULT constant is defined by the PHP 5.5, or if you are using PHP 5.3/5.4,
@@ -496,6 +499,7 @@ class LoginModel
             $query->execute(array(':user_name' => $user_name,
                                   ':user_password_hash' => $user_password_hash,
                                   ':user_email' => $user_email,
+								  ':user_tos' => $user_tos,
                                   ':user_creation_timestamp' => $user_creation_timestamp,
                                   ':user_activation_hash' => $user_activation_hash,
                                   ':user_provider_type' => 'DEFAULT'));
