@@ -52,6 +52,9 @@ $(document).ready(function(){
 		stop: function() {
 			$(this).jPlayer("clearMedia");
 		},
+		pause: function() {
+			$(this).jPlayer("clearMedia");
+		},
 		/*
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {

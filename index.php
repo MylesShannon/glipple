@@ -93,6 +93,30 @@
 	-->
 	
 	<div class="clear-both"></div>
+    <div class="header">
+		
+		<div class="header_left_box">
+			<ul id="menu">
+				<li>
+					<a href="#help" id="help" class="link">Help</a>
+				</li>
+				<li>
+					<a href="#blog" id="blog" class="link">Blog</a>
+				</li>
+				<li>
+					<a href="#contact" id="contact" class="link">Contact</a>
+				</li>
+			</ul>
+        </div>
+		
+		<div class="header_right_box">
+			<div class="login-access-box">
+				<a href="<?php echo URL; ?>login" >artist login</a>
+			</div>
+		</div>
+		
+		<div class="clear-both"></div>
+    </div>
 	
 	<div class="content">
 		<div id="filler"></div>
