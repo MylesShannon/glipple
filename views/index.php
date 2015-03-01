@@ -5,9 +5,6 @@
         <thead>
 
             <tr>
-                    <div>
-Test Div 2
-</div>
                 <th>#</th>
                 <th>Title</th>
                 <th>Artist</th>
@@ -19,7 +16,7 @@ Test Div 2
         <tfoot>
             <tr>
                 <th>#</th>
-                <th>Title</th>0000000
+                <th>Title</th>
                 <th>Artist</th>
                 <th>Album</th>
                 <th>Genre</th>
