@@ -63,6 +63,7 @@ $(document).ready(function(){
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
+				preload: "none",
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
 		},
