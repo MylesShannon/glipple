@@ -34,11 +34,14 @@
         DEBUG HELPER: you are in the view: <?php echo $filename; ?>
     </div>
 	-->
-
+	<table>
+	<tr>
+	<td>
     <div class='title-box'>
         <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
-	 
+	 </td>
+	 <td>
 	<div class='radio'>
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 			<div id="jp_container_1" class="jp-audio">
@@ -80,7 +83,7 @@
 	
 	<!-- load Now Playing js -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script> 
-	
+	</td></tr></table>
 	<!--
 	<div class="search-bar">
 		<form id="searchbar">
