@@ -23,3 +23,6 @@ define('URL', 'http://glipple.com/');
 	<script src="<?php echo URL; ?>public/js/prototype.js" type="text/javascript"></script>
 	<script src="<?php echo URL; ?>public/js/scriptaculous.js?load=controls" type="text/javascript"></script>
 	-->
+
+	<!-- load stickyfooter -->
+	<link rel="stylesheet" href="<?php echo URL; ?>public/css/stickyfooter.css" />
