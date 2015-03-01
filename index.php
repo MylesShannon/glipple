@@ -34,7 +34,7 @@
         DEBUG HELPER: you are in the view: <?php echo $filename; ?>
     </div>
 	-->
-	<table>
+	<table align="center">
 	<tr>
 	<td>
     <div class='title-box'>
