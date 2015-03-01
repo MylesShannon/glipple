@@ -15,8 +15,8 @@
             <tr>
                 <th>#</th>
                 <th>Title</th>
-                <th>Album</th>
                 <th>Artist</th>
+                <th>Album</th>
                 <th>Genre</th>
                 </tr>
         </tfoot>

@@ -1389,9 +1389,9 @@
 
   Dropzone.options = {};
 
-    Dropzone.options.songUpload = {
+    Dropzone.options.imageUpload = {
     maxFilesize:20,
-    acceptedFiles: ".mp3"      };
+    acceptedFiles: ".jpg"      };
 
   Dropzone.optionsForElement = function(element) {
     if (element.getAttribute("id")) {
