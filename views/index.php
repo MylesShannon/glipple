@@ -3,10 +3,11 @@
 <table id="latest" class="display" cellspacing="0">
 
         <thead>
-        <div>
-Test Div 1
-</div>
+
             <tr>
+                    <div>
+Test Div 2
+</div>
                 <th>#</th>
                 <th>Title</th>
                 <th>Artist</th>
