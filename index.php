@@ -140,12 +140,13 @@
 				<li>
 					<a href="#contact" id="contact" class="link">Contact</a>
 				</li>
-				<li style="width:100%; float:center;">
-				&copy; Glipple Inc 2015
-				</li>
 			</ul>
         </div>
 
+        <div class="footer_right_box">
+				&copy; Glipple Inc 2015
+			
+        </div>
     </div>
 </body>
 </html>
