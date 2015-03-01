@@ -41,6 +41,9 @@
         <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
 	 </td>
+	 <td style="float:center;">
+	 Free. Legal. Easy.
+	 </td>
 	 <td>
 	<div class='radio'>
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
