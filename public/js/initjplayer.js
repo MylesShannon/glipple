@@ -46,14 +46,17 @@ $(document).ready(function(){
 		
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
+			preload: "none",
 			ready = true;
 			$(this).jPlayer("setMedia", stream);
 		},
 		stop: function() {
+			preload: "none",
 			ready=false;
 			$(this).jPlayer("clearMedia");
 		},
 		pause: function() {
+			preload: "none",
 			ready=false;
 			$(this).jPlayer("clearMedia");
 		},
