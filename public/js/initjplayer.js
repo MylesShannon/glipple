@@ -48,20 +48,20 @@ $(document).ready(function(){
 		
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
+			t= new Date().getTime();
+			t = (t-time)/1000;
 			preload: "none",
 			ready = true;
 			$(this).jPlayer("setMedia", stream);
 		},
 		stop: function() {
-			t= new Date().getTime();
-			t = (t-time)/1000;
+			time= new Date().getTime();
 			preload: "none",
 			ready=false;
 			$(this).jPlayer("clearMedia");
 		},
 		pause: function() {
-			t= new Date().getTime();
-			t = (t-time)/1000;
+			time= new Date().getTime();
 			preload: "none",
 			ready=false;
 			$(this).jPlayer("clearMedia");
