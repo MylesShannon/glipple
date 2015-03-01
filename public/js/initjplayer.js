@@ -50,9 +50,11 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream);
 		},
 		stop: function() {
+			ready=false;
 			$(this).jPlayer("clearMedia");
 		},
 		pause: function() {
+			ready=false;
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
