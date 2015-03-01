@@ -1,8 +1,5 @@
-<h1>How Can We Help You?</h1>
+<h1>Legal</h1>
 
 <p>
-	<ul>
-	<li>Signup
-	<li>Radio Player
-	<li>Downloading, Uploading
+	ToS and PP
 </p>
