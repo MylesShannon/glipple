@@ -123,7 +123,7 @@ p {
 
 .footer {
     background-color: #42444f;
-    color: #acadb1;
+    color: #2C2F3B;
     font-size: 20px;
     font-weight: 600;
 	letter-spacing: 1px;
@@ -142,6 +142,7 @@ p {
 
 .footer_left_box {
     float: left;
+    
 }
 
 .footer_right_box {
