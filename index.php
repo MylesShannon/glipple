@@ -42,7 +42,7 @@
 	</div>
 	 </td>
 	 <td style="float:center; font-size:24px;">
-	 Free. Legal. Easy.
+	Music: Free. Legal. Easy.
 	 </td>
 	 <td>
 	<div class='radio'>
@@ -138,7 +138,7 @@
 					<a href="#legal" id="legal" class="link">Legal</a>
 				</li>
 				<li>
-					<a href="#contact" id="contact" class="link">Contact/a>
+					<a href="#contact" id="contact" class="link">Contact</a>
 				</li>
 			</ul>
         </div>
