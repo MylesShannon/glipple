@@ -4,7 +4,7 @@
 
         <thead>
         <div>
-Test Div
+Test Div 1
 </div>
             <tr>
                 <th>#</th>
