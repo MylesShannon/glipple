@@ -1,6 +1,9 @@
 <?php include "../header.php"; ?>
 
 <table id="latest" class="display" cellspacing="0">
+<div>
+Test Div
+</div>
         <thead>
             <tr>
                 <th>#</th>
