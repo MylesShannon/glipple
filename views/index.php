@@ -19,7 +19,7 @@ Test Div 2
         <tfoot>
             <tr>
                 <th>#</th>
-                <th>Title</th>
+                <th>Title</th>0000000
                 <th>Artist</th>
                 <th>Album</th>
                 <th>Genre</th>
