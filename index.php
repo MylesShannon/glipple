@@ -41,7 +41,7 @@
         <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
 	 </td>
-	 <td style="float:center;">
+	 <td style="float:center; font-size:24px;">
 	 Free. Legal. Easy.
 	 </td>
 	 <td>
