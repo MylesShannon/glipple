@@ -39,6 +39,7 @@ $username = $usernamequery['user_name'];
         </thead>
         <tbody>
 <?php
+mysql_select_db('music');
 $result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".$userid) or die(mysql_error()); 
 $count = 1;
 
