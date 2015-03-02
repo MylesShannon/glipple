@@ -49,7 +49,7 @@ $result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".$userid) or die(mysq
 
 	while ($row = mysql_fetch_array($result)) {
 		echo "<tr>";
-		echo "<td><a href='".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".$row['title'].".mp3'>".$row['title']."</a></td>";
+		echo "<td><a href='".URL."music/".$row['owner']."/".$row['id'].".mp3' download='".preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title'])."'>".$row['title']."</a></td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
