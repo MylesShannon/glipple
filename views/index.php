@@ -44,8 +44,8 @@ mysql_close();
 <script>
 $(document).ready(function() {
     $('#latest').dataTable( {
-        "info":     false,
-		"paging":	false;
+        "paging":   false,
+        "info":     false
 		
     } );
 	
