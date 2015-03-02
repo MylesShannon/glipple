@@ -23,6 +23,8 @@ $usernamequery = mysql_fetch_array($result);
 
 $username = $usernamequery['user_name'];
 
+echo "<table><th>".$username."</th>";
+echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'></td><td>".$bio."</td></tr></table>";
 ?>
 
 <table id="latest" class="display" cellspacing="0">
@@ -53,11 +55,6 @@ mysql_close();
 ?>
 </tbody>
 </table>
-<?php
-echo "<table><th>".$username."</th>";
-echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'></td><td>".$bio."</td></tr></table>";
-
-?>
 
 <script>
 $(document).ready(function() {
