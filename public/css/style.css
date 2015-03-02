@@ -502,6 +502,15 @@ table.overview-table td.avatar {
 	color: #c83292;
 }
 
+#slogan {
+	float:center; 
+	font-size:24px;
+}
+
+.copyright-box {
+	
+}
+
 /*
 table {
     border-collapse: collapse;

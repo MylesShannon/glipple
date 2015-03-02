@@ -41,8 +41,8 @@
         <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
 	 </td>
-	 <td style="float:center; font-size:24px;">
-	Music: Free. Legal. Easy.
+	 <td id="slogan">
+		Music: Free. Legal. Easy.
 	 </td>
 	 <td>
 	<div class='radio'>
@@ -140,11 +140,9 @@
         </div>
 		
 		<div class="footer_right_box">
-			<ul class="menu">
-				<li>
+			<div class="copyright-box">
 					&copy; Glipple Inc 2015
-				</li>
-			</ul>
+			</div>
 		</div>
 		
 		<div class="clear-both"></div>
