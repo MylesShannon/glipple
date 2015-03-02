@@ -39,7 +39,7 @@ $username = $usernamequery['user_name'];
         </thead>
         <tbody>
 <?php
-$result = mysql_query("SELECT * FROM id3 WHERE owner ".$userid) or die(mysql_error()); 
+$result = mysql_query("SELECT * FROM id3 WHERE owner LIKE ".$userid) or die(mysql_error()); 
 $count = 1;
 
 	while ($row = mysql_fetch_array($result)) {
