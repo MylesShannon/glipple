@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
-include "../header.php";
 
 $server = "localhost";
 $user = "root";
