@@ -28,7 +28,7 @@ echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/prof
 
 echo "<div style='float:right'>".$bio."</div";
 
-echo "<div style='float:clear'></div>;
+echo "<div style='float:clear'></div>";
 ?>
 
 <table id="latest" class="display" cellspacing="0">
