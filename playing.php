@@ -10,9 +10,6 @@ if (!$fp) {
     while (!feof($fp)) {
 		$output .=fgets($fp); 
     }
-
-	print_r($output);
-	echo "<br /> <br />";
 	
 	preg_match('/title="(.*)"/', $output, $title);
 	preg_match('/artist="(.*)"/', $output, $artist);
