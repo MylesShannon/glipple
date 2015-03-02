@@ -64,8 +64,7 @@ mysql_close();
 $(document).ready(function() {
     $('#latest').dataTable( {
         "info":     false,
-		"bLengthChange": false
-		
+		"paging": false
     } );
 } );
 </script>
