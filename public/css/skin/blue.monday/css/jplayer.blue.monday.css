@@ -33,7 +33,7 @@
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.6;
   color: #666;
-  border: 1px solid #009be3;
+  border: 1px solid #126dad;
   background-color: #eee; }
 
 .jp-audio {
@@ -98,7 +98,7 @@
   height: 80px; }
 
 .jp-video .jp-interface {
-  border-top: 1px solid #009be3; }
+  border-top: 1px solid #126dad; }
 
 /* @group CONTROLS */
 .jp-controls-holder {
@@ -339,7 +339,7 @@
 .jp-playlist {
   width: 100%;
   background-color: #ccc;
-  border-top: 1px solid #009be3; }
+  border-top: 1px solid #126dad; }
 
 .jp-type-single .jp-details,
 .jp-type-playlist .jp-details {
@@ -535,7 +535,7 @@ span.jp-artist {
   padding: 5px;
   font-size: .8em;
   background-color: #eee;
-  border: 2px solid #009be3;
+  border: 2px solid #126dad;
   color: #000;
   display: none; }
 
