@@ -31,9 +31,3 @@ if (!$fp) {
 
 fclose($fp);
 ?>
-<script>
-$(".profile").click(function (event) {
-		var pro = event.target.id;
-		alert(pro);
-	});
-</script>
