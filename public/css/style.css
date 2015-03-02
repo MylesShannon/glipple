@@ -508,7 +508,8 @@ table.overview-table td.avatar {
 }
 
 .copyright-box {
-	padding: 15px 10px 5px 0px;
+	padding: 20px 10px 5px 0px;
+	font-size:14px;
 }
 
 #song_title a{
