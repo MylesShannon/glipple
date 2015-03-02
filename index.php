@@ -141,7 +141,7 @@
 		
 		<div class="footer_right_box">
 			<div class="copyright-box">
-					<a>&copy; Glipple Inc 2015</a>
+					&copy; Glipple Inc 2015
 			</div>
 		</div>
 		
