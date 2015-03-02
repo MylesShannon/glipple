@@ -83,26 +83,7 @@
 				</div>
 			</div>
 	</div>
-	
-	<script>
-	$(document).ready(function() {	
-		//load profile on click
-		$(".profile").click(function (event) {
-			var pro = event.target.id;
-			profile(pro);
-		});
-		function profile(pro) {
-			$.ajax({
-				url: "/views/profile.php?id="+pro,
-				context: document.body,
-				success: function(result) {
-					$("#filler").html(result);
-				}	
-			});
-		};
-	)};
-	</script>
-	
+		
 	<!-- load Now Playing js -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script> 
 	</td></tr></table>
