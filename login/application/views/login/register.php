@@ -41,7 +41,7 @@
             <input type="text" name="captcha" required />
 			
 			<div id="ToS">
-				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#ToS' id="ToS_link">Terms of Service & Privacy Policy: </a></label>
+				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#ToS' id="ToS_link">Terms of Service & Privacy Policy</a>: </label>
 				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
 			</br>
@@ -65,7 +65,7 @@ $(document).ready(function() {
 	//var legal = "/views/legal.php"
 	$("#ToS_link").click(function () {
 		$.get("http://www.glipple.com/views/tospp.php", function( legal ) { 
-			alert(html)
+			alert(legal)
 		}, 'html'); 
     });
 } );
