@@ -97,14 +97,10 @@
 	
 	<div class="clear-both"></div>
     <div class="header">
-		
 		<div class="header_left_box">
 			<ul id="menu">
 				<li>
 					<a href="#blog" id="blog" class="link">Blog</a>
-				</li>
-				<li>
-					<a href="#contact" id="contact" class="link">Contact</a>
 				</li>
 				<li>
 					<a href="#faqs" id="faqs" class="link">FAQs</a>
@@ -140,12 +136,18 @@
 				<li>
 					<a href="#contact" id="contact" class="link">Contact</a>
 				</li>
-				<li>
-				&copy; Glipple Inc 2015
-				</li>
 			</ul>
         </div>
-
+		
+		<div class="footer_right_box">
+			<ul>
+				<li>
+					&copy; Glipple Inc 2015
+				</li>
+			</ul>
+		</div>
+		
+		<div class="clear-both"></div>
     </div>
 </body>
 </html>
