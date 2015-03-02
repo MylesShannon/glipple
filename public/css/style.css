@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2 {
     margin-bottom: 40px;
 }
 
@@ -161,6 +161,7 @@ h2 {
 
 h3 {
 	font-size: 18px;
+	margin-bottom: 20px;
 }
 
 /*
