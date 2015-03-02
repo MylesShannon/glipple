@@ -1,7 +1,7 @@
 // window.onload = loadXMLsongData('home');
 
 loadXMLsongData();
-setInterval('loadXMLsongData()', 5000);
+setInterval('loadXMLsongData()', 3500);
 
 function loadXMLsongData()
 {
