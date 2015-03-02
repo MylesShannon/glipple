@@ -12,16 +12,6 @@
                 <th>Genre</th>
             </tr>
         </thead>
-        
-        <tfoot>
-            <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Artist</th>
-                <th>Album</th>
-                <th>Genre</th>
-                </tr>
-        </tfoot>
         <tbody>
 <?php
 	// header('Content-Disposition: attachment');
@@ -54,8 +44,8 @@ mysql_close();
 <script>
 $(document).ready(function() {
     $('#latest').dataTable( {
-        "paging":   false,
-        "info":     false
+        "info":     false,
+		
     } );
 	
 	//load profile on click
