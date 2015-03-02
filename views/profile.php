@@ -23,8 +23,12 @@ $usernamequery = mysql_fetch_array($result);
 
 $username = $usernamequery['user_name'];
 
-echo "<table><th>".$username."</th>";
-echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'></td><td>".$bio."</td></tr></table>";
+echo "<div style='float:left'><table><th>".$username."</th>";
+echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'></td></tr></table></div>";
+
+echo "<div style='float:right'>".$bio."</div";
+
+echo "<div style='float:clear'></div>;
 ?>
 
 <table id="latest" class="display" cellspacing="0">
