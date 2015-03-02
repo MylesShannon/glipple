@@ -101,13 +101,13 @@
 		<div class="header_left_box">
 			<ul id="menu">
 				<li>
-					<a href="#Contact" id="Contact" class="link">Contact</a>
-				</li>
-				<li>
 					<a href="#blog" id="blog" class="link">Blog</a>
 				</li>
 				<li>
 					<a href="#contact" id="contact" class="link">Contact</a>
+				</li>
+				<li>
+					<a href="#faqs" id="faqs" class="link">FAQs</a>
 				</li>
 			</ul>
         </div>
