@@ -145,6 +145,12 @@
 			</div>
 		</div>
 		
+		<div class="header_right_box">
+			<div class="copyright-box">
+					&copy; Glipple Inc 2015
+			</div>
+		</div>
+		
 		<div class="clear-both"></div>
     </div>
 </body>
