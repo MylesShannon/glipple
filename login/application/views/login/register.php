@@ -62,9 +62,9 @@
 <script>
 $(document).ready(function() {
 	//load ToS on link click
-	var legal = "/views/legal.php"
+	//var legal = "/views/legal.php"
 	$("#ToS_link").click(function (event) {
-        alert(legal);
+        alert.load(glipple.com/views/tospp.php);
     });
 } );
 </script>
