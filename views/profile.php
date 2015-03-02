@@ -30,7 +30,6 @@ $username = $usernamequery['user_name'];
         <thead>
 
             <tr>
-                <th>#</th>
                 <th>Title</th>
                 <th>Artist</th>
                 <th>Album</th>
