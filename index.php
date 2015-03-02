@@ -98,7 +98,7 @@
 	<div class="clear-both"></div>
     <div class="header">
 		<div class="header_left_box">
-			<ul id="menu">
+			<ul class="menu">
 				<li>
 					<a href="#blog" id="blog" class="link">Blog</a>
 				</li>
@@ -129,7 +129,7 @@
     <div class="footer">
 		
 		<div class="footer_left_box">
-			<ul id="menu">
+			<ul class="menu">
 				<li>
 					<a href="#legal" id="legal" class="link">Legal</a>
 				</li>
@@ -140,7 +140,7 @@
         </div>
 		
 		<div class="footer_right_box">
-			<ul>
+			<ul class="menu">
 				<li>
 					&copy; Glipple Inc 2015
 				</li>
