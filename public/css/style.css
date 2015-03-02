@@ -511,6 +511,10 @@ table.overview-table td.avatar {
 	padding: 15px 10px 5px 0px;
 }
 
+#song_title a{
+	color:#c83292;
+}
+
 /*
 table {
     border-collapse: collapse;
