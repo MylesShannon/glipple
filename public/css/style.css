@@ -521,6 +521,10 @@ table.overview-table td.avatar {
 	color:#c83292;
 }
 
+.email {
+	text-indent: 20px;
+}
+
 /*
 table {
     border-collapse: collapse;
