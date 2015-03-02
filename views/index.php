@@ -45,7 +45,8 @@ mysql_close();
 $(document).ready(function() {
     $('#latest').dataTable( {
         "pageLength": 3,
-        "info":     false
+        "info":     false,
+		"bInfo": false
 		
     } );
 	
