@@ -1,6 +1,23 @@
 <?php
+$fp = fsockopen("localhost", "1234", $errno, $errstr); 
 
-exec("telnet localhost 1234 && request.on_air", $output);
+if (!$fp) {
+    echo "$errstr ($errno)</br>";
+} else {
+	fwrite($fp, "request.on_air\r\n");
+    fwrite($fp, "request.metadata ".fgets($fp)."\r\n");
+    fwrite($fp, "exit\r\n");
+    while (!feof($fp)) {
+		$output .=fgets($fp); 
+    }
 
-var_dump($output);
+	print_r($output);
+	echo "<br /> <br />";
+	
+	preg_match('/title="(.*)"/', $output, $title);
+	preg_match('/artist="(.*)"/', $output, $artist);
+	echo $title[1]." - ".$artist[1];
+}
+
+fclose($fp);
 ?>
