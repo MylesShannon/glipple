@@ -1,6 +1,4 @@
 <div class="content">
-    <h1>Upload</h1>
-	
     <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); 
 	error_reporting(E_ALL ^ E_DEPRECATED);

@@ -1,6 +1,4 @@
 <div class="content">
-    <h1>Music</h1>
-
 <?php 
 $this->renderFeedbackMessages();
 error_reporting(E_ALL ^ E_DEPRECATED);
