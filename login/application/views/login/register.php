@@ -90,15 +90,19 @@
 				}
 			</style>
 			
-			<div id="ToS">
+			<div id="tos_box">
 				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#tos' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
 				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
-			</br>
-			<div id="tosScreen">
-				<a href="#" class="cancel">&times;</a>
+			<div align="center">
+			<br><br><br><br>
+			<a href="#loginScreen" class="button">Click here to Log In</a>
 			</div>
-			<div id="cover" ></div>
+			<div id="loginScreen">
+			<a href="#" class="cancel">&times;</a>
+			</div>
+			<div id="cover" >
+			</div>
 			
             <input type="submit"  name="register" value="Register" />
         </form>
