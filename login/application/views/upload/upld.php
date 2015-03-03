@@ -89,21 +89,25 @@ $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['comments']['title']);
 */
 
 getid3_lib::CopyTagsToComments($trackInfo);
+
 $title = (isset($trackInfo['comments_html']['title'][0]) ? $trackInfo['comments_html']['title'][0] : "");
 $artist = (isset($trackInfo['comments_html']['artist'][0]) ? $trackInfo['comments_html']['artist'][0] : "");
+$album = (isset($trackInfo['comments_html']['album'][0]) ? $trackInfo['comments_html']['album'][0] : "");
+$year = (isset($trackInfo['comments_html']['year'][0]) ? $trackInfo['comments_html']['year'][0] : "");
+$genre = (isset($trackInfo['comments_html']['genre'][0]) ? $trackInfo['comments_html']['genre'][0] : "");
+$comment = (isset($trackInfo['comments_html']['comments'][0]) ? $trackInfo['comments_html']['comments'][0] : "");
+$track = (isset($trackInfo['comments_html']['track'][0]) ? $trackInfo['comments_html']['track'][0] : "");
+
 $bitrate = explode(".",($trackInfo['audio']['bitrate']/1000));
 $bitrate = $bitrate[0]."k";
 $playtime = $trackInfo['playtime_string'];
 $publisher = (isset($trackInfo['comments_html']['publisher'][0]) ? $trackInfo['comments_html']['publisher'][0] : "");
-$genre = (isset($trackInfo['comments_html']['genre'][0]) ? $trackInfo['comments_html']['genre'][0] : "");
-$track = (isset($trackInfo['comments_html']['track'][0]) ? $trackInfo['comments_html']['track'][0] : "");
-$album = (isset($trackInfo['comments_html']['album'][0]) ? $trackInfo['comments_html']['album'][0] : "");
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
 mysql_select_db($db) or die(mysql_error());
 
-//mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', NULL, '$track', NULL, NULL)") or die(mysql_error()); 
-mysql_query("INSERT INTO id3 (id, owner, title, artist, album, genre, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$genre', '$track', NULL, NULL)") or die(mysql_error());  
+mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', '$comment', '$track', NULL, NULL)") or die(mysql_error()); 
+//mysql_query("INSERT INTO id3 (id, owner, title, artist, album, genre, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$genre', '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
 $path = "/media/music/".$owner."/".$lastRow.".".$songFileType;
 
