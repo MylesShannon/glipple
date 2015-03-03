@@ -36,7 +36,7 @@
     aforementioned details.
 </p>
 <p id="E190">
-    Once your music is uploaded to our database, it’s available for free stream and download but tons of listeners. Additionally, it becomes immediately
+    Once your music is uploaded to our database, it’s available for free stream and download by tons of listeners. Additionally, it becomes immediately
     eligible for play on Glipple’s radio, so the more people you get to stream and download, the more radio play you could get!
 </p>
 <h4 id="E192">
@@ -64,7 +64,7 @@ upload your music, just email    <a id="E200" href="chrome-extension://gbkeegbai
     Definitely, show us what’s coming so we can get stoked about it!
 </p>
 <h4 id="E219">
-    What about material from my last album that a couple years old?
+    What about material from my last album that's a couple years old?
 </h4>
 <p id="E221">
     Hit us with it, let’s hear those classic tracks again! Sometimes you appreciate something most after it’s been a while since you last heard it, so we want
@@ -139,12 +139,14 @@ upload your music, just email    <a id="E200" href="chrome-extension://gbkeegbai
 <p id="E288">
     Just click the track you want to download to your “downloads” folder, and there you go! Simple!
 </p>
+<!--
 <h4 id="E290">
     How does streaming work, and what are the rules?
 </h4>
 <p id="E293">
     Same as downloading; just click the track you want to stream, and listen as the player soothes you into sweet music oblivion!
 </p>
+-->
 <h4 id="E296">
     How does the radio player work?
 </h4>
