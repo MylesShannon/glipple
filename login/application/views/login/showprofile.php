@@ -59,25 +59,25 @@
 		}
 		
 		if ($link1p == NULL){
-			$link1p = "placeholder='Provider...'";
+			$link1p = "placeholder='Facebook'";
 		}else{
 			$link1p = "value='".$link1p."'";
 		}
 		
 		if ($link1 == NULL){
-			$link1 = "placeholder='Link...'";
+			$link1 = "placeholder='facebook.com/Glipple'";
 		}else{
 			$link1 = "value='".$link1."'";
 		}
 		
 		if ($link2p == NULL){
-			$link2p = "placeholder='Provider...'";
+			$link2p = "placeholder='Twitter'";
 		}else{
 			$link2p = "value='".$link2p."'";
 		}
 		
 		if ($link2 == NULL){
-			$link2 = "placeholder='Link...'";
+			$link2 = "placeholder='@Glipple'";
 		}else{
 			$link2 = "value='".$link2."'";
 		}
