@@ -91,7 +91,7 @@ mysql_select_db($db) or die(mysql_error());
 
 mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', NULL, '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
-$path = "/media/music/".$owner."/".$lastRow.$songFileType;
+$path = "/media/music/".$owner."/".$lastRow.".".$songFileType;
 
 mysql_query("UPDATE id3 SET path = '$path' WHERE id = '$lastRow'") or die(mysql_error());
 // Rename uploaded file
@@ -100,7 +100,7 @@ mysql_query("UPDATE id3 SET path = '$path' WHERE id = '$lastRow'") or die(mysql_
 //$lastRow = mysql_result($result, 1, 'id') or die(mysql_error());  
 
 // Rename uploaded file to last row id
-rename($target_dir, $userDir."/".$lastRow.$songFileType);
+rename($target_dir, $userDir."/".$lastRow.".".$songFileType);
 
 //list(mysql_insert_id(),$fileext) = explode(".",$imagename); 
 //rename($userDir."/".mysql_insert_id(), $musicID.$fileext);
