@@ -91,7 +91,7 @@
 			</style>
 			
 			<div id="tos_box">
-				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#tos' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
+				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#loginScreen' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
 				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
 			<div align="center">
