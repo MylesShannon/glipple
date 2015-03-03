@@ -96,7 +96,7 @@ $album = (isset($trackInfo['comments_html']['album'][0]) ? $trackInfo['comments_
 $year = (isset($trackInfo['comments_html']['year'][0]) ? $trackInfo['comments_html']['year'][0] : "");
 $genre = (isset($trackInfo['comments_html']['genre'][0]) ? $trackInfo['comments_html']['genre'][0] : "");
 $comment = (isset($trackInfo['comments_html']['comments'][0]) ? $trackInfo['comments_html']['comments'][0] : "");
-$track = (isset($trackInfo['comments_html']['track'][0]) ? $trackInfo['comments_html']['track'][0] : "");
+$track = (isset($trackInfo['comments_html']['track_number'][0]) ? $trackInfo['comments_html']['track_number'][0] : "");
 
 $bitrate = explode(".",($trackInfo['audio']['bitrate']/1000));
 $bitrate = $bitrate[0]."k";
