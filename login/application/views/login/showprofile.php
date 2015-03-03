@@ -139,7 +139,7 @@
 		</form>
 		
 		<?php
-		if(isset($image) {
+		if(isset($image)) {
 			echo "<img src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' style='width:50%; height:50%'>";
 		}
 		?>
