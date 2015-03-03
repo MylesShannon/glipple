@@ -14,7 +14,7 @@ mysql_select_db($db) or die(mysql_error());
 
 $userID = Session::get('user_id');
 
-$userDir = URL."public/img/bands/".$userID;
+$userDir = "/var/www/html/public/img/bands/".$userID;
 $target_dir = "/var/www/html/public/img/bands/".$userID."/profile.jpg";
 // Does the user have a music directory, if not create one
 if (!is_dir($userDir)) 
