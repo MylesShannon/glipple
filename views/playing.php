@@ -30,4 +30,4 @@ if (!$fp) {
 
 fclose($fp);
 ?>
-<script type="text/javascript" src="../public/js/profile.js"></script>
+<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
