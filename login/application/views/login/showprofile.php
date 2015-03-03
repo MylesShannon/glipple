@@ -83,13 +83,13 @@
 		}
 		
 		if ($link3p == NULL){
-			$link3p = "placeholder='Provider...'";
+			$link3p = "placeholder='Homepage'";
 		}else{
 			$link3p = "value='".$link3p."'";
 		}
 		
 		if ($link3 == NULL){
-			$link3 = "placeholder='Link...'";
+			$link3 = "placeholder='glipple.com'";
 		}else{
 			$link3 = "value='".$link3."'";
 		}
