@@ -1,6 +1,3 @@
-<p id="E153">
-    Frequently Asked Questions
-</p>
 <p id="E155">
     What's all this about?
 </p>

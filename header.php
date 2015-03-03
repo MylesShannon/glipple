@@ -26,3 +26,6 @@ define('URL', 'http://glipple.com/');
 
 	<!-- load stickyfooter -->
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/stickyfooter.css" />
+	
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
