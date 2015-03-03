@@ -38,10 +38,14 @@ $filename=basename( $_FILES["file"]["name"]);
  {
  	// we need to make dropzone error
 	$uploadok =0;
-	}	
+	echo "No submission!";
+}
+	
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
-
 $songFileType = pathinfo($filename,PATHINFO_EXTENSION);
+
+echo $songFileType;
+echo $filename;
 
 if ($songFileType!='mp3' OR $songFileType!='m4a'){
 	$uploadok =0;
@@ -55,7 +59,7 @@ if ($songFileType!='mp3' OR $songFileType!='m4a'){
 //echo move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir);
 if ($uploadok == 0){
 
-	    echo "Sorry, your file was not uploaded.";
+	    echo "<br />Your file was not uploaded.";
 }
 	else{
 	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
