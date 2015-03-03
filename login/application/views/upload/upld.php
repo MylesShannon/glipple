@@ -70,9 +70,6 @@ $tag =  $getID3->analyze($target_dir);
 
 $owner = $userID;
 
-
-$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['title'][0]);
-
 mysql_select_db($usersdb) or die(mysql_error());
 $result = mysql_query("SELECT * FROM users WHERE user_id LIKE ".$userID) or die(mysql_error());  
 $usernamequery = mysql_fetch_array($result);
@@ -87,6 +84,7 @@ $genre = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['genre'][
 //$comment = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["comment"]);
 //$comment = $tag['tags']['id3v2']['comments'][0];
 $track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v2']['track_number'][0]);
+$title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['comments']['title']);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
 mysql_select_db($db) or die(mysql_error());
