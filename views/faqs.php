@@ -1,13 +1,13 @@
-<p id="E155">
+<h3><p id="E155">
     What's all this about?
-</p>
+</p></h3>
 <p id="E158">
     Glipple is the place where free music lives. It’s a place for new-music enthusiasts to discover and interact with music freely and legally, and for artists
     to distribute their music and grow their fanbases without all the red tape.
 </p>
-<p id="E160">
+<h3><p id="E160">
     How is Glipple useful for artists and non-artists, respectively?
-</p>
+</p></h3>
 <p id="E163">
     At Glipple, we cater to those looking for easy consumption of music, as well as those looking to easily disseminate their music amongst eager listeners.
     Therefore, Glipple has two main user functions: 1) artist, and 2) general user.
@@ -27,9 +27,9 @@
 <p id="E177">
     I’m an artist, so…
 </p>
-<p id="E180">
+<h3><p id="E180">
     How do I submit my music?
-</p>
+</p></h3>
 <p id="E183">
     After registering and logging in, follow the basic instructions to upload some cool music, providing song title(s), album(s), genre(s), and album artwork.
     Round out your artist profile by posting a basic bio, profile picture, and your contact details. Each song you upload should ideally include the
