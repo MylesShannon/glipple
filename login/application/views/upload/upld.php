@@ -102,7 +102,8 @@ $album = (isset($trackInfo['comments_html']['album'][0]) ? $trackInfo['comments_
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
 mysql_select_db($db) or die(mysql_error());
 
-mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', NULL, '$track', NULL, NULL)") or die(mysql_error());  
+//mysql_query("INSERT INTO id3 (id, owner, title, artist, album, year, genre, comment, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$year', '$genre', NULL, '$track', NULL, NULL)") or die(mysql_error()); 
+mysql_query("INSERT INTO id3 (id, owner, title, artist, album, genre, track, path, timestamp) VALUES(NULL, '$owner', '$title', '$artist', '$album', '$genre', '$track', NULL, NULL)") or die(mysql_error());  
 $lastRow = mysql_insert_id();
 $path = "/media/music/".$owner."/".$lastRow.".".$songFileType;
 
