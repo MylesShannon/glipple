@@ -15,6 +15,7 @@ $result = mysql_query("SELECT * FROM profiles WHERE user_id LIKE ".$userid) or d
 $row=mysql_fetch_array($result);
 	
 $bio = $row['band_bio'];
+$image = $row['band_image'];
 $imagepath = URL.$row['band_image'];
 
 
