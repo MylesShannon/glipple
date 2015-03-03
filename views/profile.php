@@ -23,14 +23,16 @@ $usernamequery = mysql_fetch_array($result);
 
 $username = $usernamequery['user_name'];
 
-echo "<div style='float:left'><table><th>".$username."</th>";
+echo $username;
+
 if(isset($image)) {
-	echo "<tr><td><img src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' style='width:50%; height:50%'></td></tr></table></div>";
-} else {
-	echo "</table>";
+	echo "<img style='float:left' src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' style='width:50%; height:50%' />";
 }
 
-echo "<div style='float:right'>".$bio."</div";
+if(isset($bio)) {
+	echo "<div style='float:right'>".$bio."</div";
+}
+
 
 echo "<div style='float:clear'></div>";
 ?>
