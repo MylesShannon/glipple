@@ -44,8 +44,6 @@
 				{
 					width: 150px;
 					padding: 10px;
-					background-color: #FF8C00;
-					box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
 					font-weight:bold;
 					text-decoration:none;
 				}
@@ -67,7 +65,7 @@
 					position:relative;
 					z-index:10;
 					display:none;
-					background: url(login.png) no-repeat;
+					background: #FFF;
 					border:5px solid #cccccc;
 					border-radius:10px;
 				}
