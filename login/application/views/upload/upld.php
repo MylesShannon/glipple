@@ -47,7 +47,7 @@ $songFileType = pathinfo($filename,PATHINFO_EXTENSION);
 echo $songFileType.'<br />';
 echo $filename.'<br />';
 
-if ($songFileType != 'mp3' || $songFileType != 'm4a'){
+if ($songFileType != 'mp3' && $songFileType != 'm4a'){
 	$uploadok =0;
 	echo "File type not supported";
 }
