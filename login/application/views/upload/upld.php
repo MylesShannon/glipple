@@ -66,7 +66,7 @@ if ($uploadok == 0){
 	    echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
 	
 // Call php to store ID3 information to DB
-$tag =  $getID3->analyze($target_dir);
+$trackInfo =  $getID3->analyze($target_dir);
 
 $owner = $userID;
 
