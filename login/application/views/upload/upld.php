@@ -27,7 +27,7 @@ if (!is_dir($userDir))
 }
 
 $filename=basename( $_FILES["file"]["name"]);
-echo "File basename:".$filename;
+// echo "File basename:".$filename;
 
 
 
