@@ -191,7 +191,7 @@ upload your music, just email    <a id="E200" href="chrome-extension://gbkeegbai
     How can I reach you?
 </h4>
 <p id="E332">
-Feel free to reach us by email at    <a id="E335" href="chrome-extension://gbkeegbaiigmenfmjfclcdgdpimamgkj/views/qowt.html#mailto:contact@glipple.com">contact@glipple.com</a>, on Facebook
+Feel free to reach us by email at    <a id="E335" href="mailto:contact@glipple.com">contact@glipple.com</a>, on Facebook
     (facebook.com/Glipple), or on Twitter (@glipple).
 </p>
 <h4 id="E344">
