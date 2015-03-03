@@ -4,7 +4,6 @@
     <?php $this->renderFeedbackMessages(); ?>
 
     <div class="register-default-box">
-        <h1>Register</h1>
         <!-- register form -->
         <form method="post" action="<?php echo URL; ?>login/register_action" name="registerform">
             <!-- the user name input field uses a HTML5 pattern check -->
