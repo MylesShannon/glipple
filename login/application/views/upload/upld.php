@@ -2,7 +2,7 @@
     <h1>Upload - upld</h1>
 
 <?php
-
+error_reporting(E_ALL ^ E_DEPRECATED);
 require_once('./getid3/getid3/getid3.php');
 $getID3 = new getID3;
 
