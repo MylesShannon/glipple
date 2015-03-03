@@ -104,7 +104,7 @@
 					<a href="#blog" id="blog" class="link">Blog</a>
 				</li>
 				<li>
-					<a href="#faqs" id="faqs" class="link">FAQs</a>
+					<a href="#faqs" id="faqs" class="link">FAQ's</a>
 				</li>
 			</ul>
         </div>
