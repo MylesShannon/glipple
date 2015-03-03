@@ -24,9 +24,23 @@ body {
 #song_title a {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     font-size: 16px;
-    color: #000;
+	color:#c83292;
     padding: 0;
     margin: 0;
+	text-decoration: none;
+}
+
+#song_title a {
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 16px;
+	color:#c83292;
+    padding: 0;
+    margin: 0;
+	text-decoration: none;
+}
+
+#song_title a:hover {
+    text-decoration: underline;
 }
 
 h1, h2 {
@@ -529,10 +543,6 @@ table.overview-table td.avatar {
 .copyright-box {
 	padding: 20px 10px 5px 0px;
 	font-size:14px;
-}
-
-#song_title a{
-	color:#c83292;
 }
 
 .email {
