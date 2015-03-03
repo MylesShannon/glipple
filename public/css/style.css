@@ -12,7 +12,7 @@ html, body {
     margin: 0;
 }
 
-body {
+body, #song_title a {
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     background-color: #fff;
     font-size: 16px;
