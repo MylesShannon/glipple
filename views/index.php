@@ -28,10 +28,8 @@
 	$result = mysql_query("SELECT * FROM id3 ORDER BY timestamp DESC") or die(mysql_error()); 
 	$count = 1;
 	
-	//$row = mysql_fetch_array($result);
-	preg_match('/\/media\/(.*)/', mysql_fetch_array($result)['path'], $path);
-
 	while ($row = mysql_fetch_array($result)) {
+		preg_match('/\/media\/(.*)/', $row['path'], $path);
 		echo "<tr><td>".$count++."</td>";
 		echo "<td><a href='".URL.$path[1]."' download='".preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']).".mp3'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
