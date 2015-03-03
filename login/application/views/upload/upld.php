@@ -44,8 +44,8 @@ $filename=basename( $_FILES["file"]["name"]);
 $target_dir = $userDir ."/". basename( $_FILES["file"]["name"]);
 $songFileType = pathinfo($filename,PATHINFO_EXTENSION);
 
-echo $songFileType.'<br />';
-echo $filename.'<br />';
+//echo $songFileType.'<br />';
+//echo $filename.'<br />';
 
 if ($songFileType != 'mp3' && $songFileType != 'm4a'){
 	$uploadok =0;
