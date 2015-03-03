@@ -85,7 +85,7 @@ $album = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['album'][
 $year = $tag['tags']['id3v2']['year'][0];
 $genre = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['tags']['id3v2']['genre'][0]);
 //$comment = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag["comment"]);
-$comment = $tag['id3v2']['comments'];
+$comment = $tag['id3v2']['comments'][0];
 $track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v2']['track_number'][0]);
 
 // mysql_query("INSERT INTO `id3` (`id`, `owner`, `title`, `artist`, `album`, `year`, `genre`, `comment`, `track`, `timestamp`) VALUES(NULL, `$owner`, `$title`, `$artist`, `$album`, `$year`, `$genre`, `$comment`, `$track`, NULL);") or die(mysql_error());  
