@@ -24,7 +24,9 @@ $usernamequery = mysql_fetch_array($result);
 $username = $usernamequery['user_name'];
 
 echo "<div style='float:left'><table><th>".$username."</th>";
-echo "<tr><td><img src='http://www.glipple.com/public/img/bands/".$userid."/profile.jpg'></td></tr></table></div>";
+if(isset($image)) {
+	echo "<tr><img src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' style='width:50%; height:50%'></td></tr></table></div>";
+}
 
 echo "<div style='float:right'>".$bio."</div";
 
