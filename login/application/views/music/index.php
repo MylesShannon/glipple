@@ -18,16 +18,6 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 				<th></th>
             </tr>
         </thead>
-		
-		<tfoot>
-            <tr>
-                <th>Title</th>
-                <th>Album</th>
-                <th>Artist</th>
-                 <th>Genre</th>
-				<th></th>
-            </tr>
-        </tfoot>
  
         <tbody>
 <?php
