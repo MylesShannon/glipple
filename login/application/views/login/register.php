@@ -60,7 +60,7 @@
 				#tosScreen
 				{
 					height:500px;
-					width:500px;
+					width:auto;
 					margin:0 auto;
 					position:relative;
 					z-index:10;
