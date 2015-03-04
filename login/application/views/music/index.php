@@ -4,7 +4,9 @@ $this->renderFeedbackMessages();
 error_reporting(E_ALL ^ E_DEPRECATED);
 ?>
 
+<!--
 <button type="submit">Submit form</button>
+-->
 
 <table id="music" class="display" cellspacing="0">
         <thead>
@@ -81,8 +83,8 @@ mysql_close();
 $(document).ready(function() {
     var table = $('#music').dataTable( {
         "paging":   false,
-        "info":     false,
-		"ordering": false
+        "info":     false //,
+		//"ordering": false
     } );
  
     $('button').click( function() {
