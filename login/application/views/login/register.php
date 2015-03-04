@@ -91,12 +91,12 @@
 			</style>
 			
 			<div id="tos_box">
-				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#loginScreen' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
+				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#tosScreen' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
 				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
-			<div id="loginScreen">
+			<div id="tosScreen">
 			<a href="#" class="cancel">&times;</a>
-			<div id="tos" style="border:solid 1px #000000;background:#ffffff; height:auto; width:auto; overflow:auto;">
+			<div id="tos">
 					<?php include "http://www.glipple.com/views/tospp.php"; ?>
 			</div>
 			</div>
