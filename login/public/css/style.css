@@ -6,6 +6,9 @@ magenta: #c83292
 white: #fff
 black #000
 */
+#music_filter {
+	display: none;
+}
 
 drozone {
 width: 50%;
