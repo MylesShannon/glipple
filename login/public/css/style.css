@@ -330,7 +330,7 @@ input, select, textarea {
 label {
     display: block;
     margin-bottom: 5px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 input {
@@ -507,8 +507,6 @@ table.overview-table td.avatar {
 /* login overlay */
 .button
 {
-	width: 150px;
-	padding: 10px;
 	font-weight:bold;
 	text-decoration:none;
 }
