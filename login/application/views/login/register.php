@@ -59,8 +59,8 @@
 				}
 				#tosScreen
 				{
-					height:380px;
-					width:340px;
+					height:50%;
+					width:50%;
 					margin:0 auto;
 					position:relative;
 					z-index:10;
