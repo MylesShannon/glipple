@@ -40,55 +40,7 @@
             <input type="text" name="captcha" required />
 			
 			<style type="text/css">
-				.button
-				{
-					width: 150px;
-					padding: 10px;
-					font-weight:bold;
-					text-decoration:none;
-				}
-				#cover{
-					position:fixed;
-					top:0;
-					left:0;
-					background:rgba(0,0,0,0.6);
-					z-index:5;
-					width:100%;
-					height:100%;
-					display:none;
-				}
-				#tosScreen
-				{
-					height:500px;
-					width:auto;
-					margin:0 auto;
-					position:relative;
-					z-index:10;
-					display:none;
-					background: #FFF;
-					border:5px solid #cccccc;
-					border-radius:10px;
-					overflow:auto;
-				}
-				#tosScreen:target, #tosScreen:target + #cover{
-					display:block;
-					opacity:2;
-				}
-				.cancel
-				{
-					display:block;
-					position:absolute;
-					top:3px;
-					right:2px;
-					background:rgb(245,245,245);
-					color:black;
-					height:30px;
-					width:35px;
-					font-size:30px;
-					text-decoration:none;
-					text-align:center;
-					font-weight:bold;
-				}
+				
 			</style>
 			
 			<div id="tos_box">
