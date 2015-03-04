@@ -148,7 +148,7 @@ p {
 }
 
 .content a {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     color: #2C2F3B;
 }
 
