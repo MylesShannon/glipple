@@ -48,7 +48,7 @@ mysql_close();
 
 $('#update').click(function() {
 		var id = $("#update").val();
-		$.post("update",
+		$.post("update.php",
         { 
 			id : id
 		});
