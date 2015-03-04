@@ -59,8 +59,8 @@
 				}
 				#tosScreen
 				{
-					height:50%;
-					width:50%;
+					height:500px;
+					width:500px;
 					margin:0 auto;
 					position:relative;
 					z-index:10;
@@ -97,9 +97,7 @@
 			</div>
 			<div id="tosScreen">
 			<a href="#" class="cancel">&times;</a>
-			<div id="tos">
 					<?php include "tospp.php"; ?>
-			</div>
 			</div>
 			<div id="cover" >
 			</div>
