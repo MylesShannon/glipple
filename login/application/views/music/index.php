@@ -52,12 +52,20 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script></td>";
 		*/
+		/*
 		echo "<td><input type='text' id='row-$count-title' name='row-$count-title' value='".$row['title']."'></td>";
 		echo "<td><input type='text' id='row-$count-album' name='row-$count-album' value='".$row['album']."'></td>";
 		echo "<td><input type='text' id='row-$count-artist' name='row-$count-artist' value='".$row['artist']."'></td>";
 		echo "<td><input type='text' id='row-$count-genre' name='row-$count-genre' value='".$row['genre']."'></td>";
 		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
 		echo "</tr>";
+		*/
+		
+		echo "<td>".$row['title']."</td>";
+-		echo "<td>".$row['album']."</td>";
+-		echo "<td>".$row['artist']."</td>";
+-		echo "<td>".$row['genre']."</td>";
+		
 		$count++;
 	}
 
