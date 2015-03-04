@@ -96,9 +96,9 @@
 			</div>
 			<div id="loginScreen">
 			<a href="#" class="cancel">&times;</a>
-			test
 			</div>
 			<div id="cover" >
+			test
 			</div>
 			
             <input type="submit"  name="register" value="Register" />
