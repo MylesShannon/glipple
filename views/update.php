@@ -15,5 +15,5 @@ if(isset($_POST['id']))
 
 	mysql_query("UPDATE id3 SET downloads = downloads + 1 WHERE id LIKE '$id'") or die(mysql_error());
 		mysql_close();  
-};
+}
 ?>
