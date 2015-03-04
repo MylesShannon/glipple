@@ -97,7 +97,7 @@
 			<div id="loginScreen">
 			<a href="#" class="cancel">&times;</a>
 			<div id="tos" style="border:solid 1px #000000;background:#ffffff; height:auto; width:auto; overflow:auto;">
-					<?php include "./terms.php"; ?>
+					<?php include "terms.php"; ?>
 			</div>
 			</div>
 			<div id="cover" >
