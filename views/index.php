@@ -33,7 +33,7 @@
 		preg_match('/\/media\/music\/.*\/.*\.(.*)/', $row['path'], $type);
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
 		echo "<tr><td>".$count++."</td>";
-		echo "<td><a class='dl' href='".URL.$path[1]."' onclick='updatedl(".$row['artist'].", ".$row['title'].")' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
+		echo "<td><a class='dl' href='".URL.$path[1]."' onclick='updatedl(".$row['id'].")' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
@@ -46,16 +46,19 @@ mysql_close();
 
 <script>
 
-function updatedl(artist, title){
+$(document).ready(function (){
+$.fn.updatedl = function(id){
 	$.ajax(
 		   type: "POST",
            url: 'update.php',
-           data: {artist: artist, title: title},
+           data: {id: id},
            success:function(html) {
              alert(html);
            }
 		)
+	}
 }
+);
 
 $(document).ready(function() {
     $('#latest').dataTable( {
