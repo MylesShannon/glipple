@@ -98,7 +98,6 @@
 			<a href="#" class="cancel">&times;</a>
 			</div>
 			<div id="cover" >
-			test
 			</div>
 			
             <input type="submit"  name="register" value="Register" />
