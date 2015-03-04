@@ -1,9 +1,9 @@
 <?php 
 
-if(isset($_POST['artist']) && isset($_POST['title']))
+if(isset($_POST['id']))
 {
-    $artist = $_POST['artist'];
-    $title = $_POST['title'];
+    $id = $_POST['id'];
+
 
     $server = "localhost";
 	$user = "root";
@@ -13,7 +13,7 @@ if(isset($_POST['artist']) && isset($_POST['title']))
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
-	mysql_query("UPDATE id3 SET downloads = downloads+1 WHERE artist LIKE '$artist' AND title LIKE '$title'") or die(mysql_error());
+	mysql_query("UPDATE id3 SET downloads = downloads+1 WHERE id LIKE '$id'") or die(mysql_error());
 		mysql_close();  
 }
 ?>
