@@ -98,7 +98,7 @@
 			<div id="tosScreen">
 			<a href="#" class="cancel">&times;</a>
 			<div id="tos">
-					<?php include "http://www.glipple.com/views/tospp.php"; ?>
+					<?php include "tospp.php"; ?>
 			</div>
 			</div>
 			<div id="cover" >
