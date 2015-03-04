@@ -46,8 +46,7 @@ mysql_close();
 
 <script>
 
-$(document).ready(function (){
-$.fn.updatedl = function(id){
+function updatedl(id){
 	$.ajax(
 		   type: "POST",
            url: 'update.php',
@@ -55,10 +54,8 @@ $.fn.updatedl = function(id){
            success:function(html) {
              alert(html);
            }
-		)
-	}
-}
-);
+		);
+};
 
 $(document).ready(function() {
     $('#latest').dataTable( {
