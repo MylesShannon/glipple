@@ -22,10 +22,8 @@
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
 	<!-- <link rel="stylesheet" href="<?php echo URL; ?>public/css/stickyfooter.css" /> -->
 	
-	<!-- google analytics 
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/google.js"></script>
-	-->
-	
+	<!-- google analytics -->
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/google.js"></script>	
 	
 </head>
 <body>
