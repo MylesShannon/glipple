@@ -33,8 +33,6 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 	$db = "music";
 	$count = 1;
 	
-
-	
 	mysql_connect($server, $user, $pass) or die(mysql_error());
 	mysql_select_db($db) or die(mysql_error());
 
@@ -52,10 +50,10 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script></td>";
 		*/
-		echo "<td>".$row['title']."</td>";
-		echo "<td>".$row['album']."</td>";
-		echo "<td>".$row['artist']."</td>";
-		echo "<td>".$row['genre']."</td>";
+		echo "<td><input type='text' id='row-$count-title' name='row-$count-title' value='".$row['title']."'></td>";
+		echo "<td><input type='text' id='row-$count-album' name='row-$count-album' value='".$row['album']."'></td>";
+		echo "<td><input type='text' id='row-$count-artist' name='row-$count-artist' value='".$row['artist']."'></td>";
+		echo "<td><input type='text' id='row-$count-genre' name='row-$count-genre' value='".$row['genre']."'></td>";
 		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
 		echo "</tr>";
 		$count++;
@@ -68,19 +66,16 @@ mysql_close();
 </div>
 
 <script>
-
 $(document).ready(function() {
-    $('#music').dataTable( {
-        "paging":   false,
-        "info":     false
+    var table = $('#music').DataTable();
+ 
+    $('button').click( function() {
+        var data = table.$('input').serialize();
+        alert(
+            "The following data would have been submitted to the server: \n\n"+
+            data.substr( 0, 120 )+'...'
+        );
+        return false;
     } );
-	$('#delete').click(function() {
-		var d = $("#delete").val();
-		$.post("delete",
-        { 
-			del : d
-		});
-		return false;
-	} );
 } );
 </script>
