@@ -27,7 +27,7 @@ $username = $usernamequery['user_name'];
 echo "<h2>".$username."</h2>";
 
 if(isset($image)) {
-	echo "<img style='float:left' src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' height='75%' />";
+	echo "<img style='float:left' src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' width='30%' />";
 }
 
 if(isset($bio)) {
