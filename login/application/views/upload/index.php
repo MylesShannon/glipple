@@ -4,7 +4,7 @@
 	error_reporting(E_ALL ^ E_DEPRECATED);
 	?>
 
-	<p>At the moment, we only support mp3 and m4a song file types. Lossless files types are coming soon.</p>
+	<p>At the moment, we only support 'mp3' and 'm4a' song file types. Lossless files types are coming soon.</p>
 	
     <?php 
 	/*
