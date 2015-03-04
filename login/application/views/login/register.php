@@ -68,6 +68,7 @@
 					background: #FFF;
 					border:5px solid #cccccc;
 					border-radius:10px;
+					overflow:auto;
 				}
 				#tosScreen:target, #tosScreen:target + #cover{
 					display:block;
