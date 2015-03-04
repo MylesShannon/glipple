@@ -123,6 +123,11 @@ p {
 }
 
 .content a {
+    /* text-decoration: underline; */
+    color: #2C2F3B;
+}
+
+.content a:hover {
     text-decoration: underline;
     color: #2C2F3B;
 }
@@ -404,7 +409,7 @@ a.facebook-register-button:hover {
 .register-default-box,
 .register-facebook-box {
     display: inline-block;
-    width: 425px;
+    width: 460px;
     vertical-align: top;
 }
 
