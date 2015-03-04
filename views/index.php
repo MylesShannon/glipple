@@ -33,7 +33,7 @@
 		preg_match('/\/media\/music\/.*\/.*\.(.*)/', $row['path'], $type);
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
 		echo "<tr><td>".$count++."</td>";
-		echo "<td><a class='dl' href='".URL.$path[1]."' id='update' value='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
+		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
@@ -56,15 +56,10 @@ $(document).ready(function() {
 		
     } );
 
-    $('#update').click(function() {
-		var id = $("#update").val();
-		$.post("update.php",
-        { 
-			id : id
+
+		
 		});
-		return false;
-	} );
-	
-} );
 </script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
+
