@@ -67,7 +67,10 @@ mysql_close();
 
 <script>
 $(document).ready(function() {
-    var table = $('#music').DataTable();
+    var table = $('#music').dataTable( {
+        "paging":   false,
+        "info":     false
+    } );
  
     $('button').click( function() {
         var data = table.$('input').serialize();
@@ -77,5 +80,14 @@ $(document).ready(function() {
         );
         return false;
     } );
+	
+	$('#delete').click(function() {
+		var d = $("#delete").val();
+		$.post("delete",
+        { 
+			del : d
+		});
+		return false;
+	} );
 } );
 </script>
