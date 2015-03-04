@@ -140,7 +140,7 @@
 		
 		<?php
 		if(isset($image)) {
-			echo "<img src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' width='25%' height='25%'>";
+			echo "<img src='http://www.glipple.com/public/img/bands/$userid/profile.jpg' alt='Your band image' height='75%'>";
 		}
 		?>
 		
