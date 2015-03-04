@@ -46,14 +46,7 @@ mysql_close();
 
 <script>
 
-$('#update').click(function() {
-		var id = $("#update").val();
-		$.post("update.php",
-        { 
-			id : id
-		});
-		return false;
-	} );
+
 
 $(document).ready(function() {
     $('#latest').dataTable( {
@@ -62,6 +55,16 @@ $(document).ready(function() {
 		"bLengthChange": false
 		
     } );
+
+    $('#update').click(function() {
+		var id = $("#update").val();
+		$.post("update.php",
+        { 
+			id : id
+		});
+		return false;
+	} );
+	
 } );
 </script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
