@@ -43,6 +43,14 @@ body {
     text-decoration: underline;
 }
 
+.profile, .dl {
+	text-decoration: none;
+}
+
+.profile:hover, .dl:hover {
+	text-decoration: underline;
+}
+
 h1, h2 {
     margin-bottom: 40px;
 }
