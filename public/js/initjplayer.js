@@ -51,7 +51,6 @@ $(document).ready(function(){
 		},
 		stop: function() {
 			$(this).jPlayer("clearMedia");
-			$(this).jPlayer("stop");
 		},
 		pause: function() {
 
