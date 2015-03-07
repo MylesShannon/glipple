@@ -62,8 +62,11 @@ $(document).ready(function(){
 		supplied: "mp3",
 		preload: "none",
 		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
 		keyEnabled: true
 	});
+	$("#jplayer_inspector").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
 });
 
 // tut's player 
