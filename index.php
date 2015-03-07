@@ -64,10 +64,10 @@
 						<div class="jp-volume-bar">
 							<div class="jp-volume-bar-value"></div>
 						</div>
-						<div class="jp-time-holder">
+				<!--	<div class="jp-time-holder">
 							<div class="jp-current-time"></div>
 							<div class="jp-duration"></div>
-						</div>
+						</div>-->
 					</div>
 					<div class="jp-details">
 						<ul>
