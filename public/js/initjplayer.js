@@ -58,7 +58,7 @@ $(document).ready(function(){
 		pause: function(){
 
 			
-		},
+		},/*
 		error: function(event){
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
@@ -66,7 +66,7 @@ $(document).ready(function(){
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
 		},
-		/*
+		
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
