@@ -53,11 +53,11 @@ $(document).ready(function(){
 		$(this).jPlayer("unute");
 		}
 		stop: function() {
-			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("mute");
 		},
 		pause: function() {
 
-			$(this).jPlayer("mute");
+			
 		},
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
