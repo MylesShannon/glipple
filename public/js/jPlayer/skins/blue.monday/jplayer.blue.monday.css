@@ -26,11 +26,11 @@ div.jp-video {
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
 	color: #666;
-	border:1px solid #009be3;
-	background-color:#eee;
+/*	border:1px solid #009be3; 
+	background-color:#eee;*/
 }
 div.jp-audio {
-	width:100%;
+	width:420px;
 }
 div.jp-audio-stream {
 	width:420px;
@@ -121,7 +121,7 @@ div.jp-audio ul.jp-controls {
 }
 
 div.jp-audio-stream ul.jp-controls {
-	width: 142px;
+	width: 100%;
 	padding:20px 20px 0 20px;
 }
 
@@ -314,6 +314,7 @@ div.jp-volume-bar {
 	width:46px;
 	height:5px;
 	cursor: pointer;
+	float:right;
 }
 div.jp-audio div.jp-volume-bar {
 	top:37px;
