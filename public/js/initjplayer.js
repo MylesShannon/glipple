@@ -66,7 +66,7 @@ $(document).ready(function(){
 		autoBlur: false,
 		keyEnabled: true
 	});
-	$("#jplayer_inspector").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
+	
 });
 
 // tut's player 
