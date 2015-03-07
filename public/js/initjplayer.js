@@ -50,7 +50,7 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		play: function(){
-		$(this).jPlayer("unute");
+		$(this).jPlayer("unmute");
 		}
 		stop: function() {
 			$(this).jPlayer("mute");
