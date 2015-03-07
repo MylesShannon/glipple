@@ -55,14 +55,12 @@
 						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
 						  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
 						  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-						  <li><span class="jp-title"><div id="song_title" ></div></span></li>
-						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
 						</ul>
-				<!--		<div class="jp-progress">
+						<div class="jp-progress">
 							<div class="jp-seek-bar">
 								<div class="jp-play-bar"></div>
 							</div>
-						</div> -->
+						</div>
 						<div class="jp-volume-bar">
 							<div class="jp-volume-bar-value"></div>
 						</div>
@@ -71,12 +69,12 @@
 							<div class="jp-duration"></div>
 						</div>-->
 					</div>
-					<!--<div class="jp-details">
+					<div class="jp-details">
 						<ul>
 						<li><span class="jp-title"><div id="song_title" ></div></span></li>
 						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
 						</ul>
-					</div>-->
+					</div>
 					<div class="jp-no-solution">
 						<span>Update Required</span>
 						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
