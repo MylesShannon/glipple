@@ -47,32 +47,17 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream).jPlayer("play");
+			$(this).jPlayer("setMedia", stream);
 		},
-		play: function(){
-		$(this).jPlayer("unmute");
+		pause: function() {
+			$(this).jPlayer("clearMedia");
 		},
-		stop: function(){
-			$(this).jPlayer("mute");
-		},
-		pause: function(){
-
-			
-		},/*
-		error: function(event){
-			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-				// Setup the media stream again and play it.
-				preload: "none",
-				$(this).jPlayer("setMedia", stream).jPlayer("play");
-			}
-		},
-		
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
-		}, */
+		},
 		swfPath: "./js/jPlayer/jPlayer.swf",
 		supplied: "mp3",
 		preload: "none",
