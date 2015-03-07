@@ -51,7 +51,7 @@ $(document).ready(function(){
 		},
 		play: function(){
 		$(this).jPlayer("unmute");
-		}
+		},
 		stop: function(){
 			$(this).jPlayer("mute");
 		},
