@@ -47,14 +47,17 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream);
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
+		play: function(){
+		$(this).jPlayer("unute");
+		}
 		stop: function() {
 			$(this).jPlayer("clearMedia");
 		},
 		pause: function() {
 
-			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("mute");
 		},
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
