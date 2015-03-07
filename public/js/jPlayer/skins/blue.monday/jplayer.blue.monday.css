@@ -311,7 +311,7 @@ div.jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
 	background: url("jplayer.blue.monday.jpg") 0 -250px repeat-x;
-	width:100%;
+	width:46px;
 	height:5px;
 	cursor: pointer;
 	float:right;
