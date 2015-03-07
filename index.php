@@ -45,13 +45,13 @@
 	 <td>
 	<div class='radio'>
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<!--<div id="jp_container_1" class="jp-audio-stream">
+			<div id="jp_container_1" class="jp-audio-stream">
 				<div class="jp-type-single">
 					<div class="jp-gui jp-interface">
 						<ul class="jp-controls">
 						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
 						 <!-- <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li> 
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li> -->
 						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
 						  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
 						  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
@@ -80,7 +80,7 @@
 						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 					</div>
 				</div>
-			</div>-->
+			</div><!--
 			<div id="jp_container_1" class="jp-audio-stream" role="application" aria-label="media player">
 			<div class="jp-type-single">
 			<div class="jp-gui jp-interface">
@@ -105,7 +105,7 @@
 			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 		</div>
 	</div>
-</div>
+</div> -->
 	</div>
 		
 	<!-- load Now Playing js -->
