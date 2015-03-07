@@ -52,14 +52,14 @@ $(document).ready(function(){
 		play: function(){
 		$(this).jPlayer("unmute");
 		}
-		stop: function() {
+		stop: function(){
 			$(this).jPlayer("mute");
 		},
-		pause: function() {
+		pause: function(){
 
 			
 		},
-		error: function(event) {
+		error: function(event){
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
 				preload: "none",
