@@ -33,7 +33,7 @@ div.jp-audio {
 	width:100%;
 }
 div.jp-audio-stream {
-	width:182px;
+	width:auto;
 }
 div.jp-video-270p {
 	width:480px;
