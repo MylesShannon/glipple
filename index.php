@@ -55,6 +55,9 @@
 						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
 						  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
 						  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+						  <li><span class="jp-title"><div id="song_title" ></div></span></li>
+						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
+						
 						</ul>
 						<div class="jp-progress">
 							<div class="jp-seek-bar">
