@@ -64,7 +64,11 @@ $(document).ready(function(){
 		wmode: "window",
 		useStateClassSkin: true,
 		autoBlur: false,
-		keyEnabled: true
+		keyEnabled: true,
+		size: {
+                         width: "400px",
+                         height: "30px"
+                    }
 	});
 	
 });
