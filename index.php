@@ -53,8 +53,10 @@
 						<!-- <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
 						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li> -->
 						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-						  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-						  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+						<li><div class="jp-details"><span class="jp-title"><div id="song_title" ></div></span></div></li>
+						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
 						</ul>
 						<div class="jp-progress">
 							<div class="jp-seek-bar">
@@ -68,12 +70,6 @@
 							<div class="jp-current-time"></div>
 							<div class="jp-duration"></div>
 						</div>-->
-					</div>
-					<div class="jp-details">
-						<ul>
-						<li><span class="jp-title"><div id="song_title" ></div></span></li>
-						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
-						</ul>
 					</div>
 					<div class="jp-no-solution">
 						<span>Update Required</span>
