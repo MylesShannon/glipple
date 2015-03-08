@@ -73,10 +73,10 @@
 						</div>-->
 					</div>
 					<div class="jp-details">
-						<ul>
+					<!--	<ul>
 						<li><span class="jp-title"><div id="song_title" ></div></span></li>
 						<script type="text/javascript" src="http://glipple.com/public/js/profile.js"></script>
-						</ul>
+						</ul>-->
 					</div>
 					<div class="jp-no-solution">
 						<span>Update Required</span>
