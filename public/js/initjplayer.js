@@ -65,10 +65,7 @@ $(document).ready(function(){
 		useStateClassSkin: true,
 		autoBlur: false,
 		keyEnabled: true,
-		size: {
-                         width: "400px",
-                         height: "30px"
-                    }
+		
 	});
 	
 });

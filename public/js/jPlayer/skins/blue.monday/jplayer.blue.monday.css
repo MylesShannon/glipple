@@ -101,7 +101,7 @@ div.jp-video div.jp-interface {
 
 div.jp-controls-holder {
 	clear: both;
-	width:100%;
+	width:auto;
 	margin:0 auto;
 	position: relative;
 	overflow:hidden;
@@ -121,7 +121,8 @@ div.jp-audio ul.jp-controls {
 }
 
 div.jp-audio-stream ul.jp-controls {
-	width: 100%;
+	text-align: center;
+	width: auto;
 	padding:20px 20px 0 20px;
 }
 
