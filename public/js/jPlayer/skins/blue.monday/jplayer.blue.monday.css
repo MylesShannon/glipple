@@ -12,6 +12,9 @@
  * Skin Version: 4.4 (jPlayer 2.6.0)
  * Date: 1st April 2014
  */
+div.radio {
+width:100%;
+}
 
 div.jp-audio,
 div.jp-audio-stream,
