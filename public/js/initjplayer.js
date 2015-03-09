@@ -47,7 +47,7 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream);
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
@@ -65,7 +65,7 @@ $(document).ready(function(){
 		useStateClassSkin: true,
 		autoBlur: false,
 		keyEnabled: true,
-		
+
 	});
 	
 });
