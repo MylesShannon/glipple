@@ -15,6 +15,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                 <th>Album</th>
                 <th>Artist</th>
                 <th>Genre</th>
+                <th>Downloads</th>
 				<th></th>
             </tr>
         </thead>
@@ -57,6 +58,8 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td>".$row['album']."</td>";
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
+		echo "<td>".$row['downloads']."</td>";
+
 		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
  		echo "</tr>";
 		
