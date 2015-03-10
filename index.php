@@ -40,7 +40,7 @@
 	</div>
 	 </td>
 	 <td id="slogan">
-		Music: Free. Legal. Easy.
+		Music: Free. Legal. Easy!
 	 </td>
 	 <td>
 	<div class='radio'>
