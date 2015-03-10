@@ -4,7 +4,9 @@ $this->renderFeedbackMessages();
 error_reporting(E_ALL ^ E_DEPRECATED);
 ?>
 
+<!--
 <button type="submit">Submit form</button>
+-->
 
 <table id="music" class="display" cellspacing="0">
         <thead>
@@ -13,19 +15,10 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                 <th>Album</th>
                 <th>Artist</th>
                 <th>Genre</th>
+                <th>Downloads</th>
 				<th></th>
             </tr>
         </thead>
-		
-		<tfoot>
-            <tr>
-                <th>Title</th>
-                <th>Album</th>
-                <th>Artist</th>
-                 <th>Genre</th>
-				<th></th>
-            </tr>
-        </tfoot>
  
         <tbody>
 <?php
@@ -52,12 +45,24 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "new Ajax.InPlaceEditor('".$row['id']."-title', '/demoajaxreturn.html')";
 		echo "</script></td>";
 		*/
+		/*
 		echo "<td><input type='text' id='row-$count-title' name='row-$count-title' value='".$row['title']."'></td>";
 		echo "<td><input type='text' id='row-$count-album' name='row-$count-album' value='".$row['album']."'></td>";
 		echo "<td><input type='text' id='row-$count-artist' name='row-$count-artist' value='".$row['artist']."'></td>";
 		echo "<td><input type='text' id='row-$count-genre' name='row-$count-genre' value='".$row['genre']."'></td>";
 		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
 		echo "</tr>";
+		*/
+		
+		echo "<td>".$row['title']."</td>";
+		echo "<td>".$row['album']."</td>";
+		echo "<td>".$row['artist']."</td>";
+		echo "<td>".$row['genre']."</td>";
+		echo "<td>".$row['downloads']."</td>";
+
+		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
+ 		echo "</tr>";
+		
 		$count++;
 	}
 
@@ -71,8 +76,8 @@ mysql_close();
 $(document).ready(function() {
     var table = $('#music').dataTable( {
         "paging":   false,
-        "info":     false,
-		"ordering": false
+        "info":     false //,
+		//"ordering": false
     } );
  
     $('button').click( function() {

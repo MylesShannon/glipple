@@ -40,62 +40,19 @@
             <input type="text" name="captcha" required />
 			
 			<style type="text/css">
-				.button
-				{
-					width: 150px;
-					padding: 10px;
-					font-weight:bold;
-					text-decoration:none;
-				}
-				#cover{
-					position:fixed;
-					top:0;
-					left:0;
-					background:rgba(0,0,0,0.6);
-					z-index:5;
-					width:100%;
-					height:100%;
-					display:none;
-				}
-				#tosScreen
-				{
-					height:380px;
-					width:340px;
-					margin:0 auto;
-					position:relative;
-					z-index:10;
-					display:none;
-					background: #FFF;
-					border:5px solid #cccccc;
-					border-radius:10px;
-				}
-				#tosScreen:target, #tosScreen:target + #cover{
-					display:block;
-					opacity:2;
-				}
-				.cancel
-				{
-					display:block;
-					position:absolute;
-					top:3px;
-					right:2px;
-					background:rgb(245,245,245);
-					color:black;
-					height:30px;
-					width:35px;
-					font-size:30px;
-					text-decoration:none;
-					text-align:center;
-					font-weight:bold;
-				}
+				
 			</style>
 			
 			<div id="tos_box">
-				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#loginScreen' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
+				<label for="login_input_tos" id="login_label_tos">I agree to the Glipple <a href='#tosScreen' id="tos" class="button" >Terms of Service & Privacy Policy</a>: </label>
 				<input id="login_input_tos" class="tos_input" type="checkbox" name="tos" required />
 			</div>
-			<div id="loginScreen">
+			<div id="tosScreen">
 			<a href="#" class="cancel">&times;</a>
+<<<<<<< HEAD
+=======
+					<?php include "tospp.php"; ?>
+>>>>>>> origin/master
 			</div>
 			<div id="cover" >
 			</div>

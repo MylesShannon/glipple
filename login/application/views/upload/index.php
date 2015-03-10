@@ -53,6 +53,7 @@
 	</form>
 	-->
 
+	<p>Pick a file with ID3 tags and we'll scan them automatically</p>
 	<p>
 <!-- 		<form action="<?php echo URL ?>upload/upld" id="songUpload" method="post" enctype="multipart/form-data">  add class="dropzone" for dropzone and remove content
 

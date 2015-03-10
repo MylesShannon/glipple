@@ -12,6 +12,9 @@
  * Skin Version: 4.4 (jPlayer 2.6.0)
  * Date: 1st April 2014
  */
+div.radio {
+width:100%;
+}
 
 div.jp-audio,
 div.jp-audio-stream,
@@ -26,14 +29,14 @@ div.jp-video {
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
 	color: #666;
-	border:1px solid #009be3;
-	background-color:#eee;
+/*	border:1px solid #009be3; 
+	background-color:#eee;*/
 }
 div.jp-audio {
-	width:100%;
+	width:420px;
 }
 div.jp-audio-stream {
-	width:182px;
+	width:100%;
 }
 div.jp-video-270p {
 	width:480px;
@@ -121,7 +124,8 @@ div.jp-audio ul.jp-controls {
 }
 
 div.jp-audio-stream ul.jp-controls {
-	width: 142px;
+	text-align: center;
+	width: auto;
 	padding:20px 20px 0 20px;
 }
 
@@ -314,6 +318,7 @@ div.jp-volume-bar {
 	width:46px;
 	height:5px;
 	cursor: pointer;
+	float:right;
 }
 div.jp-audio div.jp-volume-bar {
 	top:37px;

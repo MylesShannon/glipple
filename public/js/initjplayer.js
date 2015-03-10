@@ -52,6 +52,7 @@ $(document).ready(function(){
 			t = (t-time)/1000;
 			preload: "none",
 			ready = true;
+<<<<<<< HEAD
 			$(this).jPlayer("setMedia", stream);
 		},
 		stop: function() {
@@ -64,28 +65,34 @@ $(document).ready(function(){
 			time= new Date().getTime();
 			preload: "none",
 			ready=false;
+=======
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
+		},
+		pause: function() {
+>>>>>>> origin/master
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
+<<<<<<< HEAD
 				preload: "none",
 				$(this).jPlayer("setMedia", stream).jPlayer("play",t);
+=======
+				$(this).jPlayer("setMedia", stream).jPlayer("play");
+>>>>>>> origin/master
 			}
 		},
-		/*
-		error: function(event) {
-			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-				// Setup the media stream again and play it.
-				$(this).jPlayer("setMedia", stream).jPlayer("play");
-			}
-		}, */
 		swfPath: "./js/jPlayer/jPlayer.swf",
 		supplied: "mp3",
 		preload: "none",
 		wmode: "window",
-		keyEnabled: true
+		useStateClassSkin: true,
+		autoBlur: false,
+		keyEnabled: true,
+
 	});
+	
 });
 
 // tut's player 
