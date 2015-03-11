@@ -43,44 +43,20 @@ $(document).ready(function(){
 		mp3: "http://glipple.com:8000/radio"
 	},
 	ready = false;
-	time = new Date().getTime();
-	t=0;
 		
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
-			t= new Date().getTime();
-			t = (t-time)/1000;
-			preload: "none",
 			ready = true;
-<<<<<<< HEAD
 			$(this).jPlayer("setMedia", stream);
 		},
-		stop: function() {
-			time= new Date().getTime();
-			preload: "none",
-			ready=false;
-			$(this).jPlayer("clearMedia");
-		},
 		pause: function() {
-			time= new Date().getTime();
-			preload: "none",
-			ready=false;
-=======
-			$(this).jPlayer("setMedia", stream).jPlayer("play");
-		},
-		pause: function() {
->>>>>>> origin/master
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
-<<<<<<< HEAD
 				preload: "none",
-				$(this).jPlayer("setMedia", stream).jPlayer("play",t);
-=======
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
->>>>>>> origin/master
 			}
 		},
 		swfPath: "./js/jPlayer/jPlayer.swf",
