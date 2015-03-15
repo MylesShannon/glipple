@@ -49,10 +49,10 @@ $db = "music";
 mysql_connect($server, $user, $pass) or die(mysql_error());
 mysql_select_db($db) or die(mysql_error());
 
-$Path="/media/music/18/148.m4a";
 require_once('./getid3/getid3/getid3.php');
+$Path="/media/music/18/148.m4a";
 $getID3 = new getID3;
-
+$getID3->analyze($Path);
 
 //$owner = $userID;
 
