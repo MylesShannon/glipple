@@ -66,9 +66,14 @@ $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['comments']['title']);
 
 //getid3_lib::CopyTagsToComments($trackInfo);
 
+/*
 if(isset($OldThisFileInfo['comments']['picture'][0])){
      $Image='data:'.$OldThisFileInfo['comments']['picture'][0]['image_mime'].';charset=utf-8;base64,'.base64_encode($OldThisFileInfo['comments']['picture'][0]['data']);
 }
+*/
+
+header('Content-Type: image/jpeg');
+
 ?>
   
-<img id="FileImage" width="150" src="<?php echo @$Image;?>" height="150">
+<img id="FileImage" width="150" src="<?php echo $OldThisFileInfo['comments']['picture']['0']['data'];?>" height="150">
