@@ -39,16 +39,6 @@
 </div>
 
 <?php
-error_reporting(E_ALL ^ E_DEPRECATED);
-
-$server = "localhost";
-$user = "root";
-$pass = "4DaL0v3AM0n3y";
-$db = "music";
-
-mysql_connect($server, $user, $pass) or die(mysql_error());
-mysql_select_db($db) or die(mysql_error());
-
 require_once('./getid3/getid3/getid3.php');
 $Path="/media/music/18/148.m4a";
 $getID3 = new getID3;
@@ -74,9 +64,9 @@ $track = preg_replace("/[^0-9\-\/ ]/", "", $tag['tags']['id3v2']['track_number']
 $title = preg_replace("/[^0-9a-zA-Z!?\- ]/", "", $tag['comments']['title']);
 */
 
-getid3_lib::CopyTagsToComments($trackInfo);
+//getid3_lib::CopyTagsToComments($trackInfo);
 
-$Image='data:'.$trackInfo['comments_html']['picture'][0]['image_mime'].';charset=utf-8;base64,'.base64_encode($trackInfo['comments_html']['picture'][0]['data']);
+$Image='data:'.$trackInfo['comments']['picture'][0]['image_mime'].';charset=utf-8;base64,'.base64_encode($trackInfo['comments']['picture'][0]['data']);
 ?>
   
 <img id="FileImage" width="150" src="<?php echo @$Image;?>" height="150">
