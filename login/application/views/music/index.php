@@ -80,6 +80,7 @@ $(document).ready(function() {
 		//"ordering": false
     } );
  
+	/*
     $('button').click( function() {
         var data = table.$('input').serialize();
         alert(
@@ -88,6 +89,7 @@ $(document).ready(function() {
         );
         return false;
     } );
+	*/
 	
 	$('#delete').click(function() {
 		var d = $("#delete").val();
