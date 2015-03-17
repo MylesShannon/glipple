@@ -49,15 +49,23 @@ $(document).ready(function(){
 			ready = true;
 			$(this).jPlayer("setMedia", stream);
 		},
+		play: function() {
+			$(this).jPlayer("setMedia", stream);
+		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
 		},
+		stop: function() {
+			$(this).jPlayer("clearMedia");
+		},
+		/*
 		error: function(event) {
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
 		},
+		*/
 		swfPath: "./js/jPlayer/jPlayer.swf",
 		supplied: "mp3",
 		preload: "none",
