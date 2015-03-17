@@ -50,7 +50,10 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream);
 		},
 		play: function() {
-			$(this).jPlayer("setMedia", stream);
+			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("setMedia", "").jPlayer("play");
+			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
