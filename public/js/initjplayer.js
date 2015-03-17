@@ -50,14 +50,14 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
 			$(this).jPlayer("volume", 0.25);
 		},
-		play: function() {
-			$(this).jPlayer("setMedia", stream).jPlayer("play");
-		},
 		pause: function() {
-			
+			$(this).jPlayer("clearMedia");
 		},
-		stop: function() {
-			
+		error: function(event) {
+			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+				// Setup the media stream again and play it.
+				$(this).jPlayer("setMedia", stream).jPlayer("play");
+			}
 		},
 		/*
 		error: function(event) {
