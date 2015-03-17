@@ -54,9 +54,11 @@ $(document).ready(function(){
 		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("setMedia", "").jPlayer("play");
 		},
 		stop: function() {
 			$(this).jPlayer("clearMedia");
+			$(this).jPlayer("setMedia", "").jPlayer("play");
 		},
 		/*
 		error: function(event) {
