@@ -13,7 +13,6 @@ define('URL', 'http://glipple.com/');
 	<!-- load jplayer and skin -->	
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
 	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
 	
 	<!-- dataTables -->
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.dataTables.min.js"></script>
