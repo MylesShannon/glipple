@@ -11,7 +11,6 @@ define('URL', 'http://glipple.com/');
 	<script src="<?php echo URL; ?>public/js/dropzone.js"></script>
 	
 	<!-- load jplayer and skin -->	
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
 	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
 	
 	<!-- dataTables -->

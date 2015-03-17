@@ -65,5 +65,6 @@
   
   <?php define('URL', 'http://glipple.com/'); ?>
   <!-- load Now Playing js -->
+  <script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
   <script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script>
