@@ -1,3 +1,8 @@
+<head>
+	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://glipple.com/public/js/jquery-2.1.1.js"></script>
+</head>
+
 <div class='radio'>
       <div id="jquery_jplayer_1" class="jp-jplayer"></div>
       <div id="jp_container_1" class="jp-audio-stream">
@@ -63,6 +68,7 @@
 </div> -->
   </div>
   
-  <script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
-  <!-- load Now Playing js -->
-  <script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
+	<!-- load Now Playing js -->
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script>
