@@ -47,7 +47,8 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream).jPlayer("play").jPlayer("volume", 0.25);
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
+			$(this).jPlayer("volume", 0.25);
 		},
 		play: function() {
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
