@@ -1,3 +1,5 @@
+<?php define('URL', 'http://glipple.com/'); ?>
+
 <head>
 	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
 	<script type="text/javascript" src="http://glipple.com/public/js/jquery-2.1.1.js"></script>
