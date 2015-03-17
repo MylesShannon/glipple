@@ -54,10 +54,10 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		pause: function() {
-			$(this).jPlayer("setMedia", "/").jPlayer("play");
+			
 		},
 		stop: function() {
-			$(this).jPlayer("setMedia", "/").jPlayer("play");
+			
 		},
 		/*
 		error: function(event) {
