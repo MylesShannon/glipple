@@ -50,7 +50,7 @@ $(document).ready(function(){
 			$(this).jPlayer("volume", 0.25);
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
-		pause: function() {
+		play: function() {
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
