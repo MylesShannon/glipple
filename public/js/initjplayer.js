@@ -40,6 +40,7 @@ $(document).ready(function(){
 // Myles' player
 $(document).ready(function(){
 	var stream = {
+		title: "",
 		mp3: "http://glipple.com:8000/radio"
 	},
 	ready = false;
@@ -47,8 +48,7 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream).jPlayer("play");
-			$(this).jPlayer("volume", 0.25);
+			$(this).jPlayer("setMedia", stream);
 		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
@@ -59,15 +59,6 @@ $(document).ready(function(){
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
 			}
 		},
-		/*
-		error: function(event) {
-			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-				// Setup the media stream again and play it.
-				$(this).jPlayer("setMedia", stream).jPlayer("play");
-			}
-		},
-		*/
-		swfPath: "./js/jPlayer/jPlayer.swf",
 		supplied: "mp3",
 		preload: "none",
 		wmode: "window",
