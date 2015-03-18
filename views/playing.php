@@ -25,10 +25,10 @@ if (!$fp) {
 	preg_match('/title="(.*)"/', $output, $title);
 	preg_match('/artist="(.*)"/', $output, $artist);
 	
-	if($title == ""){
+	if(trim($title) == ""){
 		$title = 'title missing';
 	}
-	if($artist == ""){
+	if(trim($artist) == ""){
 		$artist = 'artist missing';
 	}
 	
