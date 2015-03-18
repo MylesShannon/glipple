@@ -51,6 +51,9 @@ $(document).ready(function(){
 			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		play: function() {
+			$(this).jPlayer("play", 0 );
+		},
+		pause: function() {
 			$(this).jPlayer("clearMedia");
 		},
 		error: function(event) {
