@@ -25,6 +25,13 @@ if (!$fp) {
 	preg_match('/title="(.*)"/', $output, $title);
 	preg_match('/artist="(.*)"/', $output, $artist);
 	
+	if(!isset($title)){
+		$title = 'title missing';
+	}
+	if(!isset($artist)){
+		$artist = 'artist missing';
+	}
+	
 	echo "<a href='http://glipple.com/music/".$file[1]."' download='".preg_replace("/[^a-zA-Z0-9 ]+/", "", $title[1])."'>".$title[1]."</a> - <a href='#profile' id='".$id[1]."' class='profile'>".$artist[1]."</a>";
 }
 
