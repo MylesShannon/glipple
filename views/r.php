@@ -2,8 +2,8 @@
 
 <head>
 	<!-- <link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" /> -->
-	<link href="../../dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="http://glipple.com/public/js/jquery-2.1.1.js"></script>
+	<link href="<?php echo URL; ?>public/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
 </head>
