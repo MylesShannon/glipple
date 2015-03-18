@@ -40,15 +40,15 @@ $(document).ready(function(){
 // Myles' player
 $(document).ready(function(){
 	var stream = {
-		title: "",
-		mp3: "http://glipple.com:8000/radio"
+		mp3: "http://glipple.com:8000/radio",
 	},
 	ready = false;
 		
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			ready = true;
-			$(this).jPlayer("setMedia", stream);
+			$(this).jPlayer("volume", 0.25);
+			$(this).jPlayer("setMedia", stream).jPlayer("play");
 		},
 		pause: function() {
 			$(this).jPlayer("clearMedia");
