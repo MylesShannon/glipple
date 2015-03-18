@@ -17,7 +17,12 @@ mysql_select_db($db) or die(mysql_error());
 
 // print anything in id3 where id = currently playing ($obj)
 $row = mysql_fetch_array(mysql_query("SELECT * FROM id3 WHERE id = ".$obj["icestats"]["source"]["title"]))or die("missing song info");
-echo $row['title']." - ".$row['artist'];
+if(!isset($row['title'])){
+	$t = '~title missing~';
+} else {
+	$t = $row['title'];
+}
+echo $t." - ".$row['artist'];
 
 mysql_close(); 
 ?>
