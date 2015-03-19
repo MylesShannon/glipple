@@ -43,7 +43,7 @@
 		Music: Free. Legal. Easy.
 	 </td>
 	 <td>
-		<?php include "views/r.php"; ?>
+		<?php include "views/radio.php"; ?>
 
 	</td></tr></table>
 	<!--
