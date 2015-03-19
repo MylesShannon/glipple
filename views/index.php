@@ -45,20 +45,15 @@ mysql_close();
 </table>
 
 <script>
-
-
-
+/*
 $(document).ready(function() {
     $('#latest').dataTable( {
         "pageLength": 15,
         "info":     false,
-		"bLengthChange": false
-		
-    } );
-
-
-		
-		});
+		"bLengthChange": false	
+    });		
+});
+*/
 </script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
