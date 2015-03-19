@@ -32,7 +32,14 @@
 		preg_match('/\/media\/(.*)/', $row['path'], $path);
 		preg_match('/\/media\/music\/.*\/.*\.(.*)/', $row['path'], $type);
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
-		echo "<tr><td>".$count++."</td>";
+		echo "<tr><td>".$count++." 
+				<audio id='myAudio'
+					<source src='".URL.$path[1]."'
+						type='audio/mp3'>
+					Your user agent does not support the HTML5 Audio element.
+				</audio>
+				<button type='button' onclick='aud_play_pause()'>Play/Pause</button>
+		</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
@@ -45,20 +52,23 @@ mysql_close();
 </table>
 
 <script>
-
-
-
 $(document).ready(function() {
     $('#latest').dataTable( {
         "pageLength": 15,
         "info":     false,
 		"bLengthChange": false
 		
-    } );
+    } );	
+});
 
-
-		
-		});
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
 </script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
