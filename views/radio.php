@@ -1,23 +1,28 @@
+<?php define('URL', 'http://glipple.com/'); ?>
+
+<head>
+  <link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
+  <script type="text/javascript" src="http://glipple.com/public/js/jquery-2.1.1.js"></script>
+</head>
+
 <div class='radio'>
       <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-      <div id="jp_container_1" class="jp-audio-stream">
+      <div id="jp_container_1" class="jp-audio">
         <div class="jp-type-single">
           <div class="jp-gui jp-interface">
             <ul class="jp-controls">
              <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
             <!-- <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li> -->
-            <!-- <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li> -->
+            <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li> 
             <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
               <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
               <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-              
             </ul>
   <!--          <div class="jp-progress">
               <div class="jp-seek-bar">
                 <div class="jp-play-bar"></div>
               </div>
             </div>-->
-
             <div class="jp-volume-bar">
               <div class="jp-volume-bar-value"></div>
             </div>
@@ -26,6 +31,9 @@
               <div class="jp-duration"></div>
             </div>-->
           </div>
+          <div class="album-art">
+           <img style="height: 64px; width: 64px;" src="<?php echo URL; ?>public/img/logo.png"></div>
+      </div>
           <div class="jp-details">
             
             <span class="jp-title"><div id="song_title" ></div></span>
@@ -65,6 +73,7 @@
 </div> -->
   </div>
   
+  <script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="<?php echo URL; ?>public/js/initjplayer.js"></script>
   <!-- load Now Playing js -->
   <script type="text/javascript" src="<?php echo URL; ?>public/js/playing.js"></script>
