@@ -33,7 +33,7 @@ div.jp-video {
 	background-color:#eee;*/
 }
 div.jp-audio {
-	width:420px;
+	width:200px;
 }
 div.jp-audio-stream {
 	width:100%;
@@ -119,8 +119,11 @@ div.jp-interface ul.jp-controls {
 }
 
 div.jp-audio ul.jp-controls {
-	width: 380px;
-	padding:20px 20px 0 20px;
+	width: 75px;
+	position: absolute;
+  	left: 30px;
+  	width: 78px;
+  	top: 10px;
 }
 
 div.jp-audio-stream ul.jp-controls {
@@ -245,7 +248,12 @@ div.jp-seeking-bg {
 /* @end */
 
 /* @group volume controls */
-
+div.jp-volume-controls {
+  position: absolute;
+  top: 51px;
+  left: 5px;
+  width: 200px;
+}
 
 a.jp-mute,
 a.jp-unmute,
@@ -343,8 +351,10 @@ div.jp-volume-bar-value {
 /* @group current time and duration */
 
 div.jp-audio div.jp-time-holder {
-	position:absolute;
-	top:50px;
+	  position: absolute;
+  top: 65px;
+  left: 33px;
+  width: 42px;
 }
 div.jp-audio div.jp-type-single div.jp-time-holder {
 	left:110px;
