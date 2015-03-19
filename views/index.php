@@ -32,14 +32,13 @@
 		preg_match('/\/media\/(.*)/', $row['path'], $path);
 		preg_match('/\/media\/music\/.*\/.*\.(.*)/', $row['path'], $type);
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
-		echo "<tr><td>".$count++."<!--
+		echo "<tr><td>".$count++." 
 				<audio id='myAudio'
 					<source src='".URL.$path[1]."'
 						type='audio/mp3'>
 					Your user agent does not support the HTML5 Audio element.
 				</audio>
-				<button type='button' onclick='aud_play_pause()'>Play/Pause</button> 
-				-->
+				<button type='button' onclick='aud_play_pause()'>Play/Pause</button>
 		</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
