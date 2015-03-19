@@ -15,7 +15,7 @@
 			<div class="jp-gui jp-interface">
 				<div class="jp-controls">
 					<button class="jp-play" role="button" tabindex="0">play</button>
-					<button class="jp-stop" role="button" tabindex="0">stop</button>
+					<!--<button class="jp-stop" role="button" tabindex="0">stop</button>-->
 				</div>
 				<!--
 				<div class="jp-progress">
