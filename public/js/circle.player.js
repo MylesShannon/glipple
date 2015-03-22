@@ -232,6 +232,7 @@ CirclePlayer.prototype = {
 	},
 	play: function(time) {
 		this.player.jPlayer("play", time);
+		this.player.jPlayer("pauseOthers");
 	},
 	pause: function(time) {
 		this.player.jPlayer("pause", time);
