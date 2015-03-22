@@ -35,15 +35,6 @@
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
 		echo "<tr><td><div id='jquery_jplayer_".$row['id']."' class='cp-jplayer'></div>";
 		echo "<div id='cp_container_".$row['id']."' class='cp-container'>";
-
-		echo "<div class='cp-buffer-holder'> <!-- .cp-gt50 only needed when buffer is > than 50% -->";
-		echo "<div class='p-buffer-1'></div>";
-		echo "<div class='cp-buffer-2'></div>";
-		echo "</div><div class='cp-progress-holder'> <!-- .cp-gt50 only needed when progress is > than 50% -->";
-		echo "<div class='cp-progress-1'></div>";
-		echo "<div class='cp-progress-2'></div>";
-		echo "</div>";
-		echo "<div class='cp-circle-control'></div>";
 		echo "<ul class='cp-controls'>";
 		echo "<li><a class='cp-play' tabindex='1'>play</a></li>";
 		echo	"<li><a class='cp-pause' style='display:none;' tabindex='1'>pause</a></li>";
