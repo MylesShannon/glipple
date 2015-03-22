@@ -30,3 +30,10 @@ define('URL', 'http://glipple.com/');
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/circle.skin/circle.player.css">
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
