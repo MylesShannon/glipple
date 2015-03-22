@@ -29,4 +29,4 @@ define('URL', 'http://glipple.com/');
 	<!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="<?php echo URL; ?>public/css/circle.skin/circle.player.css">s
+	<link rel="stylesheet" href="<?php echo URL; ?>public/css/circle.skin/circle.player.css">
