@@ -51,7 +51,7 @@
 		echo	"	</ul>";
 		echo "	</div>";
 		echo "<script type='text/javascript'> $(document).ready(function(){ var circleplayer".$row['id']." = new CirclePlayer(";
-		echo "'#jquery_player_".$row['id']."', { mp3: '".URL.$path[1]."'}, { cssSelectorAncestor: '#cp_container_".$row['id']."'});});</script>";
+		echo "'#jquery_jplayer_".$row['id']."', { mp3: '".URL.$path[1]."' }, { cssSelectorAncestor: '#cp_container_".$row['id']."' });});</script>";
 		echo "</td>";
 		echo "<td>".$count++."</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
@@ -74,11 +74,4 @@ $(document).ready(function() {
     } );
 } );
 </script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
 
