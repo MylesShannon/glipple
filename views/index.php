@@ -50,14 +50,15 @@
 		echo 	"<!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->";
 		echo	"	</ul>";
 		echo "	</div>";
-		echo "<script type='text/javascript'> $(document).ready(function(){ var circleplayer".$row['id']." = new CirclePlayer(";
-		echo "'#jquery_jplayer_".$row['id']."', { mp3: '".URL.$path[1]."' }, { cssSelectorAncestor: '#cp_container_".$row['id']."' });});</script>";
 		echo "</td>";
 		echo "<td>".$count++."</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td></tr>";
+        echo "<script type='text/javascript'> $(document).ready(function(){ var circleplayer".$row['id']." = new CirclePlayer(";
+		echo "'#jquery_jplayer_".$row['id']."', { mp3: '".URL.$path[1]."' }, { cssSelectorAncestor: '#cp_container_".$row['id']."' });});</script>";
+
 	}
 
 mysql_close();
