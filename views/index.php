@@ -32,7 +32,9 @@
 		preg_match('/\/media\/(.*)/', $row['path'], $path);
 		preg_match('/\/media\/music\/.*\/.*\.(.*)/', $row['path'], $type);
 		$title = preg_replace("/[^a-zA-Z0-9 ]+/", "", $row['title']);
-		echo "<tr><td><div id='cp_container_".$row['id']."' class='cp-container'>";
+		echo "<tr><td><div id='jquery_jplayer_".$row['id']."' class='cp-jplayer'></div>";
+		echo "<div id='cp_container_".$row['id']."' class='cp-container'>";
+
 		echo "<div class='cp-buffer-holder'> <!-- .cp-gt50 only needed when buffer is > than 50% -->";
 		echo "<div class='p-buffer-1'></div>";
 		echo "<div class='cp-buffer-2'></div>";
@@ -47,6 +49,8 @@
 		echo 	"<!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->";
 		echo	"	</ul>";
 		echo "	</div>";
+		echo "<script type='text/javascript'> $(document).ready(function(){ var circleplayer".$row['id']." = new CirclePlayer(";
+		echo "'#jquery_player_".$row['id']."', { mp3: '".URL.$path[1]."'}, { cssSelectorAncestor: '#cp_container_".$row['id']."'});});</script>";
 		echo "</td>";
 		echo "<td>".$count++."</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
@@ -71,4 +75,6 @@ $(document).ready(function() {
 </script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
+
 
