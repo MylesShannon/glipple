@@ -77,5 +77,8 @@ $(document).ready(function() {
 <script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
 <script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
-
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
 
