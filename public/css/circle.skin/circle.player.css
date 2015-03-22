@@ -14,7 +14,7 @@
 	position:relative;
 	width:104px; /* 200 - (2 * 48) */
 	height:104px;
-	background:url("bgr.jpg") 0 0 no-repeat;
+	background:url("bgr.jpg") 48 48 no-repeat;
 	padding:0px;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
