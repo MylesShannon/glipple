@@ -61,7 +61,7 @@ mysql_close();
 <script>
 $(document).ready(function() {
     $("#latest").dataTable( {
-        "pageLength": 30,
+        "pageLength": 15,
         "info":     false,
 		"bLengthChange": false	
     } );
