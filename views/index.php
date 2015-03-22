@@ -57,7 +57,7 @@
 		echo "<td>".$row['album']."</td>";
         echo "<td>".$row['genre']."</td>";
         echo "<script type='text/javascript'> $(document).ready(function(){ var circleplayer".$row['id']." = new CirclePlayer(";
-		echo "'#jquery_jplayer_".$row['id']."', { mp3: '".URL.$path[1]."' }, { cssSelectorAncestor: '#cp_container_".$row['id']."' });});</script>";
+		echo "'#jquery_jplayer_".$row['id']."', { mp3: '".URL.$path[1]."', m4a: '".URL.$path[1]."' }, { cssSelectorAncestor: '#cp_container_".$row['id']."' });});</script>";
         echo "</tr>";
 
 	}
