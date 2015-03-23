@@ -17,6 +17,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
                 <th>Genre</th>
                 <th>Downloads</th>
 				<th></th>
+				<th></th>
             </tr>
         </thead>
  
@@ -59,7 +60,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		echo "<td>".$row['artist']."</td>";
 		echo "<td>".$row['genre']."</td>";
 		echo "<td>".$row['downloads']."</td>";
-
+		echo "<td><button id='edit' value='".$row['id']."' type='submit'>edit</button></td>";
 		echo "<td><button id='delete' value='".$row['id']."' type='submit'>delete</button></td>";
  		echo "</tr>";
 		
@@ -91,13 +92,23 @@ $(document).ready(function() {
     } );
 	*/
 	
-	$('#delete').click(function() {
+	$('#delete').click(function() { 
 		var d = $("#delete").val();
 		$.post("delete",
         { 
 			del : d
 		});
 		return false;
-	} );
+	});
+
+	$('#edit').click(function() {
+		/*
+		1. make row columns into text fields
+		2. make edit button into save button
+		*/
+	});
+
+
 } );
+
 </script>
