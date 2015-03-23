@@ -11,7 +11,8 @@ define('URL', 'http://glipple.com/');
 	<script src="<?php echo URL; ?>public/js/dropzone.js"></script>
 	
 	<!-- load jplayer and skin -->	
-	<link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
+	<!-- <link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" /> -->
+	<link href="<?php echo URL; ?>public/css/skin/blue.mondayorg/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
 	
 	<!-- dataTables -->
@@ -31,9 +32,9 @@ define('URL', 'http://glipple.com/');
 
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/circle.skin/circle.player.css">
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/profile.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
+	
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/update.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/circle.player.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
