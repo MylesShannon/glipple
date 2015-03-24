@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="jp-details">
-				<div class="jp-title" aria-label="title">&nbsp;</div>
+				<div class="jp-title" aria-label="title" id="song_title">&nbsp;</div>
 			</div>
 			<div class="jp-no-solution">
 				<span>Update Required</span>
