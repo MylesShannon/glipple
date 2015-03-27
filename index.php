@@ -10,21 +10,7 @@
 		Glipple
 	</title>
 	
-	<?php include "./header.php"; ?>
-	
-	<!-- favicon -->
-	<link rel="shortcut icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
-	<link rel="icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
-	
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" />
-    <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
-	<!-- <link rel="stylesheet" href="<?php echo URL; ?>public/css/stickyfooter.css" /> -->
-	
-	<!-- google analytics -->
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/google.js"></script>	
-	
+	<?php include "./header.php"; ?>	
 </head>
 <body>
 	<!--
