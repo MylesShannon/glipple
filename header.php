@@ -12,7 +12,7 @@ define('URL', 'http://glipple.com/');
 	
 	<!-- load jplayer and skin -->	
 	<!-- <link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" /> -->
-	<link href="<?php echo URL; ?>public/css/skin/blue.mondayorg/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo URL; ?>public/css/skin/blue.mondayorg/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jPlayer/jquery.jplayer.min.js"></script>
 	
 	<!-- dataTables -->
@@ -38,3 +38,14 @@ define('URL', 'http://glipple.com/');
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.transform2d.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.grab.js"></script>
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/mod.csstransforms.min.js"></script>
+	
+		<!-- favicon -->
+	<link rel="shortcut icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
+	<link rel="icon" href="<?php echo URL; ?>public/img/fav.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/reset.css" />
+    <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css" />
+	
+	<!-- google analytics -->
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/google.js"></script>	
