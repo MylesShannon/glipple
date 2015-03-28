@@ -92,7 +92,7 @@
   width: 100%; }
 
 .jp-audio .jp-interface {
-  height: 80px; }
+  height: 90px; }
 
 .jp-audio-stream .jp-interface {
   height: 80px; }
@@ -116,8 +116,8 @@
   overflow: hidden; }
 
 .jp-audio .jp-controls {
-  width: 380px;
-  padding: 20px 20px 0 20px; }
+  width: 80px;
+  padding: 5px 5px 5px 5px; }
 
 .jp-audio-stream .jp-controls {
   position: absolute;
@@ -231,9 +231,9 @@
 
 .jp-volume-controls {
   position: absolute;
-  top: 32px;
-  left: 308px;
-  width: 200px; }
+  top: 70px;
+  left: 5px;
+  width: 50px; }
 
 .jp-audio-stream .jp-volume-controls {
   left: 70px; }
@@ -298,8 +298,8 @@
   top: 50px; }
 
 .jp-audio .jp-type-single .jp-time-holder {
-  left: 110px;
-  width: 186px; }
+  left: 5px;
+  width: 45px; }
 
 .jp-audio .jp-type-playlist .jp-time-holder {
   left: 166px;
