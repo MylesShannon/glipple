@@ -22,10 +22,7 @@ body {
 }
 
 .cp-container {
-	margin: 0px 0px 0px 20px;
-    padding: 10px 10px 0px 10px;
-    border-style: solid;
-    border-width: 2px;
+	margin:10px 0px 0px 10px;
 }
 
 #song_title a {
