@@ -60,6 +60,7 @@ $(document).ready(function(){
 			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
 				// Setup the media stream again and play it.
 				$(this).jPlayer("setMedia", stream).jPlayer("play");
+				$(".cp-jplayer").not(this).jPlayer("stop");
 			}
 		},
 		supplied: "mp3",
