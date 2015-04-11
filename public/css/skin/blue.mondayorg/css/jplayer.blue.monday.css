@@ -315,6 +315,10 @@
   float: left;
   display: inline;
   cursor: default; }
+  
+  .jp-art {
+  float: right;
+  display: inline; }
 
 .jp-duration {
   float: right;
