@@ -317,8 +317,10 @@
   cursor: default; }
   
   .jp-art {
+  position: relative;
   float: right;
-  display: inline; }
+  display: inline;
+  padding: 5px 5px 0px 0px; }
 
 .jp-duration {
   float: right;
