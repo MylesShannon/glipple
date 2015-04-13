@@ -6,7 +6,6 @@
 
             <tr>
             	<th> </th>
-                <th>#</th>
                 <th>Title</th>
                 <th>Artist</th>
                 <th>Album</th>
@@ -42,7 +41,6 @@
 		echo	"	</ul>";
 		echo "	</div>";
 		echo "</td>";
-		echo "<td>".$count++."</td>";
 		echo "<td><a class='dl' href='".URL.$path[1]."' id='".$row['id']."' download='".$title.".".$type[1]."'>".$row['title']."</a></td>";
 		echo "<td><a href='#profile' id='".$row['owner']."' class='profile'>".$row['artist']."</a></td>";
 		echo "<td>".$row['album']."</td>";
