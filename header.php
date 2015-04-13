@@ -3,7 +3,7 @@ define('URL', 'http://glipple.com/');
 ?>
 	
 	<!-- load jQuery -->
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery-2.1.3.js"></script>
 	<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 	
 	<!-- load dropzone css and js -->
