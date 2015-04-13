@@ -315,10 +315,13 @@
   float: left;
   display: inline;
   cursor: default; }
+<<<<<<< HEAD
   
   .jp-art {
   display: inline;
   padding: 5px 5px 0px 0px; }
+=======
+>>>>>>> parent of 02ef3be... add player art display
 
 .jp-duration {
   float: right;
