@@ -10,4 +10,4 @@
 
 <h2>Keep rockin!</h2>
 
-<p>					—Adam Marx,  Cofounder & CEO</p>
+<p style="float:right">—Adam Marx,  Cofounder & CEO</p>
