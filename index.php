@@ -84,7 +84,7 @@
 		
 		<div class="footer_right_box">
 			<div class="copyright-box">
-					<span class="tos-box">Use of glipple.com is in accordance with our <a href="#" id="tospp">Terms of Service</a></span> &copy; Glipple Inc 2015
+					<span class="tos-box">Use of glipple.com is in accordance with our <a href="#" id="tospp" class="link">Terms of Service</a></span> &copy; Glipple Inc 2015
 			</div>
 		</div>
 		
