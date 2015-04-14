@@ -8,6 +8,6 @@
 <p>And to those artists out there dying for a chance to find a fanbase: here’s your chance. You now have more control than you’ve ever had—use it.</p>
 <p>And that’s it. It’s as simple as that. Music is freedom, and now it’s free.</p>
 
-<h3>Keep rockin!</h3>
+<h3 style="font-weight:bold">Keep rockin!</h3>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; —Adam Marx,  Cofounder & CEO</p>
+<p style="padding-left:100px"> —Adam Marx,  Cofounder & CEO</p>
