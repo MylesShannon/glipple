@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 // Artist passcode
-define('PASSCODE', 'Pg2Phk19Pmg13');
+define('PASSCODE', 'undergroundtakeover');
 define('FEEDBACK_PASSCODE_FIELD_EMPTY', 'Passcode invalid!');
 
 //ToS

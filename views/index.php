@@ -1,5 +1,7 @@
 <?php include "../header.php"; ?>
-
+<h1>Welcome!<h1/>
+<p>Stream or download some of the very best indie-music from around the globe.<p/>
+<br>
 <table id="latest" class="display" cellspacing="0">
 
         <thead>
