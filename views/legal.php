@@ -1,5 +1,3 @@
 <h1>Legal</h1>
 
-<p>
-	
-</p>
+<?php include './tospp.php'; ?>
