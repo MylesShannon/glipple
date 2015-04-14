@@ -22,7 +22,7 @@
 	<tr>
 	<td>
     <div class='title-box'>
-        <img id="logo" class="link" src="<?php echo URL; ?>public/img/logo.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
+        <img id="logo" class="link" src="<?php echo URL; ?>public/img/logoAlpha.png" WIDTH="238px" HEIGHT="100px" alt="Glipple" />
 	</div>
 	 </td>
 	 <td id="slogan">
