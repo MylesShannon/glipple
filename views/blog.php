@@ -10,4 +10,4 @@
 
 <h3 style="font-weight:bold">Keep rockin!</h3>
 
-<p style="padding-left:100px"> —Adam Marx,  Cofounder & CEO</p>
+<p style="padding-left:300px"> —Adam Marx,  Cofounder & CEO</p>
