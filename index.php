@@ -45,10 +45,10 @@
 		<div class="header_left_box">
 			<ul class="menu">
 				<li>
-					<a href="#blog" id="blog" class="link">Blog</a>
+					<a href="#" id="blog" class="link">Blog</a>
 				</li>
 				<li>
-					<a href="#faqs" id="faqs" class="link">FAQ's</a>
+					<a href="#" id="faqs" class="link">FAQ's</a>
 				</li>
 			</ul>
         </div>
@@ -74,20 +74,17 @@
 		<div class="footer_left_box">
 			<ul class="menu">
 				<li>
-					<a href="#legal" id="legal" class="link">Legal</a>
+					<a href="#" id="legal" class="link">Legal</a>
 				</li>
 				<li>
-					<a href="#contact" id="contact" class="link">Contact</a>
+					<a href="#" id="contact" class="link">Contact</a>
 				</li>
 			</ul>
         </div>
 		
 		<div class="footer_right_box">
-			<div class="tos-box">
-				Use of glipple.com is in accordance with our <a href="#" id="tospp">Terms of Service</a>
-			</div>
 			<div class="copyright-box">
-					&copy; Glipple Inc 2015
+					<span class="tos-box">Use of glipple.com is in accordance with our <a href="#" id="tospp">Terms of Service</a></span> &copy; Glipple Inc 2015
 			</div>
 		</div>
 		
