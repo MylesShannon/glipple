@@ -1,4 +1,4 @@
-<?php define('URL', $_SERVER['PATH_INFO']); ?>
+<?php define('URL', 'http://glipple.com/'); ?>
 
 <head>
 	<!-- <link type="text/css" href="<?php echo URL; ?>public/js/jPlayer/skins/blue.monday/jplayer.blue.monday.css" rel="stylesheet" /> -->
