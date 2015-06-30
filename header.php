@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://glipple.com/');
+define('URL', $_SERVER['PATH_INFO']);
 ?>
 	
 	<!-- load jQuery -->
