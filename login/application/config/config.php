@@ -27,8 +27,8 @@ define('FEEDBACK_TOS_EMPTY', 'Please agree to the Terms of Service!');
  * if you are using a (different) port, then put this in here, like http://mydomain:8888/subfolder/
  * Note: The trailing slash is important!
  */
-define('URL', 'http://glipple.com/login/');
-define('URLlog', 'http://glipple.com/');
+define('URL', $_SERVER['PATH_INFO'].'/login/');
+define('URLlog', $_SERVER['PATH_INFO']);
 
 /**
  * Configuration for: Folders
