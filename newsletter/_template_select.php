@@ -1,1 +1,0 @@
-<?php $templates = Template::all(); ?><p>  <label for="template_id"><?=TEMPLATES?></label>  <select id="template_id" name="template_id"><?php foreach ($templates as $temp) { ?>    <option value="<?=$temp->id?>"><?=$temp->name?></option><?php } ?>  </select></p>
