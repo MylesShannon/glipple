@@ -1,4 +1,1 @@
-# glipple
-Glipple, Inc
-Copyright
-admin@glipple.com
+Copyright © 2015 Glipple, Inc. All rights reserved.
